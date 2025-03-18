@@ -5,7 +5,7 @@ const withNextra = nextra({
   search: {
     codeblocks: false
   },
-  contentDirBasePath: '/docs'
+  contentDirBasePath: '/guides'
 })
 
 export default withNextra({

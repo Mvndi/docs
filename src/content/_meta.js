@@ -1,4 +1,5 @@
 export default {
+  gettingstarted: 'Getting Started',
   servers: "Servers",
   blacksmithing: "Blacksmithing",
   town_resources: "Resources",

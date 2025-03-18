@@ -4,4 +4,3 @@ export default {
   greekfire: "Greek Fire",
   trebuchet: "Trebuchet"
 };
-
