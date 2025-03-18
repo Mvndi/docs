@@ -13,6 +13,7 @@ export default {
   doors: "Doors",
   brewery: "Brewery",
   waypoints: "Waypoints",
-  seasons: "Seasons"
+  seasons: "Seasons",
+  chest_shop: "Chest Shops"
 };
 
