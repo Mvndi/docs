@@ -14,6 +14,7 @@ export default {
   brewery: "Brewery",
   waypoints: "Waypoints",
   seasons: "Seasons",
-  chest_shop: "Chest Shops"
+  chest_shop: "Chest Shops",
+  parties: "Party System"
 };
 
