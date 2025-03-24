@@ -53,8 +53,33 @@ some weapons need to be assemlbed in smithing table not crafting table <br/>
 
 For throwing weapons like the francisca axe you can throw by holding right click
 
-# Damage Formula
+# Defense
 
-It's like Dark Souls <br/>
+![defense](https://files.catbox.moe/tkqi0t.png)
 
-![damage_formula](../../public/dmg_formula.png)
+# Damage Formula (Piecewise)
+
+1. **If Attack (Atk) ≤ 1/8 × Defense (Def)**:  
+   `DMG = Atk × 0.1`
+
+2. **If Attack (Atk) ≤ 1 × Defense (Def)**:  
+   `DMG = Atk × ((19.2 / 49) × ((Atk / Def) - 0.125)^2 + 0.1)`
+
+3. **If Attack (Atk) ≤ 2.5 × Defense (Def)**:  
+   `DMG = Atk × ((-0.4 / 3) × ((Atk / Def) - 2.5)^2 + 0.7)`
+
+4. **If Attack (Atk) < 8 × Defense (Def)**:  
+   `DMG = Atk × ((-0.8 / 121) × ((Atk / Def) - 8)^2 + 0.9)`
+
+5. **If Attack (Atk) ≥ 8 × Defense (Def)**:  
+   `DMG = Atk × 0.9`
+
+# Attack Weight vs Deflection Level Table
+```
+| ↓ Deflection Level / → Attack Weight| NONE  | LIGHT | MEDIUM | HEAVY  |
+|-------------------------------------|-------|-------|--------|--------|
+| NONE                                | MEDIUM| HEAVY | HEAVY  | HEAVY  |
+| LIGHT                               | NONE  | MEDIUM| HEAVY  | HEAVY  |
+| MEDIUM                              | NONE  | LIGHT | MEDIUM | HEAVY  |
+| HEAVY                               | NONE  | LIGHT | LIGHT  | MEDIUM |
+```
