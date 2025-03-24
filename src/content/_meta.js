@@ -6,7 +6,6 @@ export default {
   map: "Live Map",
   towny: "Towny Wiki",
   combat: "Combat Guide",
-  siege: "Siege Weapons",
   war: "War Guide",
   boats: "Boats",
   machines: "Machines",

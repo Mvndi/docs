@@ -2,5 +2,6 @@ export default {
   ballista: "Ballista",
   cannon: "Cannon",
   greekfire: "Greek Fire",
-  trebuchet: "Trebuchet"
+  trebuchet: "Trebuchet",
+  siege: "Siege Weapons"
 };
