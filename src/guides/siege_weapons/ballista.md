@@ -2,14 +2,7 @@
 
 The ballista is a long-range anti-infantry turret.
 
-<div class="box">
-    <img
-    src="/ballista.png"
-    align="left"
-    alt="ballista"
-    width="200"
-    />
-</div>
+<img src="../../assets/ballista.png" align="left" alt="ballista" width="200"/>
 
 ## Mounting
 
@@ -23,10 +16,4 @@ To load the ballista, first mount it. Then, right click the ballista with a stan
 
 Once the ballista is loaded, left click to shoot.
 
-<div class="box">
-    <img
-    src="/ballista_demonstration.gif"
-    alt="ballista_demonstration"
-    width="600"
-    />
-</div>
+![ballista demonstration](../../assets/ballista_demonstration.gif)

@@ -1,6 +1,6 @@
 # Towny Resources
 
-![map](https://files.catbox.moe/ykbori.png)
+![map](../assets/towny_resources.png)
 
 ## What is Towny Resources?
 

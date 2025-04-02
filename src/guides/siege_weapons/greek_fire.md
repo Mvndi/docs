@@ -2,14 +2,7 @@
 
 The greek fire is a short-range anti-infantry turret which acts like a flamethrower.
 
-<div class="box">
-    <img
-    src="/greekfire.png"
-    align="left"
-    alt="greekfire"
-    width="200"
-    />
-</div>
+<img src="../../assets/greek_fire.png" align="left" alt="greek fire" width="200"/>
 
 ## Mounting
 
@@ -23,10 +16,4 @@ To load the greek fire, first mount it. Then, right click the weapon with blocks
 
 Once the greek fire is loaded, left click with a flint and steel to activate it.
 
-<div class="box">
-    <img
-    src="/greekfire_demonstration.gif"
-    alt="greekfire_demonstration"
-    width="600"
-    />
-</div>
+![greek fire demonstration](../../assets/greek_fire_demonstration.gif)

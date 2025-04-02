@@ -53,10 +53,6 @@ some weapons need to be assemlbed in smithing table not crafting table
 
 For throwing weapons like the francisca axe you can throw by holding right click
 
-## Defense
-
-![defense](https://files.catbox.moe/tkqi0t.png)
-
 ## Damage Formula (Piecewise)
 
 1. **If Attack (Atk) ≤ 1/8 × Defense (Def)**:  

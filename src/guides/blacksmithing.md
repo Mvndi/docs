@@ -26,7 +26,7 @@ Blacksmith recipes are in /recipes
 
 ## Bloomery Temperatures
 
-![bloomery temperatuers](https://files.catbox.moe/gu66iv.png)
+![bloomery temperatures](../assets/bloomery_temperatures.png)
 
 ## Crucible Furnace
 

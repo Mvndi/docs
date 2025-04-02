@@ -1,7 +1,5 @@
 # Rules
 
---------
-
 ## Discord
 
 --------
@@ -30,8 +28,6 @@
 
 ‣ Discord’s Terms of Service and Community Guidelines apply, and any rule broken within these terms that may not be listed above will still result in punishment depending on infractions received.
 
---------
-
 ## Cheating
 
 --------
@@ -39,11 +35,10 @@
 1.0 Any hacks that provide an advantage over other players are not allowed
 
 _- This includes XRay and Minimaps._
+
 _- Player health indicators are NOT allowed._
 
 1.1 Auto build/break mods are not allowed. However schematic rendering is allowed.
-
---------
 
 ## Chat
 
@@ -61,8 +56,6 @@ _- Player health indicators are NOT allowed._
 
 2.5 Racial slurs are forbidden.
 
---------
-
 ## War & Building
 
 --------
@@ -70,7 +63,7 @@ _- Player health indicators are NOT allowed._
 If any of these are discovered by admins the changes shall be reverted.
 tldr your town spawn has to be accessible with siege weapons. walls are okay, no dumb water elevator larp putting ur spawn far underground far above ground blah blah blah
 
-Moats
+### Moats
 
 4.1.1 Moats must be a maximum of 16 blocks wide
 
@@ -82,7 +75,7 @@ Moats
 
 4.1.5 Drymoats have a maximum depth of 5 blocks
 
-Walls
+### Walls
 
 4.2.1 Walls must not be "factions" walls (ugly cubes)
 
@@ -96,7 +89,7 @@ Walls
 
 4.2.6 Placing buttons on walls or near town with the intention to prevent siege weapons from being placed is not allowed
 
-Traps
+### Traps
 
 4.3.1 No forms of pitfall traps are allowed
 
@@ -106,7 +99,7 @@ Traps
 
 4.3.4 Ports cannot be enclosed with blocks. There must always be a reasonable way out for any player without perms to build
 
-Tunnels
+### Tunnels
 
 4.4.1 Tunnels and underground bunkers are not allowed
 
@@ -117,7 +110,7 @@ Tunnels
 > An underground bunker is a room for use during sieges that has roughly 5-10+ solid blocks above it, staff will make case-by-case decisions as to if underground rooms constitute siege bunkers or not
 > Tunnels only refer to tunnels for use during pvp/sieges, e.g. tunnels between fortresses, towns or ones which allow you to exit behind an attacking army, again staff will make case-by-case decisions on if tunnels are breaking the rules or n
 
-Attacking
+### Attacking
 
 4.5.1 The attacking team should not cause excessive damage with the sole purpose of griefing a town
 
@@ -129,7 +122,7 @@ Attacking
 
 4.5.5 Attackers ARE allowed to use siege weapons to destroy chests to steal their contents
 
-Misc.
+### Misc.
 
 4.6.1 No building nazi/communist imagery
 
@@ -137,7 +130,7 @@ Misc.
 
 4.6.3 No automated or redstone-assisted farms
 
-4.6.4 No using doors from the BigDoors plugin in unintended ways
+4.6.4 No using [Big Doors](./guides/big_doors.md) in unintended ways
 
 4.6.5 No Sky/Ocean bases
 
@@ -145,21 +138,17 @@ Misc.
 
 4.6.7 The town spawn point must be reachable via siege weapons and cannot be underground or in the sky
 
-Peace
+### Peace
 
 4.7.1 Scamming and lying in peace treaties is allowed - admins can serve as middlemen in certain exchanges where possible and are not allowed to be knowingly involved in scams
 
 4.7.2 Mass leaving your town after it gets occupied is not allowed
-
---------
 
 ## Alts
 
 --------
 
 5.0 Using alts is not allowed and will lead to a permanent ban of the alt and a tempban for the player's main account.
-
---------
 
 ## Exploits
 
@@ -171,8 +160,6 @@ Peace
 
 6.2 Abusing bugs, lag, and other unintended features such as block glitching and dupes is not allowed
 
---------
-
 ## Towny
 
 --------
@@ -182,8 +169,6 @@ Peace
 7.1 Joining a town just to spawn kill residents is forbidden.
 
 7.2 Building a tower to get past a wall inside someone's claims is forbidden.
-
---------
 
 ## Nations
 
@@ -197,8 +182,6 @@ Peace
 - The Discord server must be dedicated to Mvndicraft.
 - You cannot advertise other Minecraft servers in that server.
 - You must atleast own a town ingame before submitting an ad. (NOT ENFORCED UNTIL 2 WEEKS AFTER RELEASE)
-
---------
 
 ## Real Money Trading
 

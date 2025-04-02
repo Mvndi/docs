@@ -1,6 +1,6 @@
 # Welcome
 
-![aether](https://files.catbox.moe/h5zx0m.png)
+![aether](assets/aether.png)
 
 ## Information
 

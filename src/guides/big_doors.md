@@ -2,6 +2,7 @@
 
 Doors can be created by using the `/bdm` command.
 A door costs 2500 Ducats to create.
+There's a video tutorial [here](https://www.youtube.com/watch?v=AYnM5divwN4)
 
 ## Power Blocks
 

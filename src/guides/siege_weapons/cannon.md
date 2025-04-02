@@ -2,14 +2,7 @@
 
 The cannon is a highly adjustable siege weapon with a large area of effect.
 
-<div class="box">
-    <img
-    src="/cannon.png"
-    align="left"
-    alt="cannon"
-    width="200"
-    />
-</div>
+<img src="../../assets/cannon.png" align="left" alt="cannon" width="200"/>
 
 ## Adjusting
 
@@ -29,10 +22,4 @@ After loading the gunpowder, move to the front of the cannon and right click wit
 
 Once the cannon is loaded, right click the back of the cannon with a flint and steel to fire. There is a 16 second cooldown before firing again.
 
-<div class="box">
-    <img
-    src="/cannon_demonstration.gif"
-    alt="cannon_demonstration"
-    width="600"
-    />
-</div>
+![cannon demonstration](../../assets/cannon_demonstration.gif)
