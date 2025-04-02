@@ -1,0 +1,6 @@
+[book]
+authors = ["ewof"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Mvndicraft"
