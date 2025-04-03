@@ -1,13 +1,5 @@
 # Combat
 
-Mvndicraft's combat system focuses around 3 main features:
-
-- Stamina
-- Weight
-- Attack/Defence Types
-
-Each of these features will be briefly explained on this page.
-
 ## Stamina
 
 Stamina is only active while in combat with another player. This stops you from endlessly spam jumping
