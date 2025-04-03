@@ -7,7 +7,7 @@ As in real world cactus can't grow in the field of Norway.
 
 Explanation of the temperature system:
 
-[![Temperature Video Tutorial](../assets/video/temperature_thumbnail.png)](../assets/video/temperature.mp4)
+<video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/temperature.mp4" title="Temperature"></video>
 
 ### Plants
 

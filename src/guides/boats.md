@@ -1,3 +1,3 @@
 # Boats
 
-[![Boats Video Tutorial"](../assets/video/boats_thumbnail.png)](../assets/video/boats.mp4)
+<video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/boats.mp4" title="Boats"></video>

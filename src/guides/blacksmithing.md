@@ -1,13 +1,8 @@
 # Blacksmithing
 
-## Crafting via Crafting Table
+(You need blacksmith profession from `/mp`)
 
-When crafting regular items, the recipes are either similar to Vanilla Minecraft or available in `/recipes`
-However, most weapons and armors require advanced techniques of crafting.
-
-## Blacksmithing (You need blacksmith profession from `/mp`)
-
-[![Blacksmithing Video Tutorial](../assets/video/blacksmithing_thumbnail.png)](../assets/video/blacksmithing.mp4)
+<video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/blacksmithing.mp4" title="Blacksmithing"></video>
 
 - Craft and place a bloomery (place two hard clay blocks on top of each other and right click with a hammer).
 - Take raw iron and put it in the bloomery with coal or charcoal.
@@ -19,9 +14,7 @@ However, most weapons and armors require advanced techniques of crafting.
 - In the GUI, select what item to craft.
 - Take a hammer and hit it in the circled points on the anvil (play osu).
 - Take out the crafted item with the tongs, and put it in a cauldron of water.
-- Assemble in smithing table.
-
-Blacksmith recipes are in /recipes
+- Assemble in smithing table. Smithing table recipes can be found in `/recipes`
 
 ## Bloomery Temperatures
 
@@ -29,7 +22,7 @@ Blacksmith recipes are in /recipes
 
 ## Crucible Furnace
 
-[![Crucible Video Tutorial](../assets/video/crucible_thumbnail.png)](../assets/video/crucible.mp4)
+<video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/crucible.mp4" title="Crucible Furnace"></video>
 
 ## Quenching (Weapon/Armor Upgrading)
 
