@@ -38,7 +38,7 @@ If you use a weapon without the attribute requirement you deal significantly les
 Each player has stats that can be see with `/mu stats`. As seen here players have a base attack of 1 (fist).
 Attributes such as strength and dexterity upgrade the strength and dexterity bonus of a player.
 Some weapons have strength and dexterity multipliers.
-The `Atk` of a weapon is the players base damage plus the weapons base damage times one plus the the attributes multipliers times the players attribute bonuses
+The attack of a weapon is the players base damage plus the weapons base damage times one plus the the attributes multipliers times the players attribute bonuses
 
 So for example a zweihander has a base damage of 12 and strength multiplier of 70% and dexterity multiplier of 35%
 If a player has strength bonus of 10% and dexterity bonus of 5%.
