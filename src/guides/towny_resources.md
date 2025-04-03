@@ -19,7 +19,7 @@ The following table provides an overview of the levels:
 You can see the resources production of a town with `/t <town name>` or look on the map
 
 | Survey Count: | Survey Cost | Required Town Size | Resource Production Mutiplier | Required Players to gain income |
-| -------- | -------- | ---------- | ------------;----- | ------------;------- |
+| ------------- | ----------- | ------------------ | ----------------------------- | ------------------------------- |
 | 1             | 250         | 10                 | 1                             | 1                               |
 | 2             | 1000        | 50                 | 2                             | 6                               |
 | 3             | 5000        | 100                | 3                             | 14                              |

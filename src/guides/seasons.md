@@ -6,7 +6,8 @@ As in real world cactus can't grow in the field of Norway.
 ## Temperature
 
 Explanation of the temperature system:
-<iframe width="735" height="315" src="https://www.youtube.com/embed/VOPPiE_yuns?si=Bn3Uk5Z5qv0ebZTg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+[![Temperature Video Tutorial](../assets/video/temperature_thumbnail.png)](../assets/video/temperature.mp4)
 
 ### Plants
 
@@ -28,7 +29,7 @@ Plants that aren't exposed to sunlight will grow slower (exept for mushrooms).
 
 Temperatures work by combining modifiers together. Each modifiers can be check with `/temperature details`.
 
-- block temperature (biome temperature as define in Minecraft (cf [Minecraft wiki](https://discord.com/channels/1095458951606321212/1118108411926679572/1233391427313074187) and height of the block))
+- block temperature (biome temperature as define in Minecraft (cf [Minecraft wiki](https://minecraft.wiki/w/Biome) and height of the block))
 - a random temperature variation (Some day are hotter some are cooler with a variation between -5 and +5)
 - day night temperature (for most biome it's -5 at midnight and +5 at noon (or +10 under greenhouse). It follow a sinusoidal function)
 - weather temperature (if it rains -2, if its' thunder -5)

@@ -7,8 +7,7 @@ However, most weapons and armors require advanced techniques of crafting.
 
 ## Blacksmithing (You need blacksmith profession from `/mp`)
 
-VIDEO
-[![Blacksmithing Video Tutorial"](https://files.catbox.moe/ygzb71.png)](https://files.catbox.moe/1v85no.mp4)
+[![Blacksmithing Video Tutorial](../assets/video/blacksmithing_thumbnail.png)](../assets/video/blacksmithing.mp4)
 
 - Craft and place a bloomery (place two hard clay blocks on top of each other and right click with a hammer).
 - Take raw iron and put it in the bloomery with coal or charcoal.
@@ -30,8 +29,7 @@ Blacksmith recipes are in /recipes
 
 ## Crucible Furnace
 
-VIDEO
-[![Crucible Video Tutorial"](https://files.catbox.moe/sju1s4.jpg)](https://files.catbox.moe/hj4c9i.mp4)
+[![Crucible Video Tutorial](../assets/video/crucible_thumbnail.jpg)](../assets/video/crucible.mp4)
 
 ## Quenching (Weapon/Armor Upgrading)
 

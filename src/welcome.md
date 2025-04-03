@@ -20,9 +20,9 @@
 
 ### Contact
 
-Email: <admin@mvndicraft.net>
-Player & Bug Reporting: `#support-ticket` channel in the Discord server.
+- Email: <admin@mvndicraft.net>
+- Player & Bug Reporting: `#support-ticket` channel in the Discord server.
 
 ### Affiliation Disclaimer
 
-We are not affiliated with Mojang and/or Microsoft.
+- We are not affiliated with Mojang and/or Microsoft.
