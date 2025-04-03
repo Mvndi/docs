@@ -31,7 +31,7 @@ Temperatures work by combining modifiers together. Each modifiers can be check w
 - north south temperature (Based on z coordinates. At z=0 -> -5 At z = 30 000 +5)
 - Under block temperature (If bloc under the farmland is SNOW_BLOCK-> -10, FIRE -> 10, HAY_BLOCK -> 5, LAVA -> 20)
 
-## Players (Work in progress)
+## Players
 
 If a player is too hot or too cold, they will be slower than usual. Same for a horse or a camel.
 At extreme temperature, player will take damage over time by freezing or overheating.
