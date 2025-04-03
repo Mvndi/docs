@@ -12,6 +12,7 @@
   - [Machines](./guides/machines.md)  
   - [Parties](./guides/parties.md)  
   - [Seasons](./guides/seasons.md)
+  - [Temperature](./guides/temperature.md)
   - [Towny](./guides/towny.md)
   - [Towny Resources](./guides/towny_resources.md)
   - [Towny Waypoints](./guides/towny_waypoints.md)
