@@ -20,5 +20,7 @@ Only mayors and comayors can create waypoints.
 1. Go to a nearby waypoint plot.
 2. Find a nearby waypoint of the same type.
 3. Type `/twp travel <town-name> <stable|sea_port> <waypoint-name>`.
-   It costs 450 ducats to travel to a stable and 200 ducats to travel to a port (50% of this goes to the waypoint towns bank and the other 50% to the waypoints nations bank).
-   NOTE: You can only travel to waypoints that are 1000 blocks near the current one you are standing on.
+
+It costs 450 ducats to travel to a stable and 200 ducats to travel to a port (50% of this goes to the waypoint towns bank and the other 50% to the waypoints nations bank).
+
+NOTE: You can only travel to waypoints that are 1000 blocks near the current one you are standing on.

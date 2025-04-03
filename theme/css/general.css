@@ -118,6 +118,11 @@ h6:target::before {
     text-decoration: none;
 }
 
+.logo { 
+    text-decoration: none !important;
+    color: var(--icons) !important;
+}
+
 table {
     margin: 0 auto;
     border-collapse: collapse;

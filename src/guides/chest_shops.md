@@ -8,7 +8,6 @@ How to create a Player Shop
 2. Place a sign 1 block away from the chest (for example, above it)
 3. On the sign, write:
 [![Sign](https://cdn-raw.modrinth.com/data/QI2CAnAl/images/f6fb7818af0689d133f53b3c24fab7ec9c91a4b2.gif)](https://cdn-raw.modrinth.com/data/QI2CAnAl/images/f6fb7818af0689d133f53b3c24fab7ec9c91a4b2.gif)
-[​https://cdn-raw.modrinth.com/data/QI2CAnAl/images/f6fb7818af0689d133f53b3c24fab7ec9c91a4b2.gif]
 
 * Leave the first line empty. It will be automatically filled with your name by the plugin (if you have the permission ChestShop.admin then you can create shops with the names of other players)
 * Second line is the amount of items to buy or sell
@@ -20,7 +19,6 @@ How to create a Player Shop
 Resulting shop:
 
 [![Sign](https://cdn-raw.modrinth.com/data/QI2CAnAl/images/a0bb9d3a3154dc2935862614279f405a5f483ca3.gif)](https://cdn-raw.modrinth.com/data/QI2CAnAl/images/a0bb9d3a3154dc2935862614279f405a5f483ca3.gif)
-[​https://cdn-raw.modrinth.com/data/QI2CAnAl/images/a0bb9d3a3154dc2935862614279f405a5f483ca3.gif]
 *A person can buy 64 diamonds for 10 dollars and sell them back for 5 dollars from Phoenix616*
 
 If you want you can also take a look at [this video tutorial](https://youtu.be/Zap3snBb5Fw?t=628).​

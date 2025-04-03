@@ -47,7 +47,7 @@ Available resources are:
 - gunpowder pouch
 
 Some resources are rarer than others.
-The full info can be found [here](https://github.com/TownyAdvanced/TownyResources) incase you still have questions
+More info can be found [here](https://github.com/TownyAdvanced/TownyResources/blob/master/README.md).
 
 ## Who is getting the resources
 

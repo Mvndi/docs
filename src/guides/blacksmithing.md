@@ -29,7 +29,7 @@ Blacksmith recipes are in /recipes
 
 ## Crucible Furnace
 
-[![Crucible Video Tutorial](../assets/video/crucible_thumbnail.jpg)](../assets/video/crucible.mp4)
+[![Crucible Video Tutorial](../assets/video/crucible_thumbnail.png)](../assets/video/crucible.mp4)
 
 ## Quenching (Weapon/Armor Upgrading)
 

@@ -29,7 +29,7 @@ Plants that aren't exposed to sunlight will grow slower (exept for mushrooms).
 
 Temperatures work by combining modifiers together. Each modifiers can be check with `/temperature details`.
 
-- block temperature (biome temperature as define in Minecraft (cf [Minecraft wiki](https://minecraft.wiki/w/Biome) and height of the block))
+- block temperature (biome temperature as define in Minecraft [Minecraft wiki](https://minecraft.wiki/w/Biome) and height of the block)
 - a random temperature variation (Some day are hotter some are cooler with a variation between -5 and +5)
 - day night temperature (for most biome it's -5 at midnight and +5 at noon (or +10 under greenhouse). It follow a sinusoidal function)
 - weather temperature (if it rains -2, if its' thunder -5)

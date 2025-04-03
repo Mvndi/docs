@@ -49,7 +49,7 @@ Some weapons have strength and dexterity multipliers.
 
 So for example a zweihander has a base damage of 12 and strength multiplier of 70% and dexterity 35%
 If a player has strength bonus of 10% and dexterity bonus of 5%.
-The Atk in the formula below will be `(12+1)*(1+(0.7*0.1)+(0.35*0.05))`=`14.1375`.
+The Atk in the formula below will be `(12+1)*(1+(0.7*0.1)+(0.35*0.05))` = `14.1375`.
 The Def for the formula below would be the sum of all the slash defence of whatever armor the person being attacked is wearing
 
 ## Damage Formula (Piecewise)
