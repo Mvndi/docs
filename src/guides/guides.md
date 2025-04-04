@@ -10,5 +10,4 @@ The guides on this website are temporary, more complete but in progress guides c
 - To check how much money you have, use `/money`. You can pay other players your money with `/money pay <name> <amount>`.
 - After the town is created you can build, wage wars, or found a nation. Check the [Towny Wiki](https://github.com/TownyAdvanced/Towny/wiki/How-Towny-Works) for a full guide on Towny.
 - To get weapons, armor, shields, etc; you need to type `/recipes` where you will find all custom recipes on the server.
-- To get enchantment books and siege weapons, ou need to type `/mshop` so you can purchase them.
 - Use the menu item in the last hotbar slot to open the player information menu (or run /menu). To disable the item, run /togglemenuitem
