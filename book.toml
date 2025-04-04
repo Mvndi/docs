@@ -7,3 +7,4 @@ title = "Mvndicraft"
 
 [output.html]
 mathjax-support = true
+preferred-dark-theme = "coal"
