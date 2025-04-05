@@ -28,10 +28,12 @@ Siege banners can only be placed on Fridays, right before Battle Sessions.
 When you start a siege, an upfront price of **5 Ducats per chunks claimed** is paid to the server in order to avoid Nations sieging their allies to provide them with immunity.
 Additionally, a war chest worth **25 Ducats per chunk claimed** is deposited into the siege. The winner gets the war chest at the end of the siege.
 
-## Battle Schedules
+## Battle Sessions
 
 A Siege is split in 2 2 hour-long battle sessions each.
 A battle session starts every Saturday/Sunday at 6:30 PM UTC.
+
+You can see when the next battle session is with the `/sw nextsession` command.
 
 ## Holding/Capturing the Banner
 
