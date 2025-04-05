@@ -25,7 +25,7 @@ You can see the resources production of a town with `/t <town name>` or look on 
 | 3             | 5000        | 100                | 3                             | 14                              |
 | 4             | 20000       | 200                | 4                             | 24                              |
 
-You can also reroll ALL of your resources with `/t resources reroll` for 50k.
+You can also reroll ALL of your resources with `/t resources reroll` for `50k` ducats.
 Available resources are:
 
 - coal
@@ -51,8 +51,8 @@ More info can be found [here](https://github.com/TownyAdvanced/TownyResources/bl
 
 ## Who is getting the resources
 
-Free town with no nation get 100%.
+A free town with no nation get 100% of the resources.
 
-Free town in a nation get 50% of the resources & the nation get 50%.
+A free town in a nation gets 50% of the resources and the nation gets the other 50% of the resources.
 
-Occupied town get 25% of the resources & the occupying get 75%.
+An occupied town gets 25% of the resources & the occupying nation gets the other 75% of the resources.
