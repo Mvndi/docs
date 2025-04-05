@@ -118,9 +118,17 @@ h6:target::before {
     text-decoration: none;
 }
 
-.logo { 
+.logo {
     text-decoration: none !important;
     color: var(--icons) !important;
+    display: flex;
+    align-items: center;
+}
+
+.logo-favicon {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px;
 }
 
 table {
