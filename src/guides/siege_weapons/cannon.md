@@ -22,4 +22,6 @@ After loading the gunpowder, move to the front of the cannon and right click wit
 
 Once the cannon is loaded, right click the back of the cannon with a flint and steel to fire. There is a 16 second cooldown before firing again.
 
+The cannon is for precise strikes. While it does break blocks it doesn't break a lot of them but has a deep penetration as opposed to the [Trebuchet](./trebuchet.md) which breaks more blocks but has less penetration.
+
 ![cannon demonstration](../../assets/cannon_demonstration.gif)

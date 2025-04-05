@@ -18,5 +18,7 @@ To load the trebuchet, first right click the back of the trebuchet to lower the 
 
 Once the trebuchet is loaded, left click the back of the trebuchet to launch the stone.
 
+The trebuchet is for breaking walls. It has a low penetration as opposed to the [Cannon](./cannon.md) which breaks less blocks but has deeper penetration.
+
 ![trebuchet demonstration](../../assets/trebuchet_demonstration.gif)
 (Loading animation is sped up for brevity. In reality, it takes 5 times as long to load.)

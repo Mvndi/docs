@@ -17,10 +17,11 @@ Siege banners can only be placed on Fridays, right before Battle Sessions.
     2. A war chest worth **25 Ducats per plot claimed by the defending town** from your nation bank.
 - To start the Siege, go right outside the defending town's border in unclaimed lands and **place a non-white banner on the ground**.
 
-### **Once the war chest is paid the banner is _MOVED TO THE DEFENDING TOWNS SPAWN_ and the siege begins.**
+**Once the war chest is paid the banner is _MOVED TO THE DEFENDING TOWNS SPAWN_ and the siege begins.**
 
-Siege weapons can be placed and destroyed in the defending towns borders but other blocks cannot placed or destroyed (by attackers). Defenders have a 60 second block place and destroy cooldown. This applies to attackers too in the surrounding wilderness chunks of the defending town (attacks cannot build/destroy inside the defending town only siege weapons can break blocks in the defending town)
-You can only use Siege weapons during active battle sessions. (this prevents griefing while there are no fights happening)
+- Siege weapons can be placed and destroyed in the defending towns claims but other blocks cannot placed or destroyed (by attackers).
+- Defenders have a 60 second block place and destroy cooldown, it also applies to attackers too in the surrounding wilderness chunks of the defending town (attackers cannot build/destroy inside the defending town only siege weapons can break blocks in the defending town)
+- Siege weapons only break blocks during active battle sessions to prevent griefing while there are no fights happening
 
 ## Upfront price / War chest
 
@@ -77,5 +78,5 @@ Winning the war as the Attacker results in receiving the war chest back and bein
 
 ## Misc
 
-- Cannons are better for precise strikes while trebuchets are better at breaking more blocks
+- [Cannons](./siege_weapons/cannon.md) are better for precise strikes while [Trebuchets](./siege_weapons/trebuchet.md) are better at breaking lots blocks
 - Greek fire burns berry bushes

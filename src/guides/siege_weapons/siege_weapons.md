@@ -9,7 +9,7 @@ To place a siege weapon, right click an area on the ground to place it. They req
 To pick up a siege weapon which has been placed, break the block underneath it.
 To pick up a siege weapon after a server restart, right click the siege weapon, and it will be turned back into an item.
 
-Blocks witch name contains one of the list world are 2 times more resistent to siege weapons like cannon and trebuchet
+Blocks which name contains a word in this list or which name is a word in the list are 2 times more resistent to siege weapons like the [Cannon](./cannon.md) and [Trebuchet](./trebuchet.md):
 
 - "BRICKS"
 - "STONE"
@@ -23,4 +23,6 @@ Blocks witch name contains one of the list world are 2 times more resistent to s
 - "SANDSTONE"
 - "QUARTZ"
 
-For example, "Polished Diorite" is more resistent than a block named "Dirt".
+For example, "Polished Diorite" is more resistent than a block named "Dirt"..
+
+Siege weapons only break blocks during active battle sessions to prevent griefing while there are no fights happening, see [War](../war.md)
