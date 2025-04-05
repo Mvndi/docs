@@ -23,6 +23,6 @@ Blocks which name contains a word in this list or which name is a word in the li
 - "SANDSTONE"
 - "QUARTZ"
 
-For example, "Polished Diorite" is more resistent than a block named "Dirt"..
+For example, "Polished Diorite" is more resistent than a block named "Dirt".
 
 Siege weapons only break blocks during active battle sessions to prevent griefing while there are no fights happening, see [War](../war.md)
