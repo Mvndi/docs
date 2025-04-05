@@ -43,7 +43,7 @@ The attack of a weapon is the players base damage plus the weapons base damage t
 So for example a zweihander has a base damage of 12 and strength multiplier of 70% and dexterity multiplier of 35%
 If a player has strength bonus of 10% and dexterity bonus of 5%.
 The `Atk` in the formula below would be `(12+1)*(1+(0.7*0.1)+(0.35*0.05))` = `14.1375`.
-The `Def` for the formula below would be the sum of all the slash defences of all armors the player being attacked has equipped
+The `Def` for the formula below would be the sum of all the `SLASH` defences of all armors the player being attacked has equipped
 
 ## Damage Formula (Piecewise)
 
