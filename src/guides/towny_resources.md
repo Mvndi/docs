@@ -29,22 +29,24 @@ You can also reroll ALL of your resources with `/t resources reroll` for `50k` d
 Available resources are:
 
 - coal
-- stone_bricks
+- stone bricks
 - terracotta
 - sandstone (you can only roll this with surveys in beach and desert biomes)
-- diorite/andesite
-- glass, raw_iron
-- quartz_block
-- raw_gold
-- diamond
+- diorite
+- andesite
+- glass
+- raw iron
+- quartz blocks
+- raw gold
+- magnetite
 - wheat
-- cooked_beef
-- raw_copper
-- cannister shot
-- cannon ball
-- boulder
-- steel bolt
-- gunpowder pouch
+- cooked beef
+- raw copper
+- cannister shots
+- cannonballs
+- boulders
+- steel bolts
+- gunpowder pouches
 
 Some resources are rarer than others.
 More info can be found [here](https://github.com/TownyAdvanced/TownyResources/blob/master/README.md).
