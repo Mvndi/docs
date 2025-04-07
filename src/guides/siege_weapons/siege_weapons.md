@@ -9,7 +9,7 @@ To place a siege weapon, right click an area on the ground to place it. They req
 To pick up a siege weapon which has been placed, break the block underneath it.
 To pick up a siege weapon after a server restart, right click the siege weapon, and it will be turned back into an item.
 
-Blocks which name contains a word in this list or which name is a word in the list are 2 times more resistent to siege weapons like the [Cannon](./cannon.md) and [Trebuchet](./trebuchet.md):
+Blocks which name contains a word in this list or which name is a word in this list are 2 times more resistent to siege weapons like the [Cannon](./cannon.md) and [Trebuchet](./trebuchet.md):
 
 - "BRICKS"
 - "STONE"
