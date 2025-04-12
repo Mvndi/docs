@@ -16,9 +16,42 @@ And if temperatures are too extreme, the plants can die (Item will drop on the g
 If plants can't survive in the current temperature, you won't be able to place them.
 If plants can't grow in the current temperature, you will be warned when you place them.
 
-You can check each plants temperatures values with `/temperature details PLANT_NAME`.
+You can check each plant's temperatures in-game with `/temperature info PLANT_NAME` or refer to the table below.
 
-Plants that aren't exposed to sunlight will grow slower (exept for mushrooms).
+Plants that aren't exposed to sunlight will grow slower (except for mushrooms).
+
+### Plant Temperature Configurations
+
+Note: All temperatures are in Celsius. A dash (-) indicates that the value uses the default
+
+| Plant              | Min Survive | Min Grow | Min Ideal | Max Ideal | Max Grow | Max Survive | Grow Speed |
+|--------------------|-------------|----------|-----------|-----------|----------|-------------|------------|
+| Default            | -100        | 0        | 10        | 20        | 30       | 100         | 1          |
+| WHEAT              | -20         | 3        | 10        | 30        | 45       | 70          | 2          |
+| POTATOES           | -20         | 7        | 15        | 25        | 30       | 35          | 2          |
+| CARROTS            | -15         | 4        | 15        | 25        | 35       | 40          | 2          |
+| BEETROOTS          | -20         | 1        | 15        | 26        | 35       | 40          | 2          |
+| MELON_STEM         | 0           | 20       | 25        | 40        | 60       | 100         | 2          |
+| PUMPKIN_STEM       | -10         | 5        | 8         | 20        | 30       | 34          | 2          |
+| SUGAR_CANE         | 10          | 28       | 32        | 38        | 50       | 100         | 2          |
+| CACTUS             | -10         | 25       | 35        | 50        | 70       | 100         | 2          |
+| BAMBOO             | -10         | 20       | 25        | 35        | 70       | 100         | 2          |
+| COCOA_BEANS        | 10          | 30       | 35        | 35        | 60       | 100         | 2          |
+| SMALL_DRIPLEAF     | 0           | 5        | 35        | 40        | 80       | 100         | 2          |
+| VINE               | -100        | -5       | 0         | 60        | 70       | 100         | 1          |
+| BROWN_MUSHROOM     | -10         | 5        | 10        | 25        | 30       | 35          | 1.5        |
+| RED_MUSHROOM       | -10         | 5        | 10        | 25        | 30       | 35          | 1.5        |
+| SWEET_BERRY_BUSH   | -20         | 10       | 25        | 30        | 40       | 45          | 2          |
+| OAK_SAPLING        | -10         | 5        | 15        | 25        | 35       | 50          | 2          |
+| DARK_OAK_SAPLING   | -10         | 5        | 15        | 25        | 40       | 50          | 2          |
+| PALE_OAK_SAPLING   | -10         | 5        | 15        | 25        | 40       | 50          | -          |
+| BIRCH_SAPLING      | -2          | 5        | 15        | 25        | 32       | 40          | 2          |
+| SPRUCE_SAPLING     | -50         | -15      | -5        | 10        | 25       | 30          | 2          |
+| JUNGLE_SAPLING     | 10          | 25       | 30        | 40        | 70       | 100         | 3          |
+| ACACIA_SAPLING     | 10          | 25       | 30        | 40        | 70       | 100         | 2          |
+| CHERRY_SAPLING     | -10         | 2        | 20        | 25        | 32       | 40          | 2          |
+| MANGROVE_PROPAGULE | 0           | 5        | 25        | 30        | 50       | 100         | 2          |
+| CAVE_VINES_PLANT   | -           | -        | -         | -         | -        | -           | 0.5        |
 
 ## Modifiers
 
