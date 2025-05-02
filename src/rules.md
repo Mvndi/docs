@@ -122,7 +122,7 @@ tldr your town spawn has to be accessible with siege weapons. walls are okay, no
 
 4.5.5 Attackers ARE allowed to use siege weapons to destroy chests to steal their contents
 
-### Misc.
+### Misc
 
 4.6.1 No building nazi/communist imagery
 

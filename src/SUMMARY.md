@@ -9,6 +9,7 @@
   - [Chest Shops](./guides/chest_shops.md)  
   - [Combat](./guides/combat.md)
   - [Big Doors](./guides/big_doors.md)
+  - [Horses](./guides/horses.md)
   - [Machines](./guides/machines.md)  
   - [Parties](./guides/parties.md)  
   - [Seasons](./guides/seasons.md)
