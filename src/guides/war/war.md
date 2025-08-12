@@ -6,5 +6,5 @@ There's a [video](https://www.youtube.com/watch?v=raiAhk2Ru5Y) that showcases so
 
 ## War Miscellaneous
 
-- [Cannons](./siege_weapons/cannon.md) are better for precise strikes, while [Trebuchets](./siege_weapons/trebuchet.md) are better at breaking many blocks.
+- [Cannons](../siege_weapons/cannon.md) are better for precise strikes, while [Trebuchets](../siege_weapons/trebuchet.md) are better at breaking many blocks.
 - Greek fire burns berry bushes.
