@@ -1,6 +1,6 @@
 # Siege Weapons
 
-Siege weapons are emplacements designed to destroy enemy fortifications and control areas of the battlefield.
+Siege weapons are emplacements designed to destroy enemy fortifications and control areas of the battlefield. They can damage [boats](../boats/boats.md).
 
 ## Obtaining
 
