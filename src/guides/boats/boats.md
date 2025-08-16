@@ -36,7 +36,7 @@ uhhh something something drydock idk uhhh specific towny plot and profession or 
   - **Types**:  
     - **Controller Seat**: Located near the rudder (usually at the back), this seat allows the player to steer the boat using standard movement keys (e.g., A/D for left/right).
     - **Rowing Seats**: Found on rowing boats, these contribute to the boat’s speed based on the number of occupied seats and the boat’s rowing factor.
-    - **Drumming**: If the ship has the drum upgrade installed and the seat for the drum is occupied, if the person in the controller seat presses the sprint key (ctrl) the boat will activate a 10 second double speed boost, this ability has a 10 minute cool down.
+    - **Drumming**: If the ship has the drum upgrade installed and the seat for the drum is occupied, if the person in the controller seat presses the sprint key (ctrl) the boat will activate a speed boost that takes 20 seconds to reach it peak 2x multiplier which lasts for 10 seconds, this ability has a 10 minute cool down.
     - **Bells**: If the ship has the bells upgrade installed and the seat for the bells is occupied, if the person in the controller seat presses the jump key (space) the boat will activate a 10 second triple turning-speed boost, this ability has a 10 minute cool down.
   - **Rowing Mechanics**:
     - The rowing factor determines the percentage of max speed achievable through rowing alone (e.g., a 60% rowing factor means 60% max speed with all rowing seats filled and sails stowed).
