@@ -20,7 +20,7 @@ uhhh something something drydock idk uhhh specific towny plot and profession or 
 - **Inventory**  
   - **Access**: Only interactable when the boat is docked.
   - **Function**: Opens a chest interface with multiple pages (if available).
-    - If a player has a horse on a lead and there’s an empty page, interacting with the inventory stores the horse, locking that page from being used as a chest.
+    - If a player has a horse (or donkey/mule) on a lead and there’s an empty page, interacting with the inventory stores the horse, locking that page from being used as a chest.
     - If all pages contain horses, nothing will happen when interacting while not sneaking.
     - Sneaking while interacting removes the first horse found, freeing the page for chest use.  
   - **Destruction**: If the boat is sunk, chests containing the inventory’s contents spawn on the seafloor.
