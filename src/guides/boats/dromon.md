@@ -31,4 +31,4 @@
 | Mast       | 10.0  |
 | Stern      | 10.0  |
 
-The dromon has an inventory with 5 pages, each double chest sized. It has two siege weapon slots in the middle that can only take ballistas and a third slot at the front that can take either a ballista or Greek fire. It has a sail and 18 rowing seats.
+The dromon has an inventory with 5 pages, each double chest sized. It has two siege weapon slots on the top middle that can only take ballistas, a third slot at the front that can take either a ballista or Greek fire, and a fourth slot on the top front that can take a ballista. It has a sail and 18 rowing seats.
