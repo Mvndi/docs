@@ -41,7 +41,8 @@ uhhh something something drydock idk uhhh specific towny plot and profession or 
   - **Rowing Mechanics**:
     - The rowing factor determines the percentage of max speed achievable through rowing alone (e.g., a 60% rowing factor means 60% max speed with all rowing seats filled and sails stowed).
     - Full sails with all rowing seats filled achieve 100% max speed. Partial rowing seat occupancy scales speed accordingly (e.g., half rowing seats + full sails = 70% max speed for a 60% rowing factor boat).  
-    - Holding the backward key (e.g., S) in the controller seat cancels all rowing allowing a rowing ship to come to a stop (if any sails are stowed).
+    - Holding the backward key (`S` default) in the controller seat cancels all rowing allowing a rowing ship to come to a stop (if any sails are stowed).
+    - Holding the backward key and the spring key (`CTRL+S` default) in the controller seat starts to gradually make the ship go backwards (if any sails are stowed), the maximum speed a ship can go backwards is 20% of it's maxiumum speed times it's rowing factor.
 
 - **Siege Weapon Slot**  
   - **Function**: When the boat is docked, specific siege weapons (e.g., ballista for cogs, galleys, and dromons; Greek fire for galleys) can be installed.
