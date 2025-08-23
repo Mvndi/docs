@@ -1,5 +1,7 @@
 # Dromon
 
+![dromon](../../assets/dromon.png)
+
 ## Movement Stats
 
 | Property                  | Value | Unit    | Description |

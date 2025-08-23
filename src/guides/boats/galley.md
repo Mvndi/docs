@@ -1,5 +1,7 @@
 # Galley
 
+![galley](../../assets/galley.png)
+
 ## Movement Stats
 
 | Property                  | Value | Unit    | Description |

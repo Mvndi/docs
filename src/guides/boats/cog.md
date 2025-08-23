@@ -1,5 +1,7 @@
 # Cog
 
+![cog](../../assets/cog.png)
+
 ## Movement Stats
 
 | Property                  | Value | Unit    | Description |
