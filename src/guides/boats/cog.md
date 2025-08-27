@@ -24,13 +24,13 @@
 | Property    | Value          |
 |-------------|----------------|
 | Dimensions  | 5.0 x 9.0 x 22.0 |
-| Offset      | 0.0, 1.0, 0.0  |
+| Offset      | 0.0, 0.0, 0.0  |
 
 | HP Section | Value |
 |------------|-------|
-| Bow        | 10.0  |
+| Bow        | 7.0  |
 | Hull       | 10.0  |
-| Mast       | 10.0  |
-| Stern      | 10.0  |
+| Mast       | 6.0  |
+| Stern      | 8.0  |
 
 The cog has an inventory with 3 pages, each double chest sized. It has two siege weapon slots (one front, one back) that can only take ballistas. It has a sail and no rowing seats.

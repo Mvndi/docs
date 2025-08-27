@@ -24,13 +24,13 @@
 | Property    | Value          |
 |-------------|----------------|
 | Dimensions  | 5.0 x 9.0 x 43.0 |
-| Offset      | 0.0, 1.0, 0.0  |
+| Offset      | 0.0, 0.0, 0.0  |
 
 | HP Section | Value |
 |------------|-------|
-| Bow        | 10.0  |
-| Hull       | 10.0  |
-| Mast       | 10.0  |
-| Stern      | 10.0  |
+| Bow        | 13.0  |
+| Hull       | 19.0  |
+| Mast       | 11.0  |
+| Stern      | 15.0  |
 
 The dromon has an inventory with 5 pages, each double chest sized. It has two siege weapon slots on the top middle that can only take ballistas, a third slot at the front that can take either a ballista or Greek fire, and a fourth slot on the top front that can take a ballista. It has a sail and 18 rowing seats.

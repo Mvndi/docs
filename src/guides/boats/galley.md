@@ -24,13 +24,13 @@
 | Property    | Value           |
 |-------------|-----------------|
 | Dimensions  | 5.0 x 9.0 x 28.0 |
-| Offset      | 0.0, 10.0, 0.0  |
+| Offset      | 0.0, 2.0, 0.0  |
 
 | HP Section | Value |
 |------------|-------|
-| Bow        | 10.0  |
-| Hull       | 10.0  |
+| Bow        | 11.0  |
+| Hull       | 16.0  |
 | Mast       | 10.0  |
-| Stern      | 10.0  |
+| Stern      | 13.0  |
 
 The galley has no inventory. It has one siege weapon slot in the front that can take a ballista. It has a sail and 14 rowing seats.
