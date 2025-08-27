@@ -48,6 +48,10 @@ uhhh something something drydock idk uhhh specific towny plot and profession or 
   - **Function**: When the boat is docked, specific siege weapons (e.g., ballista for cogs, galleys, and dromons; Greek fire for galleys) can be installed.
   - **Operation**: A dedicated seat next to the slot allows a player to control the weapon.
 
+- **Shield Slot**  
+  - **Function**: When the boat is docked, shields can be installed.
+  - **Damage Reduction**: Whenever a ship takes damage, the damage is divided by `1 + 0.15 * shields_percentage` where shields_percentage is how many shields are installed divided by how many shields slots a ship has.
+
 ### Movement and Physics
 
 - **Docked State**: Players can walk on the boat through barrier blocks that spawn, and it remains stationary.

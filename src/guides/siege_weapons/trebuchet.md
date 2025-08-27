@@ -1,6 +1,6 @@
 # Trebuchet
 
-The trebuchet is a highly adjustable siege weapon with a large area of effect.
+The trebuchet is a highly adjustable siege weapon with a large area of effect. It does 5 damage to ships.
 
 <img src="../../assets/trebuchet.png" align="left" alt="trebuchet" width="200"/>
 

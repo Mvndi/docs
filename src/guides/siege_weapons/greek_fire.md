@@ -1,6 +1,6 @@
 # Greek Fire
 
-The greek fire is a short-range anti-infantry turret which acts like a flamethrower. If fired at water it will create fire on the water’s surface that last for 60 seconds. Burns foliage like berry bushes
+The greek fire is a short-range anti-infantry turret which acts like a flamethrower. If fired at water it will create fire on the water’s surface that last for 60 seconds. Burns foliage like berry bushes. It does 0.1 damage to ships.
 
 <img src="../../assets/greek_fire.png" align="left" alt="greek fire" width="200"/>
 
