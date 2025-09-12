@@ -2,74 +2,75 @@
 
 ## Stamina
 
-Stamina is only active while in combat with another player. This stops you from endlessly spam jumping
-during PvP, aswell as other actions, since everything you do (including sprinting) during combat depletes
-your stamina.
+Stamina governs all actions in combat. Attacking, sprinting, blocking with a shield, and sprint-jumping consume stamina.
 
-To regenerate stamina, you need to either stand still, or walk without sprinting or jumping.
+- Regular jumping does **not** consume stamina.
+- Crossbows and firearms do **not consume stamina under any circumstances**.
+- Blocking that depletes your stamina will stagger you.
+- Holding up your shield (holding the block button) slows stamina regeneration.
+- Stamina recovers only when standing still or moving without sprinting.
+
+Combat requires timing and conservation; spamming actions leaves you vulnerable.
 
 ## Weight
 
-Each armor and weapon piece has a specific weight. The more armor you wear and the more weapons
-you carry, the slower you walk on foot. Weight can be read on the equipment piece's lore text, just like
-every information about the equipment.
-If you weigh too much (more than the max weight/equipload in `/stats` or shown on the HUD) you can't swim.
+Armor, weapons, and shields have weight. Heavy load slows movement and may prevent swimming.
 
-## Attack/Defence Types
+Balance mobility and protection. Item descriptions list weight.
 
-When you hover over a weapon (before or after crafting it), you will notice it
-mentions 4 defence types: `THRUST` , `REGULAR/NORMAL` , `STRIKE` & `SLASH`.
+## Poise, Stagger, and Critical Damage
 
-When you are attacked with a weapon, the only defence type that will matter is
-the one of the weapon you were hit with. If you were to be hit with a
-mace that deals 10 Damage in `STRIKE` , and your armor would overall provide little to no
-`STRIKE` defence, you would die after two hits.
+Armor provides poise, a measure of how much force you can absorb before staggering.
 
-When not knowing your enemy's weapon and armor supply, it is best to wear an armor type that
-protects you from any attack type EQUALLY.
+- Poise takes time to reset after taking a hit (up to 5 seconds), but each piece of armor reduces this time.
+- If a hit exceeds your poise threshold, you stagger.
+- Being staggered leaves you vulnerable: any hit received while staggered deals critical damage.
+- Stagger can occur from blocking that depletes stamina or taking repeated hits.
+
+## Attack and Defense Types
+
+Weapons deal specific types of damage: thrust, strike, slash, or regular. Armor provides protection differently against each type.
+
+Shields reduce damage but consume stamina. Blocking or attacking without considering poise leaves you vulnerable.
 
 ## Attributes and Stats
 
-Players have several attributes such as strength, dexterity, vitality, and endurance.
-Stats can be viewed and upgraded with the `/stats` command.
-It costs XP to upgrade stats and each one gives different bonuses.
-Some weapons will show an attribute requirement (like strength or dexterity).
-If you use a weapon without the attribute requirement you deal significantly less damage.
-Each player has stats that can be see with `/mu stats`. As seen here players have a base attack of 1 (fist).
-Attributes such as strength and dexterity upgrade the strength and dexterity bonus of a player.
-Some weapons have strength and dexterity multipliers.
-The attack of a weapon is the players base damage plus the weapons base damage times one plus the the attributes multipliers times the players attribute bonuses
+Players have attributes such as strength, dexterity, vitality, and endurance. Weapons and shields may have **attribute requirements**; using them without meeting those reduces effectiveness.
 
-So for example a zweihander has a base damage of 12 and strength multiplier of 70% and dexterity multiplier of 35%
-If a player has strength bonus of 10% and dexterity bonus of 5%.
-The `Atk` in the formula below would be `(12+1)*(1+(0.7*0.1)+(0.35*0.05))` = `14.1375`.
-The `Def` for the formula below would be the sum of all the `SLASH` defences of all armors the player being attacked has equipped
+Weapons may also provide **bonuses for strength and dexterity**, increasing damage for players with higher corresponding attributes.
 
-## Damage Formula (Piecewise)
+Attributes affect damage, stamina, and defense. Every choice matters.
 
-|                                                         Damage                                                         |                                 Condition                                 |
-|------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
-|                                             \\( \text{Atk} \times 0.1 \\)                                              |           \\( \text{Atk} \leq \frac{1}{8} \times \text{Def} \\)           |
-|\\( \text{Atk} \times \left(\frac{19.2}{49} \times \left(\frac{\text{Atk}}{\text{Def}} - 0.125\right)^2 + 0.1\right) \\)|\\( \frac{1}{8} \times \text{Def} < \text{Atk} \leq 1 \times \text{Def} \\)|
-| \\( \text{Atk} \times \left(-\frac{0.4}{3} \times \left(\frac{\text{Atk}}{\text{Def}} - 2.5\right)^2 + 0.7\right) \\)  |    \\( 1 \times \text{Def} < \text{Atk} \leq 2.5 \times \text{Def} \\)    |
-| \\( \text{Atk} \times \left(-\frac{0.8}{121} \times \left(\frac{\text{Atk}}{\text{Def}} - 8\right)^2 + 0.9\right) \\)  |     \\( 2.5 \times \text{Def} < \text{Atk} < 8 \times \text{Def} \\)      |
-|                                             \\( \text{Atk} \times 0.9 \\)                                              |                \\( \text{Atk} \geq 8 \times \text{Def} \\)                |
+## Damage and Defense
 
-## Attack Weight vs Deflection Level Table
+Damage depends on weapon, attributes, armor, and shields. Small attacks are partially absorbed; stronger attacks penetrate.
 
-| ↓ Deflection Level / → Attack Weight| NONE  | LIGHT | MEDIUM | HEAVY  |
-|-------------------------------------|-------|-------|--------|--------|
-| NONE                                | MEDIUM| HEAVY | HEAVY  | HEAVY  |
-| LIGHT                               | NONE  | MEDIUM| HEAVY  | HEAVY  |
-| MEDIUM                              | NONE  | LIGHT | MEDIUM | HEAVY  |
-| HEAVY                               | NONE  | LIGHT | LIGHT  | MEDIUM |
+- Shields reduce damage but consume stamina.
+- Poise determines if a hit will stagger you.
+- Hits taken while staggered deal critical damage.
+- Attack type, armor type, shield, and poise interact to determine the final outcome.
 
-## Crafting
+## Weapon, Shield, and Armor Trade-offs
 
-Each equipment piece has a custom recipe. Use `/recipes` ingame to view all the recipes,
-and click on the category your weapon falls into.
-some weapons need to be assemlbed in smithing table not crafting table
+- Heavy weapons deal more damage but are slower.
+- Light weapons strike faster but may be less effective against heavy armor.
+- Shields reduce damage but consume stamina, slow stamina regeneration, and can fail if overused or poise is broken.
+- Armor increases defense and poise but slows movement.
 
-## Throwing weapons
+Every choice carries a cost. Combat is about weighing trade-offs and timing actions.
 
-For throwing weapons like the francisca axe you can throw by holding right click
+## Throwing Weapons
+
+Throwing weapons allow ranged attacks but leave your hand empty afterward. Timing and accuracy are critical.
+
+---
+
+## Tips
+
+- Monitor your stamina carefully. Attacking, sprinting, or blocking recklessly will leave you vulnerable.
+- Shields reduce damage but consume stamina, and blocking that fully depletes stamina will stagger you. Holding your shield continuously also slows stamina regeneration.
+- Being staggered is dangerous: any hit received while staggered deals critical damage.
+- Crossbows and firearms do **not consume stamina under any circumstances**.
+- Weapons may provide bonuses for strength or dexterity; higher attributes increase their effectiveness.
+- Choose your loadout wisely: being too heavy, too light, or overly focused in one stat area can leave you at a disadvantage.
+
