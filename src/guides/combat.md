@@ -1,5 +1,8 @@
 # Combat
 
+1. Combat in Mvndicraft is more deliberate than in vanilla Minecraft.
+2. Timing, stamina, poise, and your loadout all influence how fights play out. Spamming attacks or blocking recklessly can lead to negative consequences.
+
 ## Stamina
 
 Stamina governs all actions in combat. Attacking, sprinting, blocking with a shield, and sprint-jumping consume stamina.
@@ -22,7 +25,7 @@ Balance mobility and protection. Item descriptions list weight.
 
 Armor provides poise, a measure of how much force you can absorb before staggering.
 
-- Poise takes time to reset after taking a hit (up to 5 seconds), but each piece of armor reduces this time.
+- Poise takes time to reset after taking a hit (up to 5 seconds), but each piece of armor reduces the time taken.
 - If a hit exceeds your poise threshold, you stagger.
 - Being staggered leaves you vulnerable: any hit received while staggered deals critical damage.
 - Stagger can occur from blocking that depletes stamina or taking repeated hits.
