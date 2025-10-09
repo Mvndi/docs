@@ -33,4 +33,4 @@
 | Mast       | 5.0  |
 | Stern      | 7.0  |
 
-The longship has no inventory or siege weapon slots.
+The longship has an inventory but it can't store horses and it doesn't have any siege weapon slots.
