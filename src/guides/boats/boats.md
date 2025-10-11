@@ -6,6 +6,10 @@
 
 uhhh something something drydock idk uhhh specific towny plot and profession or something maybe we dont know yet
 
+Boats can be repaired with the repair patch item in /recipes.
+Boats a miniscule amount of damage when sailing and need to be repaired after (weeks of) sailing.
+Some boats are not meant for deep oceans and will take a large amount of damage when sailing in deep oceans and will sink eventually unless the boat returns to coastal waters.
+
 ### Interactive Entities (Press `F3+B` to see hitboxes)
 
 - **Anchor**  
