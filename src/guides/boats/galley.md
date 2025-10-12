@@ -33,4 +33,4 @@
 | Mast       | 10.0  |
 | Stern      | 13.0  |
 
-The galley has no inventory. It has one siege weapon slot in the front that can take a ballista. It has a sail and 14 rowing seats.
+The galley has no inventory. It has one siege weapon slot in the front that can take a ballista or a cannon. It has a sail and 14 rowing seats.

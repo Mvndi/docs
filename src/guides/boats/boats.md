@@ -20,6 +20,7 @@ Some boats are not meant for deep oceans and will take a large amount of damage 
     - The boat is stationary.
     - There is enough room (empty/water blocks) to dock.
   - **Undocking**: If the boat is docked, interacting with the anchor will undock it, allowing movement.
+  - **Winch**: If the ship has the winch upgrade installed the ship takes half the time it normally does to deanchor.
 
 - **Inventory**  
   - **Access**: Only interactable when the boat is docked.
