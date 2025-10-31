@@ -2,6 +2,8 @@
 
 ![cog](../../assets/cog.png)
 
+Construction cost of 200000, takes 48 hours to construct. Need Sea Worthy skill at lvl 1.
+
 ## Movement Stats
 
 (Not Trebuchet capable, sail and no oars/rowing)

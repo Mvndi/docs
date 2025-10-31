@@ -4,7 +4,7 @@
 
 ## Building Boats
 
-uhhh something something drydock idk uhhh specific towny plot and profession or something maybe we dont know yet
+Boats have items with recipes that can be found in /recipes and must be crafted in a smithing table, the size of the items in the itemstack are important. The boat items can't be crafted unless the crafter has the necesary skill in the seaman profession. Once the item is made it can be placed in the water (placer must have necesary amount of money to place the boat/start it's construction) in a drydock towny plot, the boat will spawn and immediantly dock and it's construction timer will start, the boat can't be undocked and used until it's finished constructing.
 
 Boats can be repaired with the repair patch item in /recipes.
 Boats a miniscule amount of damage when sailing and need to be repaired after (weeks of) sailing.

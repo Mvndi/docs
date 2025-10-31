@@ -2,6 +2,8 @@
 
 ![dromon](../../assets/dromon.png)
 
+Construction cost of 1000000, takes 168 hours to construct. Need Seaworthy skill at lvl 3.
+
 ## Movement Stats
 
 | Property                  | Value | Unit    | Description |

@@ -2,6 +2,8 @@
 
 ![longship](../../assets/longship.png)
 
+Construction cost of 20000, takes 12 hours to construct. Need Naval Strides skill at lvl 1.
+
 ## Movement Stats
 
 | Property                  | Value | Unit    | Description |
