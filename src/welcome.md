@@ -7,7 +7,7 @@
 - IP: mc.mvndicraft.net
 - Wiki: <https://wiki.mvndicraft.net/>
 - Live Map: <https://map.mvndicraft.net>
-- Discord: <https://discord.gg/2BP6h8Ssta>
+- Discord: <https://discord.mvndicraft.net/>
 - Store: <https://store.mvndicraft.net/>
 
 ### A unique medieval roleplay experience in Minecraft
