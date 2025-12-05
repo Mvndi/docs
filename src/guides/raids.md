@@ -1,4 +1,4 @@
-# Raids – Player Guide
+# Raids
 
 Raids are a quick, for fun PvP mini-event that lets one party attack a town for a wager
 It's like a a 10-minute deathmatch (land) or ship battle (naval)
