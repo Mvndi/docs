@@ -20,7 +20,7 @@ It's like a a 10-minute deathmatch (land) or ship battle (naval)
 
 ### Land Raid (default)
 
-- A beacon spawns in a random direction in the wilderness surrounding the defending town
+- A beacon spawns 1 chunk outside of the wilderness surrounding the defending town in a random direction
 - A glowing beacon (red for attackers, green for defenders) appears above the banner so everyone can find it instantly
 - Attackers and Defenders get glowing (see through wall) potion effect applied for the duration of the raid
 - Kills only count if both players are within the kill radius of the banner (default 16 blocks)
