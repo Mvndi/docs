@@ -1,7 +1,7 @@
 # Raids
 
 Raids are a quick, for fun PvP mini-event that lets one party attack a town for a wager
-It's like a a 10-minute deathmatch (land) or ship battle (naval)
+It's like a a 20-minute deathmatch (land) or ship battle (naval)
 
 ## How to Start a Raid
 
@@ -13,7 +13,7 @@ It's like a a 10-minute deathmatch (land) or ship battle (naval)
 
 ### Requirements & Limits
 
-- At least 50 % of the defending town’s residents must be online  
+- At least 5 residents of defending town’s residents must be online  
 - The wager cannot exceed 10 % of the defending town’s current balance
 - A town can only be raided once every 24 hours
 - Only one raid can be active on a town at a time
@@ -48,6 +48,10 @@ It's like a a 10-minute deathmatch (land) or ship battle (naval)
 - Loser’s town loses the wager.  
 - The final result is announced globally:  
   `AttackTown won the raid and received $50,000!`
+
+### Restarts
+
+- Raids don't persist across restarts. If the server restarts in the middle of a raid the wager is refunded and the raided town doesn't get a cooldown applied (admins can also do this by command)
 
 ### Summary Table
 
