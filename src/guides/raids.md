@@ -25,6 +25,7 @@ It's like a a 20-minute deathmatch (land) or ship battle (naval)
 - Attackers and Defenders get glowing (see through wall) potion effect applied for the duration of the raid
 - Kills only count if both players are within the kill radius of the banner (default 16 blocks)
 - Most player kills after 10 minutes wins
+- If a defender logs off in the middle of a raid the attackers get a point as if they killed that person, if an attack logs off in the middle of a raid the defenders get a point as if they killed that person
 
 ### Naval Raid (automatic)
 
