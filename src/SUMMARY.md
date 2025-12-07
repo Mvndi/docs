@@ -35,3 +35,5 @@
     - [Cannon](./guides/siege_weapons/cannon.md)
     - [Greek Fire](./guides/siege_weapons/greek_fire.md)
     - [Trebuchet](./guides/siege_weapons/trebuchet.md)
+- [Blogs](./blogs/blogs.md)
+  - [one](./blogs/one.md)
