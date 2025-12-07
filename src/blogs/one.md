@@ -8,7 +8,7 @@ Today we would like to present our finished ships and the various mechanics that
 
 Ships are a system which might as well be its own game at this point as their level of customisation is quite advanced we will be showing off their various features in this dev log.
 
-A lot of what's talked about in this blog has more information which can be found on the [Boat](../boats/boats.md) page
+A lot of what's talked about in this blog has more information which can be found on the [Boat](../guides/boats/boats.md) page
 
 ![1](https://files.catbox.moe/gcg5fd.png)
 
