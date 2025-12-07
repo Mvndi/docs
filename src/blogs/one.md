@@ -10,7 +10,7 @@ Ships are a system which might as well be its own game at this point as their le
 
 A lot of what's talked about in this blog has more information which can be found on the [Boat](../guides/boats/boats.md) page
 
-![1](https://files.catbox.moe/gcg5fd.png)
+![1](https://files.catbox.moe/emhcco.png)
 
 ## New Seaman profession
 
@@ -48,7 +48,7 @@ Ramming:
 
 Ships have access to ramming without any upgrades but it causes quite a bit of damage to your own ship without the proper upgrades.
 
-We have the drum upgrade which provices an ability (with cooldown) that temporarily increases the ship's speed proportionally to the amount of rowers you have.
+We have the drum upgrade which provides an ability (with cooldown) that temporarily increases the ship's speed proportionally to the amount of rowers you have.
 
 The ram can also be installed at the front of a ship in order to cause even more damage to the ship being rammed and decrease the damage taken by the ramming ship.
 
