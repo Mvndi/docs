@@ -10,13 +10,13 @@ Ships are a system which might as well be its own game at this point as their le
 
 A lot of what's talked about in this blog has more information which can be found on the [Boat](../guides/boats/boats.md) page
 
-![1](https://files.catbox.moe/emhcco.png)
+![1](https://files.catbox.moe/gcg5fd.png)
 
 ## New Seaman profession
 
 The seaman will be the shipbuilding profession their task will mainly be to build and maintain ships while also being able to repair them at ports.
 
-![2](https://files.catbox.moe/vs6fgn.png)
+![2](https://files.catbox.moe/emhcco.png)
 
 They bring new gadgets to the table like harpoons and greek fire grenades which were invented around the 7<sup>th</sup> century by the byzantines. They are a defensive impact grenade which will allow players to defend their walls and damage enemy vessels.
 
