@@ -8,3 +8,4 @@ There's a [video](https://www.youtube.com/watch?v=raiAhk2Ru5Y) that showcases so
 
 - [Cannons](../siege_weapons/cannon.md) are better for precise strikes, while [Trebuchets](../siege_weapons/trebuchet.md) are better at breaking many blocks.
 - Greek fire burns foliage like berry bushes.
+- Attackers can place scaffolding in the towns theyre sieging, they have 1 minute cooldown and whoever places the scaffolding gets glow effect (can be seen through walls) for 1 minute
