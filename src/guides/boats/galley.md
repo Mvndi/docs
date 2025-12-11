@@ -23,10 +23,7 @@ Construction cost of 500000, takes 96 hours to construct. Need Galoots skill at 
 
 ### Structure Stats
 
-| Property    | Value           |
-|-------------|-----------------|
-| Dimensions  | 5.0 x 9.0 x 28.0 |
-| Offset      | 0.0, 3.0, 0.0  |
+5.0 x 9.0 x 28.0
 
 | HP Section | Value |
 |------------|-------|

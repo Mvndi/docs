@@ -23,10 +23,7 @@ Construction cost of 1000000, takes 168 hours to construct. Need Seaworthy skill
 
 ### Structure Stats
 
-| Property    | Value          |
-|-------------|----------------|
-| Dimensions  | 5.0 x 9.0 x 43.0 |
-| Offset      | 0.0, 0.0, 0.0  |
+5.0 x 9.0 x 43.0
 
 | HP Section | Value |
 |------------|-------|

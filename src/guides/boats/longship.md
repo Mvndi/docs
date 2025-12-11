@@ -23,10 +23,7 @@ Construction cost of 20000, takes 12 hours to construct. Need Naval Strides skil
 
 ### Structure Stats
 
-| Property    | Value           |
-|-------------|-----------------|
-| Dimensions  | 5.0 x 7.0 x 22.0 |
-| Offset      | 0.0, 3.0, 0.0  |
+Dimensions  | 5.0 x 7.0 x 22.0
 
 | HP Section | Value |
 |------------|-------|
