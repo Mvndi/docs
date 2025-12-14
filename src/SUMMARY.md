@@ -37,3 +37,4 @@
     - [Trebuchet](./guides/siege_weapons/trebuchet.md)
 - [Blogs](./blogs/blogs.md)
   - [one](./blogs/one.md)
+  - [two](./blogs/two.md)
