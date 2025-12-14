@@ -41,3 +41,5 @@ The release date is Feburary 20th 2026. We chose this to
 next blog will probably be about the map, mobs, and seasons from Hydrolien
 
 ![steamhappy](https://cdn.discordapp.com/emojis/1167965708865519736.webp?size=48&name=steamhappy)
+
+Thank you for reading and supporting us, if you like getting news about the serversubscribe to our patreon in order to get sneak peaks for upcoming features make sure to make a ticket in the discord when you subscribe to our [patreon](https://www.patreon.com/Mvndicraft). We have set up this patreon to help us cover server costs which are not cheap at all.
