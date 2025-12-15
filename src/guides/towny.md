@@ -19,7 +19,7 @@ Read/Watch These.
 
 ## Towny Distances
 
-- To join a nation, a town needs to be less than 8000 blocks away from an other town of the nation it try to join.
+- To join a nation, a town needs to be less than 8000 blocks away from any other town of the nation it try to join.
 
 ## ChatPDF
 
