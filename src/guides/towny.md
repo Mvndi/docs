@@ -17,6 +17,10 @@ Read/Watch These.
 - `Nation Upkeep` - 250 Ducats
 - `Max Daily Conquered Tax` - 500 Ducats (/n set conqueredtax {1-1000})
 
+## Towny Distances
+
+- To join a nation, a town needs to be less than 8000 blocks away from an other nation's town.
+
 ## ChatPDF
 
 This is a very helpful [ChatPDF document](https://www.chatpdf.com/share/PCoMCWTyW3wI2m03EE5DM) where you can ask it questions as if you were talking to a person, try to ask this document before asking a staff any Towny questions.
