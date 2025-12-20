@@ -111,6 +111,6 @@ And some shooting stars in the summer sky.
 
 
 
-We will speak about bears, boards, wolves & brigands in another blog.
+We will speak about bears, boards, wolves & brigands in next week blog.
 
 Thank you for reading and supporting us, if you like getting news about the server, subscribe to our patreon in order to get sneak peaks for upcoming features make sure to make a ticket in the discord when you subscribe to our [patreon](https://www.patreon.com/Mvndicraft). We have set up this patreon to help us cover server costs which are not cheap at all.
