@@ -47,7 +47,7 @@ At this step we have a perfect world surface, but there is still nothing inside 
 
 In fact, caves are not exactly the vanilla caves.
 As Nether is disabled and we still want builders to access as many block types as possible, we added quartz ore to overworld caves.
-We also make some ore regional, lapis Lazuli for example can't be found anywhere, you have to go to Persia to find some. Coal is more common near France, Belgium & England coal mines. Please note that for balance purposes, diamonds and irons are still the same all over the map.
+We also make some ore regional, lapis Lazuli for example can't be found everywhere, you have to go to Persia to find some. Coal is more common near France, Belgium & England coal mines. Please note that for balance purposes, diamonds and irons are still the same all over the map.
 
 There are no caves and no ores under the oceans. Anyways, you're not able to build in the deep oceans, we don't want faction bases in the middle of the Atlantic Ocean.
 
