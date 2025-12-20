@@ -69,43 +69,43 @@ See [seasons](https://mvndicraft.net/guides/seasons.html) & [temperature](https:
 
 ### Top view with various seasons
 
-#### Snow in Northern Europe & regular leaves and grass colors
+#### SPRING Snow in Northern Europe & regular leaves and grass colors
 ![spring](../assets/map/spring.png)
 
-#### Fewer snow & dry grass colors
+#### SUMMER Fewer snow & dry grass colors
 ![summer](../assets/map/summer.png)
 
-#### Snow in Northern Europe & falling leaves colors
+#### AUTUMN Snow in Northern Europe & falling leaves colors
 ![autumn](../assets/map/autumn.png)
 
-#### Snow in Northern Europe and Central Europe & cold grass and leaves colors
+#### WINTER Snow in Northern Europe and Central Europe & cold grass and leaves colors
 ![winter](../assets/map/winter.png)
 
 ### Random map location previews
 
 #### France
 
-<iframe width="860" height="360" src="https://www.youtube.com/embed/5Snqpkxn8Tw?si=Y1GPjE_L_yWCSlW0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="688" height="288" src="https://www.youtube.com/embed/5Snqpkxn8Tw?si=Y1GPjE_L_yWCSlW0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 #### Norway Fjord
 
-<iframe width="860" height="360" src="https://www.youtube.com/embed/VpcSNnFTFJs?si=arhblZXvXUsNiDeC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="688" height="288" src="https://www.youtube.com/embed/VpcSNnFTFJs?si=arhblZXvXUsNiDeC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 #### Corsica
 
-<iframe width="860" height="360" src="https://www.youtube.com/embed/VifHsaEbyjQ?si=IBp9-KuvEc7UylKy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="688" height="288" src="https://www.youtube.com/embed/VifHsaEbyjQ?si=IBp9-KuvEc7UylKy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 #### Sahara Tibesti Mountains
 
-<iframe width="860" height="360" src="https://www.youtube.com/embed/y7ffeotaPc8?si=KQe7s5-6uOkgvLJ7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="688" height="288" src="https://www.youtube.com/embed/y7ffeotaPc8?si=KQe7s5-6uOkgvLJ7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 More previews will be added [there](https://www.youtube.com/playlist?list=PLWkpCCxr3IBSIR4wUSIs133lTGLazB-iw).
 
 ### Effects
 
 There is a cold breath & a sweat effect at low & high temperatures.
-<iframe width="860" height="360" src="https://www.youtube.com/embed/6EUVmEbrNmg?si=KzP-Cczwu-n0LhwM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<iframe width="860" height="360" src="https://www.youtube.com/embed/OKgBJl2jpTA?si=xjoTlNew0NVRNdLg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="688" height="288" src="https://www.youtube.com/embed/6EUVmEbrNmg?si=KzP-Cczwu-n0LhwM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="688" height="288" src="https://www.youtube.com/embed/OKgBJl2jpTA?si=xjoTlNew0NVRNdLg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 And some shooting stars in the summer sky.
 
