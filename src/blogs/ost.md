@@ -1,10 +1,12 @@
 # Mvndi Soundtrack Blog
 
-Greetings Mvndibros, for this special occasion, I, the Mvndi soundtrack composer, Alhassan, am here to speak about all things music. I am excited to introduce you to our meticulously researched, and relentlessly crafted original soundtrack that will be present in-game. It features a wide array of musical styles from epic orchestral scores in sieges and cinematics to historically accurate regional music based on documented traditions and folklore of the time for the most immersive medieval experience. Let's take a look over Mvndi's musical soundscapes.
+Greetings Mvndibros, for this special occasion, I, the Mvndi soundtrack composer, [Alhassan](https://www.youtube.com/@AlhassanComposer), am here to speak about all things music. I am excited to introduce you to our meticulously researched, and relentlessly crafted original soundtrack that will be present in-game. It features a wide array of musical styles from epic orchestral scores in sieges and cinematics to historically accurate regional music based on documented traditions and folklore of the time for the most immersive medieval experience. Let's take a look over Mvndi's musical soundscapes.
 
 ## The Music
 
 <video controls src="https://files.catbox.moe/ldfnm4.mp4" title="ost"></video>
+
+Composed by Alhassan who you can find at <https://www.youtube.com/@AlhassanComposer>
 
 ### Main Theme
 
