@@ -40,3 +40,4 @@
   - [War](./blogs/war.md)
   - [Map](./blogs/map.md)
   - [Assets and UI](./blogs/assets_and_ui.md)
+  - [Original Soundtrack](./blogs/ost.md)
