@@ -170,6 +170,10 @@ tldr your town spawn has to be accessible with siege weapons. walls are okay, no
 
 7.2 Building a tower to get past a wall inside someone's claims is forbidden.
 
+7.3. All towns must be named after places (towns, cities, castles, monasteries, etc.) that existed within the servers timeframe (476-1550).
+
+7.3.1. The town must have at least one chunk over the area which corresponds to where it would have existed in the middle ages.
+
 ## Nations
 
 --------
