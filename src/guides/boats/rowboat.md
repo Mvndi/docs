@@ -13,8 +13,8 @@ Construction cost of 5000, takes 1 hour to construct.  Need Rowing Arms skill at
 | Speed                     | 20.0  | m/s     | Maximum speed. |
 | Acceleration              | 2.2   | m/s²    | Rate of speed increase. |
 | Drag                      | 0.009  | coeff   | Slowdown factor. |
-| Angular Speed             | 8.84  | deg/s   | Maximum turning speed. |
-| Angular Acceleration      | 9.84  | deg/s²  | Rate of turning increase. |
+| Angular Speed             | 15.0  | deg/s   | Maximum turning speed. |
+| Angular Acceleration      | 20.0  | deg/s²  | Rate of turning increase. |
 | Min Speed for Turn        | 0.01  | m/s     | Minimum speed required to turn. |
 | Max Turn Effectiveness    | 1.0   | coeff   | Peak turning efficiency. |
 | Max Heel                  | 2.5   | deg     | Maximum lean angle during turns. |
