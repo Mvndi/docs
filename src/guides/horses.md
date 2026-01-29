@@ -12,6 +12,8 @@ You can create paths to increase mounts speed instead:
 
 Suspicious gravel & sand can be craft by adding stone & sandstone to gravel & sand respectively. Check blocks recipes ingame `/recipes`.
 
+The road speed bonus will not work in combat.
+
 Horse & Camel stats have been limited:
 - Jump: 1.4 to 1.5 blocks (A fence height)
 
