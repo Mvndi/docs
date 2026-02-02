@@ -2,7 +2,7 @@
 
 ![rowboat](../../assets/rowboat.png)
 
-Construction cost of 5000, takes 1 hour to construct.  Need Rowing Arms skill at lvl 1.
+Construction cost of 1000, takes 20 mins to construct.  Need Rowing Arms skill at lvl 1.
 
 ## Movement Stats
 
