@@ -65,7 +65,7 @@ tldr your town spawn has to be accessible with siege weapons. walls are okay, no
 
 ### Moats
 
-4.1.1 Moats must be a maximum of 16 blocks wide
+4.1.1 The width of the moat may not exceed 10% of the width of the area that it surrounds, however it can never be wider than 20 blocks
 
 4.1.2 Moats must be filled with water up to at least 2 blocks down from the ground level on the inside of the moat
 
@@ -81,7 +81,7 @@ tldr your town spawn has to be accessible with siege weapons. walls are okay, no
 
 4.2.2 Walls must not contain any water, lava or obsidian
 
-4.2.3 Walls must not be thicker than the area which they protect
+4.2.3 Walls must not be thicker than 7 blocks, however they may have an additional 3 blocks of non-blast resistant materials (see 3.18.) in the manner of a bastion fort
 
 4.2.4 Gravity blocks in walls are allowed within reason, therefore walls that go beyond ~30 blocks in height filled with gravity blocks in that case would not be allowed
 
