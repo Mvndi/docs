@@ -180,7 +180,7 @@ tldr your town spawn has to be accessible with siege weapons. walls are okay, no
 
 8.0 Alternate history nations are allowed if they make sense in a medieval context. For example, the Crusader Kingdom of Egypt or Emirate of Montpellier ARE allowed, but something like the Buddhist state of Ulster would not be allowed
 
-8.0.1 Nations that existed after the Mvndicraft timeframe (476-1550) are not permitted (French Republic, German Empire, Belgium)
+8.0.1 Nations that ONLY existed outside the Mvndicraft timeframe (476-1550), are not permitted (Carthaginian Empire, Kingdom of Israel, French Republic, German Empire, Belgium)
 
 8.1 If you would like to have your nation advertised in the Discord server, you must meet these criterias:
 
