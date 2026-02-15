@@ -5,7 +5,7 @@
 ## Information
 
 - IP: mc.mvndicraft.net
-- Wiki: <https://wiki.mvndicraft.net/>
+- Wiki: <https://mvndicraft.net/>
 - Live Map: <https://map.mvndicraft.net>
 - Discord: <https://discord.mvndicraft.net/>
 - Store: <https://store.mvndicraft.net/>

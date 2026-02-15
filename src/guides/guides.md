@@ -1,6 +1,6 @@
 # Guides
 
-The guides on this website are temporary, more complete but in progress guides can be found on <https://wiki.mvndicraft.net>
+<!-- The guides on this website are temporary, more complete but in progress guides can be found on <https://wiki.mvndicraft.net> -->
 
 ## Getting Started
 
