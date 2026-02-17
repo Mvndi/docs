@@ -2,7 +2,7 @@
 
 ![rowboat](../../assets/rowboat.png)
 
-Construction cost of 1000, takes 20 mins to construct.  Need Rowing Arms skill at lvl 1.
+Construction cost of 1000, takes 20 mins to construct.  Need Rowing Arms skill at lvl 1.  The rowboat takes passive damage if it's in deep ocean biomes.  The rowboat gets 1 shot by any siege weapon (like ballista) reguardless of what health it's at.
 
 ## Movement Stats
 
@@ -10,7 +10,7 @@ Construction cost of 1000, takes 20 mins to construct.  Need Rowing Arms skill a
 
 | Property                  | Value | Unit    | Description |
 |---------------------------|-------|---------|-------------|
-| Speed                     | 20.0  | m/s     | Maximum speed. |
+| Speed                     | 10.0  | m/s     | Maximum speed. |
 | Acceleration              | 2.2   | m/s²    | Rate of speed increase. |
 | Drag                      | 0.009  | coeff   | Slowdown factor. |
 | Angular Speed             | 15.0  | deg/s   | Maximum turning speed. |
@@ -29,7 +29,7 @@ Dimensions  | 2.0 x 3.0 x 8.0
 
 | HP Section | Value |
 |------------|-------|
-| Bow        | 0.25  |
-| Hull       | 0.25  |
-| Mast       | 0.25  |
-| Stern      | 0.25  |
+| Bow        | 1.0  |
+| Hull       | 1.0  |
+| Mast       | 1.0  |
+| Stern      | 1.0  |
