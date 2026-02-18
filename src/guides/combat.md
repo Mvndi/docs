@@ -57,6 +57,8 @@ The `Def` for the formula below would be the sum of all the `SLASH` defences of 
 
 ## Attack Weight vs Deflection Level Table
 
+The more a weapon weighs, the harder it is to deflect with a shield. Shields will be disabled longer or shorter depending on this table result (HEAVY > MEDIUM > LIGHT > NONE).
+
 | ↓ Deflection Level / → Attack Weight| NONE  | LIGHT | MEDIUM | HEAVY  |
 |-------------------------------------|-------|-------|--------|--------|
 | NONE                                | MEDIUM| HEAVY | HEAVY  | HEAVY  |
