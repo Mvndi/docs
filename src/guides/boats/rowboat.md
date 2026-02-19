@@ -2,7 +2,7 @@
 
 ![rowboat](../../assets/rowboat.png)
 
-Construction cost of 1000, takes 20 mins to construct.  Need Rowing Arms skill at lvl 1.  The rowboat takes passive damage if it's in deep ocean biomes.  The rowboat gets 1 shot by any siege weapon (like ballista) reguardless of what health it's at.
+Construction cost of `500`, takes 20 mins to construct.  Need Rowing Arms skill at lvl 1.  The rowboat takes passive damage if it's in deep ocean biomes.  The rowboat gets 1 shot by any siege weapon (like ballista) reguardless of what health it's at.
 
 ## Movement Stats
 

@@ -2,7 +2,7 @@
 
 ![cog](../../assets/cog.png)
 
-Construction cost of 200000, takes 48 hours to construct. Need Sea Worthy skill at lvl 1.
+Construction cost of `15,000`, takes 48 hours to construct. Need Sea Worthy skill at lvl 1.
 
 ## Movement Stats
 
@@ -51,4 +51,4 @@ Construction cost of 200000, takes 48 hours to construct. Need Sea Worthy skill 
 | Mast       | 6.0  |
 | Stern      | 8.0  |
 
-The cog has an inventory with 3 pages, each double chest sized. It has two siege weapon slots (one front, one back) that can only take ballistas. It has a sail and no rowing seats.
+The cog has an inventory with 3 pages, each double chest sized. It has two siege weapon slots (one front, one back) that can only take ballistas. It has a sail and no rowing seats. It cannot have ram and drum upgrades.
