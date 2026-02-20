@@ -29,3 +29,7 @@
 - Make sure you have the skill for what you're trying to quench
 - Fill a cauldron with water
 - Right click cauldron with the weapon/armor you want to quench (you can do this more than once)
+
+## steel wire
+
+<iframe width="688" height="288" src="https://www.youtube.com/watch?v=OIK-dNazmbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
