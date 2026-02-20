@@ -31,6 +31,7 @@ profession xp is sent in chat msg, whenever u do a thing that gives u money (lis
 ### attribute xp?
 
 the level up and experience in the action bar (above hotbot) is for `/attributes` and you can upgrade your health/stamin/etc here
+only pve combat activites get u attribute xp
 
 action bar xp (normal minecraft xp bar) -> `/attributes` xp
 chat msg xp  (hud % next to profession icon, left of hotbar) -> `/professions` xp
