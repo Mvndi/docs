@@ -138,6 +138,10 @@ tldr your town spawn has to be accessible with siege weapons. walls are okay, no
 
 4.6.7 The town spawn point must be reachable via siege weapons and cannot be underground or in the sky
 
+4.6.8 Builds must be decently realistic for the time period (476-1550)
+
+4.6.9 Builds must be similar to actual medieval architecture of the area you are building in. For example, you can't build andalusian architecture in Denmark for example
+
 ### Peace
 
 4.7.1 Scamming and lying in peace treaties is allowed - admins can serve as middlemen in certain exchanges where possible and are not allowed to be knowingly involved in scams
