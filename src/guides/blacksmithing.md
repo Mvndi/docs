@@ -2,6 +2,8 @@
 
 (You need blacksmith profession from `/mp`)
 
+smelting gives blacksmith profession xp (like when u remove from furnace), anvil minigames also gives blacksmith xp, hammering bloom on an anvil also gives it
+
 <video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/blacksmithing.mp4" title="Blacksmithing"></video>
 
 - Craft and place a bloomery (place two hard clay blocks on top of each other and right click with a hammer).
