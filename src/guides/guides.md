@@ -26,12 +26,14 @@ fishing gives seaman profession xp so does riding in a boat and killing fish and
 
 when u do these its rng for if u like get xp (shows % in hud) but the higher ur level the lower the chance, low level sohuld be like almost garunteed
 
-profession xp is sent in chat msg, whenever u do a thing that gives u money (listed above) it increases ur progress towards a level up, the higher ur level the lower chance u have to make progress towatds leveling up
+profession xp is sent in chat msg, whenever u do a thing that gives u money (listed above) it increases ur progress towards a level up, the higher ur level the lower chance u have to make progress towards leveling up
 
 ### attribute xp?
 
-the level up and experience in the action bar (above hotbot) is for `/attributes` and you can upgrade your health/stamin/etc here
+the level up and experience in the action bar (above hotbot) is for `/attributes` and you can upgrade your health/stamina/etc here
 only pve combat activites get u attribute xp
+most mobs like horses aren't garunteed to give attribute xp and it's low amount
+boars/bears/wolves/bandits are garunteed to give attribute xp and give a lot more compared to other mobs
 
 action bar xp (normal minecraft xp bar) -> `/attributes` xp
 chat msg xp  (hud % next to profession icon, left of hotbar) -> `/professions` xp
