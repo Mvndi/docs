@@ -32,8 +32,8 @@ profession xp is sent in chat msg, whenever u do a thing that gives u money (lis
 
 the level up and experience in the action bar (above hotbot) is for `/attributes` and you can upgrade your health/stamina/etc here
 only pve combat activites get u attribute xp
-most mobs like horses aren't garunteed to give attribute xp and it's low amount
-boars/bears/wolves/bandits are garunteed to give attribute xp and give a lot more compared to other mobs
+most mobs like horses and cows don't give attribute xp they just give money
+boars/bears/wolves/bandits are guaranteed to give attribute xp, rats too but way less compared to others
 
 action bar xp (normal minecraft xp bar) -> `/attributes` xp
 chat msg xp  (hud % next to profession icon, left of hotbar) -> `/professions` xp
