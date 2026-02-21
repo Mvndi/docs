@@ -22,7 +22,7 @@ farming gives u farming profession xp
 hunting and breeding gives herdsman profession xp
 smelting gives blacksmith profession xp (like when u remove from furnace)
 mining gives miner profession xp
-fishing gives seaman profession xp so does riding in a boat and killing fish
+fishing gives seaman profession xp so does riding in a boat and killing fish and swimming in river/ocean/beach biome also gives seaman profession xp
 
 when u do these its rng for if u like get xp (shows % in hud) but the higher ur level the lower the chance, low level sohuld be like almost garunteed
 
