@@ -42,7 +42,6 @@ most mobs like horses and cows don't give attribute xp they just give money
 
 boars/bears/wolves/bandits are guaranteed to give attribute xp, rats too but way less compared to others
 
-
 action bar xp (normal minecraft xp bar) -> `/attributes` xp
 chat msg xp  (hud % next to profession icon, left of hotbar) -> `/professions` xp
 
