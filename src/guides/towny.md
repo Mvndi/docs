@@ -8,6 +8,8 @@ Read/Watch These.
 - [Quarters/Apartments](https://github.com/jwkerr/Quarters/wiki)
 - [War](https://mvndicraft.net/guides/war)
 
+You get 12 chunks per player in your town & an extra chunks bonus from your nation.
+
 ## Towny Prices
 
 - `Town Cost` - 1000 Ducats
@@ -16,6 +18,8 @@ Read/Watch These.
 - `Nationless Town Upkeep` - 4 * CHUNKS-IN-TOWN Ducats (Minimum 100 Ducats)
 - `Nation Upkeep` - 250 Ducats
 - `Max Daily Conquered Tax` - 500 Ducats (/n set conqueredtax {1-1000})
+
+Taxes are collected each IRL day at 12:00 UTC.
 
 ## Towny Distances
 

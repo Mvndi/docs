@@ -58,3 +58,5 @@ A free town with no nation get 100% of the resources.
 A free town in a nation gets 50% of the resources and the nation gets the other 50% of the resources.
 
 An occupied town gets 25% of the resources & the occupying nation gets the other 75% of the resources.
+
+If there are not enough players in your town to collect a resources, it will display 0 of that resource & you won't get these resources. Once enough players are in your town, the resource will start to generate again.
