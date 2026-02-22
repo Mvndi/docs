@@ -4,7 +4,7 @@
 
 ## XP Gain
 
-There are a couple of ways to gain XP for the blacksmith profession
+There are a couple of ways to gain XP for the blacksmith profession:
 
 1. **Smelting ores**, specifically picking up smelted ingots from a furnace
 2. Hammering **bloom**, after picking it up from a bloomery
