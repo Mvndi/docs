@@ -28,6 +28,7 @@ There are a couple of ways to gain XP for the blacksmith profession:
 - 1 x Bellows
 - 1 x Tongs
 
+#### Guide
 - Craft and place a bloomery (place two hard clay blocks on top of each other and right click with a hammer).
 - Take raw iron (only raw iron works, not ingots) and put it in the bloomery with coal or charcoal.
 - Once hot, take it out by right clicking with the tongs item.
@@ -58,12 +59,21 @@ To change the chance of gaining either steel, slag, or cast iron, you need to se
 
 ### Crucible Furnace
 
+#### Crucible Furnace-specific requirements
 
 - 1x Crucible + Tongs per slot (steel, cast iron, slag)
 - 1x Tongs (to pick up cast ingots)
 - 1x Ingot Cast
 - 1x Blast Furnace
 - 1x Clay Block
+
+
+**IMPORTANT**: To use a crucible furnace, you need the **True Smithing** skill, which is in the **Miner** tree.
+
+![miner req](../assets/true_smithing_req.png)
+
+
+#### Guide
 
 The max level blacksmith upgrade gives access to the Crucible Furnace. The main difference is that the Crucible Furnace doesn't require any kind of temperature control like the bloomery does, which makes it easier to make steel & cast iron ingots.
 
