@@ -24,11 +24,13 @@ There are a couple of ways to gain XP for the blacksmith profession:
 ### Bloomery
 
 #### Bloomery-specific requirements
+
 - 2 x **Hard Clay** (for bloomery)
 - 1 x Bellows
 - 1 x Tongs
 
 #### Guide
+
 - Craft and place a bloomery (place two hard clay blocks on top of each other and right click with a hammer).
 - Take raw iron (only raw iron works, not ingots) and put it in the bloomery with coal or charcoal.
 - Once hot, take it out by right clicking with the tongs item.
@@ -41,12 +43,9 @@ There are a couple of ways to gain XP for the blacksmith profession:
 - Take out the crafted item with the tongs, and put it in a cauldron of water.
 - Assemble in smithing table. Smithing table recipes can be found in `/recipes`
 
-
 Video guide:
 
-
 <video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/blacksmithing.mp4" title="Blacksmithing"></video>
-
 
 #### Bloomery Temperatures
 
@@ -67,11 +66,9 @@ To change the chance of gaining either steel, slag, or cast iron, you need to se
 - 1x Blast Furnace
 - 1x Clay Block
 
-
 **IMPORTANT**: To use a crucible furnace, you need the **True Smithing** skill, which is in the **Miner** tree.
 
 ![miner req](../assets/true_smithing_req.png)
-
 
 #### Guide
 
@@ -90,24 +87,22 @@ The max level blacksmith upgrade gives access to the Crucible Furnace. The main 
 
 <video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/crucible.mp4" title="Crucible Furnace"></video>
 
-### Steel Wire
-<!-- iframe will be blocked by firefox -->
-<a href="https://www.youtube.com/watch?v=OIK-dNazmbw" target="_blank">
-  <img src="https://img.youtube.com/vi/OIK-dNazmbw/0.jpg" alt="Watch the video" />
-</a>
+### Steel Wire Video
 
+<video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/steel_wire.mp4" title="Steel Wire"></video>
 
 ### Quenching
+
 You can quench any "hot" item you have in Tongs, i.e. ingots, weapon heads, etc.
 
-
 #### Weapon/Armor Upgrading
+
 - Make sure you have the skill for what you're trying to quench
 - Fill a cauldron with water
 - Right click cauldron with the weapon/armor you want to quench (you can do this more than once)
 
-
 ### FAQ
 
 #### How do I remove steel/cast iron from tongs?
+
 Quench it, and when you want to use it again, reheat it with fire
