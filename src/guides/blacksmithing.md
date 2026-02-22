@@ -68,7 +68,7 @@ To change the chance of gaining either steel, slag, or cast iron, you need to se
 The max level blacksmith upgrade gives access to the Crucible Furnace. The main difference is that the Crucible Furnace doesn't require any kind of temperature control like the bloomery does, which makes it easier to make steel & cast iron ingots.
 
 - Make the Crucible Furnace by putting a Blast Furnace on the ground, and putting a clay block onto it, and right click it with the hammer
-- Combine Tongs & Crucibles to make Tongs with Crucibles.
+- Combine Tongs & Crucibles to make Tongs with Crucibles
 - Put raw iron & coal into the Crucible Furnace
 - Put the Tongs with Crucibles into any of the Crucible Furnace slots
 - Wait until they fill up
