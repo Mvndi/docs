@@ -2,6 +2,8 @@
 
 ![aether](assets/aether.png)
 
+[TLDR FAQ GUIDE](./guides/guides.md)
+
 ## Information
 
 - IP: mc.mvndicraft.net

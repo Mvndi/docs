@@ -2,6 +2,10 @@
 
 <video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/boats.mp4" title="Boats"></video>
 
+## I placed boat and it's not moving
+
+it's probably under construction do `/modifyship` while looking at it and you can see the initial construction timer, it will undock after this and be usable
+
 ## Building Boats
 
 Boats have items with recipes that can be found in /recipes and must be crafted in a smithing table, the size of the items in the itemstack are important. The boat items can't be crafted unless the crafter has the necesary skill in the seaman profession. Once the item is made it can be placed in the water (placer must have necesary amount of money to place the boat/start it's construction) in a drydock towny plot, the boat will spawn and immediantly dock and it's construction timer will start, the boat can't be undocked and used until it's finished constructing.

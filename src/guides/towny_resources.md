@@ -7,13 +7,11 @@
 Towny Resources is a towny extension that allows towns to generate
 resource income.
 
-## How do i use towny Resources?
+## How do I use Towny Resources?
 
 You start by surveying with the command `/t resource survey`. This will add a resource to your towns
 production and will allow you to collect the income 1. per towny day.
 Each consequent survey will be more expensive.
-The prices are: 250, 1000, 5000, 20000. Each survey also requires a certain town size (in chunks): 10, 50, 100, 200.
-You also need enough players in your town to harvest your found resources. The player requirement is: 1, 6, 14, 24.
 The following table provides an overview of the levels:
 
 You can see the resources production of a town with `/t <town name>` or look on the map

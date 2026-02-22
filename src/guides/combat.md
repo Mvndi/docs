@@ -1,8 +1,14 @@
 # Combat
 
+## Poise
+
+Poise is only active while in combat. It's the gray bar in the hud. Players have a base poise and can get more poise from armor.
+
+You take poise damage when you get hit depending on the weapon that hit you. If your poise reaches 0 you get staggered and can't move temporarily.
+
 ## Stamina
 
-Stamina is only active while in combat with another player. This stops you from endlessly spam jumping
+Stamina is only active while in combat. It's the orange bar in the hud. This stops you from endlessly spam jumping
 during PvP, aswell as other actions, since everything you do (including sprinting) during combat depletes
 your stamina.
 

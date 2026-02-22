@@ -2,7 +2,7 @@
 
 ![galley](../../assets/galley.png)
 
-Construction cost of 500000, takes 96 hours to construct. Need Galoots skill at lvl 1.
+Construction cost of `65,000`, takes 96 hours to construct. Need Galoots skill at lvl 1.
 
 ## Movement Stats
 

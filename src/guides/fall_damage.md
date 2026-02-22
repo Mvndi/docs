@@ -14,19 +14,18 @@ Fall damage in Mvndicraft is far more lethal than standard Minecraft. Distance a
 
 ## Deadly Falls
 
-- Falls exceeding **20 blocks** are **instantly fatal**.
+- Falls exceeding **10 blocks** are **instantly fatal**.
 
 ## Quick Reference
 
 | Fall Distance | Damage Effect | Notes |
 |---------------|---------------|-------|
 | 0–5 blocks    | Safe          | No damage |
-| 5–20 blocks   | Significant   | Scales with distance and weight |
-| >20 blocks    | Fatal         | Instant death |
+| 5–10 blocks   | Significant   | Scales with distance and weight |
+| >10 blocks    | Fatal         | Instant death |
 
 ## Survival Tips
 
 - Even 5–10 block falls can be seriously harmful.  
 - Heavy equipment increases damage from any fall.  
 - Avoid high drops; careful navigation and load management are crucial.
-

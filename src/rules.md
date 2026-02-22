@@ -97,7 +97,7 @@ tldr your town spawn has to be accessible with siege weapons. walls are okay, no
 
 4.3.3 Convincing someone to walk into your base then closing the door behind them and killing them IS allowed
 
-4.3.4 Ports cannot be enclosed with blocks. There must always be a reasonable way out for any player without perms to build
+4.3.4 Ports cannot be enclosed with blocks. There must always be a reasonable way out for any player without perms to build. For purposes of ships, blocks like chains may be used to enclose boats in the port and prevent their theft.
 
 ### Tunnels
 
@@ -137,6 +137,10 @@ tldr your town spawn has to be accessible with siege weapons. walls are okay, no
 4.6.6 No temporary towns for the sole purpose of acting as an outpost to siege from - building siege bases is allowed but they may not be claimed as towns
 
 4.6.7 The town spawn point must be reachable via siege weapons and cannot be underground or in the sky
+
+4.6.8 Builds must be decently realistic for the time period (476-1550)
+
+4.6.9 Builds must be similar to actual medieval architecture of the area you are building in. For example, you can't build andalusian architecture in Denmark for example
 
 ### Peace
 
