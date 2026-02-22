@@ -51,8 +51,8 @@ Video guide:
 
 To change the chance of gaining either steel, slag, or cast iron, you need to set the temperature of your bloomery to one that maximises either slag, cast iron or steel gain. The graph below shows the temperature to chance ratio, directly correlated to the temperature displayed above the bloomery when using the bellows.
 
-- X axis: **chance to gain item**
-- Y axis: **temperature set on bloomery**
+- X axis: **temperature set on bloomery**
+- Y axis: **chance to gain item**
 
 ![bloomery temperatures](../assets/bloomery_temperatures.png)
 
