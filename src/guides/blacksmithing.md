@@ -60,7 +60,7 @@ To change the chance of gaining either steel, slag, or cast iron, you need to se
 
 
 - 1x Crucible + Tongs per slot (steel, cast iron, slag)
-- 1x Tongs (to pick up casted ingots)
+- 1x Tongs (to pick up cast ingots)
 - 1x Ingot Cast
 - 1x Blast Furnace
 - 1x Clay Block
