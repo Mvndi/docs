@@ -19,7 +19,7 @@ There are a couple of ways to gain XP for the blacksmith profession
 - 1 x Smithing Table (for assembling weapons)
 - 1 x Hammer
 - Raw Iron
-- Coal 
+- Coal
 
 ### Bloomery
 
