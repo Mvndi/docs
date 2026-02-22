@@ -14,7 +14,7 @@ want to open your door.
 
 | Door Type       | Price Formula                                 |
 |-----------------|-----------------------------------------------|
-| Standard Door   | `800 + 400 * blockCount`                      |
-| Drawbridge      | `1200 + 500 * blockCount`                     |
-| Portcullis      | `1500 + 600 * blockCount + 50 * blockCount^2` |
-| Sliding Door    | `1000 + 450 * blockCount`                     |
+| Standard Door   | `1000 + 500 + 2 * log(blockCount + 1)'`                      |
+| Drawbridge      | `1500 + 600 * min(blockCount, 15)`                     |
+| Portcullis      | `2000 + 800 + 2 * sqrt(blockCount)` |
+| Sliding Door    | `1800 + 650 + 2 * blockCount^0.5`                     |
