@@ -1,6 +1,6 @@
 # Miner (GUIDE WIP)
 
-Miners get night vision when breaking blocks under Y 60.
+Miners get night vision when breaking blocks under Y 50.
 
 ## XP Gain
 
@@ -12,7 +12,7 @@ Most of these are self explanatory so only explaining the not intuitive skills (
 
 To gold pan you right click a river with wooden bowl. Default chance is 1% without the skill upgraded and no other miners nearby
 
-To blastmine properly face a cardinal direction (0, 90, 180. -90, -180) place a TNT under Y 60 and light it. More TNT will spawn in that direction and explode a tunnel, the ores will drop their items.
+To blastmine properly face a cardinal direction (0, 90, 180. -90, -180) place a TNT under Y 50 and light it. More TNT will spawn in that direction and explode a tunnel, the ores will drop their items.
 
 For the bear trap you place it then you can bury it with a shovel to conceal it, players/mobs that step in it will take damage and be temporarily immobilized.
 
