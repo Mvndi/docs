@@ -2,7 +2,7 @@
 
 ## XP Gain
 
-There are a couple of ways to gain XP for the herdsman profession:
+There are a couple of ways to gain XP for the seaman profession:
 
 1. Fishing with fishing rod
 2. Killing fish

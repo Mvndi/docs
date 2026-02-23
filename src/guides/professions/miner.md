@@ -14,6 +14,10 @@ To gold pan you right click a river with wooden bowl. Default chance is 1% witho
 
 To blastmine properly face a cardinal direction (0, 90, 180. -90, -180) place a TNT under Y 60 and light it. More TNT will spawn in that direction and explode a tunnel, the ores will drop their items.
 
+For the bear trap you place it then you can bury it with a shovel to conceal it, players/mobs that step in it will take damage and be temporarily immobilized.
+
+Frisian horse trap is made by placing two logs next to each other then two wood slabs on top of them and then right clicking a log with an axe.
+
 ### Crucible Furnace
 
 #### Crucible Furnace-specific requirements
