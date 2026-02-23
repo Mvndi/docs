@@ -820,9 +820,9 @@ This might be outdated over time, you should use the in game `/recipes` if you c
 
 ![cased_lantern](../assets/recipes/cased_lantern.png)
 
-### Candle Bow
+### Candle Bowl
 
-![candle_bow](../assets/recipes/candle_bow.png)
+![candle_bowl](../assets/recipes/candle_bowl.png)
 
 ### Blackstone
 
