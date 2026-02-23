@@ -664,6 +664,10 @@ This might be outdated over time, you should use the in game `/recipes` if you c
 
 ![decorated_terracotta](../assets/recipes/decorated_terracotta.png)
 
+### Dripstone Block
+
+![terracotta](../assets/recipes/dripstone_block.png)
+
 ### Column Base
 
 ![collumn_base](../assets/recipes/collumn_base.png)
