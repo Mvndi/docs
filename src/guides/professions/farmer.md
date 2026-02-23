@@ -14,6 +14,8 @@ If you have flax skill you break normal foliage to get flax seeds. Similar with 
 
 Windmills speed up growth of crops within 3x3 chunk radius
 
+Hold shift and right click tamed donkey/horse to attach the plough. Can only plough in claim chunks of your town.
+
 ## Machines
 
 Machines need the preindustrial skill from farming tree.

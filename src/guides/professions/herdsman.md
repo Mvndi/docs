@@ -19,3 +19,5 @@ Shepehrds staff makes sheep follow you when you hold it.
 To start the truffle minigame you have to walk a pig around on a lead and it will spawn truffles you have to find by right clicking the ground
 
 Cheese crafting is you put glass bottle and milk or something into crafting table have to look at this later to write the specifics.
+
+Hold shift and right click tamed donkey to attach the cart.
