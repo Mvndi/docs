@@ -3,6 +3,7 @@
 - [Welcome](./welcome.md)
 - [Rules](./rules.md)
 - [Guides](./guides/guides.md)
+  - [Recipes](./guides/recipes.md)
   - [Blacksmithing](./guides/blacksmithing.md)
   - [Boats](./guides/boats/boats.md)
     - [Cog](./guides/boats/cog.md)
