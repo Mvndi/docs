@@ -20,4 +20,4 @@ To start the truffle minigame you have to walk a pig around on a lead and it wil
 
 Cheese crafting is you put glass bottle and milk or something into crafting table have to look at this later to write the specifics.
 
-Hold shift and right click tamed donkey to attach the cart.
+Hold shift and right click tamed donkey to attach the cart.  It has to be a donkey that you tamed for you to be able to attach the cart.
