@@ -70,7 +70,6 @@ You will also be able to place horses inside the storage in order to launch amph
 
 <video controls src="https://files.catbox.moe/zz9sss.mp4" title="horses"></video>
 
-
 Full customisation
 
 Ships will also be nameable and have a plethora of skins available to be unlocked through the achievement system.
