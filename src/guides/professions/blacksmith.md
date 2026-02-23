@@ -54,7 +54,7 @@ To change the chance of gaining either steel, slag, or cast iron, you need to se
 - X axis: **temperature set on bloomery**
 - Y axis: **chance to gain item**
 
-![bloomery temperatures](../assets/bloomery_temperatures.png)
+![bloomery temperatures](../../assets/bloomery_temperatures.png)
 
 ### Steel Wire Video
 
