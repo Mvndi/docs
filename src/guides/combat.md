@@ -224,7 +224,7 @@ Heavier armors will give more poise, but sacrifice mobility.
 
 ## Ranged Combat
 
-Ranged weapons have require specific ammuntion. i.e. A bow like the Short Bow uses a Standard Arrow, where as a Crossbow uses a Standard Bolt and the Arquebus needs to be loaded first with gunpowder, then a bullet. The player's movement affects the accuracy of the weapon. Walking, running, jumping, falling and climbing have an effect on accuracy. The player is most accurate when not moving. Sneaking when standing still is the most accurate that the player can be when using a ranged weapon.
+Ranged weapons must be loaded with the correct ammunition. i.e. A bow like the Short Bow uses a Standard Arrow, where as a Crossbow uses a Standard Bolt and the Arquebus needs to be loaded first with gunpowder, then a bullet. The player's movement affects the accuracy of the weapon. Walking, running, jumping, falling and climbing have an effect on accuracy. The player is most accurate when not moving. Sneaking when standing still is the most accurate that the player can be when using a ranged weapon.
 
 Ammunition for crossbow-like weapons must be loaded in the offhand.
 
