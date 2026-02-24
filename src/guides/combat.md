@@ -13,16 +13,16 @@ Mvndicraft's combat is very much different than that of vanilla Minecraft. There
         * [Stamina](#stamina)
         * [Equip Load](#equip-load)
     * [Strength and Dexterity](#strength-and-dexterity)
-[Attack Effects](#attack-effects)
-[Attack Modes](#attack-modes)
-[Attack Range](#attack-range)
-[Attack Speed](#attack-speed)
-[Damage Types](#damage-types)
-[Attack Weight and Deflection Level](#attack-weight-and-deflection-level)
-[Poise](#poise)
-[Ranged Combat](#ranged-combat)
-[Mounted Combat](#mounted-combat)
-[Damage Formula](#damage-formula)
+* [Attack Effects](#attack-effects)
+* [Attack Modes](#attack-modes)
+* [Attack Range](#attack-range)
+* [Attack Speed](#attack-speed)
+* [Damage Types](#damage-types)
+* [Attack Weight and Deflection Level](#attack-weight-and-deflection-level)
+* [Poise](#poise)
+* [Ranged Combat](#ranged-combat)
+* [Mounted Combat](#mounted-combat)
+* [Damage Formula](#damage-formula)
 
 ## Commands:
 * `/stats` or `/attributes` opens the GUI to allow the player to view and modify their stats.
@@ -41,7 +41,7 @@ When the player gains enough experience points they will gain a level and an [at
 * Cancel changes: `/mu spec cancel`
 
 ### Experience Points
-Combat experience points are gained by felling hostile mobs.
+Combat experience points are gained by defeating hostile mobs.
 * Bandits
 * Bears
 * Boars
