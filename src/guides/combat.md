@@ -32,11 +32,11 @@ Mvndicraft's combat is very much different than that of vanilla Minecraft. There
 * `/mu spec` allocate attribute points.
 * `/mu respec` reallocate attribute points.
 
-Running `/mu spec` and `/mu respec` without any additional arguments, show the player how to use the command.
+Running `/mu spec` and `/mu respec` without any additional arguments, shows the player how to use the command.
 
 ## Leveling Up
 
-When the player gains enough experience points they will gain a level and an [attribute](#attributes) point. The player can spend their available attribute by using the GUI or `/mu spec`.
+When the player gains enough experience points they will gain a level and an [attribute](#attributes) point. The player can spend their available attribute points by using the GUI or `/mu spec`.
 
 * Spend available points: `/mu spec <attribute> [amount]`.
 * Check the spec status: `/mu spec status`
@@ -74,7 +74,7 @@ The player has four main **Attributes**:
 * **Strength**
 * **Dexterity**
 
-Each of these attributes affects the value of the player's stats. When the player levels up and gains an attribute point, it can be spent on an attribute. The player starts at 1 point in each attribute. Attributes have a maximum of 99.
+Each of these attributes affects the value of the player's stats. When the player levels up and gains an attribute point, it can be spent on an attribute. The player starts at 1 point in each attribute. Attributes have a maximum of 99 points.
 
 ## Vitality
 
