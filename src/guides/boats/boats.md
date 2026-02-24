@@ -8,7 +8,11 @@ it's probably under construction do `/modifyship` while looking at it and you ca
 
 ## Building Boats
 
-Boats have items with recipes that can be found in /recipes and must be crafted in a smithing table, the size of the items in the itemstack are important. The boat items can't be crafted unless the crafter has the necesary skill in the seaman profession. Once the item is made it can be placed in the water (placer must have necesary amount of money to place the boat/start it's construction) in a dock towny plot (`/plot set dock`) which can only be made in ocean/beach/river biomes, the boat will spawn and immediantly dock and it's construction timer will start, the boat can't be undocked and used until it's finished constructing.
+Boats have items with recipes that can be found in /recipes and must be crafted in a smithing table, the size of the items in the itemstack are important.
+
+The boat items can't be crafted unless the crafter has the necesary skill in the seaman profession.
+
+Once the item is made it can be placed in the water (placer must have necesary amount of money to place the boat/start it's construction) in a dock towny plot (`/plot set dock`) which can only be made in ocean/beach/river biomes and by a farmer with pre industrial skill, the boat will spawn and immediantly dock and it's construction timer will start, the boat can't be undocked and used until it's finished constructing.
 
 Boats can be repaired with the repair patch item in /recipes.
 Boats a miniscule amount of damage when sailing and need to be repaired after (weeks of) sailing.
