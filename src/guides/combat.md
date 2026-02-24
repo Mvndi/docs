@@ -226,6 +226,8 @@ Heavier armors will give more poise, but sacrifice mobility.
 
 Ranged weapons have require specific ammuntion. i.e. A bow like the Short Bow uses a Standard Arrow, where as a Crossbow uses a Standard Bolt and the Arquebus needs to be loaded first with gunpowder, then a bullet. The player's movement affects the accuracy of the weapon. Walking, running, jumping, falling and climbing have an effect on accuracy. The player is most accurate when not moving. Sneaking when standing still is the most accurate that the player can be when using a ranged weapon.
 
+Ammunition for crossbow-like weapons must be loaded in the offhand.
+
 ## Mounted Combat
 
 When holding out a lance on a horse, the player charges a couched attack as long as they maintain a constant speed for a period of time. Once the charging completes, all the player needs to do is hit the target with the couched lance by charging into them. Horses can also trample targets by maintaining a constant speed for a period of time.
