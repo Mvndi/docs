@@ -113,7 +113,8 @@ Equip load is the maximum amount of weight the player can carry, affects movemen
 | 0% | 110% | No |
 | >0% | 100% | No |
 | >25% | 90% | No |
-| >50% | 70% | Yes |
+| >50% | 70% | No |
+| >75% | 70% | Yes |
 | >=100% | 50% | Yes |
 
 **NOTE** that some of the heavier armors will cause the player to drown regardless of their encumbrance.
