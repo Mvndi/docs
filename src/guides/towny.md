@@ -13,10 +13,9 @@ You get 12 chunks per player in your town & an extra chunks bonus from your nati
 ## Towny Prices
 
 - `Town Cost` - 1000 Ducats
-- `Nation Cost` - 3000 Ducats
-- `Normal Town Daily Upkeep` - 2 * CHUNKS-IN-TOWN Ducats (Minimum 100 Ducats)
-- `Nationless Town Upkeep` - 4 * CHUNKS-IN-TOWN Ducats (Minimum 100 Ducats)
-- `Nation Upkeep` - 250 Ducats
+- `Nation Cost` - 5000 Ducats
+- `Town Daily Upkeep` - 2 * CHUNKS-IN-TOWN Ducats (Minimum 100 Ducats)
+- `Nation Daily Upkeep` - 250 Ducats
 - `Max Daily Conquered Tax` - 500 Ducats (/n set conqueredtax {1-1000})
 
 Taxes are collected each IRL day at 12:00 UTC.

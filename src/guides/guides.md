@@ -18,15 +18,17 @@ smelt, kill stuff, fish, mine, etc
 
 ### profession xp tldr?
 
-farming gives u farming profession xp
+read [professions guide](./professions/professions.md)
 
-hunting and breeding gives herdsman profession xp
+[farmer](./professions/farmer.md) gets from farming
 
-smelting gives blacksmith profession xp (like when u remove from furnace), anvil minigames also gives blacksmith xp, hammering bloom on an anvil also gives it
+[herdsman](./professions/herdsman.md) gets from breeding animals, killing animals, sheering sheep
 
-mining gives miner profession xp
+[blacksmith](./professions/blacksmith.md) gets from smelting (like when u remove from furnace), anvil minigames also gives blacksmith xp, hammering bloom on an anvil also gives it
 
-fishing gives seaman profession xp so does riding in a boat and killing fish and swimming in river/ocean/beach biome also gives seaman profession xp
+[miner](./professions/miner.md) gets from mining
+
+[seaman](./professions/seaman.md) gets from killing fish, fishing, swimming, and riding boats
 
 when u do these its rng for if u like get xp (shows % in hud) but the higher ur level the lower the chance, low level sohuld be like almost garunteed
 
