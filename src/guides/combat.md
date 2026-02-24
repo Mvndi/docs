@@ -146,15 +146,14 @@ The player starts with a maximum equip load of 50, and each point increases thei
 Spending attribute points on strength/dexterity increases the bonus damage of weapons with a strength/dexterity multiplier.
 
 An example:
-
-    * The shortsword has a base attack damage of 11.2 and both a strength and dexterity multiplier of 51%.
-        * 51% of 11.2 is 5.712.
-    * At level 10 strength and dexterity, the player has 5% multiplier bonus.
-    * The damage bonus of the shortsword would be 5% of the 51%
-        * 5% of the 51% is 0.2856.
-        * Therefore the strength bonus and dexterity bonus is 0.2856
-    * The resulting attack damage, before any damage calculations, is: `base attack damage + strength bonus + dexterity bonus`
-        * 11.2 + 0.2856 + 0.2856 = 11.7712
+* The shortsword has a base attack damage of 11.2 and both a strength and dexterity multiplier of 51%.
+    * 51% of 11.2 is 5.712.
+* At level 10 strength and dexterity, the player has 5% multiplier bonus.
+* The damage bonus of the shortsword would be 5% of the 51%
+    * 5% of the 51% is 0.2856.
+    * Therefore the strength bonus and dexterity bonus is 0.2856
+* The resulting attack damage, before any damage calculations, is: `base attack damage + strength bonus + dexterity bonus`
+    * `11.2 + 0.2856 + 0.2856 = 11.7712`
 
 Some weapons have attribute requirements in order to effectively use them. If the player does not meet the attribute requirements for the weapon, they cannot do full damage with that weapon.
 
