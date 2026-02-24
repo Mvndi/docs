@@ -15,8 +15,6 @@ You get 12 chunks per player in your town & an extra chunks bonus from your nati
 - `Town Cost` - 1000 Ducats
 - `Nation Cost` - 5000 Ducats
 - `Normal Town Daily Upkeep` - 2 * CHUNKS-IN-TOWN Ducats (Minimum 100 Ducats)
-<!-- Nationless Town Upkeep is not possible to set in Towny config. -->
-<!-- - `Nationless Town Upkeep` - 4 * CHUNKS-IN-TOWN Ducats (Minimum 100 Ducats) -->
 - `Nation Upkeep` - 250 Ducats
 - `Max Daily Conquered Tax` - 500 Ducats (/n set conqueredtax {1-1000})
 
