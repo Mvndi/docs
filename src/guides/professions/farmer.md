@@ -18,6 +18,6 @@ Hold shift and right click tamed donkey to attach the plough. Can only plough in
 
 ## Machines
 
-Machines need the preindustrial skill from farming tree.
+Machines need the preindustrial skill from farming tree. They need to be reconnected (right click with wrench to connect it) to their generator (windmill) every server restart.
 
 <video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/machines.mp4" title="Machines"></video>
