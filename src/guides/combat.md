@@ -67,16 +67,21 @@ The player has four main **Attributes**:
 * **Strength**
 * **Dexterity**
 
-Each of these attributes affects the value of the player's stats. When the player levels up and gains an attribute point, it can be spent on an attribute.
+Each of these attributes affects the value of the player's stats. When the player levels up and gains an attribute point, it can be spent on an attribute. The player starts at 1 point in each attribute. Attributes have a maximum of 99.
 
 ## Vitality
 Spending attribute points on vitality increases the player's maximum health stat.
+
+### Health
+The player starts with 40HP, and each point increases their health by 0.5 points up to a maximum of 89HP at 99 Vitality.
 
 ## Endurance
 Spending attribute points on endurance increases the player's maximum stamina and equip load stats.
 
 ### Stamina
 Stamina is activated in combat. It is the orange bar above the hunger meter.
+
+The player starts with 20 Stamina, and each point increases their stamina by 0.6 points up to a maximum of 80 Stamina at 99 Endurance.
 
 The following actions consume stamina:
 * Melee attacks
@@ -107,6 +112,8 @@ When stamina is depleted there are some things to note.
 
 ### Equip Load
 Equip load is the maximum amount of weight the player can carry, affects movement speed and if the player will drown. Equipment such as weapons, armors and shields have weight. Encumbrance is the percentage of the maximum equip load currently being used.
+
+The player starts with a maximum equip load of 50, and each point increases their maximum equip load by 1 point up to a maximum of 148 at 99 Endurance.
 
 | Encumbrance | Movement Speed | Drown |
 | --- | --- | --- |
