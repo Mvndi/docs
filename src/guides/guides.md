@@ -36,6 +36,8 @@ profession xp is sent in chat msg, whenever u do a thing that gives u money (lis
 
 ### attribute xp?
 
+read [leveling up](./combat.md#leveling-up) and [attributes](./combat.md#attributes) section of [combat guide](./combat.md).
+
 the level up and experience in the action bar (above hotbot) is for `/attributes` and you can upgrade your health/stamina/etc here
 
 only pve combat activites get u attribute xp
