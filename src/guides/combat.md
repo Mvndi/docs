@@ -41,7 +41,7 @@ When the player gains enough experience points they will gain a level and an [at
 * Cancel changes: `/mu spec cancel`
 
 ### Experience Points
-Combat experience points are gained by defeating hostile mobs.
+Combat experience points are gained by killing hostile mobs.
 * Bandits
 * Bears
 * Boars
