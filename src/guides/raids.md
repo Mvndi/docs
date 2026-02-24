@@ -24,7 +24,7 @@ It's like a a 20-minute deathmatch (land) or ship battle (naval)
 - A glowing beacon (red for attackers, green for defenders) appears above the banner so everyone can find it instantly
 - Attackers and Defenders get glowing (see through wall) potion effect applied for the duration of the raid
 - Kills only count if both players are within the kill radius of the banner (default 16 blocks)
-- Most player kills after 10 minutes wins
+- Most player kills after 10 minutes wins (Attackers win if defenders have 0 kills at the end)
 - If a defender logs off in the middle of a raid the attackers get a point as if they killed that person, if an attack logs off in the middle of a raid the defenders get a point as if they killed that person
 
 ### Naval Raid (automatic)
@@ -61,6 +61,6 @@ It's like a a 20-minute deathmatch (land) or ship battle (naval)
 | Trigger                  | Default               | Town borders ocean         |
 | Objective                | Most player kills     | Deal more ship damage      |
 | Banner & Beacon          | Yes (with fake beacon)| No                         |
-| Kill radius              | 16          | N/A                        |
+| Kill radius              | 16                    | N/A                        |
 | Win condition            | Higher kill count     | Damage dealt difference    |
-| Instant win              | —                     | No ships in defender claim|
+| Instant win              | —                     | No ships in defender claim |
