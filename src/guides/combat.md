@@ -3,16 +3,17 @@
 Mvndicraft's combat is very much different than that of vanilla Minecraft. There are many facets to it, and as such it has been broken down into different sections.
 
 ## Quick Navigation
+
 * [Commands](#commands)
 * [Leveling Up](#leveling-up)
-    * [Experience Points](#experience-points)
-    * [Respec](#respec)
+  * [Experience Points](#experience-points)
+  * [Respec](#respec)
 [Attributes](#attributes)
-    * [Vitality](#vitality)
-    * [Endurance](#endurance)
-        * [Stamina](#stamina)
-        * [Equip Load](#equip-load)
-    * [Strength and Dexterity](#strength-and-dexterity)
+  * [Vitality](#vitality)
+  * [Endurance](#endurance)
+    * [Stamina](#stamina)
+    * [Equip Load](#equip-load)
+  * [Strength and Dexterity](#strength-and-dexterity)
 * [Attack Effects](#attack-effects)
 * [Attack Modes](#attack-modes)
 * [Attack Range](#attack-range)
@@ -24,7 +25,8 @@ Mvndicraft's combat is very much different than that of vanilla Minecraft. There
 * [Mounted Combat](#mounted-combat)
 * [Damage Formula](#damage-formula)
 
-## Commands:
+## Commands
+
 * `/stats` or `/attributes` opens the GUI to allow the player to view and modify their stats.
 * `/mu stats` view player stats.
 * `/mu spec` allocate attribute points.
@@ -33,6 +35,7 @@ Mvndicraft's combat is very much different than that of vanilla Minecraft. There
 Running `/mu spec` and `/mu respec` without any additional arguments, show the player how to use the command.
 
 ## Leveling Up
+
 When the player gains enough experience points they will gain a level and an [attribute](#attributes) point. The player can spend their available attribute by using the GUI or `/mu spec`.
 
 * Spend available points: `/mu spec <attribute> [amount]`.
@@ -41,7 +44,9 @@ When the player gains enough experience points they will gain a level and an [at
 * Cancel changes: `/mu spec cancel`
 
 ### Experience Points
+
 Combat experience points are gained by killing hostile mobs.
+
 * Bandits
 * Bears
 * Boars
@@ -49,19 +54,21 @@ Combat experience points are gained by killing hostile mobs.
 * Wolves
 
 ### Respec
+
 If the player is not satisfied with their attributes, they can reallocate them by using the GUI or `/mu respec`. In order to respec, the player must gain enough combat experience in order to satisfy the respec experience requirement. The amount of combat experience points in order to reallocate their attributes can be checked with the GUI or `/mu stats`.
 
 * Reallocate attribute points: `/mu respec <attribute> [+-amount]`.
-    * Example: `/mu respec vitality -1` will remove one point from vitality and it will become an availale point.
-        * The player can then spec this point into another attribute. i.e. `/mu respec dexterity 1` 
+  * Example: `/mu respec vitality -1` will remove one point from vitality and it will become an availale point.
+    * The player can then spec this point into another attribute. i.e. `/mu respec dexterity 1`
 * Check the respec status: `/mu respec status`
 * Confirm changes: `/mu respec confirm`
-    * Once changes have been confirmed, respec experience will be reset to 0.
+  * Once changes have been confirmed, respec experience will be reset to 0.
 * Cancel changes: `/mu respec cancel`
 
 ## Attributes
 
 The player has four main **Attributes**:
+
 * **Vitality**
 * **Endurance**
 * **Strength**
@@ -70,33 +77,39 @@ The player has four main **Attributes**:
 Each of these attributes affects the value of the player's stats. When the player levels up and gains an attribute point, it can be spent on an attribute. The player starts at 1 point in each attribute. Attributes have a maximum of 99.
 
 ## Vitality
+
 Spending attribute points on vitality increases the player's maximum health stat.
 
 ### Health
+
 The player starts with 40HP, and each point increases their health by 0.5 points up to a maximum of 89HP at 99 Vitality.
 
 ## Endurance
+
 Spending attribute points on endurance increases the player's maximum stamina and equip load stats.
 
 ### Stamina
+
 Stamina is activated in combat. It is the orange bar above the hunger meter.
 
 The player starts with 20 Stamina, and each point increases their stamina by 0.6 points up to a maximum of 80 Stamina at 99 Endurance.
 
 The following actions consume stamina:
+
 * Melee attacks
-    * The player's [attack cooldown](https://minecraft.wiki/w/Melee_attack#Attack_cooldown) affects how much stamina is consumed.
+  * The player's [attack cooldown](https://minecraft.wiki/w/Melee_attack#Attack_cooldown) affects how much stamina is consumed.
 * Ranged weapon attacks (i.e, Short Bow and Longbow)
-    * How long the player pulls charges a ranged weapon can affect how much stamina is consumed.
-    * Weapons like crossbows and firearms do not consume stamina.
+  * How long the player pulls charges a ranged weapon can affect how much stamina is consumed.
+  * Weapons like crossbows and firearms do not consume stamina.
 * Throwing weapons
-    * The player's [attack cooldown](https://minecraft.wiki/w/Melee_attack#Attack_cooldown) affects how much stamina is consumed.
+  * The player's [attack cooldown](https://minecraft.wiki/w/Melee_attack#Attack_cooldown) affects how much stamina is consumed.
 * Blocking an attack
 * Sprinting
 * Sprint jumping
 * Swimming
 
 Stamina regenerates at a fixed rate however some actions or equipment can reduce the rate at which stamina regenerates.
+
 * Holding up a shield to block an attack.
 * Drawing a bow. (i.e. Short Bow and Longbow)
 * Climbing (i.e ladders and vines)
@@ -106,11 +119,13 @@ Stamina regenerates at a fixed rate however some actions or equipment can reduce
 Jumping normally without sprinting does not consume stamina, however it pauses stamina regeneration until the player touches the ground again. Simply walking off ledges does not do this.
 
 When stamina is depleted there are some things to note.
+
 * If the player depletes their stamina by sprinting, sprint jumping or swimming the player must wait longer than normal before their stamina starts to regenerate.
 * As long as the player has stamina in their stamina bar, they may attack. However, if they delpete their stamina bar it will take longer for the player to use their stamina again.
 * The player cannot do any actions that require stamina when their stamina is depleted.
 
 ### Equip Load
+
 Equip load is the maximum amount of weight the player can carry, affects movement speed and if the player will drown. Equipment such as weapons, armors and shields have weight. Encumbrance is the percentage of the maximum equip load currently being used.
 
 The player starts with a maximum equip load of 50, and each point increases their maximum equip load by 1 point up to a maximum of 148 at 99 Endurance.
@@ -127,9 +142,11 @@ The player starts with a maximum equip load of 50, and each point increases thei
 **NOTE** that some of the heavier armors will cause the player to drown regardless of their encumbrance.
 
 ### Strength and Dexterity
+
 Spending attribute points on strength/dexterity increases the bonus damage of weapons with a strength/dexterity multiplier.
 
 An example:
+
     * The shortsword has a base attack damage of 11.2 and both a strength and dexterity multiplier of 51%.
         * 51% of 11.2 is 5.712.
     * At level 10 strength and dexterity, the player has 5% multiplier bonus.
@@ -142,21 +159,28 @@ An example:
 Some weapons have attribute requirements in order to effectively use them. If the player does not meet the attribute requirements for the weapon, they cannot do full damage with that weapon.
 
 ## Attack Effects
+
 There are two types of attack effects that melee attacks can have. Some weapons do not have them.
+
 * [Sweep](https://minecraft.wiki/w/Melee_attack#Sweep_attack)
 * [Piercing](https://minecraft.wiki/w/Melee_attack#Jab_attack)
 
 ## Attack Modes
-Melee weapons can have two attack modes. Attack modes can be swapped by sneaking and right clicking while the weapon is in the player's hand. Attack modes can have completely different attack data. For example the Longsword's primary attack is a regular sweep attack, but its secondary is a slower thrusting attack that has the pierce effect. 
+
+Melee weapons can have two attack modes. Attack modes can be swapped by sneaking and right clicking while the weapon is in the player's hand. Attack modes can have completely different attack data. For example the Longsword's primary attack is a regular sweep attack, but its secondary is a slower thrusting attack that has the pierce effect.
 
 ## Attack Range
+
 Melee weapons have varying attack reaches. Some weapons have a minimum attack reach to be effective. For example the Winged Spear has a minimum reach of 1m and a maximum reach of 4.5m.
 
 ## Attack Speed
+
 Melee attacks can be anywhere from slow but heavy hitting to fast lower damage. The attack speed of a weapon is the time it takes for the player's attack cooldown to completely reset. Attacking when the attack cooldown has not finished will result in reduced damage and stamina cost.
 
 ## Damage Types
+
 There are four main damage types.
+
 * Regular
 * Slash
 * Strike
@@ -174,7 +198,6 @@ Shields have deflection levels that correspond to attack weights.
 
 Below is a table for how long blocking cooldowns last.
 **NOTE** Blocking cooldowns are in seconds.
-
 
 | ↓ Deflection Level / → Attack Weight| NONE  | LIGHT | MEDIUM | HEAVY  |
 |-------------------------------------|-------|-------|--------|--------|
@@ -200,9 +223,11 @@ Poise is the meter above the stamina meter. Taking successive hits will cause th
 Heavier armors will give more poise, but sacrifice mobility.
 
 ## Ranged Combat
+
 Ranged weapons have require specific ammuntion. i.e. A bow like the Short Bow uses a Standard Arrow, where as a Crossbow uses a Standard Bolt and the Arquebus needs to be loaded first with gunpowder, then a bullet. The player's movement affects the accuracy of the weapon. Walking, running, jumping, falling and climbing have an effect on accuracy. The player is most accurate when not moving. Sneaking when standing still is the most accurate that the player can be when using a ranged weapon.
 
 ## Mounted Combat
+
 When holding out a lance on a horse, the player charges a couched attack as long as they maintain a constant speed for a period of time. Once the charging completes, all the player needs to do is hit the target with the couched lance by charging into them. Horses can also trample targets by maintaining a constant speed for a period of time.
 
 **NOTE** In order to couch attack or trample, the horse needs to move decently fast.
