@@ -83,6 +83,8 @@ Some boats are not meant for deep oceans and will take a large amount of damage 
 
 ### Combat and Damage
 
+Boats inside of town claim can only be damaged if there's an active raid on the town or if the town is sieged and it's an active battle seassion. Boats in wilderness can always be damaged.
+
 Any boat not meant for deep ocean get's 1 shot by any siege weapon (or greek fire grenade)
 
 For any greekfire damage the ship will burn for 60 seconds

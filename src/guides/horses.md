@@ -1,6 +1,6 @@
 # Horses
 
-Golden carrots and apples are disabled. You can breed horses with hay bales instead (the hroses must be tamed to breed).
+Golden carrots and apples are disabled. You can breed horses with hay bales instead (the horses must be tamed to breed).
 
 Ice roads are banned in the rules.
 
