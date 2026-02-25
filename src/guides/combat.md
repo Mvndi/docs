@@ -18,6 +18,7 @@ Mvndicraft's combat is very much different than that of vanilla Minecraft. There
 * [Attack Modes](#attack-modes)
 * [Attack Range](#attack-range)
 * [Attack Speed](#attack-speed)
+* [Blocking Attacks](#blocking-attacks)
 * [Damage Types](#damage-types)
 * [Attack Weight and Deflection Level](#attack-weight-and-deflection-level)
 * [Poise](#poise)
@@ -92,17 +93,18 @@ Spending attribute points on endurance increases the player's maximum stamina an
 
 Stamina is activated in combat. It is the orange bar above the hunger meter.
 
-The player starts with 20 Stamina, and each point increases their stamina by 0.6 points up to a maximum of 80 Stamina at 99 Endurance.
+The player starts with 20 Stamina, and each point increases their Stamina by 0.6 points up to a maximum of 80 Stamina at 99 Endurance.
 
 The following actions consume stamina:
 
 * Melee attacks
   * The player's [attack cooldown](https://minecraft.wiki/w/Melee_attack#Attack_cooldown) affects how much stamina is consumed.
 * Ranged weapon attacks (i.e, Short Bow and Longbow)
-  * How long the player pulls charges a ranged weapon can affect how much stamina is consumed.
+  * How long the player draws a ranged weapon affects how much stamina is consumed.
   * Weapons like crossbows and firearms do not consume stamina.
 * Throwing weapons
   * The player's [attack cooldown](https://minecraft.wiki/w/Melee_attack#Attack_cooldown) affects how much stamina is consumed.
+  * How long the player charges the thrown weapon affects how much stamina is consumed.
 * Blocking an attack
 * Sprinting
 * Sprint jumping
@@ -176,6 +178,20 @@ Melee weapons have varying attack reaches. Some weapons have a minimum attack re
 ## Attack Speed
 
 Melee attacks can be anywhere from slow but heavy hitting to fast lower damage. The attack speed of a weapon is the time it takes for the player's attack cooldown to completely reset. Attacking when the attack cooldown has not finished will result in reduced damage and stamina cost.
+
+## Blocking Attacks
+
+The player can block incoming attacks with shields. Projectiles like the Ballista Bolt or Bullet cannot be blocked.
+
+The stamina has three main stats
+
+* Deflection Level ([See Attack Weight and Defletion Level](#attack-weight-and-deflection-level))
+* **Stability**
+  * Determines how much stamina is comsumed by blocking an attack.
+  * Example: If the incoming attack consumed 2 stamina for the attacker and the shield has a stability of 50%, then the player blocking the attack will only consume 1 stamina.
+* **Damage Reduction**
+  * Determines how much damage is reduced by when blocking an attack.
+  * Example: A shield with a damage reduction of 93% means the player will only take 7% of incoming damage.
 
 ## Damage Types
 
