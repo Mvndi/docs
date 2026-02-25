@@ -92,17 +92,18 @@ Spending attribute points on endurance increases the player's maximum stamina an
 
 Stamina is activated in combat. It is the orange bar above the hunger meter.
 
-The player starts with 20 Stamina, and each point increases their stamina by 0.6 points up to a maximum of 80 Stamina at 99 Endurance.
+The player starts with 20 Stamina, and each point increases their Stamina by 0.6 points up to a maximum of 80 Stamina at 99 Endurance.
 
 The following actions consume stamina:
 
 * Melee attacks
   * The player's [attack cooldown](https://minecraft.wiki/w/Melee_attack#Attack_cooldown) affects how much stamina is consumed.
 * Ranged weapon attacks (i.e, Short Bow and Longbow)
-  * How long the player pulls charges a ranged weapon can affect how much stamina is consumed.
+  * How long the player draws a ranged weapon affects how much stamina is consumed.
   * Weapons like crossbows and firearms do not consume stamina.
 * Throwing weapons
   * The player's [attack cooldown](https://minecraft.wiki/w/Melee_attack#Attack_cooldown) affects how much stamina is consumed.
+  * How long the player charges the thrown weapon affects how much stamina is consumed.
 * Blocking an attack
 * Sprinting
 * Sprint jumping
