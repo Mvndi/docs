@@ -43,6 +43,8 @@ There are a couple of ways to gain XP for the blacksmith profession:
 - Take out the crafted item with the tongs, and put it in a cauldron of water.
 - Assemble in smithing table. Smithing table recipes can be found in `/recipes`
 
+Highest grade you can get is 4 stars highest quality you can get is Excellent
+
 Video guide:
 
 <video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/blacksmithing.mp4" title="Blacksmithing"></video>
