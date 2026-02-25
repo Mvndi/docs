@@ -208,7 +208,7 @@ Below is a table for how long blocking cooldowns last.
 
 ## Poise
 
-Poise is the meter above the stamina meter. Taking successive hits will cause the player to stagger. Wearing armor increases the player's poise as well as reduces the player's poise timer. 
+Poise is the meter above the stamina meter. Taking successive hits will cause the player to stagger. Wearing armor increases the player's poise as well as reduces the player's poise timer.
 
 * Without any armor the player's poise will reset after 5 seconds of not taking any damage. Every piece of armor reduces the timer by 10%.
 

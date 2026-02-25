@@ -60,6 +60,10 @@ To change the chance of gaining either steel, slag, or cast iron, you need to se
 
 <video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/steel_wire.mp4" title="Steel Wire"></video>
 
+### Reworking
+
+If you got a bad minigame result, you can throw the weapon head/blade or armor plate back into a fire (like an ingot) pick it up in your tongs, place it back on an anvil to reattempt the minigame first time for -75% XP, and second time for -100% XP
+
 ### Quenching
 
 You can quench any "hot" item you have in Tongs, i.e. ingots, weapon heads, etc.

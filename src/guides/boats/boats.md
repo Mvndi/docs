@@ -83,10 +83,19 @@ Some boats are not meant for deep oceans and will take a large amount of damage 
 
 ### Combat and Damage
 
+Any boat not meant for deep ocean get's 1 shot by any siege weapon (or greek fire grenade)
+
+For any greekfire damage the ship will burn for 60 seconds
+
 - **Damage Sources**:
   - **Ramming**: As described above.  
   - **Siege Weapons**: Both land-based and ship-based siege weapons can damage boats.
+    - Ballista does 1 damage
+    - Trebuchet does 80% of the max HP of whatever part of the ship it hit
+    - Greekfire does 0.1 damage but there's some RNG because it shoots a lot of projectiles (without the RNG it was a death lazer that sawed ships in half). Also ship takes passive damage and passengers nearby where the greekfire impacted start to burn and take damage.
+    - Cannon does 7.5 damage
   - **Greek Fire**: Creates fire on the water’s surface. Boat parts passing through fire take damage, and passengers in nearby seats catch fire and take damage.
+  - **Greek Fire Grenade**: Does 0.5 damage and create's a fire on the boat and does passive damage, and passengers in nearby seats catch fire and take damage.
 - **Destruction**:  
   - Damage is visually represented by the model looking more destroyed or normal.
   - When fully destroyed, the boat sinks, and any inventory contents spawn as chests on the seafloor.
