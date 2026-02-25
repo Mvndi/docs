@@ -183,7 +183,7 @@ Melee attacks can be anywhere from slow but heavy hitting to fast lower damage. 
 
 The player can block incoming attacks with shields. Projectiles like the Ballista Bolt or Bullet cannot be blocked.
 
-The stamina has three main stats
+Shields have three main stats.
 
 * Deflection Level ([See Attack Weight and Defletion Level](#attack-weight-and-deflection-level))
 * **Stability**
