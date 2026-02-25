@@ -1,5 +1,7 @@
 # Seaman (GUIDE WIP)
 
+There's a lot of overlap with [boats guide](../boats/boats.md) so read that
+
 ## XP Gain
 
 There are a couple of ways to gain XP for the seaman profession:
