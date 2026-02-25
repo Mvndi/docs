@@ -3,6 +3,8 @@
 On Mvndicraft, you can brew almost any drink you can think of.
 The following links will help you understand the brewing system more:
 
+Birch Stairs are thatch stairs you make them with hay blocks.
+
 Coffee and potion effects are disabled.
 
 - [Brewery Plugin Usage](https://github.com/DieReicheErethons/Brewery/wiki/Usage)

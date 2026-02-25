@@ -18,7 +18,7 @@
     - [Rowboat](./guides/boats/rowboat.md)
   - [Brewery](./guides/brewery.md)  
   - [Chest Shops](./guides/chest_shops.md)  
-  - [Combat](./guides/combat.md)
+  - [Combat & Attributes](./guides/combat.md)
   - [Fall Damage](./guides/fall_damage.md)
   - [Big Doors](./guides/big_doors.md)
   - [Horses](./guides/horses.md)

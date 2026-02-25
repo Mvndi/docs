@@ -98,7 +98,7 @@ For any greekfire damage the ship will burn for 60 seconds
   - **Greek Fire Grenade**: Does 0.5 damage and create's a fire on the boat and does passive damage, and passengers in nearby seats catch fire and take damage.
 - **Destruction**:  
   - Damage is visually represented by the model looking more destroyed or normal.
-  - When fully destroyed, the boat sinks, and any inventory contents spawn as chests on the seafloor.
+  - When fully destroyed (any part of the ship reaches 0 hp), the boat sinks, and any inventory contents spawn as chests on the seafloor.
 
 ### Alignment and Navigation
 

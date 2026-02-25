@@ -2,7 +2,7 @@
 
 Doors can be created by using the `/bdm` command.
 
-There's a video tutorial [here](https://www.youtube.com/watch?v=AYnM5divwN4)
+Here's a [video tutorial](https://www.youtube.com/watch?v=AYnM5divwN4)
 
 ## Power Blocks
 
@@ -14,7 +14,7 @@ want to open your door.
 
 | Door Type       | Price Formula                                 |
 |-----------------|-----------------------------------------------|
-| Standard Door   | `1000 + 500 + 2 * log(blockCount + 1)'`                      |
-| Drawbridge      | `1500 + 600 * min(blockCount, 15)`                     |
-| Portcullis      | `2000 + 800 + 2 * sqrt(blockCount)` |
-| Sliding Door    | `1800 + 650 + 2 * blockCount^0.5`                     |
+| Standard Door   | `1000 + 500 + 2 * log(blockCount + 1)'`       |
+| Drawbridge      | `1500 + 600   *   min(blockCount, 15)`        |
+| Portcullis      | `2000 + 800 + 2 * sqrt(blockCount)`           |
+| Sliding Door    | `1800 + 650 + 2 * blockCount^0.5`             |
