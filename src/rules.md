@@ -101,14 +101,15 @@ tldr your town spawn has to be accessible with siege weapons. walls are okay, no
 
 ### Tunnels
 
-4.4.1 Tunnels and underground bunkers are not allowed
+4.4.1 It is forbidden to build underground tunnels and underground bunkers that could be used for siege now or later
 
 4.4.2 Storing items in underground vaults that are unreachable via siege weapons is not allowed
 
-4.4.3 Using or digging underground tunnels during a siege for any reason is not allowed
+4.4.3 Using underground tunnels during a siege for any reason is not allowed
 
-> An underground bunker is a room for use during sieges that has roughly 5-10+ solid blocks above it, staff will make case-by-case decisions as to if underground rooms constitute siege bunkers or not
-> Tunnels only refer to tunnels for use during pvp/sieges, e.g. tunnels between fortresses, towns or ones which allow you to exit behind an attacking army, again staff will make case-by-case decisions on if tunnels are breaking the rules or not
+> An underground bunker is a room for use during sieges that has roughly 5-10+ solid blocks above it, staff will make case-by-case decisions as to if underground rooms constitute siege bunkers or not.
+> Tunnels only refer to tunnels for use during pvp/sieges, e.g. tunnels between fortresses, towns or ones which allow you to exit behind an attacking army, again staff will make case-by-case decisions on if tunnels are breaking the rules or not.
+> Digging to attack an underground player is not considered building a tunnel.
 
 ### Attacking
 
