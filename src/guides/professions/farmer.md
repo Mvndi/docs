@@ -14,7 +14,7 @@ If you have flax skill you break normal foliage to get flax seeds. Similar with 
 
 Windmills speed up growth of crops within 3x3 chunk radius
 
-Hold shift and right click tamed donkey to attach the plough. Can only plough in claim chunks of your town. It has to be a donkey that you tamed for you to be able to attach the plough.
+Hold shift and right click tamed donkey to attach the plough. Can only plough in claim chunks of your town. It has to be a saddled donkey that you tamed for you to be able to attach the plough and you need the skill.
 
 ## Machines
 
