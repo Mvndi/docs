@@ -34,9 +34,9 @@
 
 1.0 Any hacks that provide an advantage over other players are not allowed
 
-_- This includes XRay and Minimaps._
+_- This includes XRay, Minimaps displaying other player locations, Freecam and Player health indicators._
 
-_- Player health indicators are NOT allowed._
+_- Minimaps that does not display other player locations are allowed. Mods that provide a replay of the game (as Flashback) are allowed as long as the replay has to be seen after closing the game._
 
 1.1 Auto build/break mods are not allowed. However schematic rendering is allowed.
 
