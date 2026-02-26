@@ -119,7 +119,7 @@ tldr your town spawn has to be accessible with siege weapons. walls are okay, no
 
 4.5.3 Block glitching into a town is not allowed
 
-4.5.4 It is recommended towns claim 1 chunk around their base to prevent pillaring over walls
+4.5.4 Building a tower to pass over walls in a town is allowed. It is recommended towns claim 1 chunk around their base to prevent pillaring over walls.
 
 4.5.5 Attackers ARE allowed to use siege weapons to destroy chests to steal their contents
 
@@ -173,11 +173,9 @@ tldr your town spawn has to be accessible with siege weapons. walls are okay, no
 
 7.1 Joining a town just to spawn kill residents is forbidden.
 
-7.2 Building a tower to get past a wall inside someone's claims is forbidden.
+7.2. All towns must be named after places (towns, cities, castles, monasteries, etc.) that existed within the servers timeframe (476-1550).
 
-7.3. All towns must be named after places (towns, cities, castles, monasteries, etc.) that existed within the servers timeframe (476-1550).
-
-7.3.1. The town must have at least one chunk over the area which corresponds to where it would have existed in the middle ages.
+7.3. The town must have at least one chunk over the area which corresponds to where it would have existed in the middle ages.
 
 ## Nations
 
