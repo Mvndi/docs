@@ -1000,6 +1000,10 @@ This might be outdated over time, you should use the in game `/recipes` if you c
 
 ![lead](../assets/recipes/lead.png)
 
+### Horse Hay Block
+
+![redstone](../assets/recipes/horse_hay_block.png)
+
 ### Redstone
 
 ![redstone](../assets/recipes/redstone.png)
