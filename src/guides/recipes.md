@@ -852,6 +852,10 @@ This might be outdated over time, you should use the in game `/recipes` if you c
 
 ![cased_torch](../assets/recipes/cased_torch.png)
 
+### End Stone Bricks
+
+![hard_clay](../assets/recipes/end_stone_bricks.png)
+
 ### Hard Clay
 
 ![hard_clay](../assets/recipes/hard_clay.png)
