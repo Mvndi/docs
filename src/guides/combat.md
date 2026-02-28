@@ -160,6 +160,13 @@ An example:
 
 Some weapons have attribute requirements in order to effectively use them. If the player does not meet the attribute requirements for the weapon, they cannot do full damage with that weapon.
 
+#### Rating
+For each point put into strength and dexterity, the rating goes up by:
+* 0.5% from level 1 to 10
+* 3.5% from level 10 to 20
+* 2.25% from level 20 to level 40
+* 0.25% from level 40 to level 99
+
 ## Attack Effects
 
 There are two types of attack effects that melee attacks can have. Some weapons do not have them.
