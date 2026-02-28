@@ -177,7 +177,7 @@ tldr your town spawn has to be accessible with siege weapons. walls are okay, no
 
 7.3. The town must have at least one chunk over the area which corresponds to where it would have existed in the middle ages.
 
-7.4 Town are allowed build bridges or barrages over major rivers in there claim as long as they are medieval looking. Bridges and barrages can’t entirely block major rivers, a row boat still need to be able to pass by the river. Man made canals & small rivers are not affected by this rule.
+7.4 Towns are allowed to build bridges or barrages over major rivers in their claim as long as they are medieval looking. Bridges and barrages can’t entirely block major rivers, a row boat still need to be able to pass by the river. Row boats need 4 blocks wide, 3 air blocks high, and 2 water blocks deep space to pass by. Man-made canals & small rivers are not affected by this rule.
 
 ## Nations
 
