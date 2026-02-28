@@ -720,6 +720,10 @@ This might be outdated over time, you should use the in game `/recipes` if you c
 
 ![thatch_stairs](../assets/recipes/thatch_stairs.png)
 
+### Sandstone Trapdoor
+
+![sandstone_trapdoor](../assets/recipes/sandstone_trapdoor.png)
+
 ### White Concrete
 
 ![white_concrete](../assets/recipes/white_concrete.png)
