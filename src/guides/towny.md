@@ -71,6 +71,10 @@ Use `/town finances` or `/nation finances` to check town/nation balances & tax s
 
 Max bail is $5000, default bail is $1000 ($2000 if the prisoner is a mayor, $4000 if the prisoner is a king) you can `/t spawn` after paying bail with `/resident jail paybail` but you should be teleported
 
+## Joining & Leaving
+
+When you join a town a 24 hours cooldown starts where you cannot join other towns. If you have stayed more than 24 hours in a town, you will be able to join any other town without waiting.
+
 ## ChatPDF
 
 This is a very helpful [ChatPDF document](https://www.chatpdf.com/share/PCoMCWTyW3wI2m03EE5DM) — ask it Towny questions like you're chatting with someone before pinging staff!
