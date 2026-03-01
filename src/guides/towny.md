@@ -67,6 +67,10 @@ If a town or nation can't pay **upkeep** after taxes → it risks deletion (town
 Use `/res taxes` to see what you personally owe each day.  
 Use `/town finances` or `/nation finances` to check town/nation balances & tax settings.
 
+## Jail
+
+Max bail is $5000, default bail is $1000 ($2000 if the prisoner is a mayor, $4000 if the prisoner is a king) you can `/t spawn` after paying bail with `/resident jail paybail` but you should be teleported
+
 ## ChatPDF
 
 This is a very helpful [ChatPDF document](https://www.chatpdf.com/share/PCoMCWTyW3wI2m03EE5DM) — ask it Towny questions like you're chatting with someone before pinging staff!
