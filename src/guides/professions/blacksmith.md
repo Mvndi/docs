@@ -62,6 +62,46 @@ To change the chance of gaining either steel, slag, or cast iron, you need to se
 
 <video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/steel_wire.mp4" title="Steel Wire"></video>
 
+### Smithing Table Bonus/Debuff (Number after the +/-)
+
+- `quality` is between 0 and 1 — how well you did the hammer minigame  
+  - quality > 0.95 → **excellent**  
+  - quality > 0.85 → **good**  
+  - quality > 0.7  → **fine**  
+  - quality > 0.5  → **poor**  
+  - otherwise      → **terrible**
+
+- `grade` is an integer between 0 and 3, based on difficulty  
+  (highest difficulty = grade 3 / 4 stars, lowest = grade 0 / 1 star)
+
+- The **multiplier** is calculated as:
+
+$$
+\text{multiplier} = \text{quality} \times (1 + \text{grade} \times 0.1)
+$$
+
+- a perfect hammer minigame (quality = 1) on highest difficulty (grade = 3) gives:
+
+$$
+1 \times (1 + 3 \times 0.1) = 1 \times 1.3 = 1.3
+$$
+
+- the number shown after the **+** is the **bonus damage**:
+
+$$
+\text{bonus} = (\text{baseDamage} \times \text{multiplier}) - \text{baseDamage}
+$$
+
+or equivalently:
+
+$$
+\text{bonus} = \text{baseDamage} \times (\text{multiplier} - 1)
+$$
+
+so with a perfect 1.3× multiplier you get +30% of base damage
+
+for armor it takes the average of this calculation for each of the armor plates used to craft the armor
+
 ### Reworking
 
 If you got a bad minigame result, you can throw the weapon head/blade or armor plate back into a fire (like an ingot) pick it up in your tongs, place it back on an anvil to reattempt the minigame first time for -75% XP, and second time for -100% XP
