@@ -25,7 +25,7 @@ Check current server time & next new day with `/towny time`.
 
 ## Towny Distances & Nation Joining
 
-To create a town it must be at least *1120 blocks** (~70 chunks) from an existing towns homeblock.
+To create a town it must be at least *640 blocks** (~40 chunks) from an existing towns homeblock.
 
 To join a nation, your town's **homeblock** must be within roughly **6000 blocks** (~375 chunks) of **at least one** existing town in that nation (not just the capital).  
 
