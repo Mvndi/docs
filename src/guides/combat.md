@@ -83,7 +83,7 @@ Spending attribute points on vitality increases the player's maximum health stat
 
 ### Health
 
-The player starts with 40HP, and each point increases their health by 0.5 points up to a maximum of 89HP at 99 Vitality.
+The player starts with 40HP, and each point increases their health by 0.5 points up to a maximum of 89HP at 99 Vitality. Half a (visual) heart is 4 hp.
 
 ## Endurance
 
