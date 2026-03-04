@@ -27,7 +27,7 @@ Note: All temperatures are in Celsius. A dash (-) indicates that the value uses 
 | Plant              | Min Survive | Min Grow | Min Ideal | Max Ideal | Max Grow | Max Survive | Grow Speed |
 |--------------------|-------------|----------|-----------|-----------|----------|-------------|------------|
 | Default            | -100        | 0        | 10        | 20        | 30       | 100         | 1          |
-| WHEAT              | -20         | 3        | 10        | 30        | 45       | 70          | 2          |
+| WHEAT              | -20         | 3        | 10        | 40        | 55       | 70          | 2          |
 | POTATOES           | -20         | 7        | 15        | 25        | 30       | 35          | 2          |
 | CARROTS            | -15         | 4        | 15        | 25        | 35       | 40          | 2          |
 | BEETROOTS          | -20         | 1        | 15        | 26        | 35       | 40          | 2          |
@@ -62,7 +62,7 @@ Temperatures work by combining modifiers together. Each modifiers can be check w
 - day night temperature (for most biome it's -5 at midnight and +5 at noon (or +10 under greenhouse). It follow a sinusoidal function)
 - weather temperature (if it rains -2, if its' thunder -5)
 - north south temperature (Based on z coordinates. At z=0 -> -5 At z = 30 000 +5)
-- Under block temperature (If bloc under the farmland is SNOW_BLOCK-> -10, FIRE -> 10, HAY_BLOCK -> 5, LAVA -> 20)
+- Under block temperature. To warn the crops use: HAY_BLOCK -> 5, FIRE -> 10, LAVA -> 20. To cool the crops use: WATER -> -5, SNOW_BLOCK -> -10, ICE -> -10, PACKED_ICE -> -20, BLUE_ICE -> -30
 
 ## Players
 
