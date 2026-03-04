@@ -1240,8 +1240,7 @@ function _runTimer(id,name,end,total){
 }
 
 window.startTimer=function(name,secs){
-  const id=name.replace(/[^a-z0-9]/gi,'_')+'_cook';
-  if(timers[id]){showToast('Timer already running for '+name);return;}
+  const id=name.replace(/[^a-z0-9]/gi,'_')+'_cook_'+Date.now();
   const end=Date.now()+secs*1000;
   _runTimer(id,name,end,secs);
   saveCookTimers();
@@ -1250,7 +1249,7 @@ window.startTimer=function(name,secs){
 function showAlarm(){
   if(!alarmQ.length)return;
   const a=alarmQ[0];
-  document.getElementById('al-name').textContent=a.name;
+  document.getElementById('al-name').textContent=a.count&&a.count>1?`${a.count}x ${a.name}`:a.name;
   document.getElementById('al-type').textContent=a.kind==='cook'?'COOKING COMPLETE':'AGING COMPLETE';
   document.getElementById('alarm').classList.add('show');
   beep(a.kind==='age'?'age':'cook');
@@ -1602,8 +1601,13 @@ setInterval(()=>{
       if(remMs<=0 && s._alerted!==true){
         s._alerted=true;
         saveBs();
-        alarmQ.push({name:s.name,kind:'age'});
-        if(alarmQ.length===1)showAlarm();
+        const existing=alarmQ.find(a=>a.name===s.name&&a.kind==='age');
+        if(existing){
+          existing.count=(existing.count||1)+1;
+        } else {
+          alarmQ.push({name:s.name,kind:'age',count:1});
+          if(alarmQ.length===1)showAlarm();
+        }
       }
     });
     // update aging timer chips
@@ -1746,7 +1750,9 @@ setTimeout(()=>{
     const end=s.startTime+s.totalSecs*1000;
     if(Date.now()>=end && !s._alerted){
       s._alerted=true;
-      alarmQ.push({name:s.name,kind:'age'});
+      const existing=alarmQ.find(a=>a.name===s.name&&a.kind==='age');
+      if(existing){ existing.count=(existing.count||1)+1; }
+      else { alarmQ.push({name:s.name,kind:'age',count:1}); }
     }
   }));
   saveBs();
