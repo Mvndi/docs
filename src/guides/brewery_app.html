@@ -1601,6 +1601,7 @@ setInterval(()=>{
       // check if just completed
       if(remMs<=0 && s._alerted!==true){
         s._alerted=true;
+        saveBs();
         alarmQ.push({name:s.name,kind:'age'});
         if(alarmQ.length===1)showAlarm();
       }
