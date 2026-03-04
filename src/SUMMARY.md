@@ -17,7 +17,7 @@
     - [Longship](./guides/boats/longship.md)
     - [Rowboat](./guides/boats/rowboat.md)
   - [Brewery](./guides/brewery.md)
-  - [Brewery App](./guides/brewery.html)
+  - [Brewery App](./guides/brewery_app.html)
   - [Chest Shops](./guides/chest_shops.md)  
   - [Combat & Attributes](./guides/combat.md)
   - [Fall Damage](./guides/fall_damage.md)
