@@ -1,0 +1,1773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>MvndiCraft Brewery Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Cinzel:wght@400;600;700;900&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+<script>
+// ════════════════════════════════════
+// DOWNLOAD APP + EXPORT DATA
+// ════════════════════════════════════
+var DATA_KEYS = [
+  'mvndi_username','mvndi_barrels','mvndi_log','mvndi_cook_timers',
+  'mvndi_vol','mvndi_v'
+];
+
+function gatherData() {
+  var data = {};
+  DATA_KEYS.forEach(function(k) {
+    var v = localStorage.getItem(k);
+    if (v !== null) data[k] = v;
+  });
+  return data;
+}
+
+function triggerJsonDownload(data) {
+  var blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+  var a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'mvndi-data.json';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(a.href);
+}
+
+var GITHUB_RELEASES = 'https://github.com/JohnyMilkBucket/mvndicraft-brewery/releases/latest';
+
+
+
+window.navDownloadClick = function() {
+  if (window.electronAPI) {
+    // Inside app: go to GitHub releases for update
+    if (window.electronAPI && window.electronAPI.openExternal) {
+      window.electronAPI.openExternal(GITHUB_RELEASES);
+    } else {
+      window.open(GITHUB_RELEASES, '_blank');
+    }
+  } else {
+    // In browser: export data + download from Drive
+    downloadApp();
+  }
+};
+
+window.downloadApp = function() {
+  triggerJsonDownload(gatherData());
+  setTimeout(function() {
+    window.location.href = 'https://github.com/JohnyMilkBucket/mvndicraft-brewery/releases/latest/download/MvndiCraft-Setup.exe';
+  }, 800);
+  showToast('Exporting your data + starting download...');
+};
+
+window.exportData = function() {
+  triggerJsonDownload(gatherData());
+  showToast('Data exported as mvndi-data.json');
+};
+
+window.importData = async function() {
+  // In Electron: use native file dialog
+  if (window.electronAPI && window.electronAPI.importData) {
+    var data = await window.electronAPI.importData();
+    if (!data) { showToast('No file selected or invalid file.'); return; }
+    showConfirm(
+      'Import this data? It will overwrite your current brewery data.',
+      function() {
+        Object.entries(data).forEach(function(entry) {
+          localStorage.setItem(entry[0], entry[1]);
+        });
+        showToast('Data imported! Reloading...');
+        setTimeout(function() { location.reload(); }, 1200);
+      },
+      'IMPORT & OVERWRITE'
+    );
+    return;
+  }
+  // In browser: use file input
+  var input = document.createElement('input');
+  input.type = 'file';
+  input.accept = '.json';
+  input.onchange = function(e) {
+    var file = e.target.files[0];
+    if (!file) return;
+    var reader = new FileReader();
+    reader.onload = function(ev) {
+      try {
+        var data = JSON.parse(ev.target.result);
+        showConfirm(
+          'Import this data? It will overwrite your current brewery data.',
+          function() {
+            Object.entries(data).forEach(function(entry) {
+              localStorage.setItem(entry[0], entry[1]);
+            });
+            showToast('Data imported! Reloading...');
+            setTimeout(function() { location.reload(); }, 1200);
+          },
+          'IMPORT & OVERWRITE'
+        );
+      } catch(err) {
+        showToast('Invalid file — could not read data.');
+      }
+    };
+    reader.readAsText(file);
+  };
+  input.click();
+};
+</script>
+<style>
+:root{
+  --bg:#0d0a07;--bg2:#130e08;--panel:#1a1108;--panel2:#211408;
+  --border:#3a2810;--border2:#503820;
+  --amber:#d4860a;--amber2:#f5a623;--gold:#c9963a;
+  --foam:#e8d5a3;--text:#d4c49a;--text2:#a88850;--text3:#6a5030;
+  --red:#c0392b;--green:#2d8a4e;
+  --spirit:#c0392b;--wine:#8e1a5a;--beer:#c47c1a;--mead:#d4a017;--other:#2d7a6a;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{height:100%;overflow:hidden;}
+body{background:var(--bg);color:var(--text);font-family:'Crimson Pro',Georgia,serif;display:flex;flex-direction:column;}
+body::after{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");pointer-events:none;z-index:9999;opacity:.5;}
+
+/* NAV */
+nav{height:56px;background:linear-gradient(180deg,#1c1005,var(--bg2));border-bottom:2px solid var(--border2);display:flex;align-items:stretch;flex-shrink:0;z-index:200;}
+.nav-brand{display:flex;align-items:center;padding:0 20px;border-right:1px solid var(--border);gap:8px;flex-shrink:0;}
+.nav-logo{font-family:'UnifrakturMaguntia',cursive;font-size:26px;color:var(--amber2);text-shadow:0 0 16px rgba(245,166,35,.4);line-height:1;}
+.nav-sub{font-family:'Cinzel',serif;font-size:8px;letter-spacing:3px;color:var(--text3);}
+.nav-tabs{display:flex;flex:1;}
+.nav-tab{display:flex;align-items:center;gap:6px;padding:0 18px;font-family:'Cinzel',serif;font-size:10px;letter-spacing:2px;color:var(--text3);cursor:pointer;border:none;background:none;border-bottom:2px solid transparent;transition:all .2s;white-space:nowrap;}
+.nav-tab:hover{color:var(--text2);}
+.nav-tab.active{color:var(--amber2);border-bottom-color:var(--amber);}
+.nav-right{display:flex;align-items:center;padding:0 14px;border-left:1px solid var(--border);flex-shrink:0;}
+.time-note{font-family:'Cinzel',serif;font-size:8px;letter-spacing:1.5px;color:var(--text3);text-align:right;line-height:1.7;}
+.time-note strong{color:var(--amber);display:block;}
+
+/* TIMER BAR (cooking only) */
+#timer-bar{background:var(--panel2);border-bottom:1px solid var(--border);padding:0 18px;max-height:0;overflow:hidden;transition:max-height .3s,padding .3s;flex-shrink:0;}
+#timer-bar.open{max-height:66px;padding:7px 18px;}
+.tbar-inner{display:flex;align-items:center;gap:8px;overflow-x:auto;}
+.tbar-lbl{font-family:'Cinzel',serif;font-size:9px;letter-spacing:2px;color:var(--text3);white-space:nowrap;flex-shrink:0;}
+.t-chip{display:inline-flex;align-items:center;gap:7px;background:var(--panel);border:1px solid var(--border2);padding:5px 10px;flex-shrink:0;position:relative;overflow:hidden;min-width:170px;}
+.t-chip-fill{position:absolute;left:0;top:0;bottom:0;background:rgba(213,134,10,.07);pointer-events:none;transition:width 1s linear;}
+.t-chip-name{font-family:'Cinzel',serif;font-size:10px;color:var(--amber2);letter-spacing:1px;position:relative;z-index:1;}
+.t-chip-kind{font-size:9px;color:var(--text3);letter-spacing:1px;position:relative;z-index:1;}
+.t-chip-time{font-family:'Cinzel',serif;font-size:13px;color:var(--foam);letter-spacing:2px;position:relative;z-index:1;min-width:44px;}
+.t-chip-x{background:none;border:none;color:var(--text3);cursor:pointer;font-size:15px;line-height:1;padding:2px 4px;position:relative;z-index:10;transition:color .15s;flex-shrink:0;pointer-events:all;}
+.t-chip-x:hover{color:var(--red);}
+
+/* PAGES */
+.page{display:none;flex:1;overflow:hidden;flex-direction:column;min-height:0;}
+.page.active{display:flex;}
+
+/* RECIPES */
+.r-toolbar{display:flex;align-items:center;gap:10px;padding:10px 18px;background:var(--bg2);border-bottom:1px solid var(--border);flex-shrink:0;flex-wrap:wrap;}
+.search-wrap{position:relative;}
+.search-wrap input{background:var(--panel);border:1px solid var(--border2);color:var(--text);font-family:'Crimson Pro',serif;font-size:14px;padding:6px 10px 6px 30px;outline:none;width:260px;}
+.search-wrap input:focus{border-color:var(--amber);}
+.search-wrap::before{content:'⚗';position:absolute;left:9px;top:50%;transform:translateY(-50%);color:var(--text3);font-size:12px;}
+.cat-pills{display:flex;gap:5px;}
+.cat-pill{padding:4px 12px;border:1px solid var(--border);background:none;font-family:'Cinzel',serif;font-size:9px;letter-spacing:1.5px;color:var(--text3);cursor:pointer;transition:all .2s;}
+.cat-pill.active{border-color:var(--amber);color:var(--amber);background:rgba(212,134,10,.08);}
+.r-scroll{flex:1;overflow-y:auto;padding:18px;}
+.r-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px;}
+
+/* CARD */
+.r-card{background:var(--panel);border:1px solid var(--border);border-top:2px solid var(--cc,#3a2810);transition:transform .1s;}
+.r-card:hover{transform:translateY(-1px);}
+.r-head{padding:9px 12px 7px;border-bottom:1px solid var(--border);display:flex;align-items:flex-start;justify-content:space-between;gap:6px;}
+.r-name{font-family:'Cinzel',serif;font-size:13px;letter-spacing:1px;color:var(--foam);}
+.r-badges{display:flex;gap:3px;flex-wrap:wrap;flex-shrink:0;}
+.badge{font-size:8px;font-family:'Cinzel',serif;letter-spacing:1px;padding:2px 5px;border:1px solid;}
+.badge-alc{border-color:var(--amber);color:var(--amber);}
+.badge-dist{border-color:var(--red);color:var(--red);}
+.badge-wood{border-color:var(--gold);color:var(--gold);}
+.badge-diff{border-color:var(--border2);color:var(--text3);}
+.r-body{padding:7px 12px;display:flex;flex-direction:column;gap:5px;}
+.r-row{display:flex;align-items:flex-start;gap:8px;}
+.r-lbl{font-family:'Cinzel',serif;font-size:8px;letter-spacing:1.5px;color:var(--text3);min-width:72px;padding-top:2px;}
+.r-val{font-size:13px;color:var(--text2);flex:1;}
+.ing-section{display:flex;align-items:center;gap:6px;}
+.ing-list{flex:1;font-size:13px;color:var(--text2);}
+.ing-q{color:var(--amber);font-weight:600;}
+.batch-wrap{display:flex;align-items:center;gap:4px;flex-shrink:0;}
+.batch-wrap label{font-family:'Cinzel',serif;font-size:8px;letter-spacing:1px;color:var(--text3);}
+.batch-wrap input{width:38px;background:var(--panel2);border:1px solid var(--border2);color:var(--amber2);font-family:'Cinzel',serif;font-size:11px;text-align:center;padding:2px;outline:none;}
+.steps-row{display:flex;gap:5px;flex-wrap:wrap;}
+.step-tag{font-size:9px;font-family:'Cinzel',serif;letter-spacing:.5px;padding:2px 7px;border:1px solid var(--border2);color:var(--text2);}
+.wood-tag{display:inline-block;font-size:11px;color:var(--gold);background:rgba(201,150,58,.07);border:1px solid rgba(201,150,58,.2);padding:1px 7px;}
+.diff-stars{letter-spacing:-1px;font-size:11px;}
+.diff-on{color:var(--amber);}
+.diff-off{color:var(--border2);}
+.r-foot{padding:6px 12px;border-top:1px solid var(--border);display:flex;gap:5px;}
+.t-btn{flex:1;padding:5px 6px;border:1px solid;background:none;font-family:'Cinzel',serif;font-size:8px;letter-spacing:.5px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:4px;transition:all .2s;white-space:nowrap;}
+.t-btn-cook{border-color:var(--amber);color:var(--amber);}
+.t-btn-cook:hover{background:rgba(212,134,10,.12);}
+.t-btn-log{border-color:var(--green);color:var(--green);}
+.t-btn-log:hover{background:rgba(45,138,78,.1);}
+
+/* HOW TO BREW */
+.howto-wrap{flex:1;overflow-y:auto;padding:28px 32px;max-width:860px;margin:0 auto;width:100%;}
+.ht-h1{font-family:'UnifrakturMaguntia',cursive;font-size:36px;color:var(--amber2);text-shadow:0 0 16px rgba(245,166,35,.3);}
+.ht-sub{font-family:'Cinzel',serif;font-size:9px;letter-spacing:3px;color:var(--text3);margin-bottom:24px;}
+.steps-list{display:flex;flex-direction:column;}
+.ht-step{display:flex;gap:18px;}
+.ht-step-left{display:flex;flex-direction:column;align-items:center;flex-shrink:0;width:44px;}
+.ht-num{width:38px;height:38px;border:2px solid var(--amber);display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:15px;color:var(--amber);}
+.ht-line{flex:1;width:1px;background:var(--border);margin:3px 0;}
+.ht-content{flex:1;padding-bottom:24px;}
+.ht-title{font-family:'Cinzel',serif;font-size:15px;letter-spacing:2px;color:var(--foam);margin-bottom:6px;}
+.ht-title small{font-size:9px;letter-spacing:2px;color:var(--text3);margin-left:10px;}
+.ht-body{font-size:14px;color:var(--text2);line-height:1.7;}
+.ht-body li{margin-left:16px;margin-bottom:3px;}
+.ht-tip{background:rgba(212,134,10,.06);border-left:2px solid var(--amber);padding:7px 10px;margin-top:10px;font-size:12px;color:var(--text2);font-style:italic;}
+.barrel-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:14px;}
+.bcard{background:var(--panel);border:1px solid var(--border);border-top:2px solid var(--gold);padding:12px;}
+.bcard-name{font-family:'Cinzel',serif;font-size:12px;letter-spacing:2px;color:var(--gold);margin-bottom:2px;}
+.bcard-slots{font-size:10px;color:var(--text3);font-family:'Cinzel',serif;letter-spacing:1px;margin-bottom:6px;}
+.bcard-body{font-size:12px;color:var(--text2);line-height:1.6;}
+.wood-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(95px,1fr));gap:6px;margin-top:10px;}
+.wood-chip{padding:5px 8px;border:1px solid var(--border);text-align:center;font-family:'Cinzel',serif;font-size:9px;letter-spacing:1px;color:var(--text2);}
+.wood-chip.req{border-color:var(--gold);color:var(--gold);background:rgba(201,150,58,.05);}
+
+/* ═══════════════════════════════════════════
+   MY BARRELS — new 3-panel layout
+═══════════════════════════════════════════ */
+.barrels-wrap{display:flex;flex:1;min-height:0;}
+
+/* Left: barrel list + create form */
+.barrels-sidebar{width:260px;flex-shrink:0;border-right:1px solid var(--border);display:flex;flex-direction:column;overflow-y:auto;}
+.b-form{padding:14px;border-bottom:1px solid var(--border);}
+.form-title{font-family:'Cinzel',serif;font-size:10px;letter-spacing:2px;color:var(--amber);margin-bottom:10px;}
+.f-field{margin-bottom:7px;}
+.f-field label{display:block;font-family:'Cinzel',serif;font-size:8px;letter-spacing:1.5px;color:var(--text3);margin-bottom:2px;}
+.f-field input,.f-field select{width:100%;background:var(--panel2);border:1px solid var(--border2);color:var(--text);font-family:'Crimson Pro',serif;font-size:13px;padding:4px 7px;outline:none;}
+.f-field input:focus,.f-field select:focus{border-color:var(--amber);}
+.f-field select option{background:#1a1108;}
+.f-row{display:flex;gap:6px;}
+.f-row .f-field{flex:1;}
+.btn-create{width:100%;padding:7px;background:rgba(212,134,10,.1);border:1px solid var(--amber);color:var(--amber);font-family:'Cinzel',serif;font-size:9px;letter-spacing:2px;cursor:pointer;transition:all .2s;margin-top:2px;}
+.btn-create:hover{background:rgba(212,134,10,.2);}
+.b-item{padding:9px 14px;border-bottom:1px solid var(--border);cursor:pointer;display:flex;align-items:center;gap:8px;transition:background .15s;}
+.b-item:hover{background:var(--panel);}
+.b-item.sel{background:var(--panel2);border-left:2px solid var(--amber);padding-left:12px;}
+.bi-icon{font-size:20px;flex-shrink:0;}
+.bi-name{font-family:'Cinzel',serif;font-size:11px;color:var(--foam);}
+.bi-meta{font-size:10px;color:var(--text3);}
+.bi-count{font-family:'Cinzel',serif;font-size:9px;color:var(--text2);margin-left:auto;flex-shrink:0;}
+
+/* Center: barrel detail + slot grid */
+.barrels-main{flex:1;overflow-y:auto;padding:16px;}
+.bd-head{display:flex;align-items:center;gap:12px;margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid var(--border);}
+.bd-icon{font-size:32px;}
+.bd-name{font-family:'Cinzel',serif;font-size:17px;letter-spacing:2px;color:var(--amber2);}
+.bd-sub{font-size:11px;color:var(--text3);font-family:'Cinzel',serif;letter-spacing:1px;}
+.bd-del{margin-left:auto;background:none;border:1px solid var(--border);color:var(--text3);font-family:'Cinzel',serif;font-size:8px;letter-spacing:1px;padding:4px 9px;cursor:pointer;transition:all .2s;}
+.bd-del:hover{border-color:var(--red);color:var(--red);}
+
+/* Aging timers in barrel */
+.barrel-age-timers{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;}
+.age-chip{display:inline-flex;align-items:center;gap:6px;background:var(--panel);border:1px solid var(--gold);padding:5px 10px;position:relative;overflow:hidden;min-width:160px;}
+.age-chip-fill{position:absolute;left:0;top:0;bottom:0;background:rgba(201,150,58,.08);pointer-events:none;transition:width 2s linear;}
+.age-chip-name{font-family:'Cinzel',serif;font-size:10px;color:var(--gold);letter-spacing:1px;position:relative;z-index:1;}
+.age-chip-label{font-size:9px;color:var(--text3);letter-spacing:1px;position:relative;z-index:1;}
+.age-chip-time{font-family:'Cinzel',serif;font-size:12px;color:var(--foam);letter-spacing:1px;position:relative;z-index:1;min-width:52px;}
+.age-chip-count{font-size:9px;color:var(--text3);position:relative;z-index:1;}
+
+/* Slot grid */
+.slot-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:8px;}
+.bd-slots-lbl{font-family:'Cinzel',serif;font-size:9px;letter-spacing:2px;color:var(--text3);margin-bottom:8px;}
+
+/* Slot with liquid gauge */
+.slot{background:var(--panel);border:1px solid var(--border);cursor:pointer;transition:border-color .2s;position:relative;overflow:hidden;height:100px;display:flex;flex-direction:column;}
+.slot:hover{border-color:var(--border2);}
+.slot.filled{border-color:var(--amber);}
+.slot.filled.done{border-color:var(--green);}
+.slot.empty-slot:hover{border-color:var(--amber);background:rgba(212,134,10,.04);}
+
+/* Liquid gauge — fills from top, drains as time passes (shows time REMAINING) */
+.slot-gauge-bg{position:absolute;inset:0;pointer-events:none;}
+.slot-gauge-liquid{
+  position:absolute;top:0;left:0;right:0;
+  background:linear-gradient(180deg,rgba(180,95,5,.75) 0%,rgba(212,134,10,.55) 60%,rgba(245,166,35,.35) 100%);
+  transition:height 1.5s ease;
+  overflow:hidden;
+}
+.slot-gauge-done{background:linear-gradient(180deg,rgba(20,90,40,.75) 0%,rgba(45,138,78,.55) 100%) !important;}
+
+/* Wave sits at the BOTTOM of the liquid to look like a surface */
+.slot-gauge-wave{
+  position:absolute;
+  bottom:-8px; left:-10%;
+  width:120%; height:22px;
+  background:rgba(245,166,35,.9);
+  border-radius:50% 55% 45% 50% / 100% 100% 0% 0%;
+  animation:wave-slosh 1.6s ease-in-out infinite alternate;
+}
+.slot-gauge-wave2{
+  position:absolute;
+  bottom:-6px; left:-5%;
+  width:110%; height:14px;
+  background:rgba(255,190,60,.55);
+  border-radius:48% 52% 52% 48% / 100% 100% 0% 0%;
+  animation:wave-slosh 2.1s ease-in-out infinite alternate-reverse;
+}
+@keyframes wave-slosh{
+  0%  {transform:translateX(-6%) scaleX(1.04);}
+  100%{transform:translateX(6%)  scaleX(0.97);}
+}
+
+.slot-content{position:relative;z-index:2;padding:7px 8px;display:flex;flex-direction:column;gap:2px;height:100%;}
+.slot-num{font-family:'Cinzel',serif;font-size:7px;letter-spacing:1px;color:var(--text3);}
+.slot-brew{font-family:'Cinzel',serif;font-size:10px;color:var(--amber2);letter-spacing:.5px;line-height:1.2;}
+.slot-time{font-family:'Cinzel',serif;font-size:9px;color:var(--foam);letter-spacing:.5px;margin-top:auto;}
+.slot-pct{font-size:8px;color:var(--text3);}
+.slot-empty{font-family:'Cinzel',serif;font-size:8px;letter-spacing:1px;color:var(--text3);margin-top:auto;}
+.slot-clear{position:absolute;top:4px;right:4px;z-index:5;background:none;border:none;color:var(--text3);cursor:pointer;font-size:11px;line-height:1;padding:2px;transition:color .15s;opacity:0;}
+.slot.filled:hover .slot-clear{opacity:1;}
+.slot-clear:hover{color:var(--red);}
+
+/* Age chip X button */
+.age-chip-x{background:none;border:none;color:var(--text3);cursor:pointer;font-size:13px;line-height:1;padding:2px 3px;position:relative;z-index:10;transition:color .15s;flex-shrink:0;margin-left:2px;}
+.age-chip-x:hover{color:var(--red);}
+
+/* Right panel: recipe picker */
+.barrels-picker{width:310px;flex-shrink:0;border-left:1px solid var(--border);display:flex;flex-direction:column;background:var(--bg2);}
+.picker-header{padding:10px 14px;border-bottom:1px solid var(--border);flex-shrink:0;}
+.picker-title{font-family:'Cinzel',serif;font-size:9px;letter-spacing:2px;color:var(--amber);margin-bottom:6px;}
+.picker-hint{font-size:11px;color:var(--text3);}
+.picker-search{width:100%;background:var(--panel);border:1px solid var(--border2);color:var(--text);font-family:'Crimson Pro',serif;font-size:13px;padding:5px 8px;outline:none;margin-top:6px;}
+.picker-search:focus{border-color:var(--amber);}
+.picker-cats{display:flex;gap:4px;flex-wrap:wrap;padding:7px 10px;border-bottom:1px solid var(--border);flex-shrink:0;}
+.picker-cat{padding:3px 8px;border:1px solid var(--border);background:none;font-family:'Cinzel',serif;font-size:8px;letter-spacing:1px;color:var(--text3);cursor:pointer;transition:all .2s;}
+.picker-cat.active{border-color:var(--amber);color:var(--amber);background:rgba(212,134,10,.08);}
+.picker-list{flex:1;overflow-y:auto;}
+.picker-item{padding:8px 14px;border-bottom:1px solid var(--border);cursor:pointer;transition:background .15s;display:flex;align-items:center;gap:8px;}
+.picker-item:hover{background:rgba(212,134,10,.06);}
+.picker-item-info{flex:1;min-width:0;}
+.picker-item-name{font-family:'Cinzel',serif;font-size:11px;color:var(--foam);letter-spacing:.5px;}
+.picker-item-meta{font-size:10px;color:var(--text3);margin-top:1px;}
+.picker-item-badge{font-family:'Cinzel',serif;font-size:8px;letter-spacing:.5px;padding:2px 5px;border:1px solid var(--gold);color:var(--gold);flex-shrink:0;}
+.picker-item-add{font-size:16px;color:var(--amber);flex-shrink:0;opacity:.5;transition:opacity .15s;}
+.picker-item:hover .picker-item-add{opacity:1;}
+
+/* STATS */
+.stats-wrap{flex:1;overflow-y:auto;padding:20px;}
+.stat-row{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:10px;margin-bottom:18px;}
+.stat-card{background:var(--panel);border:1px solid var(--border);border-top:2px solid var(--amber);padding:12px;}
+.stat-val{font-family:'Cinzel',serif;font-size:26px;color:var(--amber2);letter-spacing:2px;}
+.stat-lbl{font-family:'Cinzel',serif;font-size:8px;letter-spacing:2px;color:var(--text3);margin-top:2px;}
+.charts-row{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px;margin-bottom:18px;}
+.chart-box{background:var(--panel);border:1px solid var(--border);padding:14px;}
+.chart-lbl{font-family:'Cinzel',serif;font-size:10px;letter-spacing:2px;color:var(--text2);margin-bottom:10px;}
+.log-head{display:flex;align-items:center;gap:10px;margin-bottom:8px;}
+.log-title{font-family:'Cinzel',serif;font-size:10px;letter-spacing:2px;color:var(--text2);}
+.log-sel{background:var(--panel);border:1px solid var(--border2);color:var(--text);font-family:'Crimson Pro',serif;font-size:12px;padding:4px 7px;outline:none;margin-left:auto;}
+.btn-log{padding:5px 12px;background:rgba(45,138,78,.1);border:1px solid var(--green);color:var(--green);font-family:'Cinzel',serif;font-size:8px;letter-spacing:1px;cursor:pointer;}
+.log-row{display:flex;align-items:center;gap:10px;padding:6px 10px;border-bottom:1px solid var(--border);font-size:12px;}
+.log-row:nth-child(even){background:var(--panel);}
+.log-brew{font-family:'Cinzel',serif;font-size:11px;color:var(--foam);min-width:120px;}
+.log-cat{font-size:9px;font-family:'Cinzel',serif;letter-spacing:1px;color:var(--text3);min-width:55px;}
+.log-date{font-size:10px;color:var(--text3);margin-left:auto;}
+.log-x{background:none;border:none;color:var(--text3);cursor:pointer;font-size:13px;transition:color .15s;}
+.log-x:hover{color:var(--red);}
+.no-data{font-family:'Cinzel',serif;font-size:9px;letter-spacing:2px;color:var(--text3);padding:30px;text-align:center;}
+
+/* SETTINGS */
+.settings-wrap{flex:1;overflow-y:auto;padding:36px;max-width:640px;margin:0 auto;width:100%;}
+.settings-section{margin-bottom:32px;}
+.settings-h{font-family:'Cinzel',serif;font-size:11px;letter-spacing:3px;color:var(--amber);border-bottom:1px solid var(--border);padding-bottom:8px;margin-bottom:16px;}
+.settings-row{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:12px 0;border-bottom:1px solid rgba(58,40,16,.4);}
+.settings-row:last-child{border-bottom:none;}
+.settings-label{font-family:'Cinzel',serif;font-size:11px;color:var(--foam);letter-spacing:.5px;}
+.settings-desc{font-size:12px;color:var(--text3);margin-top:3px;line-height:1.5;}
+.settings-btn{padding:7px 18px;background:none;font-family:'Cinzel',serif;font-size:9px;letter-spacing:1.5px;cursor:pointer;transition:all .2s;white-space:nowrap;flex-shrink:0;}
+.settings-btn-amber{border:1px solid var(--amber);color:var(--amber);}
+.settings-btn-amber:hover{background:rgba(212,134,10,.15);}
+.settings-btn-red{border:1px solid var(--border);color:var(--text3);}
+.settings-btn-red:hover{border-color:var(--red);color:var(--red);background:rgba(192,57,43,.08);}
+.settings-stat{font-family:'Cinzel',serif;font-size:11px;color:var(--text2);text-align:right;}
+.danger-zone{background:rgba(192,57,43,.04);border:1px solid rgba(192,57,43,.2);padding:16px 20px;}
+.danger-zone .settings-h{color:var(--red);border-color:rgba(192,57,43,.3);}
+#alarm{position:fixed;inset:0;background:rgba(0,0,0,.88);z-index:8000;display:none;align-items:center;justify-content:center;}
+#alarm.show{display:flex;}
+.alarm-box{background:var(--panel);border:2px solid var(--amber2);padding:40px 58px;text-align:center;animation:ap .9s ease infinite alternate;}
+@keyframes ap{from{border-color:var(--amber)}to{border-color:var(--amber2);box-shadow:0 0 36px rgba(245,166,35,.2)}}
+.al-glyph{font-family:'UnifrakturMaguntia',cursive;font-size:48px;color:var(--amber2);}
+.al-name{font-family:'Cinzel',serif;font-size:20px;letter-spacing:4px;color:var(--foam);margin:7px 0 3px;}
+.al-type{font-family:'Cinzel',serif;font-size:10px;letter-spacing:3px;color:var(--text2);}
+.al-dismiss{margin-top:18px;padding:9px 32px;background:none;border:1px solid var(--amber);color:var(--amber);font-family:'Cinzel',serif;font-size:10px;letter-spacing:2px;cursor:pointer;transition:all .2s;}
+.al-dismiss:hover{background:rgba(212,134,10,.15);}
+
+/* CUSTOM CONFIRM */
+#custom-confirm{position:fixed;inset:0;background:rgba(0,0,0,.75);z-index:7000;display:none;align-items:center;justify-content:center;}
+#custom-confirm.show{display:flex;}
+.cc-box{background:var(--panel);border:1px solid var(--border2);padding:24px 28px;min-width:280px;max-width:360px;width:90%;}
+.cc-msg{font-size:13px;color:var(--text);margin-bottom:16px;line-height:1.6;}
+.cc-btns{display:flex;gap:8px;justify-content:flex-end;}
+.cc-ok{padding:6px 20px;background:rgba(192,57,43,.15);border:1px solid var(--red);color:var(--red);font-family:'Cinzel',serif;font-size:9px;letter-spacing:1.5px;cursor:pointer;transition:all .2s;}
+.cc-ok:hover{background:rgba(192,57,43,.3);}
+.cc-cancel{padding:6px 20px;background:none;border:1px solid var(--border);color:var(--text3);font-family:'Cinzel',serif;font-size:9px;letter-spacing:1.5px;cursor:pointer;transition:all .2s;}
+.cc-cancel:hover{border-color:var(--text2);color:var(--text2);}
+/* TOAST */
+#toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);background:var(--panel);border:1px solid var(--border2);padding:8px 20px;font-family:'Cinzel',serif;font-size:10px;letter-spacing:1.5px;color:var(--amber2);z-index:9000;opacity:0;transition:opacity .25s;pointer-events:none;}
+#toast.show{opacity:1;}
+::-webkit-scrollbar{width:6px;height:6px;}
+::-webkit-scrollbar-track{background:transparent;}
+::-webkit-scrollbar-thumb{background:linear-gradient(180deg,var(--amber2),var(--amber));border-radius:3px;}
+::-webkit-scrollbar-thumb:hover{background:var(--amber2);}
+::-webkit-scrollbar-corner{background:transparent;}
+
+/* ═══════════════════════════════════
+   SPLASH SCREEN
+═══════════════════════════════════ */
+#splash{position:fixed;inset:0;z-index:20000;background:#050302;display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden;}
+#splash.fade-out{animation:splashOut 1.4s ease forwards;}
+@keyframes splashOut{to{opacity:0;pointer-events:none;}}
+.splash-particles{position:absolute;inset:0;pointer-events:none;}
+.spark{position:absolute;border-radius:50%;background:radial-gradient(circle,#f5a623 0%,rgba(212,134,10,0) 70%);animation:sparkFloat linear infinite;opacity:0;}
+@keyframes sparkFloat{0%{transform:translateY(0) scale(1);opacity:0;}15%{opacity:.7;}85%{opacity:.3;}100%{transform:translateY(-90vh) scale(.3);opacity:0;}}
+.splash-glow{position:absolute;width:600px;height:600px;background:radial-gradient(circle,rgba(212,134,10,.14) 0%,transparent 70%);border-radius:50%;animation:glowPulse 4s ease-in-out infinite alternate;}
+@keyframes glowPulse{0%{transform:scale(.85);opacity:.5;}100%{transform:scale(1.2);opacity:1;}}
+.splash-logo{font-family:'UnifrakturMaguntia',cursive;font-size:clamp(52px,8vw,96px);color:var(--amber2);text-shadow:0 0 40px rgba(245,166,35,.65),0 0 90px rgba(212,134,10,.3);opacity:0;animation:fadeUp 2.2s ease .7s forwards;position:relative;z-index:2;letter-spacing:6px;}
+.splash-sub{font-family:'Cinzel',serif;font-size:clamp(9px,1.4vw,13px);letter-spacing:9px;color:var(--amber);opacity:0;animation:fadeUp 1.8s ease 2.1s forwards;position:relative;z-index:2;margin-top:14px;}
+.splash-divider{width:0;height:1px;background:linear-gradient(90deg,transparent,var(--amber),transparent);opacity:0;animation:expandLine 1.6s ease 2.8s forwards;position:relative;z-index:2;margin:24px 0;}
+@keyframes expandLine{0%{width:0;opacity:0;}30%{opacity:.8;}100%{width:300px;opacity:.4;}}
+.splash-welcome{font-family:'Crimson Pro',Georgia,serif;font-size:clamp(17px,2.6vw,30px);color:var(--foam);opacity:0;animation:fadeUp 2s ease 3.2s forwards;position:relative;z-index:2;text-align:center;font-style:italic;font-weight:300;max-width:560px;line-height:1.7;padding:0 20px;}
+.splash-enter{opacity:0;animation:fadeUp 1.4s ease 5s forwards;position:relative;z-index:2;margin-top:44px;font-family:'Cinzel',serif;font-size:9px;letter-spacing:4px;color:var(--text3);}
+@keyframes fadeUp{0%{opacity:0;transform:translateY(24px);}100%{opacity:1;transform:translateY(0);}}
+
+/* USERNAME PROMPT */
+#username-prompt{position:fixed;inset:0;z-index:19000;background:rgba(5,3,2,.97);display:none;align-items:center;justify-content:center;}
+#username-prompt.show{display:flex;}
+.up-box{display:flex;flex-direction:column;align-items:center;text-align:center;padding:64px 80px;max-width:600px;width:92%;border:1px solid var(--border2);background:var(--panel);box-shadow:0 0 80px rgba(212,134,10,.1);animation:fadeUp .9s ease;}
+.up-glyph{font-family:'UnifrakturMaguntia',cursive;font-size:56px;color:var(--amber2);text-shadow:0 0 30px rgba(245,166,35,.5);margin-bottom:20px;}
+.up-title{font-family:'Cinzel',serif;font-size:24px;letter-spacing:5px;color:var(--foam);margin-bottom:12px;}
+.up-sub{font-size:16px;color:var(--text2);font-style:italic;margin-bottom:38px;line-height:1.65;max-width:400px;}
+.up-input{font-family:'Cinzel',serif;font-size:22px;letter-spacing:4px;background:transparent;border:none;border-bottom:2px solid var(--amber);color:var(--amber2);text-align:center;padding:14px 24px;outline:none;width:100%;transition:border-color .3s,box-shadow .3s;}
+.up-input:focus{border-bottom-color:var(--amber2);box-shadow:0 6px 24px rgba(245,166,35,.12);}
+.up-input::placeholder{color:var(--text3);font-size:16px;letter-spacing:2px;}
+.up-btn{margin-top:32px;padding:16px 56px;background:rgba(212,134,10,.1);border:1px solid var(--amber);color:var(--amber2);font-family:'Cinzel',serif;font-size:13px;letter-spacing:4px;cursor:pointer;transition:all .25s;}
+.up-btn:hover{background:rgba(212,134,10,.22);box-shadow:0 0 24px rgba(245,166,35,.18);}
+.up-btn:disabled{opacity:.35;cursor:not-allowed;}
+
+/* VOLUME SLIDER */
+.vol-wrap{display:flex;align-items:center;gap:12px;}
+.vol-slider{-webkit-appearance:none;appearance:none;width:180px;height:4px;background:var(--border2);outline:none;border-radius:2px;cursor:pointer;}
+.vol-slider::-webkit-slider-thumb{-webkit-appearance:none;width:16px;height:16px;border-radius:50%;background:var(--amber2);border:2px solid var(--amber);cursor:pointer;transition:transform .15s;}
+.vol-slider::-webkit-slider-thumb:hover{transform:scale(1.3);}
+.vol-val{font-family:'Cinzel',serif;font-size:11px;color:var(--amber2);min-width:34px;}
+</style>
+</head>
+<body>
+
+<!-- ═══════ SPLASH SCREEN ═══════ -->
+<div id="splash">
+  <div class="splash-particles" id="splash-particles"></div>
+  <div class="splash-glow"></div>
+  <div class="splash-logo">MvndiCraft</div>
+  <div class="splash-sub">BREWERY</div>
+  <div class="splash-divider"></div>
+  <div class="splash-welcome" id="splash-welcome">Welcome to the Brewery</div>
+  <div class="splash-enter">CLICK ANYWHERE TO CONTINUE</div>
+</div>
+
+<!-- ═══════ USERNAME PROMPT ═══════ -->
+<div id="username-prompt">
+  <div class="up-box">
+    <div class="up-glyph">⚗</div>
+    <div class="up-title">WELCOME, BREWER</div>
+    <div class="up-sub">Before we begin, what shall we call you? Your name will greet you every time you open the app.</div>
+    <input class="up-input" id="username-input" type="text" maxlength="24" placeholder="Enter your name…" autocomplete="off">
+    <button class="up-btn" id="username-btn" onclick="submitUsername()" disabled>ENTER THE BREWERY</button>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-brand"><div class="nav-logo">MvndiCraft</div><div class="nav-sub">BREWERY</div></div>
+  <div class="nav-tabs">
+    <button class="nav-tab active" onclick="showPage('recipes')" id="tab-recipes">📜 RECIPES</button>
+    <button class="nav-tab" onclick="showPage('howto')" id="tab-howto">📖 HOW TO BREW</button>
+    <button class="nav-tab" onclick="showPage('barrels')" id="tab-barrels">🛢 MY BARRELS</button>
+    <button class="nav-tab" onclick="showPage('stats')" id="tab-stats">📊 STATS</button>
+    <button class="nav-tab" onclick="showPage('settings')" id="tab-settings">⚙ SETTINGS</button>
+  </div>
+  <div class="nav-right" style="gap:10px;">
+    <div class="time-note">1 YEAR = 1 MC DAY<strong>= 20 REAL MINUTES</strong></div>
+    <button id="nav-download-btn" onclick="navDownloadClick()" style="padding:5px 14px;background:rgba(212,134,10,.12);border:1px solid var(--amber);color:var(--amber2);font-family:'Cinzel',serif;font-size:8px;letter-spacing:2px;cursor:pointer;transition:all .2s;flex-shrink:0;" onmouseover="this.style.background='rgba(212,134,10,.28)'" onmouseout="this.style.background='rgba(212,134,10,.12)'">⬇ DOWNLOAD APP</button>
+    <script>
+      // Change label based on context (runs immediately so no flash)
+      (function(){
+        var btn = document.getElementById('nav-download-btn');
+        if (window.electronAPI) { btn.textContent = '⬆ CHECK UPDATES'; }
+      })();
+    </script>
+    <button onclick="lockUp()" style="padding:5px 13px;background:none;border:1px solid var(--border);color:var(--text3);font-family:'Cinzel',serif;font-size:8px;letter-spacing:2px;cursor:pointer;transition:all .2s;flex-shrink:0;" onmouseover="this.style.borderColor='var(--red)';this.style.color='var(--red)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--text3)'">🔒 LOCK UP</button>
+  </div>
+</nav>
+
+<!-- TIMER BAR (cooking timers only) -->
+<div id="timer-bar">
+  <div class="tbar-inner">
+    <span class="tbar-lbl">🔥 COOKING TIMERS</span>
+    <div id="timer-chips" style="display:flex;gap:7px;flex-wrap:nowrap;"></div>
+  </div>
+</div>
+
+<!-- RECIPES PAGE -->
+<div class="page active" id="page-recipes">
+  <div class="r-toolbar">
+    <div class="search-wrap"><input type="text" id="search" placeholder="Search recipes…" oninput="filterSearch(this.value)"></div>
+    <div class="cat-pills">
+      <button class="cat-pill active" onclick="setCat('all')" id="pill-all">ALL</button>
+      <button class="cat-pill" onclick="setCat('spirits')" id="pill-spirits">SPIRITS</button>
+      <button class="cat-pill" onclick="setCat('wines')" id="pill-wines">WINES</button>
+      <button class="cat-pill" onclick="setCat('beers')" id="pill-beers">BEERS</button>
+      <button class="cat-pill" onclick="setCat('meads')" id="pill-meads">MEADS</button>
+      <button class="cat-pill" onclick="setCat('other')" id="pill-other">OTHER</button>
+    </div>
+  </div>
+  <div class="r-scroll"><div class="r-grid" id="r-grid"></div></div>
+</div>
+
+<!-- HOW TO BREW PAGE -->
+<div class="page" id="page-howto">
+<div class="howto-wrap">
+  <div class="ht-h1">⚗ The Brewer's Manual</div>
+  <div class="ht-sub">FERMENTING · DISTILLING · AGING · BARRELS</div>
+  <div class="steps-list">
+
+    <div class="ht-step">
+      <div class="ht-step-left"><div class="ht-num">I</div><div class="ht-line"></div></div>
+      <div class="ht-content">
+        <div class="ht-title">Fermenting <small>ALWAYS REQUIRED</small></div>
+        <div class="ht-body"><ol>
+          <li>Place a <strong>Cauldron</strong> over fire or a heat source</li>
+          <li>Fill it with <strong>water</strong></li>
+          <li><strong>Right-click</strong> to add ingredients</li>
+          <li>Wait for the recipe's cooking time</li>
+          <li>Fill brew into <strong>glass bottles</strong></li>
+        </ol></div>
+        <div class="ht-tip">💡 Right-click the cauldron with a <strong>Clock</strong> to check current fermentation time.</div>
+      </div>
+    </div>
+
+    <div class="ht-step">
+      <div class="ht-step-left"><div class="ht-num">II</div><div class="ht-line"></div></div>
+      <div class="ht-content">
+        <div class="ht-title">Distilling <small>SPIRITS ONLY</small></div>
+        <div class="ht-body"><ol>
+          <li>Put fermented bottles into a <strong>Brewing Stand</strong></li>
+          <li>Add <strong>Glowstone Dust</strong> as filter in the top slot</li>
+          <li>The filter is <strong>never consumed</strong> — leave it in permanently</li>
+          <li>Each run = 1 distill pass. Spirits need <strong>1 or 2 runs</strong></li>
+          <li>Over- or under-distilling degrades quality</li>
+        </ol></div>
+        <div class="ht-tip">⚠️ Each distill pass is one full Brewing Stand cycle. Count carefully — precision matters.</div>
+      </div>
+    </div>
+
+    <div class="ht-step">
+      <div class="ht-step-left"><div class="ht-num">III</div><div class="ht-line"></div></div>
+      <div class="ht-content">
+        <div class="ht-title">Aging <small>ALWAYS REQUIRED</small></div>
+        <div class="ht-body"><ol>
+          <li>Build or place a barrel (see types below)</li>
+          <li>Open and place your bottles inside</li>
+          <li>Every <strong>Minecraft day (20 min)</strong> = 1 year of aging</li>
+          <li>Some recipes need a <strong>specific wood type</strong></li>
+          <li>Wrong wood = reduced quality on those recipes</li>
+        </ol></div>
+        <div class="ht-tip">🪵 Recipes that say "Any" work in any barrel. Recipes that list a specific wood (Acacia, Spruce, Birch) REQUIRE that barrel type.</div>
+
+        <div style="margin-top:16px;font-family:'Cinzel',serif;font-size:10px;letter-spacing:2px;color:var(--text3);margin-bottom:8px;">BARREL TYPES</div>
+        <div class="barrel-grid">
+          <div class="bcard"><div class="bcard-name">🛢 Small Barrel</div><div class="bcard-slots">9 SLOTS · Any wood</div><div class="bcard-body"><strong>8 wooden stairs</strong> in barrel shape. Sign on lower-right with <em>"Barrel"</em> on line 1.</div></div>
+          <div class="bcard"><div class="bcard-name">⚗ Big Barrel</div><div class="bcard-slots">27 SLOTS · Any wood</div><div class="bcard-body"><strong>5 fences + 16 stairs + 18 planks</strong>. Fence as spigot, sign with <em>"Barrel"</em>. Sign can be removed after.</div></div>
+        </div>
+
+        <div style="margin-top:16px;font-family:'Cinzel',serif;font-size:10px;letter-spacing:2px;color:var(--text3);margin-bottom:8px;">WOOD TYPES (highlighted = required by a recipe)</div>
+        <div class="wood-grid">
+          <div class="wood-chip req">🌲 Spruce<br><span style="font-size:8px;color:var(--text3)">Klosterbier</span></div>
+          <div class="wood-chip req">🌴 Acacia<br><span style="font-size:8px;color:var(--text3)">Bock Beer, Dark Beer</span></div>
+          <div class="wood-chip req">🌿 Birch<br><span style="font-size:8px;color:var(--text3)">Wheat Beer, Wheatbeer</span></div>
+          <div class="wood-chip">🌳 Oak</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ht-step">
+      <div class="ht-step-left"><div class="ht-num">IV</div></div>
+      <div class="ht-content">
+        <div class="ht-title">Quality &amp; Sealing <small>OPTIONAL</small></div>
+        <div class="ht-body">
+          <p>Quality is hurt by wrong cook time, wrong distill runs, or wrong barrel wood.</p>
+          <br><p>To sell via shop plugins, craft a <strong>Brew Sealing Table</strong> (2 bottles over 4 planks) and seal each batch. Sealed brews can no longer age.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+
+<!-- MY BARRELS PAGE — 3 panel layout -->
+<div class="page" id="page-barrels">
+  <div class="barrels-wrap">
+
+    <!-- Left: sidebar -->
+    <div class="barrels-sidebar">
+      <div class="b-form">
+        <div class="form-title">+ ADD BARREL</div>
+        <div class="f-field"><label>Name / Label</label><input id="b-name" type="text" placeholder="e.g. Big Spruce #1"></div>
+        <div class="f-row">
+          <div class="f-field"><label>Type</label>
+            <select id="b-type">
+              <option value="small" selected>Small (9 slots)</option>
+              <option value="big">Big (27 slots)</option>
+            </select>
+          </div>
+          <div class="f-field"><label>Wood</label>
+            <select id="b-wood">
+              <option>Oak</option>
+              <option>Spruce</option>
+              <option>Birch</option>
+              <option>Acacia</option>
+            </select>
+          </div>
+        </div>
+        <button class="btn-create" onclick="addBarrel()">CREATE BARREL</button>
+      </div>
+      <div id="barrel-list"></div>
+    </div>
+
+    <!-- Center: barrel slot grid + aging timers -->
+    <div class="barrels-main" id="barrel-detail">
+      <div class="no-data" style="margin-top:80px;">← SELECT A BARREL TO VIEW IT</div>
+    </div>
+
+    <!-- Right: recipe picker -->
+    <div class="barrels-picker">
+      <div class="picker-header">
+        <div class="picker-title">⚗ ADD DRINK TO BARREL</div>
+        <div class="picker-hint" id="picker-hint">Select a barrel first, then click a recipe to add it to the next empty slot.</div>
+        <input class="picker-search" type="text" placeholder="Search recipes…" id="picker-search" oninput="renderPickerList()">
+      </div>
+      <div class="picker-cats" id="picker-cats">
+        <button class="picker-cat active" onclick="setPickerCat('all')" id="pcat-all">ALL</button>
+        <button class="picker-cat" onclick="setPickerCat('spirits')" id="pcat-spirits">SPIRITS</button>
+        <button class="picker-cat" onclick="setPickerCat('wines')" id="pcat-wines">WINES</button>
+        <button class="picker-cat" onclick="setPickerCat('beers')" id="pcat-beers">BEERS</button>
+        <button class="picker-cat" onclick="setPickerCat('meads')" id="pcat-meads">MEADS</button>
+        <button class="picker-cat" onclick="setPickerCat('other')" id="pcat-other">OTHER</button>
+      </div>
+      <div class="picker-list" id="picker-list"></div>
+    </div>
+
+  </div>
+</div>
+
+<!-- STATS PAGE -->
+<div class="page" id="page-stats">
+  <div class="stats-wrap">
+    <div class="stat-row" id="stat-cards"></div>
+    <div class="charts-row">
+      <div class="chart-box"><div class="chart-lbl">BREWS BY CATEGORY</div><canvas id="chart-cat" height="200"></canvas></div>
+      <div class="chart-box"><div class="chart-lbl">TOP 8 MOST BREWED</div><canvas id="chart-top" height="200"></canvas></div>
+    </div>
+    <div>
+      <div class="log-head">
+        <div class="log-title">BREW LOG</div>
+        <select class="log-sel" id="log-select"></select>
+        <button class="btn-log" onclick="logBrew()">+ LOG BREW</button>
+      </div>
+      <div id="log-list"></div>
+    </div>
+  </div>
+</div>
+
+<!-- SETTINGS PAGE -->
+<div class="page" id="page-settings">
+  <div class="settings-wrap">
+
+    <div class="settings-section">
+      <div class="settings-h">BREWER PROFILE</div>
+      <div class="settings-row">
+        <div><div class="settings-label">Username</div><div class="settings-desc">Shown in your personalized greeting on startup.</div></div>
+        <div style="display:flex;align-items:center;gap:8px;">
+          <input id="settings-username" type="text" maxlength="24"
+            style="background:var(--panel2);border:none;border-bottom:1px solid var(--border2);color:var(--amber2);font-family:'Cinzel',serif;font-size:13px;letter-spacing:2px;padding:5px 10px;outline:none;width:160px;transition:border-color .2s;"
+            onfocus="this.style.borderColor='var(--amber)'" onblur="this.style.borderColor='var(--border2)'">
+          <button class="settings-btn settings-btn-amber" onclick="saveUsername()">SAVE</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="settings-section">
+      <div class="settings-h">AUDIO</div>
+      <div class="settings-row">
+        <div><div class="settings-label">Master Volume</div><div class="settings-desc">Controls alarm and startup music volume.</div></div>
+        <div class="vol-wrap">
+          <span style="font-size:14px;color:var(--text3);">🔇</span>
+          <input class="vol-slider" id="vol-slider" type="range" min="0" max="100" value="70" oninput="updateVolume(this.value)">
+          <span style="font-size:14px;color:var(--text3);">🔊</span>
+          <span class="vol-val" id="vol-val">70%</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="settings-section">
+      <div class="settings-h">DATA OVERVIEW</div>
+      <div class="settings-row">
+        <div><div class="settings-label">Barrels</div></div>
+        <div class="settings-stat" id="stat-barrels">—</div>
+      </div>
+      <div class="settings-row">
+        <div><div class="settings-label">Aging Slots</div></div>
+        <div class="settings-stat" id="stat-slots">—</div>
+      </div>
+      <div class="settings-row">
+        <div><div class="settings-label">Brew Log Entries</div></div>
+        <div class="settings-stat" id="stat-log">—</div>
+      </div>
+      <div class="settings-row">
+        <div><div class="settings-label">Active Cook Timers</div></div>
+        <div class="settings-stat" id="stat-timers">—</div>
+      </div>
+    </div>
+
+    <div class="settings-section">
+      <div class="settings-h">DATA TRANSFER</div>
+      <div class="settings-row">
+        <div>
+          <div class="settings-label">Export Data</div>
+          <div class="settings-desc">Save all your barrels, logs and timers to a file.</div>
+        </div>
+        <button class="settings-btn settings-btn-amber" onclick="exportData()">⬆ EXPORT</button>
+      </div>
+      <div class="settings-row">
+        <div>
+          <div class="settings-label">Import Data</div>
+          <div class="settings-desc">Load a previously exported mvndi-data.json file.</div>
+        </div>
+        <button class="settings-btn settings-btn-amber" onclick="importData()">⬇ IMPORT</button>
+      </div>
+    </div>
+
+    <div class="settings-section danger-zone">
+      <div class="settings-h">⚠ DANGER ZONE</div>
+      <div class="settings-row">
+        <div><div class="settings-label">Reset Barrels</div><div class="settings-desc">Removes all barrels and aging slots. Brew log kept.</div></div>
+        <button class="settings-btn settings-btn-red" onclick="resetAllBarrels()">RESET BARRELS</button>
+      </div>
+      <div class="settings-row">
+        <div><div class="settings-label">Clear Brew Log</div><div class="settings-desc">Wipes all brew history and chart data. Barrels kept.</div></div>
+        <button class="settings-btn settings-btn-red" onclick="clearBrewLog()">CLEAR LOG</button>
+      </div>
+      <div class="settings-row" style="border-bottom:none;padding-top:18px;margin-top:6px;border-top:1px solid rgba(192,57,43,.25);">
+        <div>
+          <div class="settings-label" style="color:var(--red)">Wipe All Data</div>
+          <div class="settings-desc">Permanently deletes every barrel, slot, brew history, and saved timer.</div>
+        </div>
+        <button class="settings-btn" style="border:1px solid var(--red);color:#fff;background:rgba(192,57,43,.18);font-size:10px;" onclick="wipeAllData()">WIPE ALL DATA</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ALARM -->
+<div id="alarm">
+  <div class="alarm-box">
+    <div class="al-glyph">⚗</div>
+    <div class="al-name" id="al-name">Whiskey</div>
+    <div class="al-type" id="al-type">COOKING COMPLETE</div>
+    <button class="al-dismiss" onclick="dismissAlarm()">DISMISS</button>
+  </div>
+</div>
+
+<!-- CUSTOM CONFIRM -->
+<div id="custom-confirm">
+  <div class="cc-box">
+    <div class="cc-msg" id="cc-msg"></div>
+    <div class="cc-btns">
+      <button class="cc-cancel" onclick="ccCancel()">CANCEL</button>
+      <button class="cc-ok" id="cc-ok-btn">CONFIRM</button>
+    </div>
+  </div>
+</div>
+<!-- TOAST -->
+<div id="toast"></div>
+
+<script>
+// ════════════════════════════════════
+// ════════════════════════════════════
+// CUSTOM CONFIRM + TOAST
+// ════════════════════════════════════
+let _ccCallback=null;
+function showConfirm(msg,onOk,okLabel='CONFIRM'){
+  document.getElementById('cc-msg').textContent=msg;
+  document.getElementById('cc-ok-btn').textContent=okLabel;
+  _ccCallback=onOk;
+  document.getElementById('custom-confirm').classList.add('show');
+}
+function ccCancel(){
+  document.getElementById('custom-confirm').classList.remove('show');
+  _ccCallback=null;
+}
+document.getElementById('cc-ok-btn').addEventListener('click',()=>{
+  document.getElementById('custom-confirm').classList.remove('show');
+  if(_ccCallback){_ccCallback();_ccCallback=null;}
+});
+let _toastTimer=null;
+function showToast(msg){
+  const el=document.getElementById('toast');
+  el.textContent=msg;el.classList.add('show');
+  if(_toastTimer)clearTimeout(_toastTimer);
+  _toastTimer=setTimeout(()=>el.classList.remove('show'),2800);
+}
+
+// ════════════════════════════════════
+// ════════════════════════════════════
+// INTRO MUSIC
+// ════════════════════════════════════
+let masterVolume = parseFloat(localStorage.getItem('mvndi_vol') ?? '0.7');
+let _introCtx = null;
+let _introNodes = [];
+let _introMaster = null;
+
+function _note(ctx, dest, freq, type, amp, t, dur) {
+  const o = ctx.createOscillator(), g = ctx.createGain();
+  o.connect(g); g.connect(dest); o.type = type;
+  o.frequency.setValueAtTime(freq, t);
+  g.gain.setValueAtTime(0, t);
+  g.gain.linearRampToValueAtTime(amp, t + Math.min(0.14, dur*0.18));
+  g.gain.setValueAtTime(amp, t + dur*0.62);
+  g.gain.linearRampToValueAtTime(0, t + dur + 0.18);
+  o.start(t); o.stop(t + dur + 0.28);
+  _introNodes.push(o);
+}
+function _pad(ctx, dest, freq, amp, t, dur) {
+  const o = ctx.createOscillator(), g = ctx.createGain();
+  o.connect(g); g.connect(dest); o.type = 'sine';
+  o.frequency.setValueAtTime(freq, t);
+  g.gain.setValueAtTime(0, t);
+  g.gain.linearRampToValueAtTime(amp, t + 3.5);
+  g.gain.setValueAtTime(amp, Math.max(t+3.6, t + dur - 4));
+  g.gain.linearRampToValueAtTime(0, t + dur);
+  o.start(t); o.stop(t + dur + 0.1);
+  _introNodes.push(o);
+}
+function _makeReverb(ctx, secs, wet) {
+  const size = ctx.sampleRate * secs;
+  const buf = ctx.createBuffer(2, size, ctx.sampleRate);
+  for (let c = 0; c < 2; c++) {
+    const d = buf.getChannelData(c);
+    for (let i = 0; i < size; i++) d[i] = (Math.random()*2-1)*Math.pow(1-i/size,2.6);
+  }
+  const conv = ctx.createConvolver(); conv.buffer = buf;
+  const g = ctx.createGain(); g.gain.value = wet;
+  conv.connect(g); g.connect(ctx.destination);
+  return conv;
+}
+
+function playIntroMusic() {
+  stopIntroMusic();
+  try {
+    _introCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if (_introCtx.state === 'suspended') _introCtx.resume();
+    const ctx = _introCtx;
+    const master = ctx.createGain();
+    _introMaster = master;
+    master.gain.setValueAtTime(0, ctx.currentTime);
+    master.gain.linearRampToValueAtTime(masterVolume * 0.52, ctx.currentTime + 2.2);
+    master.connect(ctx.destination);
+    const rev = _makeReverb(ctx, 3.0, 0.38); master.connect(rev);
+
+    // D pentatonic
+    const S = [146.83,164.81,185,220,246.94,293.66,329.63,369.99,440,493.88,587.33,659.25,739.99,880];
+    let t = ctx.currentTime + 1.0;
+    // Phrase A — gentle rising
+    [[5,.9],[7,.9],[8,1.2],[10,1.4],[11,1.0],[10,.8],[8,1.0],[7,.7]].forEach(([n,d])=>{
+      _note(ctx,master,S[n],'sine',0.20,t,d);
+      _note(ctx,master,S[n]*2,'triangle',0.045,t,d);
+      t+=d*.72;
+    });
+    t+=0.5;
+    // Phrase B — peak & breathe
+    [[6,1.2],[5,1.9],[7,.8],[8,.8],[10,1.0],[11,1.2],[12,2.4]].forEach(([n,d])=>{
+      _note(ctx,master,S[n],'sine',0.20,t,d);
+      _note(ctx,master,S[n]*2,'triangle',0.04,t,d);
+      t+=d*.72;
+    });
+    t+=0.3;
+    // Phrase C — resolve
+    [[10,.9],[8,.9],[7,.9],[5,3.8]].forEach(([n,d])=>{
+      _note(ctx,master,S[n],'sine',0.22,t,d);
+      _note(ctx,master,S[n]*2,'triangle',0.05,t,d);
+      t+=d*.72;
+    });
+    _pad(ctx,master,S[0],0.07,ctx.currentTime,44);
+    _pad(ctx,master,S[3],0.03,ctx.currentTime+9,32);
+  } catch(e) { console.warn('Intro music error:', e); }
+}
+
+function stopIntroMusic() {
+  if (_introCtx) {
+    const ctx = _introCtx; _introCtx = null; _introMaster = null;
+    _introNodes.forEach(n=>{ try{n.stop();}catch(e){} });
+    _introNodes = [];
+    setTimeout(()=>{ try{ctx.close();}catch(e){} }, 300);
+  }
+}
+
+function fadeOutIntroMusic(ms=2500) {
+  if (_introMaster && _introCtx) {
+    // Smoothly ramp master volume to silence over ms, then stop
+    const ctx = _introCtx;
+    _introMaster.gain.cancelScheduledValues(ctx.currentTime);
+    _introMaster.gain.setValueAtTime(_introMaster.gain.value, ctx.currentTime);
+    _introMaster.gain.linearRampToValueAtTime(0, ctx.currentTime + ms/1000);
+    setTimeout(()=>stopIntroMusic(), ms + 100);
+  } else {
+    stopIntroMusic();
+  }
+}
+
+// ════════════════════════════════════
+// SPLASH SCREEN
+// ════════════════════════════════════
+function spawnSparks() {
+  const container=document.getElementById('splash-particles');
+  if(!container) return;
+  for(let i=0;i<32;i++){
+    const s=document.createElement('div'); s.className='spark';
+    const sz=3+Math.random()*11;
+    s.style.cssText=`width:${sz}px;height:${sz}px;left:${5+Math.random()*90}%;bottom:${-5+Math.random()*18}%;animation-duration:${6+Math.random()*11}s;animation-delay:${Math.random()*9}s;`;
+    container.appendChild(s);
+  }
+}
+
+function initSplash() {
+  // Set nav button label based on context
+  var btn = document.getElementById('nav-download-btn');
+  if (btn) {
+    btn.textContent = window.electronAPI ? '⬆ UPDATE' : '⬇ DOWNLOAD APP';
+  }
+  spawnSparks();
+  const username=localStorage.getItem('mvndi_username')||'';
+  const welcome=document.getElementById('splash-welcome');
+  welcome.textContent = username
+    ? `Welcome back, ${username}. The brew awaits.`
+    : `Welcome to the MvndiCraft Brewery.`;
+
+  let musicStarted=false;
+  function startMusic(){
+    if(!musicStarted){ musicStarted=true; playIntroMusic(); }
+  }
+
+  let canDismiss=false;
+  setTimeout(()=>{ canDismiss=true; }, 3500);
+
+  function dismissSplash(){
+    if(!canDismiss) return;
+    startMusic();
+    const splash=document.getElementById('splash');
+    splash.classList.add('fade-out');
+    setTimeout(()=>{
+      splash.style.display='none';
+      // Music keeps playing into username prompt or straight into the app
+      if(!localStorage.getItem('mvndi_username')){
+        document.getElementById('username-prompt').classList.add('show');
+      } else {
+        // Returning user: music gently fades after ~12s unless they keep it on
+        setTimeout(()=>{ fadeOutIntroMusic(3000); }, 12000);
+      }
+    },1400);
+  }
+
+  document.getElementById('splash').addEventListener('click',()=>{ startMusic(); dismissSplash(); });
+  document.addEventListener('keydown',e=>{
+    if(e.key==='Enter'||e.key===' '){ startMusic(); dismissSplash(); }
+  });
+  setTimeout(()=>dismissSplash(), 8500);
+}
+
+// ════════════════════════════════════
+// USERNAME
+// ════════════════════════════════════
+(function(){
+  const inp=document.getElementById('username-input');
+  const btn=document.getElementById('username-btn');
+  if(!inp) return;
+  inp.addEventListener('input',()=>{ btn.disabled=inp.value.trim().length<1; });
+  inp.addEventListener('keydown',e=>{ if(e.key==='Enter'&&inp.value.trim()) submitUsername(); });
+})();
+
+window.submitUsername=function(){
+  const name=document.getElementById('username-input').value.trim();
+  if(!name) return;
+  localStorage.setItem('mvndi_username',name);
+  document.getElementById('username-prompt').classList.remove('show');
+  // Music fades out after ~10s — they can keep it with the player
+  setTimeout(()=>{ fadeOutIntroMusic(3000); }, 10000);
+};
+
+window.saveUsername=function(){
+  const val=document.getElementById('settings-username').value.trim();
+  if(!val){ showToast('Enter a name first.'); return; }
+  localStorage.setItem('mvndi_username',val);
+  showToast(`Username saved — welcome, ${val}!`);
+};
+
+// ════════════════════════════════════
+// VOLUME
+// ════════════════════════════════════
+window.updateVolume=function(val){
+  masterVolume=val/100;
+  localStorage.setItem('mvndi_vol',masterVolume);
+  document.getElementById('vol-val').textContent=val+'%';
+  const slider=document.getElementById('vol-slider');
+  if(slider) slider.style.background=`linear-gradient(90deg,var(--amber) ${val}%,var(--border2) ${val}%)`;
+};
+
+// ════════════════════════════════════
+// RECIPE DATA  (1 year = 20 min)
+// ════════════════════════════════════
+const RECIPES=[
+  {name:'Whiskey',      cat:'spirits',ing:[{n:'Wheat',q:8}],                                                        cook:10,distill:2,barrel:'Any',  age:18,diff:7,alc:18},
+  {name:'Brandy',       cat:'spirits',ing:[{n:'Grapes',q:7}],                                                cook:10,distill:2,barrel:'Any',  age:16,diff:7,alc:17},
+  {name:'Aqua Ardens',  cat:'spirits',ing:[{n:'Wheat',q:6}],                                                        cook:10,distill:2,barrel:'Any',  age:6, diff:6,alc:15},
+  {name:'Khrenovukha',  cat:'spirits',ing:[{n:'Wheat',q:6},{n:'Sugar',q:1}],                                        cook:8, distill:1,barrel:'Any',  age:8, diff:6,alc:15},
+  {name:'Amaretto',     cat:'spirits',ing:[{n:'Apple',q:4},{n:'Honey Bottle',q:1}],                                 cook:8, distill:1,barrel:'Any',  age:10,diff:6,alc:14},
+  {name:'Aqua Vitae',   cat:'spirits',ing:[{n:'Grapes',q:6}],                                                cook:10,distill:2,barrel:'Any',  age:6, diff:6,alc:14},
+  {name:'Port Wine',    cat:'wines',  ing:[{n:'Grapes',q:7},{n:'Honey Bottle',q:1}],                         cook:6, distill:0,barrel:'Any',  age:24,diff:6,alc:11},
+  {name:'Sherry',       cat:'wines',  ing:[{n:'Grapes',q:6},{n:'Honey Bottle',q:1}],                         cook:6, distill:0,barrel:'Any',  age:20,diff:6,alc:10},
+  {name:'Honeyed Wine', cat:'wines',  ing:[{n:'Grapes',q:6},{n:'Honey Bottle',q:2}],                         cook:6, distill:0,barrel:'Any',  age:16,diff:5,alc:9},
+  {name:'Wormwood Wine',cat:'wines',  ing:[{n:'Grapes',q:5},{n:'Short Grass',q:1}],                          cook:6, distill:0,barrel:'Any',  age:12,diff:5,alc:9},
+  {name:'Resinated Wine',cat:'wines', ing:[{n:'Grapes',q:6},{n:'Stick',q:1}],                                cook:6, distill:0,barrel:'Any',  age:18,diff:5,alc:8},
+  {name:'Sparkling Wine',cat:'wines', ing:[{n:'Grapes',q:6},{n:'Sugar',q:1}],                                cook:5, distill:0,barrel:'Any',  age:14,diff:5,alc:8},
+  {name:'Red Wine',     cat:'wines',  ing:[{n:'Grapes',q:6}],                                                cook:5, distill:0,barrel:'Any',  age:20,diff:4,alc:8},
+  {name:'Date Wine',    cat:'wines',  ing:[{n:'Cocoa Beans',q:8},{n:'Honey Bottle',q:1}],                           cook:7, distill:0,barrel:'Any',  age:14,diff:4,alc:8},
+  {name:'Raisin Wine',  cat:'wines',  ing:[{n:'Grapes',q:4},{n:'Honey Bottle',q:1}],                         cook:7, distill:0,barrel:'Any',  age:16,diff:4,alc:8},
+  {name:'White Wine',   cat:'wines',  ing:[{n:'Grapes',q:6}],                                                cook:5, distill:0,barrel:'Any',  age:16,diff:4,alc:7},
+  {name:'Sugarcane Wine',cat:'wines', ing:[{n:'Sugar Cane',q:10}],                                                  cook:6, distill:0,barrel:'Any',  age:10,diff:4,alc:7},
+  {name:'Herbal Wine',  cat:'wines',  ing:[{n:'Grapes',q:5},{n:'Rosemary',q:1},{n:'Sage',q:1},{n:'Honey Bottle',q:1}],cook:6,distill:0,barrel:'Any',age:12,diff:4,alc:7},
+  {name:'Clairet',      cat:'wines',  ing:[{n:'Grapes',q:6}],                                                cook:5, distill:0,barrel:'Any',  age:6, diff:4,alc:7},
+  {name:'Bock Beer',    cat:'beers',  ing:[{n:'Wheat',q:8}],                                                        cook:10,distill:0,barrel:'Acacia',age:12,diff:4,alc:9},
+  {name:'Klosterbier',  cat:'beers',  ing:[{n:'Wheat',q:7}],                                                        cook:9, distill:0,barrel:'Spruce',age:10,diff:3,alc:8},
+  {name:'Dark Beer',    cat:'beers',  ing:[{n:'Wheat',q:6}],                                                        cook:9, distill:0,barrel:'Acacia',age:8, diff:2,alc:7},
+  {name:'Koyt Beer',    cat:'beers',  ing:[{n:'Wheat',q:6},{n:'Honey Bottle',q:1}],                                 cook:8, distill:0,barrel:'Any',  age:6, diff:3,alc:7},
+  {name:'Red Ale',      cat:'beers',  ing:[{n:'Wheat',q:6}],                                                        cook:8, distill:0,barrel:'Any',  age:5, diff:2,alc:6},
+  {name:'Wheat Beer',   cat:'beers',  ing:[{n:'Wheat',q:5}],                                                        cook:8, distill:0,barrel:'Birch', age:3,diff:1,alc:5},
+  {name:'Wheatbeer',    cat:'beers',  ing:[{n:'Wheat',q:3}],                                                        cook:8, distill:0,barrel:'Birch', age:2,diff:1,alc:5},
+  {name:'Ale',          cat:'beers',  ing:[{n:'Wheat',q:5}],                                                        cook:7, distill:0,barrel:'Any',  age:3, diff:1,alc:5},
+  {name:'Grodziskie',   cat:'beers',  ing:[{n:'Wheat',q:4}],                                                        cook:7, distill:0,barrel:'Any',  age:4, diff:3,alc:5},
+  {name:'Budweiser',    cat:'beers',  ing:[{n:'Wheat',q:5}],                                                        cook:7, distill:0,barrel:'Any',  age:4, diff:2,alc:5},
+  {name:'Braggot',      cat:'meads',  ing:[{n:'Wheat',q:4},{n:'Honey Bottle',q:2}],                                 cook:7, distill:0,barrel:'Any',  age:10,diff:4,alc:10},
+  {name:'Bochet',       cat:'meads',  ing:[{n:'Honey Bottle',q:4}],                                                 cook:6, distill:0,barrel:'Any',  age:12,diff:5,alc:10},
+  {name:'Bragawd',      cat:'meads',  ing:[{n:'Wheat',q:4},{n:'Honey Bottle',q:2}],                                 cook:8, distill:0,barrel:'Any',  age:8, diff:4,alc:9},
+  {name:'Tej',          cat:'meads',  ing:[{n:'Honey Bottle',q:3},{n:'Short Grass',q:1}],                           cook:5, distill:0,barrel:'Any',  age:8, diff:4,alc:9},
+  {name:'Melomel',      cat:'meads',  ing:[{n:'Honey Bottle',q:2},{n:'Apple',q:2}],                                 cook:5, distill:0,barrel:'Any',  age:8, diff:4,alc:9},
+  {name:'Mead',         cat:'meads',  ing:[{n:'Honey Bottle',q:3}],                                                 cook:4, distill:0,barrel:'Any',  age:8, diff:2,alc:9},
+  {name:'Medovukha',    cat:'meads',  ing:[{n:'Honey Bottle',q:2}],                                                 cook:4, distill:0,barrel:'Any',  age:6, diff:3,alc:7},
+  {name:'Apple Cider',  cat:'other',  ing:[{n:'Apple',q:12}],                                                       cook:7, distill:0,barrel:'Any',  age:4, diff:3,alc:6},
+  {name:'Airag',        cat:'other',  ing:[{n:'Milk Bucket',q:3}],                                                  cook:3, distill:0,barrel:'Any',  age:6, diff:4,alc:6},
+  {name:'Vinegar',      cat:'other',  ing:[{n:'Grapes',q:5}],                                                cook:2, distill:0,barrel:'Any',  age:6, diff:2,alc:-5},
+];
+const CC={spirits:'#c0392b',wines:'#8e1a5a',beers:'#c47c1a',meads:'#d4a017',other:'#2d7a6a'};
+const SLOTS={small:9,big:27};
+const ICONS={small:'🛢',big:'⚗'};
+const BLABEL={small:'Small Barrel',big:'Big Barrel'};
+// MvndiCraft: 1 Minecraft day = 20 real minutes = 1 year aging
+const MIN_PER_YEAR = 20;
+
+// ════════════════════════════════════
+// STATE
+// ════════════════════════════════════
+let activeCat='all', searchQ='';
+let pickerCat='all';
+const timers={};   // cooking timers (in-memory interval handles)
+let alarmQ=[];
+// Version bump — clears old test data
+if(localStorage.getItem('mvndi_v')!=='3'){
+  localStorage.removeItem('mvndi_barrels');
+  localStorage.removeItem('mvndi_cook_timers');
+  localStorage.setItem('mvndi_v','3');
+}
+let barrels=JSON.parse(localStorage.getItem('mvndi_barrels')||'[]');
+let brewLog=JSON.parse(localStorage.getItem('mvndi_log')||'[]');
+let selBarrel=null;
+let catChart=null, topChart=null;
+
+// Migrate old slot data (add startTime/totalSecs if missing)
+barrels.forEach(b=>b.slots.forEach((s,i)=>{
+  if(s && !s.startTime){
+    const r=RECIPES.find(x=>x.name===s.name);
+    b.slots[i]={name:s.name,startTime:Date.now(),totalSecs:(r?r.age*MIN_PER_YEAR*60:3600),date:s.date||new Date().toLocaleDateString()};
+  }
+}));
+
+function saveBs(){localStorage.setItem('mvndi_barrels',JSON.stringify(barrels));}
+function saveLog(){localStorage.setItem('mvndi_log',JSON.stringify(brewLog));}
+// Persist active cooking timers by storing end timestamps
+function saveCookTimers(){
+  const saved={};
+  Object.entries(timers).forEach(([id,t])=>saved[id]={end:t.end,total:t.total,name:t.name});
+  localStorage.setItem('mvndi_cook_timers',JSON.stringify(saved));
+}
+
+// ════════════════════════════════════
+// NAV
+// ════════════════════════════════════
+function showPage(id){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.nav-tab').forEach(t=>t.classList.remove('active'));
+  document.getElementById('page-'+id).classList.add('active');
+  document.getElementById('tab-'+id).classList.add('active');
+  if(id==='stats')renderStats();
+  if(id==='barrels'){renderBarrelList();renderBarrelDetail();renderPickerList();}
+  if(id==='settings')renderSettings();
+}
+
+// ════════════════════════════════════
+// AUDIO — layered oscillators + repeated beep loop for persistence
+// ════════════════════════════════════
+let _audioCtx=null;
+function getAudio(){
+  if(!_audioCtx||_audioCtx.state==='closed')
+    _audioCtx=new(window.AudioContext||window.webkitAudioContext)();
+  if(_audioCtx.state==='suspended')_audioCtx.resume();
+  return _audioCtx;
+}
+function beep(type='cook'){
+  try{
+    const ctx=getAudio();
+    const notes=type==='age'
+      ? [[523,0,.28],[659,.32,.28],[784,.64,.28],[1047,.96,.55],[784,1.55,.22],[1047,1.8,.5]]
+      : [[880,0,.18],[1100,.22,.18],[880,.44,.18],[1100,.66,.35],[1320,.9,.5]];
+    notes.forEach(([f,t,d])=>{
+      const o=ctx.createOscillator(),g=ctx.createGain();
+      o.connect(g);g.connect(ctx.destination);
+      o.type=type==='age'?'triangle':'square';
+      o.frequency.setValueAtTime(f,ctx.currentTime+t);
+      g.gain.setValueAtTime(0,ctx.currentTime+t);
+      g.gain.linearRampToValueAtTime(.28 * masterVolume, ctx.currentTime+t+.03);
+      g.gain.linearRampToValueAtTime(0,ctx.currentTime+t+d);
+      o.start(ctx.currentTime+t);o.stop(ctx.currentTime+t+d+.05);
+    });
+    // Repeat beep twice more so it's hard to miss
+    [1.4,2.8].forEach(delay=>{
+      notes.forEach(([f,t,d])=>{
+        const o=ctx.createOscillator(),g=ctx.createGain();
+        o.connect(g);g.connect(ctx.destination);
+        o.type=type==='age'?'triangle':'square';
+        o.frequency.setValueAtTime(f,ctx.currentTime+delay+t);
+        g.gain.setValueAtTime(0,ctx.currentTime+delay+t);
+        g.gain.linearRampToValueAtTime(.22 * masterVolume,ctx.currentTime+delay+t+.03);
+        g.gain.linearRampToValueAtTime(0,ctx.currentTime+delay+t+d);
+        o.start(ctx.currentTime+delay+t);o.stop(ctx.currentTime+delay+t+d+.05);
+      });
+    });
+    // Also fire Electron notification if available
+    if(window.electronAPI){
+      window.electronAPI.notify(
+        type==='age'?'⚗ Aging Complete':'🔥 Cooking Complete',
+        type==='age'?'Your brew has finished aging!':'Your cauldron is ready!'
+      );
+    }
+  }catch(e){console.warn('Audio error:',e);}
+}
+
+// ════════════════════════════════════
+// COOKING TIMERS (global top bar)
+// ════════════════════════════════════
+function fmt(s){
+  if(s<=0)return'00:00';
+  const h=Math.floor(s/3600),m=Math.floor((s%3600)/60),ss=s%60;
+  if(h>0)return`${h}h ${String(m).padStart(2,'0')}m`;
+  return`${String(m).padStart(2,'0')}:${String(ss).padStart(2,'0')}`;
+}
+
+window.stopTimer=function(id){
+  if(!timers[id])return;
+  clearInterval(timers[id].iv);
+  delete timers[id];
+  const el=document.getElementById('chip-'+id);
+  if(el)el.remove();
+  if(!Object.keys(timers).length)document.getElementById('timer-bar').classList.remove('open');
+  saveCookTimers();
+};
+
+function _runTimer(id,name,end,total){
+  const chips=document.getElementById('timer-chips');
+  // Don't duplicate
+  if(document.getElementById('chip-'+id))return;
+  const remNow=Math.ceil((end-Date.now())/1000);
+  if(remNow<=0){
+    // Already expired while app was closed — queue alarm immediately
+    alarmQ.push({name,kind:'cook'});
+    if(alarmQ.length===1)showAlarm();
+    saveCookTimers();
+    return;
+  }
+  const div=document.createElement('div');
+  div.className='t-chip';div.id='chip-'+id;
+  div.innerHTML=`<div class="t-chip-fill" id="fill-${id}" style="width:${Math.max(0,(end-Date.now())/(total*1000)*100)}%"></div>`+
+    `<span class="t-chip-name">${name}</span>`+
+    `<span class="t-chip-kind">COOK</span>`+
+    `<span class="t-chip-time" id="ct-${id}">${fmt(remNow)}</span>`+
+    `<button class="t-chip-x" type="button" onclick="stopTimer('${id}')">✕</button>`;
+  chips.appendChild(div);
+  document.getElementById('timer-bar').classList.add('open');
+  timers[id]={iv:null,end,total,name,kind:'cook'};
+  timers[id].iv=setInterval(()=>{
+    const t=timers[id];if(!t)return;
+    const rem=Math.ceil((t.end-Date.now())/1000);
+    const ct=document.getElementById('ct-'+id);
+    const fi=document.getElementById('fill-'+id);
+    if(ct)ct.textContent=fmt(Math.max(0,rem));
+    if(fi)fi.style.width=Math.max(0,(t.end-Date.now())/(t.total*1000)*100)+'%';
+    if(rem<=0){
+      clearInterval(t.iv);delete timers[id];
+      const chip=document.getElementById('chip-'+id);if(chip)chip.remove();
+      if(!Object.keys(timers).length)document.getElementById('timer-bar').classList.remove('open');
+      alarmQ.push({name:t.name,kind:'cook'});
+      if(alarmQ.length===1)showAlarm();
+      saveCookTimers();
+    }
+  },1000);
+}
+
+window.startTimer=function(name,secs){
+  const id=name.replace(/[^a-z0-9]/gi,'_')+'_cook';
+  if(timers[id]){showToast('Timer already running for '+name);return;}
+  const end=Date.now()+secs*1000;
+  _runTimer(id,name,end,secs);
+  saveCookTimers();
+};
+
+function showAlarm(){
+  if(!alarmQ.length)return;
+  const a=alarmQ[0];
+  document.getElementById('al-name').textContent=a.name;
+  document.getElementById('al-type').textContent=a.kind==='cook'?'COOKING COMPLETE':'AGING COMPLETE';
+  document.getElementById('alarm').classList.add('show');
+  beep(a.kind==='age'?'age':'cook');
+}
+window.dismissAlarm=function(){
+  alarmQ.shift();
+  document.getElementById('alarm').classList.remove('show');
+  if(alarmQ.length)setTimeout(showAlarm,400);
+};
+
+// ════════════════════════════════════
+// RECIPES
+// ════════════════════════════════════
+function setCat(c){
+  activeCat=c;
+  document.querySelectorAll('.cat-pill').forEach(p=>p.classList.remove('active'));
+  document.getElementById('pill-'+c).classList.add('active');
+  render();
+}
+function filterSearch(q){searchQ=q.toLowerCase();render();}
+
+window.updateBatch=function(sid,ingJson){
+  const n=Math.max(1,parseInt(document.getElementById('bi-'+sid).value)||1);
+  const el=document.getElementById('il-'+sid);
+  if(!el)return;
+  const ing=JSON.parse(ingJson);
+  el.innerHTML=ing.map(i=>`<span class="ing-q">${i.q*n}</span> ${i.n}`).join(' · ');
+};
+
+window.quickLog=function(name){
+  const r=RECIPES.find(x=>x.name===name);
+  brewLog.unshift({name,cat:r?.cat||'?',date:new Date().toLocaleDateString()});
+  saveLog();
+};
+
+function buildCard(r){
+  const cc=CC[r.cat];
+  // 1 year = MIN_PER_YEAR minutes
+  const ageMin=r.age*MIN_PER_YEAR;
+  const ageFmt=ageMin>=60?`${(ageMin/60).toFixed(1).replace(/\.0$/,'')}h`:`${ageMin}m`;
+  const ac=r.alc<0?'#2d8a4e':r.alc>=15?'#c0392b':r.alc>=10?'#d4860a':'#a88850';
+  const sid=r.name.replace(/[^a-z0-9]/gi,'_');
+  const ingJsonSafe=JSON.stringify(r.ing).replace(/"/g,'&quot;');
+  const ingHtml=r.ing.map(i=>`<span class="ing-q">${i.q}</span> ${i.n}`).join(' · ');
+  const sn=r.name.replace(/'/g,"\\'");
+  return `<div class="r-card" style="--cc:${cc}" data-cat="${r.cat}" data-name="${r.name.toLowerCase()}">
+  <div class="r-head">
+    <div class="r-name">${r.name}</div>
+    <div class="r-badges">
+      <span class="badge badge-alc" style="border-color:${ac};color:${ac}">${r.alc>0?'+':''}${r.alc}</span>
+      ${r.distill>0?`<span class="badge badge-dist">DIST ×${r.distill}</span>`:''}
+      ${r.barrel!=='Any'?`<span class="badge badge-wood">🪵 ${r.barrel}</span>`:''}
+      <span class="badge badge-diff">D${r.diff}</span>
+    </div>
+  </div>
+  <div class="r-body">
+    <div class="r-row">
+      <span class="r-lbl">Ingredients</span>
+      <div class="ing-section">
+        <span class="ing-list" id="il-${sid}">${ingHtml}</span>
+        <div class="batch-wrap"><label>BATCH ×</label><input type="number" id="bi-${sid}" min="1" max="999" value="1" onchange="updateBatch('${sid}','${ingJsonSafe}')" oninput="updateBatch('${sid}','${ingJsonSafe}')"></div>
+      </div>
+    </div>
+    <div class="r-row">
+      <span class="r-lbl">Steps</span>
+      <span class="r-val"><div class="steps-row">
+        <span class="step-tag">🔥 Cook ${r.cook}m</span>
+        ${r.distill>0?`<span class="step-tag" style="border-color:var(--red);color:var(--red)">⚗ Distill ×${r.distill}</span>`:''}
+        <span class="step-tag">🪣 Age ${r.age}yr = ${ageFmt}</span>
+      </div></span>
+    </div>
+    <div class="r-row">
+      <span class="r-lbl">Barrel</span>
+      <span class="r-val">${r.barrel==='Any'?'Any wood':`<span class="wood-tag">🪵 ${r.barrel} required</span>`}</span>
+    </div>
+    <div class="r-row">
+      <span class="r-lbl">Difficulty</span>
+      <span class="r-val diff-stars">${'<span class="diff-on">★</span>'.repeat(r.diff)+'<span class="diff-off">★</span>'.repeat(10-r.diff)}</span>
+    </div>
+  </div>
+  <div class="r-foot">
+    <button class="t-btn t-btn-cook" onclick="startTimer('${sn}',${r.cook*60})">🔥 Start Cook Timer</button>
+    <button class="t-btn t-btn-log" onclick="quickLog('${sn}')">✓ Log Brew</button>
+  </div>
+</div>`;
+}
+
+function render(){
+  const grid=document.getElementById('r-grid');
+  const items=RECIPES.filter(r=>(activeCat==='all'||r.cat===activeCat)&&(!searchQ||r.name.toLowerCase().includes(searchQ)));
+  grid.innerHTML=items.map(buildCard).join('')||`<div class="no-data" style="grid-column:1/-1">NO RECIPES FOUND</div>`;
+}
+
+// ════════════════════════════════════
+// BARRELS
+// ════════════════════════════════════
+window.addBarrel=function(){
+  const name=document.getElementById('b-name').value.trim()||'Barrel';
+  const type=document.getElementById('b-type').value;
+  const wood=document.getElementById('b-wood').value;
+  barrels.push({id:'b'+Date.now(),name,type,wood,slots:Array(SLOTS[type]).fill(null)});
+  saveBs();document.getElementById('b-name').value='';
+  renderBarrelList();
+};
+
+function renderBarrelList(){
+  const el=document.getElementById('barrel-list');
+  el.innerHTML=barrels.length?barrels.map(b=>`
+    <div class="b-item${b.id===selBarrel?' sel':''}" onclick="selBarrelFn('${b.id}')">
+      <span class="bi-icon">${ICONS[b.type]}</span>
+      <div><div class="bi-name">${b.name}</div><div class="bi-meta">${b.wood} · ${BLABEL[b.type]}</div></div>
+      <span class="bi-count">${b.slots.filter(s=>s).length}/${b.slots.length}</span>
+    </div>`).join(''):`<div class="no-data">NO BARRELS YET</div>`;
+}
+
+window.selBarrelFn=function(id){
+  selBarrel=id;renderBarrelList();renderBarrelDetail();
+  // update picker hint
+  const b=barrels.find(x=>x.id===id);
+  if(b){
+    const empty=b.slots.filter(s=>!s).length;
+    document.getElementById('picker-hint').textContent=`Barrel: ${b.name} · ${empty} empty slot${empty!==1?'s':''}. Click a recipe to add it.`;
+  }
+};
+
+window.deleteBarrel=function(bid){
+  showConfirm('Delete this barrel and all its contents?',()=>{
+    barrels=barrels.filter(x=>x.id!==bid);
+    if(selBarrel===bid){selBarrel=null;}
+    saveBs();renderBarrelList();renderBarrelDetail();
+    document.getElementById('picker-hint').textContent='Select a barrel first, then click a recipe to add it to the next empty slot.';
+  },'DELETE');
+};
+
+window.clearSlot=function(bid,idx,e){
+  if(e)e.stopPropagation();
+  const b=barrels.find(x=>x.id===bid);if(!b)return;
+  b.slots[idx]=null;saveBs();renderBarrelList();renderBarrelDetail();
+};
+
+// Add recipe to next empty slot in selected barrel
+window.addRecipeToBarrel=function(recipeName){
+  if(!selBarrel){showToast('Select a barrel first!');return;}
+  const b=barrels.find(x=>x.id===selBarrel);
+  if(!b)return;
+  const idx=b.slots.findIndex(s=>!s);
+  if(idx===-1){showToast('This barrel is full!');return;}
+  const r=RECIPES.find(x=>x.name===recipeName);
+  if(!r)return;
+  const totalSecs=r.age*MIN_PER_YEAR*60;
+  b.slots[idx]={name:recipeName,startTime:Date.now(),totalSecs,date:new Date().toLocaleDateString()};
+  saveBs();
+  renderBarrelList();renderBarrelDetail();
+  // Update picker hint
+  const empty=b.slots.filter(s=>!s).length;
+  document.getElementById('picker-hint').textContent=`Added ${recipeName}! · ${empty} empty slot${empty!==1?'s':''} left.`;
+};
+
+// ── Aging timer groups per barrel ──
+// Groups slots by recipe name, then within each name group, splits into subgroups
+// if startTimes differ by more than 5% of totalSecs (would affect outcome)
+function getAgingGroups(b){
+  const now=Date.now();
+  // collect filled slots
+  const filled=b.slots.map((s,i)=>s?{...s,idx:i}:null).filter(Boolean);
+  if(!filled.length)return[];
+  // group by recipe name
+  const byName={};
+  filled.forEach(s=>{
+    if(!byName[s.name])byName[s.name]=[];
+    byName[s.name].push(s);
+  });
+  const groups=[];
+  Object.entries(byName).forEach(([name,slots])=>{
+    // sort by startTime
+    slots.sort((a,b)=>a.startTime-b.startTime);
+    const threshold=slots[0].totalSecs*0.05*1000; // 5% of total duration in ms
+    let cur=[slots[0]];
+    for(let i=1;i<slots.length;i++){
+      if(slots[i].startTime-cur[0].startTime<=threshold){
+        cur.push(slots[i]);
+      } else {
+        groups.push({name,slots:cur});
+        cur=[slots[i]];
+      }
+    }
+    groups.push({name,slots:cur});
+  });
+  return groups;
+}
+
+function renderBarrelDetail(){
+  const b=barrels.find(x=>x.id===selBarrel);
+  const el=document.getElementById('barrel-detail');
+  if(!b){el.innerHTML='<div class="no-data" style="margin-top:80px;">← SELECT A BARREL TO VIEW IT</div>';return;}
+
+  const now=Date.now();
+
+  // Build aging timer chips
+  const groups=getAgingGroups(b);
+  let timerHtml='';
+  if(groups.length){
+    timerHtml=`<div class="barrel-age-timers" id="age-timers-${b.id}">`;
+    groups.forEach((g,gi)=>{
+      // average remaining
+      const avgRem=g.slots.reduce((sum,s)=>{
+        const end=s.startTime+s.totalSecs*1000;
+        return sum+Math.max(0,end-now);
+      },0)/g.slots.length/1000;
+      const avgTotal=g.slots[0].totalSecs;
+      const pct=Math.min(100,(1-(avgRem/avgTotal))*100);
+      const chipId=`age_${b.id}_${gi}`;
+      const countLabel=g.slots.length>1?` ×${g.slots.length}`:'';
+      timerHtml+=`<div class="age-chip" id="${chipId}">
+        <div class="age-chip-fill" id="agefill_${chipId}" style="width:${pct}%"></div>
+        <span class="age-chip-name">${g.name}</span>
+        <span class="age-chip-label">AGING</span>
+        <span class="age-chip-time" id="agetime_${chipId}">${fmt(Math.round(avgRem))}</span>
+        ${g.slots.length>1?`<span class="age-chip-count">${countLabel}</span>`:''}
+        <button class="age-chip-x" title="Cancel this aging group" onclick="removeAgingGroup('${b.id}',${gi})">✕</button>
+      </div>`;
+    });
+    timerHtml+='</div>';
+  }
+
+  // Build slots
+  const slotHtml=b.slots.map((s,i)=>{
+    if(s){
+      const end=s.startTime+s.totalSecs*1000;
+      const remMs=Math.max(0,end-now);
+      const remSec=Math.round(remMs/1000);
+      const pct=Math.min(100,(remMs/(s.totalSecs*1000))*100); // TIME REMAINING %
+      const isDone=remMs<=0;
+      return `<div class="slot filled${isDone?' done':''}" id="slot_${b.id}_${i}">
+        <div class="slot-gauge-bg">
+          <div class="slot-gauge-liquid${isDone?' slot-gauge-done':''}" id="gauge_${b.id}_${i}" style="height:${pct}%">
+            <div class="slot-gauge-wave"></div>
+            <div class="slot-gauge-wave2"></div>
+          </div>
+        </div>
+        <div class="slot-content">
+          <div class="slot-num">SLOT ${i+1}</div>
+          <div class="slot-brew">${s.name}</div>
+          <div class="slot-time" id="slottime_${b.id}_${i}">${isDone?'✓ DONE':fmt(remSec)}</div>
+          <div class="slot-pct" id="slotpct_${b.id}_${i}">${isDone?'DONE':Math.round(pct)+'%'}</div>
+        </div>
+        <button class="slot-clear" onclick="clearSlot('${b.id}',${i},event)">✕</button>
+      </div>`;
+    } else {
+      return `<div class="slot empty-slot" onclick="addRecipeToBarrelEmpty('${b.id}',${i})">
+        <div class="slot-content">
+          <div class="slot-num">SLOT ${i+1}</div>
+          <div class="slot-empty">EMPTY<br>← Pick recipe</div>
+        </div>
+      </div>`;
+    }
+  }).join('');
+
+  el.innerHTML=`<div>
+    <div class="bd-head">
+      <div class="bd-icon">${ICONS[b.type]}</div>
+      <div><div class="bd-name">${b.name}</div><div class="bd-sub">${b.wood} Wood · ${BLABEL[b.type]} · ${b.slots.length} slots · ${b.slots.filter(s=>s).length} in use</div></div>
+      <button class="bd-del" onclick="deleteBarrel('${b.id}')">DELETE</button>
+    </div>
+    ${timerHtml}
+    <div class="bd-slots-lbl">SLOTS — click filled to remove · use right panel to add drinks</div>
+    <div class="slot-grid">${slotHtml}</div>
+  </div>`;
+}
+
+window.addRecipeToBarrelEmpty=function(bid,idx){
+  // Clicking an empty slot just focuses search
+  document.getElementById('picker-search').focus();
+};
+
+// Remove an aging timer group (clears all slots in that group from the barrel)
+window.removeAgingGroup=function(bid,gi){
+  const b=barrels.find(x=>x.id===bid);if(!b)return;
+  const groups=getAgingGroups(b);
+  const g=groups[gi];if(!g)return;
+  const label=g.slots.length>1?`${g.slots.length} slots of ${g.name}`:`${g.name}`;
+  showConfirm(`Remove ${label} from barrel? This will clear those slots.`,()=>{
+    g.slots.forEach(s=>{ b.slots[s.idx]=null; });
+    saveBs();renderBarrelList();renderBarrelDetail();
+    const empty=b.slots.filter(s=>!s).length;
+    document.getElementById('picker-hint').textContent=`Removed ${g.name}. · ${empty} empty slot${empty!==1?'s':''} left.`;
+  },'REMOVE');
+};
+
+// ════════════════════════════════════
+// RECIPE PICKER (right panel)
+// ════════════════════════════════════
+function setPickerCat(c){
+  pickerCat=c;
+  document.querySelectorAll('.picker-cat').forEach(p=>p.classList.remove('active'));
+  document.getElementById('pcat-'+c).classList.add('active');
+  renderPickerList();
+}
+
+function renderPickerList(){
+  const q=(document.getElementById('picker-search').value||'').toLowerCase();
+  const list=document.getElementById('picker-list');
+  const items=RECIPES.filter(r=>(pickerCat==='all'||r.cat===pickerCat)&&(!q||r.name.toLowerCase().includes(q)));
+  if(!items.length){list.innerHTML='<div class="no-data">NO RECIPES FOUND</div>';return;}
+  list.innerHTML=items.map(r=>{
+    const ageMin=r.age*MIN_PER_YEAR;
+    const ageFmt=ageMin>=60?`${(ageMin/60).toFixed(1).replace(/\.0$/,'')}h`:`${ageMin}m`;
+    const woodBadge=r.barrel!=='Any'?`<span class="picker-item-badge">${r.barrel}</span>`:'';
+    const sn=r.name.replace(/'/g,"\\'");
+    return `<div class="picker-item" onclick="addRecipeToBarrel('${sn}')">
+      <div class="picker-item-info">
+        <div class="picker-item-name">${r.name}</div>
+        <div class="picker-item-meta">Age ${r.age}yr = ${ageFmt} · Alc ${r.alc>0?'+':''}${r.alc}</div>
+      </div>
+      ${woodBadge}
+      <span class="picker-item-add">＋</span>
+    </div>`;
+  }).join('');
+}
+
+// ════════════════════════════════════
+// LIVE TICK — updates gauges + aging timers every second
+// ════════════════════════════════════
+setInterval(()=>{
+  const now=Date.now();
+  barrels.forEach(b=>{
+    b.slots.forEach((s,i)=>{
+      if(!s)return;
+      const end=s.startTime+s.totalSecs*1000;
+      const remMs=Math.max(0,end-now);
+      const remSec=Math.round(remMs/1000);
+      const pct=Math.min(100,(remMs/(s.totalSecs*1000))*100); // remaining %
+      // update gauge
+      const gauge=document.getElementById(`gauge_${b.id}_${i}`);
+      if(gauge){
+        gauge.style.height=pct+'%';
+        if(remMs<=0)gauge.classList.add('slot-gauge-done');
+      }
+      // update slot time
+      const st=document.getElementById(`slottime_${b.id}_${i}`);
+      if(st)st.textContent=remSec<=0?'✓ DONE':fmt(remSec);
+      const slotEl=document.getElementById(`slot_${b.id}_${i}`);
+      if(slotEl){
+        const pctEl=document.getElementById(`slotpct_${b.id}_${i}`);
+        if(pctEl)pctEl.textContent=remMs<=0?'DONE':Math.round(pct)+'%';
+        if(remMs<=0)slotEl.classList.add('done');
+      }
+      // check if just completed
+      if(remMs<=0 && s._alerted!==true){
+        s._alerted=true;
+        saveBs();
+        alarmQ.push({name:s.name,kind:'age'});
+        if(alarmQ.length===1)showAlarm();
+      }
+    });
+    // update aging timer chips
+    const groups=getAgingGroups(b);
+    groups.forEach((g,gi)=>{
+      const chipId=`age_${b.id}_${gi}`;
+      const avgRem=g.slots.reduce((sum,s)=>{
+        const end=s.startTime+s.totalSecs*1000;
+        return sum+Math.max(0,end-now);
+      },0)/g.slots.length/1000;
+      const avgTotal=g.slots[0].totalSecs;
+      const pct=Math.min(100,(1-(avgRem/avgTotal))*100);
+      const fillEl=document.getElementById(`agefill_${chipId}`);
+      if(fillEl)fillEl.style.width=pct+'%';
+      const timeEl=document.getElementById(`agetime_${chipId}`);
+      if(timeEl)timeEl.textContent=fmt(Math.round(avgRem));
+    });
+  });
+},1000);
+
+// ════════════════════════════════════
+// STATS
+// ════════════════════════════════════
+function renderStats(){
+  const total=brewLog.length;
+  const cats={spirits:0,wines:0,beers:0,meads:0,other:0};
+  brewLog.forEach(l=>{if(cats[l.cat]!==undefined)cats[l.cat]++;});
+  const top=Object.entries(cats).sort((a,b)=>b[1]-a[1])[0];
+  document.getElementById('stat-cards').innerHTML=`
+    <div class="stat-card"><div class="stat-val">${total}</div><div class="stat-lbl">BREWS LOGGED</div></div>
+    <div class="stat-card"><div class="stat-val">${Object.values(cats).filter(v=>v>0).length}</div><div class="stat-lbl">CATEGORIES ACTIVE</div></div>
+    <div class="stat-card"><div class="stat-val" style="font-size:16px;padding-top:4px">${top&&top[1]>0?top[0].toUpperCase():'—'}</div><div class="stat-lbl">TOP CATEGORY</div></div>
+    <div class="stat-card"><div class="stat-val">${barrels.length}</div><div class="stat-lbl">BARRELS OWNED</div></div>
+    <div class="stat-card"><div class="stat-val">${barrels.reduce((a,b)=>a+b.slots.filter(s=>s).length,0)}</div><div class="stat-lbl">BATCHES AGING</div></div>
+  `;
+  const cfg={plugins:{legend:{labels:{color:'#a88850',font:{family:'Cinzel, serif',size:9},boxWidth:10}}},responsive:true};
+  if(catChart)catChart.destroy();
+  catChart=new Chart(document.getElementById('chart-cat'),{type:'doughnut',data:{labels:Object.keys(cats).map(k=>k.toUpperCase()),datasets:[{data:Object.values(cats),backgroundColor:Object.keys(cats).map(k=>CC[k]),borderColor:'#0d0a07',borderWidth:2}]},options:cfg});
+  const counts={};brewLog.forEach(l=>{counts[l.name]=(counts[l.name]||0)+1;});
+  const sorted=Object.entries(counts).sort((a,b)=>b[1]-a[1]).slice(0,8);
+  if(topChart)topChart.destroy();
+  topChart=new Chart(document.getElementById('chart-top'),{type:'bar',data:{labels:sorted.map(e=>e[0]),datasets:[{data:sorted.map(e=>e[1]),backgroundColor:'rgba(212,134,10,.65)',borderColor:'#d4860a',borderWidth:1}]},options:{plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#a88850',font:{family:'Cinzel, serif',size:9}},grid:{color:'#3a2810'}},y:{ticks:{color:'#a88850',font:{family:'Cinzel, serif',size:9}},grid:{color:'#3a2810'},beginAtZero:true}},responsive:true}});
+  const sel=document.getElementById('log-select');
+  sel.innerHTML=RECIPES.map(r=>`<option value="${r.name}">${r.name}</option>`).join('');
+  document.getElementById('log-list').innerHTML=brewLog.length
+    ?brewLog.map((l,i)=>`<div class="log-row"><span class="log-brew">${l.name}</span><span class="log-cat">${(l.cat||'').toUpperCase()}</span><span class="log-date">${l.date}</span><button class="log-x" onclick="delLog(${i})">✕</button></div>`).join('')
+    :`<div class="no-data">NO BREWS LOGGED YET — use ✓ Log Brew on any recipe card</div>`;
+}
+
+window.logBrew=function(){
+  const name=document.getElementById('log-select').value;
+  const r=RECIPES.find(x=>x.name===name);
+  brewLog.unshift({name,cat:r?.cat||'?',date:new Date().toLocaleDateString()});
+  saveLog();renderStats();
+};
+window.delLog=function(i){brewLog.splice(i,1);saveLog();renderStats();};
+
+window.resetAllBarrels=function(){
+  showConfirm('Delete ALL barrels and brewing data? This cannot be undone.',()=>{
+    barrels=[];selBarrel=null;
+    saveBs();renderBarrelList();renderBarrelDetail();
+    document.getElementById('picker-hint').textContent='Select a barrel first, then click a recipe to add it to the next empty slot.';
+  },'DELETE ALL');
+};
+
+// ════════════════════════════════════
+// SETTINGS
+// ════════════════════════════════════
+function renderSettings(){
+  const activeTimers=Object.keys(timers).length;
+  document.getElementById('stat-barrels').textContent=barrels.length;
+  document.getElementById('stat-slots').textContent=barrels.reduce((a,b)=>a+b.slots.filter(s=>s).length,0);
+  document.getElementById('stat-log').textContent=brewLog.length;
+  document.getElementById('stat-timers').textContent=activeTimers;
+  // Username
+  const uname=localStorage.getItem('mvndi_username')||'';
+  const uField=document.getElementById('settings-username');
+  if(uField && !uField.value) uField.value=uname;
+  // Volume
+  const vol=Math.round(masterVolume*100);
+  const vSlider=document.getElementById('vol-slider');
+  if(vSlider){ vSlider.value=vol; vSlider.style.background=`linear-gradient(90deg,var(--amber) ${vol}%,var(--border2) ${vol}%)`; }
+  const vVal=document.getElementById('vol-val');
+  if(vVal) vVal.textContent=vol+'%';
+
+}
+
+
+
+window.clearBrewLog=function(){
+  showConfirm('Clear the entire brew log? All history and chart data will be lost.',()=>{
+    brewLog=[];saveLog();
+    renderSettings();
+    showToast('Brew log cleared.');
+  },'CLEAR LOG');
+};
+
+window.wipeAllData=function(){
+  showConfirm(
+    'This will permanently delete EVERYTHING — all barrels, aging slots, brew history, and timers. The app will be completely reset. Are you absolutely sure?',
+    ()=>{
+      // Second confirmation for something this destructive
+      showConfirm('Last chance. This cannot be undone.',()=>{
+        // Stop all cooking timers
+        Object.keys(timers).forEach(id=>{
+          clearInterval(timers[id].iv);
+          delete timers[id];
+          const el=document.getElementById('chip-'+id);
+          if(el)el.remove();
+        });
+        document.getElementById('timer-bar').classList.remove('open');
+        // Wipe all storage keys
+        ['mvndi_barrels','mvndi_log','mvndi_cook_timers','mvndi_v','mvndi_username','mvndi_vol'].forEach(k=>localStorage.removeItem(k));
+        // Reset in-memory state
+        barrels=[];brewLog=[];selBarrel=null;alarmQ=[];
+        renderBarrelList();renderBarrelDetail();renderSettings();
+        showToast('All data wiped. Fresh start.');
+      },'YES, WIPE EVERYTHING');
+    },
+    'WIPE ALL DATA'
+  );
+};
+
+// ════════════════════════════════════
+// ════════════════════════════════════
+render();
+renderBarrelList();
+renderPickerList();
+
+// Restore saved cooking timers
+try{
+  const saved=JSON.parse(localStorage.getItem('mvndi_cook_timers')||'{}');
+  Object.entries(saved).forEach(([id,t])=>_runTimer(id,t.name,t.end,t.total));
+}catch(e){}
+
+// Check for any aging timers that completed while app was closed
+setTimeout(()=>{
+  barrels.forEach(b=>b.slots.forEach(s=>{
+    if(!s)return;
+    const end=s.startTime+s.totalSecs*1000;
+    if(Date.now()>=end && !s._alerted){
+      s._alerted=true;
+      alarmQ.push({name:s.name,kind:'age'});
+    }
+  }));
+  saveBs();
+  if(alarmQ.length)showAlarm();
+},600);
+
+// Kick off the splash (must be last)
+initSplash();
+
+// ════════════════════════════════════
+// LOCK UP (hard quit)
+// ════════════════════════════════════
+window.lockUp = function() {
+  showConfirm('Lock up the brewery and close the app?', () => {
+    if (window.electronAPI) {
+      window.electronAPI.quit();
+    } else {
+      window.close(); // fallback for plain HTML preview
+    }
+  }, '🔒 LOCK UP');
+};
+</script>
+</body>
+</html>

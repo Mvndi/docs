@@ -20,4 +20,6 @@ To start the truffle minigame you have to walk a pig around on a lead and it wil
 
 Cheese crafting is you put glass bottle and milk or something into crafting table have to look at this later to write the specifics.
 
+You have random chance to get barely seeds when breaking wheat if you have the skill.
+
 Hold shift and right click tamed donkey/horse to attach the cart.  It has to be a saddled donkey/horse that you tamed for you to be able to attach the cart and you need the skill.
