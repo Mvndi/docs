@@ -91,7 +91,7 @@ For any greekfire damage the ship will burn for 60 seconds
 
 - **Damage Sources**:
   - **Ramming**: As described above.  
-  - **Siege Weapons**: Both land-based and ship-based siege weapons can damage boats.
+  - **Siege Weapons**: Both land-based and ship-based siege weapons can damage boats. Don't have durability.
     - Ballista does 1 damage
     - Trebuchet does 80% of the max HP of whatever part of the ship it hit
     - Greekfire does 0.1 damage but there's some RNG because it shoots a lot of projectiles (without the RNG it was a death lazer that sawed ships in half). Also ship takes passive damage and passengers nearby where the greekfire impacted start to burn and take damage.

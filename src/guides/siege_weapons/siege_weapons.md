@@ -1,6 +1,6 @@
 # Siege Weapons
 
-Siege weapons are emplacements designed to destroy enemy fortifications and control areas of the battlefield. They can damage [boats](../boats/boats.md).
+Siege weapons are emplacements designed to destroy enemy fortifications and control areas of the battlefield. They can damage [boats](../boats/boats.md). They have durability which can be upgraded by up to 30% by the Durable Siegeworking skill from the blacksmithing tree. Ship siege weapons do not have durability.
 
 ## Obtaining
 

@@ -1,6 +1,6 @@
 # Ballista
 
-The ballista is a long-range anti-infantry turret. It does 1 damage to ships.
+The ballista is a long-range anti-infantry turret. It does 1 damage to ships. Breaks after 300 shots.
 
 <img src="../../assets/ballista.png" align="left" alt="ballista" width="200"/>
 

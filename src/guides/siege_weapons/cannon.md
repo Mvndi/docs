@@ -1,6 +1,6 @@
 # Cannon
 
-The cannon is a highly adjustable siege weapon with a large area of effect. It does 7.5 damage to ships.
+The cannon is a highly adjustable siege weapon with a large area of effect. It does 7.5 damage to ships. Breaks after 200 shots.
 
 <img src="../../assets/cannon.png" align="left" alt="cannon" width="200"/>
 
