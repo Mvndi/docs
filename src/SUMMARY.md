@@ -21,6 +21,7 @@
   - [Chest Shops](./guides/chest_shops.md)  
   - [Combat & Attributes](./guides/combat.md)
   - [Fall Damage](./guides/fall_damage.md)
+  - [Flags](./guides/flags.md)
   - [Big Doors](./guides/big_doors.md)
   - [Animals](./guides/animals.md)
   - [Horses](./guides/horses.md)
