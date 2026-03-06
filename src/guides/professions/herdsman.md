@@ -29,4 +29,4 @@ To open horse genetics menu you need to have the relevant skill in herdsman tree
 - Feeding baby horse sugar gives speed
 - Feeding baby horse horse hay bale blocks gives bravery
 
-To work with cow genetics they have to be bred with barley, you shift right click them to open the genetics menu, doesn't have to be a baby. The temperature where the cows are bred at determines their genetics and there's also some rng.
+To work with cow/sheep/chicken genetics they have to be bred with barley, you shift right click them to open the genetics menu, doesn't have to be a baby. The temperature where the cows are bred at determines their genetics and there's also some rng.
