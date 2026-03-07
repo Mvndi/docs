@@ -12,7 +12,7 @@ There's a [video](https://www.youtube.com/watch?v=raiAhk2Ru5Y) that showcases so
 
 ## Respawn Cooldown
 
-All siege participants have a 10 second respawn cooldown during a battle session
+All siege participants have a 30 second respawn cooldown during a battle session
 
 ## Battle commanders
 
@@ -21,3 +21,5 @@ If players have a battle commander they will spawn there, siege camp takes prior
 - When a battle session starts, 2 Battle Commanders are automatically designated for each Siege, 1 for the attackers, 1 for the defenders.
 - To be designated a Battle Commander, a player must be a King or General, an official siege participant, in the Siege-Zone, and online.
 - During the battle Session, if your team's battle commander is alive and in the Siege-Zone, run `/sw spawn <town>`, to teleport to them.
+
+These don't really and you should set up a [siege camp](./siege_camps.md) instead

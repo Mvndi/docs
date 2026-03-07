@@ -720,6 +720,14 @@ This might be outdated over time, you should use the in game `/recipes` if you c
 
 ![thatch_stairs](../assets/recipes/thatch_stairs.png)
 
+### Scaffolding
+
+![scaffolding](../assets/recipes/scaffolding.png)
+
+### Smooth Stone Trapdoor
+
+![smooth_stone_trapdoor](../assets/recipes/smooth_stone_trapdoor.png)
+
 ### Sandstone Trapdoor
 
 ![sandstone_trapdoor](../assets/recipes/sandstone_trapdoor.png)
@@ -1127,3 +1135,53 @@ This might be outdated over time, you should use the in game `/recipes` if you c
 ### Galley
 
 ![galley](../assets/recipes/galley.png)
+
+## Vertical Slabs
+
+### Polished Granite Vertical Slab
+
+![polished_granite_vertical_slab](../assets/recipes/polished_granite_vertical_slab.png)
+
+### Diorite Vertical Slab
+
+![diorite_vertical_slab](../assets/recipes/diorite_vertical_slab.png)
+
+### Sandstone Vertical Slab
+
+![sandstone_vertical_slab](../assets/recipes/sandstone_vertical_slab.png)
+
+### Red Sandstone Vertical Slab
+
+![red_sandstone_vertical_slab](../assets/recipes/red_sandstone_vertical_slab.png)
+
+### Cobblestone Vertical Slab
+
+![cobblestone_vertical_slab](../assets/recipes/cobblestone_vertical_slab.png)
+
+### Nether Bricks Vertical Slab
+
+![nether_bricks_vertical_slab](../assets/recipes/nether_bricks_vertical_slab.png)
+
+### Bricks Vertical Slab
+
+![bricks_vertical_slab](../assets/recipes/bricks_vertical_slab.png)
+
+### Stone Bricks Vertical Slab
+
+![stone_bricks_vertical_slab](../assets/recipes/stone_bricks_vertical_slab.png)
+
+### Polished Diorite Vertical Slab
+
+![polished_diorite_vertical_slab](../assets/recipes/polished_diorite_vertical_slab.png)
+
+### White Terracotta Vertical Slab
+
+![white_terracotta_vertical_slab](../assets/recipes/white_terracotta_vertical_slab.png)
+
+### Quartz Bricks Vertical Slab
+
+![quartz_bricks_vertical_slab](../assets/recipes/quartz_bricks_vertical_slab.png)
+
+### Dark Oak Vertical Slab
+
+![dark_oak_vertical_slab](../assets/recipes/dark_oak_vertical_slab.png)

@@ -1,6 +1,6 @@
 # Outcome of a Siege
 
-A siege has points. Actions by defenders make the siege lose points, and actions by attackers make the siege gain points. At the end of the last battle session, if the siege has negative or zero points, the defenders win. If the siege has positive points, the attackers win (if the attackers have never captured the banner, it's nearly impossible for them to have more points than the defenders, so defenders typically win in this case). If the attackers capture the banner before the end of the second session, the siege ends in an attacker victory.
+A siege has points. They don't really matter on mvndi beacuse attackers can only win if they capture the siege banner in the center of the town.
 
 A siege's points can be modified by:
 
@@ -14,5 +14,9 @@ Winning the war as the attacker results in receiving the war chest back and bein
 
 - **Invade it**: Place the town under occupation status, allowing you to tax the town up to 12 Ducats per plot daily. To do this, place another non-white banner at the town's borders right after the siege ends.
 - **Plunder it**: Receive a one-time fee worth 50 Ducats per plot claimed. To do this, place a chest at the town's borders right after the siege ends.
+
+If attackers win, reguardless of if they invade/plunder it, a pillage starts given attackers switch (chest/door) perms for 10 minutes, everyone (including attackers) can break/destroy blocks in the town (that lost the siege) with a 60 second cooldown.
+
+Getting counquered DOES NOT give the conquereror perms for the town, the mayor and such of the conquered town stays the same they're just forced into the conquerers nation where they're unable to leave the nation until the declare a [revolt siege](https://github.com/TownyAdvanced/SiegeWar/wiki/Siege-War-User-Guide#statue_of_liberty-revolt) (more info on the siege war wiki below).
 
 Read more at the [SiegeWar Guide](https://github.com/TownyAdvanced/SiegeWar/wiki/Siege-War-User-Guide#trophy-win-siege).
