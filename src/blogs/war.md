@@ -9,7 +9,7 @@ tldr your town spawn has to be accessible with siege weapons. walls are okay, no
 
 We have this in the rules before all the building and war rules but it's not the most enforceable thing.  We're still going to keep this and enforce it but in order to mitigate the issue we've made it so that:
 
-Attackers can place scaffolding in the towns theyre sieging, they have 1 minute cooldown and whoever places the scaffolding gets glow effect (can be seen through walls) for 1 minute
+Attackers can place scaffolding in the towns theyre sieging, they have 1 minute cooldown and whoever places the scaffolding gets glow effect (can be seen through walls) for 3 minute
 
 The newly added greek fire grenades (shown in the previous blog) destroy scaffolding and so do siege weapons. Im sure you guys know how scaffolding works where if the bottom block breaks all the scaffolding above it falls down.
 

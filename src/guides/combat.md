@@ -8,7 +8,7 @@ Mvndicraft's combat is very much different than that of vanilla Minecraft. There
 * [Leveling Up](#leveling-up)
   * [Experience Points](#experience-points)
   * [Respec](#respec)
-[Attributes](#attributes)
+* [Attributes](#attributes)
   * [Vitality](#vitality)
   * [Endurance](#endurance)
     * [Stamina](#stamina)

@@ -1,6 +1,6 @@
 # Greek Fire
 
-The greek fire is a short-range anti-infantry turret which acts like a flamethrower. If fired at water it will create fire on the water’s surface that last for 60 seconds. Burns foliage like berry bushes. For ships it does 0.1 damage but there's some RNG because it shoots a lot of projectiles (without the RNG it was a death lazer that sawed ships in half). Also ship takes passive damage and passengers nearby where the greekfire. Breaks after 500 coal blocks of shooting (fireing 1 coal block worth of fuel consumes 1 durability of 500).
+The greek fire is a short-range anti-infantry turret which acts like a flamethrower. If fired at water it will create fire on the water’s surface that last for 60 seconds. Burns foliage like berry bushes. For ships it does 0.1 damage but there's some RNG because it shoots a lot of projectiles (without the RNG it was a death lazer that sawed ships in half). Also ship takes passive damage and passengers nearby where the greekfire. Breaks after 500 coal blocks of shooting (fireing 1 coal block worth of fuel consumes 1 durability of 500). Will  overheat if fired too much without letting it cooldown, if it overheats it can't be shot for 2 minutes.
 
 <img src="../../assets/greek_fire.png" align="left" alt="greek fire" width="200"/>
 
