@@ -175,7 +175,7 @@ To make a Frisian horse trap:
 
 Video guide:
 
-<video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/traps1.mp4" title="Crucible Furnace"></video>
+<video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/traps.mp4" title="Crucible Furnace"></video>
 
 ## Crucible Furnace
 
