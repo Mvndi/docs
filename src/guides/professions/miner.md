@@ -129,6 +129,10 @@ Gold panning is done by right clicking a river with a **wooden bowl**.
 
 The default chance is **1%** without any skill upgrades and with no other miners nearby. The Gold Panning skill increases this chance, and Corporatism gives an additional bonus when other nearby miners are within range.
 
+Video guide:
+
+<video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/goldpanning.mp4" title="Crucible Furnace"></video>
+
 ## Blast Mining
 
 Blast mining is used for tunnel mining with explosives.
@@ -151,10 +155,7 @@ You can enable explosions with:
 
 Video guide:
 
-<!-- Add blast mining video here -->
-<!-- Example:
-<video controls src="VIDEO_LINK_HERE" title="Blast Mining"></video>
--->
+<video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/tunnelmine.mp4" title="Crucible Furnace"></video>
 
 ## Traps
 
@@ -169,15 +170,12 @@ Players or mobs that step on it will take damage and be temporarily immobilized.
 To make a Frisian horse trap:
 
 - Place **two logs** next to each other
-- Place **two wooden slabs** on top of them
+- Place **two log slabs** on top of them
 - Right click one of the logs with an **axe**
 
 Video guide:
 
-<!-- Add traps video here -->
-<!-- Example:
-<video controls src="VIDEO_LINK_HERE" title="Miner Traps"></video>
--->
+<video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/traps1.mp4" title="Crucible Furnace"></video>
 
 ## Crucible Furnace
 
