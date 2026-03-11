@@ -1,50 +1,244 @@
-# Miner (GUIDE WIP)
+# Miner
 
-Miners get night vision when breaking blocks under Y 50.
+**Important note: You need to have the miner profession to use the abilities in this guide. You can select a profession by using the `/mp` command.**
+
+## Passive Effect
+
+Miners gain **night vision** while breaking blocks below **Y 50**.
 
 ## XP Gain
 
-Miner profession gains XP from mining ores.
+The miner profession gains XP from mining ores.
 
 ## Skill Tree
 
-Most of these are self explanatory so only explaining the not intuitive skills (wip guide will rewrite later)
+The miner profession contains several skills that improve mining, resource gathering, explosives, trapping, and advanced smelting.
 
-To gold pan you right click a river with wooden bowl. Default chance is 1% without the skill upgraded and no other miners nearby
+### Full Skill Tree
 
-To blastmine properly face a cardinal direction (0, 90, 180. -90, -180) place a TNT under Y 50 and light it. More TNT will spawn in that direction and explode a tunnel, the ingots of exploded ores will be added to your inventory. It won't work in claimed chunks with explosions off you can toggle this with `/plot toggle explosion` for chunk basis and `/t toggle explosion  on town basis.
+![Miner Skill Tree](../../assets/professions/miner/fulltree.png)
 
-For the bear trap you place it then you can bury it with a shovel to conceal it, players/mobs that step in it will take damage and be temporarily immobilized.
+---
 
-Frisian horse trap is made by placing two logs next to each other then two wood slabs on top of them and then right clicking a log with an axe.
+### Gold Panning
 
-### Crucible Furnace
+![Gold Panning](../../assets/professions/miner/1left.png)
 
-#### Crucible Furnace-specific requirements
+Find gold in rivers.
 
-- 1x Crucible + Tongs per slot (steel, cast iron, slag)
-- 1x Tongs (to pick up cast ingots)
-- 1x Ingot Cast
-- 1x Blast Furnace
-- 1x Clay Block
+Lvl 1: Unlock gold panning  
+Lvl 2–5: +1% chance per level  
+Maximum bonus: +5%
 
-**IMPORTANT**: To use a crucible furnace, you need the **True Smithing** skill, which is in the **Miner** tree.
+---
 
-![miner req](../../assets/true_smithing_req.png)
+### Miner's Strength
 
-#### Crucible Furnace guide
+![Miner's Strength](../../assets/professions/miner/1right.png)
 
-The max level miner upgrade gives access to the Crucible Furnace. The main difference is that the Crucible Furnace doesn't require any kind of temperature control like the bloomery does, which makes it easier to make steel & cast iron ingots. You can also smelt slag in the crucible furance so it's not just a waste byproduct of bloomery anymore.
+Mine faster and harder.
 
-- Make the Crucible Furnace by putting a Blast Furnace on the ground, and putting a clay block onto it, and right click it with the hammer
-- Combine Tongs & Crucibles to make Tongs with Crucibles
-- Put raw iron & coal into the Crucible Furnace
-- Put the Tongs with Crucibles into any of the Crucible Furnace slots
+Lvl 1: 5% chance for Haste I for 2 seconds  
+Lvl 2–5: +5% chance per level  
+Maximum bonus: +25%
+
+---
+
+### Corporatism
+
+![Corporatism](../../assets/professions/miner/2left.png)
+
+Group gold panning bonus.
+
++2% chance per nearby person per level within 16 blocks  
+Maximum bonus: +10%
+
+---
+
+### Prospecting
+
+![Prospecting](../../assets/professions/miner/2right.png)
+
+Extract more resources from ores.
+
+Lvl 1–5: +10% double drops from ores per level  
+Maximum bonus: +50%
+
+---
+
+### Blast Mining
+
+![Blast Mining](../../assets/professions/miner/3.png)
+
+Explosions for tunnel mining.
+
+Lvl 1: Unlock Gunpowder Barrel recipe  
+Adds the ingot of exploded ores directly to your inventory
+
+---
+
+### Miner's Delight
+
+![Miner's Delight](../../assets/professions/miner/4left.png)
+
+Drinking bonus for mining.
+
+No effects by itself.  
+Increases double drop chance by 1% per alcohol % per level  
+Maximum bonus: +5%
+
+---
+
+### Bombardier
+
+![Bombardier](../../assets/professions/miner/4right.png)
+
+Cheaper explosions.
+
+Lvl 1: 5% coal drops gunpowder  
+Lvl 2–5: +5% chance per level  
+Maximum bonus: +25%
+
+---
+
+### Trapper
+
+![Trapper](../../assets/professions/miner/5left.png)
+
+Advanced hunting traps.
+
+Lvl 1: Bear Traps  
+Lvl 2: Frisian horse trap  
+Lvl 3: Buried Bear Traps
+
+---
+
+### True Smithing
+
+![True Smithing](../../assets/professions/miner/5right.png)
+
+Faster smelting.
+
+Lvl 1: Unlock Crucible Furnace
+
+---
+
+## Gold Panning
+
+Gold panning is done by right clicking a river with a **wooden bowl**.
+
+The default chance is **1%** without any skill upgrades and with no other miners nearby. The Gold Panning skill increases this chance, and Corporatism gives an additional bonus when other nearby miners are within range.
+
+Video guide:
+
+<!-- Add gold panning video here -->
+<!-- Example:
+<video controls src="VIDEO_LINK_HERE" title="Gold Panning"></video>
+-->
+
+## Blast Mining
+
+Blast mining is used for tunnel mining with explosives.
+
+To blast mine properly:
+
+- Face a **cardinal direction**: `0`, `90`, `180`, `-90`, or `-180`
+- Go below **Y 50**
+- Place TNT
+- Light it
+
+If done correctly, more TNT will spawn in that direction and explode a tunnel. The ingots from exploded ores are added directly to your inventory.
+
+Blast mining will not work in claimed chunks with explosions disabled.
+
+You can enable explosions with:
+
+- `/plot toggle explosion` on a plot basis
+- `/t toggle explosion` on a town basis
+
+Video guide:
+
+<!-- Add blast mining video here -->
+<!-- Example:
+<video controls src="VIDEO_LINK_HERE" title="Blast Mining"></video>
+-->
+
+## Traps
+
+### Bear Trap
+
+Place the bear trap on the ground, then use a **shovel** to bury it and conceal it.
+
+Players or mobs that step on it will take damage and be temporarily immobilized.
+
+### Frisian Horse Trap
+
+To make a Frisian horse trap:
+
+- Place **two logs** next to each other
+- Place **two wooden slabs** on top of them
+- Right click one of the logs with an **axe**
+
+Video guide:
+
+<!-- Add traps video here -->
+<!-- Example:
+<video controls src="VIDEO_LINK_HERE" title="Miner Traps"></video>
+-->
+
+## Crucible Furnace
+
+### Crucible Furnace-specific requirements
+
+- 1 x Crucible + Tongs per slot (steel, cast iron, slag)
+- 1 x Tongs (to pick up cast ingots)
+- 1 x Ingot Cast
+- 1 x Blast Furnace
+- 1 x Clay Block
+
+**Important: To use a Crucible Furnace, you need the True Smithing skill from the Miner skill tree.**
+
+### Guide
+
+The True Smithing skill gives access to the **Crucible Furnace**.
+
+The main advantage of the Crucible Furnace is that it does not require temperature control like the bloomery does. This makes it a simpler way to produce **steel** and **cast iron** ingots. It can also process **slag**, so slag is no longer just a waste byproduct from the bloomery.
+
+To create and use a Crucible Furnace:
+
+- Place a **Blast Furnace** on the ground
+- Place a **Clay Block** on top of it
+- Right click it with a **hammer**
+- Combine **Tongs** and **Crucibles** to make **Tongs with Crucibles**
+- Put **raw iron** and **coal** into the Crucible Furnace
+- Put the **Tongs with Crucibles** into any of the Crucible Furnace slots
 - Wait until they fill up
-- Take a pair of Tongs out
-- Place down an Ingot Cast onto the ground, then right click the Tongs onto the Ingot Cast
-- Once the liquid has solidified, pick it up with a pair of Tongs
-- Quench the Tongs to cool down the ingot
-- Once you want to use the ingots for crafting, reheat them using fire and pick them up using tongs
+- Take out a pair of tongs
+- Place an **Ingot Cast** on the ground
+- Right click the tongs onto the Ingot Cast
+- Wait for the liquid to solidify
+- Pick up the finished ingot with tongs
+- Quench the tongs to cool the ingot
+- When you want to use the ingot for crafting, reheat it in fire and pick it up again with tongs
+
+Video guide:
 
 <video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/crucible.mp4" title="Crucible Furnace"></video>
+
+## FAQ
+
+#### Why is blast mining not working?
+
+Make sure you are:
+
+- Below **Y 50**
+- Facing a valid cardinal direction
+- Not in a claimed chunk with explosions disabled
+
+#### How do I start gold panning?
+
+Use a **wooden bowl** and right click a river.
+
+#### What skill do I need for the Crucible Furnace?
+
+You need **True Smithing**.
