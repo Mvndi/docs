@@ -129,13 +129,6 @@ Gold panning is done by right clicking a river with a **wooden bowl**.
 
 The default chance is **1%** without any skill upgrades and with no other miners nearby. The Gold Panning skill increases this chance, and Corporatism gives an additional bonus when other nearby miners are within range.
 
-Video guide:
-
-<!-- Add gold panning video here -->
-<!-- Example:
-<video controls src="VIDEO_LINK_HERE" title="Gold Panning"></video>
--->
-
 ## Blast Mining
 
 Blast mining is used for tunnel mining with explosives.
