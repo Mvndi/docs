@@ -10,6 +10,124 @@ There are a couple of ways to gain XP for the blacksmith profession:
 2. Hammering **bloom**, after picking it up from a bloomery
 3. Hammering items crafted from **hot cast iron** and **hot steel** (shown below)
 
+## Skill Tree
+
+The blacksmith profession contains several skills that unlock new equipment, siege weapons, and improvements to forged gear.
+
+### Full Skill Tree
+
+![Blacksmith Skill Tree](../../assets/professions/blacksmith/fulltree.png)
+
+---
+
+### Fletching
+
+![Fletching](../../assets/professions/blacksmith/fletching.png)
+
+Craft advanced ranged weapons.
+
+Lvl1: Longbow & Bullets  
+Lvl2: Crossbow & Bolts  
+Lvl3: Siege Weapon Ammo
+
+---
+
+### Armor Smithing
+
+![Armor Smithing](../../assets/professions/blacksmith/armor_smithing.png)
+
+Create stronger armor pieces.
+
+Lvl1: Chainmail  
+Lvl2: Half Plate gear  
+Lvl3: Steel gear
+
+---
+
+### Weapon Smithing
+
+![Weapon Smithing](../../assets/professions/blacksmith/weapon_smithing.png)
+
+Unlocks more advanced melee weapons.
+
+Lvl1: Short Spears  
+Lvl2: Heavy Axes  
+Lvl3: Pole Arms
+
+---
+
+### Weapon Quenching
+
+![Weapon Quenching](../../assets/professions/blacksmith/weapon_quenching.png)
+
+Advanced weapon quenching techniques.
+
+Lvl1–3: Increases weapon damage.
+
+---
+
+### Armor Quenching
+
+![Armor Quenching](../../assets/professions/blacksmith/armor_quenching.png)
+
+Advanced quenching techniques for armor pieces.
+
+Lvl1–3: Increases armor defensive quality.
+
+---
+
+### Warsmithing
+
+![Warsmithing](../../assets/professions/blacksmith/warsmithing.png)
+
+Allows the crafting of siege weapons.
+
+Lvl1: Ballista  
+Lvl2: Greek Fire  
+Lvl3: Trebuchet
+
+---
+
+### Durable Siegeworking
+
+![Durable Siegeworking](../../assets/professions/blacksmith/durable_siegeworking.png)
+
+Reinforces siege weapons.
+
+Lvl1–3: +10% durability per level (max 30%).
+
+---
+
+### The Handgonne
+
+![The Handgonne](../../assets/professions/blacksmith/handgonne.png)
+
+Unlocks the first firearm.
+
+Lvl1: Handgonne recipe.
+
+---
+
+### Backpacking
+
+![Backpacking](../../assets/professions/blacksmith/backpacking.png)
+
+Allows carrying mixed stacks of items.
+
+Lvl1: Unlock bundle recipe.
+
+---
+
+### Quality Steelworking
+
+![Quality Steelworking](../../assets/professions/blacksmith/quality_steelworking.png)
+
+Master blacksmithing skill.
+
+Lvl1: Arquebus & Cannon recipe.
+
+---
+
 ## Creating weapons/armor
 
 ### Requirements
@@ -64,12 +182,12 @@ To change the chance of gaining either steel, slag, or cast iron, you need to se
 
 ### Smithing Table Bonus/Debuff (Number after the +/-)
 
-- `quality` is between 0 and 1 — how well you did the hammer minigame  
-  - quality > 0.95 → **excellent**  
-  - quality > 0.85 → **good**  
-  - quality > 0.7  → **fine**  
-  - quality > 0.5  → **poor**  
-  - otherwise      → **terrible**
+- `quality` is between 0 and 1 — how well you did the hammer minigame
+  - quality > 0.95 → **excellent**
+  - quality > 0.85 → **good**
+  - quality > 0.7 → **fine**
+  - quality > 0.5 → **poor**
+  - otherwise → **terrible**
 
 - `grade` is an integer between 0 and 3, based on difficulty  
   (highest difficulty = grade 3 / 4 stars, lowest = grade 0 / 1 star)
