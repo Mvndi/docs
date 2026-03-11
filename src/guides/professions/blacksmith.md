@@ -22,109 +22,109 @@ The blacksmith profession contains several skills that unlock new equipment, sie
 
 ### Fletching
 
-![Fletching](../../assets/professions/blacksmith/fletching.png)
+![Fletching](../../assets/professions/blacksmith/1left.png)
 
 Craft advanced ranged weapons.
 
-Lvl1: Longbow & Bullets  
-Lvl2: Crossbow & Bolts  
-Lvl3: Siege Weapon Ammo
+Lvl 1: Longbow & Bullets  
+Lvl 2: Crossbow & Bolts  
+Lvl 3: Siege Weapon Ammo
 
 ---
 
 ### Armor Smithing
 
-![Armor Smithing](../../assets/professions/blacksmith/armor_smithing.png)
+![Armor Smithing](../../assets/professions/blacksmith/1right.png)
 
 Create stronger armor pieces.
 
-Lvl1: Chainmail  
-Lvl2: Half Plate gear  
-Lvl3: Steel gear
-
----
-
-### Weapon Smithing
-
-![Weapon Smithing](../../assets/professions/blacksmith/weapon_smithing.png)
-
-Unlocks more advanced melee weapons.
-
-Lvl1: Short Spears  
-Lvl2: Heavy Axes  
-Lvl3: Pole Arms
-
----
-
-### Weapon Quenching
-
-![Weapon Quenching](../../assets/professions/blacksmith/weapon_quenching.png)
-
-Advanced weapon quenching techniques.
-
-Lvl1–3: Increases weapon damage.
-
----
-
-### Armor Quenching
-
-![Armor Quenching](../../assets/professions/blacksmith/armor_quenching.png)
-
-Advanced quenching techniques for armor pieces.
-
-Lvl1–3: Increases armor defensive quality.
-
----
-
-### Warsmithing
-
-![Warsmithing](../../assets/professions/blacksmith/warsmithing.png)
-
-Allows the crafting of siege weapons.
-
-Lvl1: Ballista  
-Lvl2: Greek Fire  
-Lvl3: Trebuchet
-
----
-
-### Durable Siegeworking
-
-![Durable Siegeworking](../../assets/professions/blacksmith/durable_siegeworking.png)
-
-Reinforces siege weapons.
-
-Lvl1–3: +10% durability per level (max 30%).
-
----
-
-### The Handgonne
-
-![The Handgonne](../../assets/professions/blacksmith/handgonne.png)
-
-Unlocks the first firearm.
-
-Lvl1: Handgonne recipe.
+Lvl 1: Chainmail  
+Lvl 2: Half Plate gear  
+Lvl 3: Steel gear
 
 ---
 
 ### Backpacking
 
-![Backpacking](../../assets/professions/blacksmith/backpacking.png)
+![Backpacking](../../assets/professions/blacksmith/2left.png)
 
 Allows carrying mixed stacks of items.
 
-Lvl1: Unlock bundle recipe.
+Lvl 1: Unlock bundle recipe.
+
+---
+
+### Weapon Smithing
+
+![Weapon Smithing](../../assets/professions/blacksmith/2right.png)
+
+Unlocks more advanced melee weapons.
+
+Lvl 1: Short Spears  
+Lvl 2: Heavy Axes  
+Lvl 3: Pole Arms
+
+---
+
+### The Handgonne
+
+![The Handgonne](../../assets/professions/blacksmith/3.png)
+
+Unlocks the first firearm.
+
+Lvl 1: Handgonne recipe.
+
+---
+
+### Warsmithing
+
+![Warsmithing](../../assets/professions/blacksmith/4left.png)
+
+Allows the crafting of siege weapons.
+
+Lvl 1: Ballista  
+Lvl 2: Greek Fire  
+Lvl 3: Trebuchet
+
+---
+
+### Armor Quenching
+
+![Armor Quenching](../../assets/professions/blacksmith/4right.png)
+
+Advanced quenching techniques for armor pieces.
+
+Lvl 1–3: Increases armor defensive quality.
+
+---
+
+### Durable Siegeworking
+
+![Durable Siegeworking](../../assets/professions/blacksmith/5left.png)
+
+Reinforces siege weapons.
+
+Lvl 1–3: +10% durability per level (max 30%).
+
+---
+
+### Weapon Quenching
+
+![Weapon Quenching](../../assets/professions/blacksmith/5right.png)
+
+Advanced weapon quenching techniques.
+
+Lvl 1–3: Increases weapon damage.
 
 ---
 
 ### Quality Steelworking
 
-![Quality Steelworking](../../assets/professions/blacksmith/quality_steelworking.png)
+![Quality Steelworking](../../assets/professions/blacksmith/6.png)
 
 Master blacksmithing skill.
 
-Lvl1: Arquebus & Cannon recipe.
+Lvl 1: Arquebus & Cannon recipe.
 
 ---
 
