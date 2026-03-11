@@ -233,6 +233,10 @@ You can quench any "hot" item you have in Tongs, i.e. ingots, weapon heads, etc.
 - Make sure you have the skill for what you're trying to quench
 - Fill a cauldron with water
 - Right click cauldron with the weapon/armor you want to quench (you can do this more than once)
+- Quenching weapon/armor gives bonus defense/damage by the level (up to a maximum of 3 levels)
+  - Level 1 = x 1.1
+  - Level 2 = x 1.2
+  - Level 3 = x 1.3
 
 ### FAQ
 
