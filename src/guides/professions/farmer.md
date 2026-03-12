@@ -155,10 +155,7 @@ Ploughing only works in claimed chunks belonging to your town.
 
 Video guide:
 
-<!-- Add plough video here -->
-<!-- Example:
-<video controls src="VIDEO_LINK_HERE" title="Plough"></video>
--->
+<video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/plough.mp4" title="Machines"></video>
 
 ## Windmills
 
