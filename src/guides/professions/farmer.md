@@ -22,8 +22,8 @@ The farmer profession contains several skills that improve harvesting, crop mana
 
 Increases the drop rate from harvested crops.
 
-+2% per level  
-Maximum bonus: +10%
++3% per level  
+Maximum bonus: +15%
 
 ---
 
@@ -33,8 +33,8 @@ Maximum bonus: +10%
 
 Increases the chance for a scythe to not take damage.
 
-+4% per level  
-Maximum bonus: +20%
++12% per level  
+Maximum bonus: +60%
 
 ---
 
