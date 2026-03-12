@@ -24,4 +24,4 @@ Once the cannon is loaded, right click the back of the cannon with a flint and s
 
 The cannon is for precise strikes. While it does break blocks it doesn't break a lot of them but has a deep penetration as opposed to the [Trebuchet](./trebuchet.md) which breaks more blocks but has less penetration.
 
-![cannon demonstration](../../assets/cannon_demonstration.gif)
+<video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/cannon.mp4" title="Cannon"></video>

@@ -16,4 +16,4 @@ To load the greek fire, first mount it. Then, right click the weapon with blocks
 
 Once the greek fire is loaded, left click with a flint and steel to activate it.
 
-![greek fire demonstration](../../assets/greek_fire_demonstration.gif)
+<video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/greek_fire.mp4" title="Greek Fire"></video>

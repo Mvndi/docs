@@ -16,4 +16,4 @@ To load the ballista, first mount it. Then, right click the ballista with a stan
 
 Once the ballista is loaded, left click to shoot.
 
-![ballista demonstration](../../assets/ballista_demonstration.gif)
+<video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/ballista.mp4" title="Ballista"></video>
