@@ -58,6 +58,10 @@ Unlocks flax planting and crafting, and increases flax drops.
 +5% flax drops per level  
 Maximum bonus: +25%
 
+If you have the Flax skill unlocked, you can get flax seeds by breaking normal foliage. Flax seeds can also be obtained by breaking **blue flax flowers** with a **scythe**.
+
+To plant flax, right click grass with the seeds.
+
 ---
 
 ### Plough
@@ -65,6 +69,19 @@ Maximum bonus: +25%
 ![Plough](../../assets/professions/farmer/3.png)
 
 Create and use a plough.
+
+To attach a plough:
+
+- Use a **tamed donkey**
+- The donkey must be **saddled**
+- Hold **Shift** and **right click** the donkey to attach the plough
+- You must have the Plough skill unlocked
+
+Ploughing only works in claimed chunks belonging to your town.
+
+Video guide:
+
+<video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/plough.mp4" title="Plough"></video>
 
 ---
 
@@ -77,6 +94,13 @@ Plant herbs which can increase the qualities of your food.
 Lvl 1: Sage  
 Lvl 2: N/A  
 Lvl 3: Rosemary
+
+If you have the Herbalism skill unlocked, you can get herb seeds by breaking normal foliage.
+
+- **Sage** unlocks at Lvl 1
+- **Rosemary** unlocks at Lvl 3
+
+To plant them, right click grass with the seeds.
 
 ---
 
@@ -103,68 +127,6 @@ Logs to planks
 Lvl 2: Grain Mill  
 Lvl 3: Sawmill
 
----
-
-### Wind Power
-
-![Wind Power](../../assets/professions/farmer/5right.png)
-
-Craft and use windmills.
-
-Speeds up crop growth  
-Used to power machines
-
----
-
-### Crop Reaper
-
-![Crop Reaper](../../assets/professions/farmer/6.png)
-
-Crops cut with a scythe are automatically replanted.
-
----
-
-## Seedbags
-
-Seedbags work similarly to bundles, but are made for storing seeds. They were added before vanilla bundles.
-
-To use them, place the seedbag into a crafting table with seeds.
-
-## Flax and Herbalism
-
-If you have the correct skill unlocked, you can get special seeds by breaking normal foliage.
-
-- **Flax**: break foliage to get flax seeds
-- **Sage**: break foliage to get sage seeds
-- **Rosemary**: break foliage to get rosemary seeds
-
-Flax seeds can also be obtained by breaking **blue flax flowers** with a **scythe**.
-
-To plant them, right click grass with the seeds.
-
-## Ploughs
-
-To attach a plough:
-
-- Use a **tamed donkey**
-- The donkey must be **saddled**
-- Hold **Shift** and **right click** the donkey to attach the plough
-- You must have the Plough skill unlocked
-
-Ploughing only works in claimed chunks belonging to your town.
-
-Video guide:
-
-<video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/plough.mp4" title="Machines"></video>
-
-## Windmills
-
-Windmills increase the growth speed of crops within a **3 x 3 chunk radius**.
-
-They are also used to power farmer machines.
-
-## Machines
-
 Machines require the **Pre Industrial** skill from the Farmer skill tree.
 
 Machines must be connected to a generator such as a **windmill**.
@@ -180,9 +142,38 @@ Video guide:
 
 <video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/machines.mp4" title="Machines"></video>
 
-## Crop Reaper
+---
 
-Crop Reaper causes crops cut with a scythe to be automatically replanted. This makes harvesting large fields faster and reduces the need to replant by hand.
+### Wind Power
+
+![Wind Power](../../assets/professions/farmer/5right.png)
+
+Craft and use windmills.
+
+Speeds up crop growth  
+Used to power machines
+
+Windmills increase the growth speed of crops within a **3 x 3 chunk radius**.
+
+They are also used to power farmer machines.
+
+---
+
+### Crop Reaper
+
+![Crop Reaper](../../assets/professions/farmer/6.png)
+
+Crops cut with a scythe are automatically replanted.
+
+Crop Reaper makes harvesting large fields faster and reduces the need to replant by hand.
+
+---
+
+## Seedbags
+
+Seedbags work similarly to bundles, but are made for storing seeds. They were added before vanilla bundles.
+
+To use them, place the seedbag into a crafting table with seeds.
 
 ## FAQ
 
