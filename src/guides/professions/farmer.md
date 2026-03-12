@@ -142,13 +142,6 @@ Flax seeds can also be obtained by breaking **blue flax flowers** with a **scyth
 
 To plant them, right click grass with the seeds.
 
-Video guide:
-
-<!-- Add flax and herbalism video here -->
-<!-- Example:
-<video controls src="VIDEO_LINK_HERE" title="Flax and Herbalism"></video>
--->
-
 ## Ploughs
 
 To attach a plough:
