@@ -30,6 +30,14 @@ Lvl 1: Unlock gold panning
 Lvl 2–5: +1% chance per level  
 Maximum bonus: +5%
 
+Gold panning is done by right clicking a river with a **wooden bowl**.
+
+The default chance is **1%** without any skill upgrades and with no other miners nearby. The Gold Panning skill increases this chance, and **Corporatism** gives an additional bonus when other nearby miners are within range.
+
+Video guide:
+
+<video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/goldpanning.mp4" title="Gold Panning"></video>
+
 ---
 
 ### Miner's Strength
@@ -42,6 +50,8 @@ Lvl 1: 5% chance for Haste I for 2 seconds
 Lvl 2–5: +5% chance per level  
 Maximum bonus: +25%
 
+This skill gives a chance to gain **Haste I for 2 seconds** while mining, making it easier to break blocks faster.
+
 ---
 
 ### Corporatism
@@ -52,6 +62,8 @@ Group gold panning bonus.
 
 +2% chance per nearby person per level within 16 blocks  
 Maximum bonus: +10%
+
+This skill increases gold panning chance when other nearby players are within **16 blocks**.
 
 ---
 
@@ -64,6 +76,8 @@ Extract more resources from ores.
 Lvl 1–5: +10% double drops from ores per level  
 Maximum bonus: +50%
 
+This skill increases the chance for ores to give double drops.
+
 ---
 
 ### Blast Mining
@@ -74,66 +88,6 @@ Explosions for tunnel mining.
 
 Lvl 1: Unlock Gunpowder Barrel recipe  
 Adds the ingot of exploded ores directly to your inventory
-
----
-
-### Miner's Delight
-
-![Miner's Delight](../../assets/professions/miner/4left.png)
-
-Drinking bonus for mining.
-
-No effects by itself.  
-Increases double drop chance by 1% per alcohol % per level  
-Maximum bonus: +5%
-
----
-
-### Bombardier
-
-![Bombardier](../../assets/professions/miner/4right.png)
-
-Cheaper explosions.
-
-Lvl 1: 5% coal drops gunpowder  
-Lvl 2–5: +5% chance per level  
-Maximum bonus: +25%
-
----
-
-### Trapper
-
-![Trapper](../../assets/professions/miner/5left.png)
-
-Advanced hunting traps.
-
-Lvl 1: Bear Traps  
-Lvl 2: Frisian horse trap  
-Lvl 3: Buried Bear Traps
-
----
-
-### True Smithing
-
-![True Smithing](../../assets/professions/miner/5right.png)
-
-Faster smelting.
-
-Lvl 1: Unlock Crucible Furnace
-
----
-
-## Gold Panning
-
-Gold panning is done by right clicking a river with a **wooden bowl**.
-
-The default chance is **1%** without any skill upgrades and with no other miners nearby. The Gold Panning skill increases this chance, and Corporatism gives an additional bonus when other nearby miners are within range.
-
-Video guide:
-
-<video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/goldpanning.mp4" title="Crucible Furnace"></video>
-
-## Blast Mining
 
 Blast mining is used for tunnel mining with explosives.
 
@@ -155,17 +109,55 @@ You can enable explosions with:
 
 Video guide:
 
-<video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/tunnelmine.mp4" title="Crucible Furnace"></video>
+<video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/tunnelmine.mp4" title="Blast Mining"></video>
 
-## Traps
+---
 
-### Bear Trap
+### Miner's Delight
+
+![Miner's Delight](../../assets/professions/miner/4left.png)
+
+Drinking bonus for mining.
+
+No effects by itself.  
+Increases double drop chance by 1% per alcohol % per level  
+Maximum bonus: +5%
+
+This skill does nothing on its own unless alcohol is involved. It increases double drop chance based on alcohol percentage and skill level.
+
+---
+
+### Bombardier
+
+![Bombardier](../../assets/professions/miner/4right.png)
+
+Cheaper explosions.
+
+Lvl 1: 5% coal drops gunpowder  
+Lvl 2–5: +5% chance per level  
+Maximum bonus: +25%
+
+This skill gives coal a chance to drop gunpowder, making explosives easier to produce.
+
+---
+
+### Trapper
+
+![Trapper](../../assets/professions/miner/5left.png)
+
+Advanced hunting traps.
+
+Lvl 1: Bear Traps  
+Lvl 2: Frisian horse trap  
+Lvl 3: Buried Bear Traps
+
+#### Bear Trap
 
 Place the bear trap on the ground, then use a **shovel** to bury it and conceal it.
 
 Players or mobs that step on it will take damage and be temporarily immobilized.
 
-### Frisian Horse Trap
+#### Frisian Horse Trap
 
 To make a Frisian horse trap:
 
@@ -175,11 +167,21 @@ To make a Frisian horse trap:
 
 Video guide:
 
-<video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/traps.mp4" title="Crucible Furnace"></video>
+<video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/traps.mp4" title="Traps"></video>
 
-## Crucible Furnace
+---
 
-### Crucible Furnace-specific requirements
+### True Smithing
+
+![True Smithing](../../assets/professions/miner/5right.png)
+
+Faster smelting.
+
+Lvl 1: Unlock Crucible Furnace
+
+### Crucible Furnace
+
+#### Crucible Furnace-specific requirements
 
 - 1 x Crucible + Tongs per slot (steel, cast iron, slag)
 - 1 x Tongs (to pick up cast ingots)
@@ -189,7 +191,7 @@ Video guide:
 
 **Important: To use a Crucible Furnace, you need the True Smithing skill from the Miner skill tree.**
 
-### Guide
+#### Guide
 
 The True Smithing skill gives access to the **Crucible Furnace**.
 
