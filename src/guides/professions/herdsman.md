@@ -200,25 +200,3 @@ Feeding baby horses changes different stats:
 Video guide:
 
 <video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/genetics.mp4" title="genetics"></video>
-
-## FAQ
-
-#### How do I get worms for fishing?
-
-Right click grass blocks with a trowel while it is raining.
-
-#### How do I start the fishing minigame?
-
-Hold a worm in your offhand while fishing. There is a random chance for the minigame to appear.
-
-#### How do I attach a cart?
-
-Use a tamed, saddled horse or donkey, then hold Shift and right click to attach the cart.
-
-#### How do I open the genetics menu for cows, sheep, or chickens?
-
-Breed them with barley, then Shift and right click them.
-
-#### How do I open the horse genetics menu?
-
-Shift and right click a baby horse with an empty hand, as long as you have the relevant herdsman skill.

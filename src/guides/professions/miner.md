@@ -217,21 +217,3 @@ To create and use a Crucible Furnace:
 Video guide:
 
 <video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/crucible.mp4" title="Crucible Furnace"></video>
-
-## FAQ
-
-#### Why is blast mining not working?
-
-Make sure you are:
-
-- Below **Y 50**
-- Facing a valid cardinal direction
-- Not in a claimed chunk with explosions disabled
-
-#### How do I start gold panning?
-
-Use a **wooden bowl** and right click a river.
-
-#### What skill do I need for the Crucible Furnace?
-
-You need **True Smithing**.

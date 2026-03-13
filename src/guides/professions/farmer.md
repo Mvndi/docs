@@ -174,21 +174,3 @@ Crop Reaper makes harvesting large fields faster and reduces the need to replant
 Seedbags work similarly to bundles, but are made for storing seeds. They were added before vanilla bundles.
 
 To use them, place the seedbag into a crafting table with seeds.
-
-## FAQ
-
-#### How do I get flax, sage, or rosemary seeds?
-
-Break normal foliage after unlocking the relevant skill. Flax seeds can also be obtained by breaking blue flax flowers with a scythe.
-
-#### How do I use a plough?
-
-Use a tamed, saddled donkey, then hold Shift and right click to attach the plough. It only works in claimed chunks belonging to your town.
-
-#### What powers farmer machines?
-
-Farmer machines are powered by windmills.
-
-#### Why are my machines not working after a restart?
-
-They need to be reconnected to their windmill by right clicking them with a wrench.

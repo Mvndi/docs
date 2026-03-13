@@ -277,9 +277,3 @@ If you get a bad minigame result, you can throw the weapon head, blade, or armor
 
 - First retry: -75% XP
 - Second retry: -100% XP
-
-## FAQ
-
-#### How do I remove steel or cast iron from tongs?
-
-Quench it, and when you want to use it again, reheat it with fire.
