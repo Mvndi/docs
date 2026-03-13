@@ -193,7 +193,7 @@ Most of the stats are self explanatory, but **bravery** decreases the chance for
 Feeding baby horses changes different stats:
 
 - **Apples** increase health
-- **Barley** increases jump
+- **Barley and Wheat** increases jump
 - **Sugar** increases speed
 - **Horse hay bale blocks** increase bravery
 
