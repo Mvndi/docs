@@ -99,10 +99,7 @@ To attach a cart:
 
 Video guide:
 
-<!-- Add cart video here -->
-<!-- Example:
-<video controls src="VIDEO_LINK_HERE" title="Horsepower"></video>
--->
+<video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/cart.mp4" title="cart"></video>
 
 ---
 
