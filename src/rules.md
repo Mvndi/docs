@@ -145,6 +145,8 @@ tldr your town spawn has to be accessible with siege weapons. walls are okay, no
 
 4.6.9 Builds must be similar to actual medieval architecture of the area you are building in. For example, you can't build andalusian architecture in Denmark for example
 
+4.6.10 Statues that go beyond humanly possible scale when it comes to the middle ages, so statues equivalent to the colossus of Rhodes are not allowed is they don't respect the proper proportions of the time
+
 ### Peace
 
 4.7.1 Scamming and lying in peace treaties is allowed - admins can serve as middlemen in certain exchanges where possible and are not allowed to be knowingly involved in scams
