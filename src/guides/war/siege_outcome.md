@@ -15,7 +15,9 @@ Winning the war as the attacker results in receiving the war chest back and bein
 - **Invade it**: Place the town under occupation status, allowing you to tax the town up to 12 Ducats per plot daily. To do this, place another non-white banner at the town's borders right after the siege ends.
 - **Plunder it**: Receive a one-time fee worth 50 Ducats per plot claimed. To do this, place a chest at the town's borders right after the siege ends.
 
-If attackers win, reguardless of if they invade/plunder it, a pillage starts given attackers switch (chest/door) perms for 10 minutes, everyone (including attackers) can break/destroy blocks in the town (that lost the siege) with a 60 second cooldown.
+If attackers win, reguardless of if they invade/plunder it, a pillage starts given attackers switch (chest/door) perms for ~10 minutes, everyone (including attackers) can break/destroy blocks in the town (that lost the siege) with a 60 second cooldown.
+
+Default pillage time is 10 mins and this gets multiplied by attacker kd ratio, min 5 mins max 15 mins, if the pillage time after being multiplied by kdratio (so if defenders have a lot more kills than attackers) is <5 mins then there will be no pillage.
 
 Getting counquered DOES NOT give the conquereror perms for the town, the mayor and such of the conquered town stays the same they're just forced into the conquerers nation where they're unable to leave the nation until the declare a [revolt siege](https://github.com/TownyAdvanced/SiegeWar/wiki/Siege-War-User-Guide#statue_of_liberty-revolt) (more info on the siege war wiki below).
 
