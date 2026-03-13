@@ -2,6 +2,10 @@
 
 **Important note: You need to have the miner profession to use the abilities in this guide. You can select a profession by using the `/mp` command.**
 
+## Quick Navigation
+
+* [Crucible Furnace](#crucible-furnace)
+
 ## Passive Effect
 
 Miners gain **night vision** while breaking blocks below **Y 50**.

@@ -2,6 +2,11 @@
 
 **Important note: You need to have the blacksmith profession to do anything in this guide. You can select a profession by using the `/mp` command.**
 
+## Quick Navigation
+
+* [Bloomery](#bloomery)
+* [Core Blacksmithing](#core-blacksmithing)
+
 ## XP Gain
 
 There are a couple of ways to gain XP for the blacksmith profession:
@@ -110,16 +115,16 @@ Lvl 1–3: Increases armor defensive quality.
 
 To upgrade armor through quenching:
 
-- Make sure you have the Armor Quenching skill
-- Fill a cauldron with water
-- Right click the cauldron with the armor piece you want to quench
-- This can be done more than once
+* Make sure you have the Armor Quenching skill
+* Fill a cauldron with water
+* Right click the cauldron with the armor piece you want to quench
+* This can be done more than once
 
 Quenching armor gives bonus defense based on level:
 
-- Level 1 = x1.1
-- Level 2 = x1.2
-- Level 3 = x1.3
+* Level 1 = x1.1
+* Level 2 = x1.2
+* Level 3 = x1.3
 
 You can quench any "hot" item held in tongs, such as ingots or armor pieces.
 
@@ -147,16 +152,16 @@ Lvl 1–3: Increases weapon damage.
 
 To upgrade weapons through quenching:
 
-- Make sure you have the Weapon Quenching skill
-- Fill a cauldron with water
-- Right click the cauldron with the weapon or weapon part you want to quench
-- This can be done more than once
+* Make sure you have the Weapon Quenching skill
+* Fill a cauldron with water
+* Right click the cauldron with the weapon or weapon part you want to quench
+* This can be done more than once
 
 Quenching weapons gives bonus damage based on level:
 
-- Level 1 = x1.1
-- Level 2 = x1.2
-- Level 3 = x1.3
+* Level 1 = x1.1
+* Level 2 = x1.2
+* Level 3 = x1.3
 
 You can quench any "hot" item held in tongs, such as ingots or weapon heads.
 
@@ -178,36 +183,36 @@ This skill unlocks the Arquebus and Cannon recipes.
 
 ### Requirements
 
-- 1 x Anvil (for hammering)
-- 1 x Cauldron (for quenching)
-- 1 x Smithing Table (for assembling weapons)
-- 1 x Hammer
-- Raw Iron
-- Coal
+* 1 x Anvil (for hammering)
+* 1 x Cauldron (for quenching)
+* 1 x Smithing Table (for assembling weapons)
+* 1 x Hammer
+* Raw Iron
+* Coal
 
 ### Bloomery
 
 #### Bloomery-specific requirements
 
-- 2 x **Hard Clay** (for bloomery)
-- 1 x Bellows
-- 1 x Tongs
+* 2 x **Hard Clay** (for bloomery)
+* 1 x Bellows
+* 1 x Tongs
 
 #### Guide
 
-- Craft and place a bloomery by placing two hard clay blocks on top of each other and right clicking with a hammer
-- Take raw iron, not ingots, and put it in the bloomery with coal or charcoal
-- Once hot, take it out by right clicking with the tongs item
-- Place the bloom on an anvil and start hitting it with a hammer
-- Enable fire in your plot with `/plot toggle fire on`
-- Make a fire with flint and steel, then throw the new hot ingots into the fire
-- Pick up the ingots with tongs by right clicking
-- With the tongs holding the hot steel or iron, right click the anvil
-- In the GUI, select what item to craft
-- Take a hammer and hit the circled points on the anvil to complete the smithing minigame
-- Take out the crafted item with the tongs and place it in a cauldron of water
-- Assemble the final item in a smithing table
-- Smithing table recipes can be found in `/recipes`
+* Craft and place a bloomery by placing two hard clay blocks on top of each other and right clicking with a hammer
+* Take raw iron, not ingots, and put it in the bloomery with coal or charcoal
+* Once hot, take it out by right clicking with the tongs item
+* Place the bloom on an anvil and start hitting it with a hammer
+* Enable fire in your plot with `/plot toggle fire on`
+* Make a fire with flint and steel, then throw the new hot ingots into the fire
+* Pick up the ingots with tongs by right clicking
+* With the tongs holding the hot steel or iron, right click the anvil
+* In the GUI, select what item to craft
+* Take a hammer and hit the circled points on the anvil to complete the smithing minigame
+* Take out the crafted item with the tongs and place it in a cauldron of water
+* Assemble the final item in a smithing table
+* Smithing table recipes can be found in `/recipes`
 
 The highest grade is 4 stars, and the highest quality is Excellent.
 
@@ -219,8 +224,8 @@ Video guide:
 
 To change the chance of gaining either steel, slag, or cast iron, you need to set the temperature of your bloomery to one that maximises either slag, cast iron, or steel gain. The graph below shows the temperature to chance ratio, directly correlated to the temperature displayed above the bloomery when using the bellows.
 
-- X axis: **temperature set on bloomery**
-- Y axis: **chance to gain item**
+* X axis: **temperature set on bloomery**
+* Y axis: **chance to gain item**
 
 ![bloomery temperatures](../../assets/bloomery_temperatures.png)
 
@@ -232,16 +237,16 @@ Video guide:
 
 ### Smithing Table Bonus and Debuff
 
-- `quality` is between 0 and 1, based on how well you complete the hammer minigame
-  - quality > 0.95 = **excellent**
-  - quality > 0.85 = **good**
-  - quality > 0.7 = **fine**
-  - quality > 0.5 = **poor**
-  - otherwise = **terrible**
+* `quality` is between 0 and 1, based on how well you complete the hammer minigame
+  * quality > 0.95 = **excellent**
+  * quality > 0.85 = **good**
+  * quality > 0.7 = **fine**
+  * quality > 0.5 = **poor**
+  * otherwise = **terrible**
 
-- `grade` is an integer between 0 and 3, based on difficulty
-  - highest difficulty = grade 3 / 4 stars
-  - lowest difficulty = grade 0 / 1 star
+* `grade` is an integer between 0 and 3, based on difficulty
+  * highest difficulty = grade 3 / 4 stars
+  * lowest difficulty = grade 0 / 1 star
 
 The **multiplier** is calculated as:
 
@@ -275,5 +280,5 @@ For armor, it takes the average of this calculation for each of the armor plates
 
 If you get a bad minigame result, you can throw the weapon head, blade, or armor plate back into a fire like an ingot, pick it up in your tongs, place it back on an anvil, and reattempt the minigame.
 
-- First retry: -75% XP
-- Second retry: -100% XP
+* First retry: -75% XP
+* Second retry: -100% XP
