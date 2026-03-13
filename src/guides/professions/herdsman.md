@@ -76,8 +76,6 @@ To collect worms, right click **grass blocks** with a **trowel** while it is **r
 
 When fishing, hold a **worm in your offhand** while using a fishing rod. There is a random chance to start a fishing minigame. When it starts, a bar appears at the top of the screen. You need to right click and fill the bar within the time limit to win the minigame and receive a better fish.
 
-Video guide:
-
 <!-- Add fishmonger video here -->
 <!-- Example:
 <video controls src="VIDEO_LINK_HERE" title="Fishmonger"></video>
@@ -97,6 +95,7 @@ To attach a cart:
 - The animal must be **saddled**
 - Hold **Shift** and **right click** the animal to attach the cart
 - You must have the Horsepower skill unlocked
+- Once cart is attached, shift right click the animal to access the cart storage
 
 Video guide:
 
