@@ -149,10 +149,7 @@ Eating a truffle gives **Speed for 10 seconds**.
 
 Video guide:
 
-<!-- Add truffle hunter video here -->
-<!-- Example:
-<video controls src="VIDEO_LINK_HERE" title="Truffle Hunter"></video>
--->
+<video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/truffle.mp4" title="truffle"></video>
 
 ---
 
