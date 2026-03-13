@@ -10,6 +10,7 @@ There are a couple of ways to gain XP for the herdsman profession:
    For horses, you can use hay bales and the horses must be tamed.
 2. **Hunting domestic mobs** such as cows, sheep, and pigs
 3. **Shearing sheep**
+4. **Milking Cows**
 
 ## Skill Tree
 
@@ -198,10 +199,7 @@ Feeding baby horses changes different stats:
 
 Video guide:
 
-<!-- Add genetics video here -->
-<!-- Example:
-<video controls src="VIDEO_LINK_HERE" title="Artificial Selection and Horse Genetics"></video>
--->
+<video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/genetics.mp4" title="genetics"></video>
 
 ## FAQ
 
