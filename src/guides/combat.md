@@ -151,21 +151,18 @@ An example:
 
 * The shortsword has a base attack damage of 11.2 and both a strength and dexterity multiplier of 51%.
   * 51% of 11.2 is 5.712.
-* At level 10 strength and dexterity, the player has 5% multiplier bonus.
-* The damage bonus of the shortsword would be 5% of the 51%
-  * 5% of the 51% is 0.2856.
-  * Therefore the strength bonus and dexterity bonus is 0.2856
+* At level 10 strength and dexterity, the player has 17.095% multiplier bonus.
+* The damage bonus of the shortsword would be 17.095% of the 51%
+  * 17.095% of the 51% is 0.9765.
+  * Therefore the strength bonus and dexterity bonus is 0.9765
 * The resulting attack damage, before any damage calculations, is: `base attack damage + strength bonus + dexterity bonus`
-  * `11.2 + 0.2856 + 0.2856 = 11.7712`
+  * `11.2 + 0.9765 + 0.9765 = 13.153`
 
 Some weapons have attribute requirements in order to effectively use them. If the player does not meet the attribute requirements for the weapon, they cannot do full damage with that weapon.
 
 #### Rating
-For each point put into strength and dexterity, the rating goes up by:
-* 0.5% from level 1 to 10
-* 3.5% from level 10 to 20
-* 2.25% from level 20 to level 40
-* 0.25% from level 40 to level 99
+
+The multiplier bonus uses the formula \\( 130 \times (1 - 0.986^{x}) / 100 \\) where \\( x \\) is the attribute level.
 
 ## Attack Effects
 
