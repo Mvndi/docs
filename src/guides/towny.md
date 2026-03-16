@@ -18,7 +18,7 @@ You get **12 chunks** per player in your town + extra bonus chunks from your nat
   (Minimum 100 Ducats — paid from town bank)
 - **Nation Daily Upkeep** — 250 Ducats × (number of towns in the nation)  
   (Paid from nation capital's town bank)
-- **Max Daily Conquered Tax** — 500 Ducats (`/n set conqueredtax {1-500}` — for nations taxing conquered towns)
+- **Daily Conquered Tax** — 20 Ducats × (total chunks claimed in town)
 
 Taxes & upkeep are collected **daily at 12:00 UTC**.  
 Check current server time & next new day with `/towny time`.

@@ -12,7 +12,7 @@ A siege's points can be modified by:
 Losing the siege as the attacker means your war chest goes to the defenders for reparation.
 Winning the war as the attacker results in receiving the war chest back and being able to choose how to annex the losing town:
 
-- **Invade it**: Place the town under occupation status, allowing you to tax the town up to 12 Ducats per plot daily. To do this, place another non-white banner at the town's borders right after the siege ends.
+- **Invade it**: Place the town under occupation status, allowing you to tax the town up to 20 Ducats per plot daily. To do this, place another non-white banner at the town's borders right after the siege ends.
 - **Plunder it**: Receive a one-time fee worth 50 Ducats per plot claimed. To do this, place a chest at the town's borders right after the siege ends.
 
 If attackers win, reguardless of if they invade/plunder it, a pillage starts given attackers switch (chest/door) perms for ~10 minutes, everyone (including attackers) can break/destroy blocks in the town (that lost the siege) with a 60 second cooldown.
