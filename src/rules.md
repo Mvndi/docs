@@ -93,6 +93,8 @@ tldr your town spawn has to be accessible with siege weapons. walls are okay, no
 
 4.2.6 Placing buttons on walls or near town with the intention to prevent siege weapons from being placed is not allowed
 
+4.2.7 You can have multiple walls but for two walls to count as "seperate" walls (and not 1 wall with a gap between them), the distance between them has to be greater than the height of the smaller wall
+
 ### Traps
 
 4.3.1 No forms of pitfall traps are allowed
