@@ -67,6 +67,10 @@ tldr your town spawn has to be accessible with siege weapons. walls are okay, no
 
 4.1.1 The width of the moat may not exceed 10% of the width of the area that it surrounds, however it can never be wider than 20 blocks
 
+> So for example, the moat in the attached picture is 20 blocks wide (16 on the diagonals) but length of what it surrounds (measured with the purple amethyst blocks) is ~86 blocks so a moat length that doesn't break the rules would be 8-9 blocks
+
+![moat](assets/moat.png)
+
 4.1.2 Moats must be filled with water up to at least 2 blocks down from the ground level on the inside of the moat
 
 4.1.3 Moats may not be filled with lava or dripstone spikes
