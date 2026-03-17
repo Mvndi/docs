@@ -85,7 +85,7 @@ tldr your town spawn has to be accessible with siege weapons. walls are okay, no
 
 4.2.2 Walls must not contain any water, lava or obsidian
 
-4.2.3 Walls must not be thicker than 7 blocks, however they may have an additional 3 blocks of non-blast resistant materials (see 3.18.) in the manner of a bastion fort
+4.2.3 Walls must not be thicker than 7 blocks, however they may have an additional 3 blocks of non-[blast resistant materials](./guides/siege_weapons/siege_weapons.md#blast-resistant-materials) in the manner of a bastion fort
 
 4.2.4 Gravity blocks in walls are allowed within reason, therefore walls that go beyond ~30 blocks in height filled with gravity blocks in that case would not be allowed
 
