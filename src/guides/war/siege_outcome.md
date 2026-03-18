@@ -15,7 +15,7 @@ Winning the war as the attacker results in receiving the war chest back and bein
 - **Invade it**: Place the town under occupation status, allowing you to tax the town up to 20 Ducats per plot daily. To do this, place another non-white banner at the town's borders right after the siege ends.
 - **Plunder it**: Receive a one-time fee worth 50 Ducats per plot claimed. To do this, place a chest at the town's borders right after the siege ends.
 
-If attackers win and have done more kill than defenders (or no one died), reguardless of if they invade/plunder it, a pillage starts given attackers switch (chest/door) perms for ~5 minutes, everyone (including attackers) can break/destroy blocks in the town (that lost the siege) with a 60 second cooldown.
+If attackers win and have done more kill than defenders (or less than 2 attackers were killed), reguardless of if they invade/plunder it, a pillage starts given attackers switch (chest/door) perms for ~5 minutes, everyone (including attackers) can break/destroy blocks in the town (that lost the siege) with a 60 second cooldown.
 
 Default pillage time is 5 mins and this gets multiplied by attacker kd ratio, min 5 mins max 10 mins.
 
