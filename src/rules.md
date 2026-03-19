@@ -79,6 +79,14 @@ tldr your town spawn has to be accessible with siege weapons. walls are okay, no
 
 4.1.5 Drymoats have a maximum depth of 5 blocks
 
+4.1.6 Filled moats have a maximum depth of 30 blocks
+
+4.1.7 Using natural rivers or oceans for defense is allowed. Extending oceans or rivers beyond their natural limits is considered to be a moat and needs to follow the moat rules
+
+4.1.8 It is allowed to build several moats as long as each moats does not exceed 10% of the width of the area that it surrounds minus the inner moat's side
+
+> So for example, if you build a 10 block moat over a 100 block area and want to do a 2nd one over a 160 block area, the 2nd moat width would be max 6 (160/10 - 10 = 16 - 10 = 6)
+
 ### Walls
 
 4.2.1 Walls must not be "factions" walls (ugly cubes)
