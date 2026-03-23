@@ -75,7 +75,7 @@ The player has four main **Attributes**:
 * **Strength**
 * **Dexterity**
 
-Each of these attributes affects the value of the player's stats. When the player levels up and gains an attribute point, it can be spent on an attribute. The player starts at 1 point in each attribute. Attributes have a maximum of 99 points.
+Each of these attributes affects the value of the player's stats. When the player levels up and gains an attribute point, it can be spent on an attribute. The player starts at 1 point in each attribute. Attributes have a maximum of 99 points. The initial level cap for a player is 100 and can be increased by 25 each time a player prestiges with `/mu prestige`. When you prestige you get set back to level 1 and 25% of your attributes get refunded and can be spec'd into anything and your level cap raises by 25.
 
 ## Vitality
 
