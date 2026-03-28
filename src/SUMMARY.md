@@ -45,6 +45,7 @@
     - [Cannon](./guides/siege_weapons/cannon.md)
     - [Greek Fire](./guides/siege_weapons/greek_fire.md)
     - [Trebuchet](./guides/siege_weapons/trebuchet.md)
+    - [Catapult](./guides/siege_weapons/catapult.md)
 - [Blogs](./blogs/blogs.md)
   - [Ships](./blogs/ships.md)
   - [War](./blogs/war.md)
