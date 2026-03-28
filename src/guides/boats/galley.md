@@ -32,4 +32,4 @@ Construction cost of `65,000`, takes 96 hours to construct. Need Galoots skill a
 | Mast       | 10.0  |
 | Stern      | 13.0  |
 
-The galley has no inventory. It has one siege weapon slot in the front center that can take a ballista or a cannon, it has two slots next (one left one right) to this front center slot that can take only cannons. It has a sail and 14 rowing seats.
+The galley has no inventory. It has one siege weapon slot in the front center that can take a ballista or a cannon. It can have a catpault if the "no forecastle" upgrade is installed, it has two slots next (one left one right) to this front center slot that can take only cannons. It has a sail and 14 rowing seats.
