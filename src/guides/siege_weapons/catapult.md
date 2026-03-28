@@ -1,6 +1,6 @@
 # Catapult
 
-The catapult is a highly versatile siege weapon, it has three times of ammo. It does not damage the ship. Breaks after 300 shots.
+The catapult is a highly versatile siege weapon, it has three types of ammo. It does not damage the ship. Breaks after 300 shots.
 
 <img src="../../assets/catapult.png" align="left" alt="catapult" width="200"/>
 
