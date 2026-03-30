@@ -28,6 +28,13 @@
 
 ‣ Discord’s Terms of Service and Community Guidelines apply, and any rule broken within these terms that may not be listed above will still result in punishment depending on infractions received.
 
+‣ No bandwagonning: Coordinating or encouraging others to mass responses, or otherwise influence polls, decisions, or discussions with the intent to manipulate outcomes is prohibited. Sharing or signal-boosting content for visibility is allowed as long as it does not include instructions, expectations, or pressure on how others should respond.
+
+> This includes (but is not limited to):
+> Rallying groups to artificially boost or suppress opinions
+> Sharing links or messages that directly instruct or pressure others how to vote or respond (“go downvote this,” “everyone vote yes”)
+> Attempting to pressure or strongarm staff or the community through coordinated numbers rather than constructive discussion
+
 ## Cheating
 
 --------
