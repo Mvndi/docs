@@ -26,7 +26,7 @@ The miner profession contains several skills that improve mining, resource gathe
 
 ### Gold Panning
 
-![Gold Panning](../../assets/professions/miner/1left.png)
+![Gold Panning](../../assets/professions/miner/goldpan.png)
 
 Find gold in rivers.
 
@@ -46,7 +46,7 @@ Video guide:
 
 ### Miner's Strength
 
-![Miner's Strength](../../assets/professions/miner/1right.png)
+![Miner's Strength](../../assets/professions/miner/minerstrength.png)
 
 Mine faster and harder.
 
@@ -60,7 +60,7 @@ This skill gives a chance to gain **Haste I for 2 seconds** while mining, making
 
 ### Corporatism
 
-![Corporatism](../../assets/professions/miner/2left.png)
+![Corporatism](../../assets/professions/miner/corpor.png)
 
 Group gold panning bonus.
 
@@ -73,7 +73,7 @@ This skill increases gold panning chance when other nearby players are within **
 
 ### Prospecting
 
-![Prospecting](../../assets/professions/miner/2right.png)
+![Prospecting](../../assets/professions/miner/prospect.png)
 
 Extract more resources from ores.
 
@@ -86,7 +86,7 @@ This skill increases the chance for ores to give double drops.
 
 ### Blast Mining
 
-![Blast Mining](../../assets/professions/miner/3.png)
+![Blast Mining](../../assets/professions/miner/blast.png)
 
 Explosions for tunnel mining.
 
@@ -119,7 +119,7 @@ Video guide:
 
 ### Miner's Delight
 
-![Miner's Delight](../../assets/professions/miner/4left.png)
+![Miner's Delight](../../assets/professions/miner/minersdelight.png)
 
 Drinking bonus for mining.
 
@@ -133,7 +133,7 @@ This skill does nothing on its own unless alcohol is involved. It increases doub
 
 ### Bombardier
 
-![Bombardier](../../assets/professions/miner/4right.png)
+![Bombardier](../../assets/professions/miner/bombardier.png)
 
 Cheaper explosions.
 
