@@ -20,13 +20,13 @@ The miner profession contains several skills that improve mining, resource gathe
 
 ### Full Skill Tree
 
-![Miner Skill Tree](../../assets/professions/miner/fulltree.png)
+![Miner Skill Tree](../../assets/professions/miner/minerfulltree.png)
 
 ---
 
 ### Gold Panning
 
-![Gold Panning](../../assets/professions/miner/1left.png)
+![Gold Panning](../../assets/professions/miner/goldpan.png)
 
 Find gold in rivers.
 
@@ -46,7 +46,7 @@ Video guide:
 
 ### Miner's Strength
 
-![Miner's Strength](../../assets/professions/miner/1right.png)
+![Miner's Strength](../../assets/professions/miner/minerstrength.png)
 
 Mine faster and harder.
 
@@ -60,7 +60,7 @@ This skill gives a chance to gain **Haste I for 2 seconds** while mining, making
 
 ### Corporatism
 
-![Corporatism](../../assets/professions/miner/2left.png)
+![Corporatism](../../assets/professions/miner/corpor.png)
 
 Group gold panning bonus.
 
@@ -73,7 +73,7 @@ This skill increases gold panning chance when other nearby players are within **
 
 ### Prospecting
 
-![Prospecting](../../assets/professions/miner/2right.png)
+![Prospecting](../../assets/professions/miner/prospect.png)
 
 Extract more resources from ores.
 
@@ -86,7 +86,7 @@ This skill increases the chance for ores to give double drops.
 
 ### Blast Mining
 
-![Blast Mining](../../assets/professions/miner/3.png)
+![Blast Mining](../../assets/professions/miner/blast.png)
 
 Explosions for tunnel mining.
 
@@ -119,7 +119,7 @@ Video guide:
 
 ### Miner's Delight
 
-![Miner's Delight](../../assets/professions/miner/4left.png)
+![Miner's Delight](../../assets/professions/miner/minersdelight.png)
 
 Drinking bonus for mining.
 
@@ -133,7 +133,7 @@ This skill does nothing on its own unless alcohol is involved. It increases doub
 
 ### Bombardier
 
-![Bombardier](../../assets/professions/miner/4right.png)
+![Bombardier](../../assets/professions/miner/bombardier.png)
 
 Cheaper explosions.
 
@@ -145,79 +145,35 @@ This skill gives coal a chance to drop gunpowder, making explosives easier to pr
 
 ---
 
-### Trapper
+### Tool Quenching
 
-![Trapper](../../assets/professions/miner/5left.png)
+![Tool Quenching](../../assets/professions/miner/toolquenching.png)
 
-Advanced hunting traps.
+Advanced tool quenching techniques.
 
-Lvl 1: Bear Traps  
-Lvl 2: Frisian horse trap  
-Lvl 3: Buried Bear Traps
+Right click a **water cauldron** with a tool.
 
-#### Bear Trap
+Lvl 1–3: Increases efficiency when quenching  
 
-Place the bear trap on the ground, then use a **shovel** to bury it and conceal it.
-
-Players or mobs that step on it will take damage and be temporarily immobilized.
-
-#### Frisian Horse Trap
-
-To make a Frisian horse trap:
-
-- Place **two logs** next to each other
-- Place **two log slabs** on top of them
-- Right click one of the logs with an **axe**
-
-Video guide:
-
-<video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/traps.mp4" title="Traps"></video>
+This skill works like the blacksmith quenching skills, but for tools instead of armor or weapons. It gives **Efficiency** enchants to tools through quenching.
 
 ---
 
-### True Smithing
+### Reinforced Tools
 
-![True Smithing](../../assets/professions/miner/5right.png)
+![Reinforced Tools](../../assets/professions/miner/reinforced.png)
 
-Faster smelting.
+Unlock reinforced steel tool recipes.
 
-Lvl 1: Unlock Crucible Furnace
+Lvl 1: Reinforced Hoe  
+Lvl 2: Reinforced Axe  
+Lvl 3: Reinforced Shovel  
+Lvl 4: Reinforced Pickaxe  
+Lvl 5: Unbreaking when quenching
 
-### Crucible Furnace
+This skill unlocks crafting of **reinforced steel tools**.
+Grants **Unbreaking** when quenching
 
-#### Crucible Furnace-specific requirements
+Normal steel tools correspond to **vanilla diamond tools**, while reinforced steel tools correspond to **vanilla netherite tools**.
 
-- 1 x Crucible + Tongs per slot (steel, cast iron, slag)
-- 1 x Tongs (to pick up cast ingots)
-- 1 x Ingot Cast
-- 1 x Blast Furnace
-- 1 x Clay Block
 
-**Important: To use a Crucible Furnace, you need the True Smithing skill from the Miner skill tree.**
-
-#### Guide
-
-The True Smithing skill gives access to the **Crucible Furnace**.
-
-The main advantage of the Crucible Furnace is that it does not require temperature control like the bloomery does. This makes it a simpler way to produce **steel** and **cast iron** ingots. It can also process **slag**, so slag is no longer just a waste byproduct from the bloomery.
-
-To create and use a Crucible Furnace:
-
-- Place a **Blast Furnace** on the ground
-- Place a **Clay Block** on top of it
-- Right click it with a **hammer**
-- Combine **Tongs** and **Crucibles** to make **Tongs with Crucibles**
-- Put **raw iron** and **coal** into the Crucible Furnace
-- Put the **Tongs with Crucibles** into any of the Crucible Furnace slots
-- Wait until they fill up
-- Take out a pair of tongs
-- Place an **Ingot Cast** on the ground
-- Right click the tongs onto the Ingot Cast
-- Wait for the liquid to solidify
-- Pick up the finished ingot with tongs
-- Quench the tongs to cool the ingot
-- When you want to use the ingot for crafting, reheat it in fire and pick it up again with tongs
-
-Video guide:
-
-<video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/crucible.mp4" title="Crucible Furnace"></video>
