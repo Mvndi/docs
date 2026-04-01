@@ -2,10 +2,6 @@
 
 **Important note: You need to have the miner profession to use the abilities in this guide. You can select a profession by using the `/mp` command.**
 
-## Quick Navigation
-
-* [Crucible Furnace](#crucible-furnace)
-
 ## Passive Effect
 
 Miners gain **night vision** while breaking blocks below **Y 50**.
@@ -97,10 +93,10 @@ Blast mining is used for tunnel mining with explosives.
 
 To blast mine properly:
 
-- Face a **cardinal direction**: `0`, `90`, `180`, `-90`, or `-180`
-- Go below **Y 50**
-- Place TNT
-- Light it
+* Face a **cardinal direction**: `0`, `90`, `180`, `-90`, or `-180`
+* Go below **Y 50**
+* Place TNT
+* Light it
 
 If done correctly, more TNT will spawn in that direction and explode a tunnel. The ingots from exploded ores are added directly to your inventory.
 
@@ -108,8 +104,8 @@ Blast mining will not work in claimed chunks with explosions disabled.
 
 You can enable explosions with:
 
-- `/plot toggle explosion` on a plot basis
-- `/t toggle explosion` on a town basis
+* `/plot toggle explosion` on a plot basis
+* `/t toggle explosion` on a town basis
 
 Video guide:
 
@@ -175,5 +171,3 @@ This skill unlocks crafting of **reinforced steel tools**.
 Grants **Unbreaking** when quenching
 
 Normal steel tools correspond to **vanilla diamond tools**, while reinforced steel tools correspond to **vanilla netherite tools**.
-
-

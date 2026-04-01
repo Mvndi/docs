@@ -6,6 +6,7 @@
 
 * [Bloomery](#bloomery)
 * [Core Blacksmithing](#core-blacksmithing)
+* [Crucible Furnace](#crucible-furnace)
 
 ## XP Gain
 
@@ -179,11 +180,11 @@ Lvl 1: Unlock Crucible Furnace
 
 #### Crucible Furnace-specific requirements
 
-- 1 x Crucible + Tongs per slot (steel, cast iron, slag)
-- 1 x Tongs (to pick up cast ingots)
-- 1 x Ingot Cast
-- 1 x Blast Furnace
-- 1 x Clay Block
+* 1 x Crucible + Tongs per slot (steel, cast iron, slag)
+* 1 x Tongs (to pick up cast ingots)
+* 1 x Ingot Cast
+* 1 x Blast Furnace
+* 1 x Clay Block
 
 **Important: To use a Crucible Furnace, you need the True Smithing skill from the Blacksmith skill tree.**
 
@@ -195,20 +196,20 @@ The main advantage of the Crucible Furnace is that it does not require temperatu
 
 To create and use a Crucible Furnace:
 
-- Place a **Blast Furnace** on the ground
-- Place a **Clay Block** on top of it
-- Right click it with a **hammer**
-- Combine **Tongs** and **Crucibles** to make **Tongs with Crucibles**
-- Put **raw iron** and **coal** into the Crucible Furnace
-- Put the **Tongs with Crucibles** into any of the Crucible Furnace slots
-- Wait until they fill up
-- Take out a pair of tongs
-- Place an **Ingot Cast** on the ground
-- Right click the tongs onto the Ingot Cast
-- Wait for the liquid to solidify
-- Pick up the finished ingot with tongs
-- Quench the tongs to cool the ingot
-- When you want to use the ingot for crafting, reheat it in fire and pick it up again with tongs
+* Place a **Blast Furnace** on the ground
+* Place a **Clay Block** on top of it
+* Right click it with a **hammer**
+* Combine **Tongs** and **Crucibles** to make **Tongs with Crucibles**
+* Put **raw iron** and **coal** into the Crucible Furnace
+* Put the **Tongs with Crucibles** into any of the Crucible Furnace slots
+* Wait until they fill up
+* Take out a pair of tongs
+* Place an **Ingot Cast** on the ground
+* Right click the tongs onto the Ingot Cast
+* Wait for the liquid to solidify
+* Pick up the finished ingot with tongs
+* Quench the tongs to cool the ingot
+* When you want to use the ingot for crafting, reheat it in fire and pick it up again with tongs
 
 Video guide:
 
