@@ -31,7 +31,7 @@ The blacksmith profession contains several skills that unlock new equipment, sie
 
 Craft advanced ranged weapons.
 
-Lvl 1: Longbow & Bullets  
+Lvl 1: Longbow & Bullets  g
 Lvl 2: Crossbow & Bolts  
 Lvl 3: Siege Weapon Ammo
 
