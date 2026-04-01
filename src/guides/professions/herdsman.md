@@ -24,7 +24,7 @@ The herdsman profession contains several skills that improve animal products, br
 
 ### Butcher
 
-![Butcher](../../assets/professions/herdsman/1left.png)
+![Butcher](../../assets/professions/herdsman/butcher.png)
 
 Increases drop rate of domestic animals.
 
@@ -37,7 +37,7 @@ This skill increases drops from domestic animals such as cows, sheep, and pigs.
 
 ### Scavenger
 
-![Scavenger](../../assets/professions/herdsman/1right.png)
+![Scavenger](../../assets/professions/herdsman/scavenger.png)
 
 Domestic animals drop more bones.
 
@@ -50,7 +50,7 @@ This skill increases bone drops from domestic animals.
 
 ### Hatchery
 
-![Hatchery](../../assets/professions/herdsman/2left.png)
+![Hatchery](../../assets/professions/herdsman/hatch.png)
 
 Breed chickens and get more eggs.
 
@@ -64,7 +64,7 @@ This skill increases egg drops from chickens and unlocks the bowl of eggs crafti
 
 ### Fishmonger
 
-![Fishmonger](../../assets/professions/herdsman/2right.png)
+![Fishmonger](../../assets/professions/herdsman/fishmonger.png)
 
 Collect worms with trowels.  
 Use worms as stronger lure.  
@@ -86,7 +86,7 @@ When fishing, hold a **worm in your offhand** while using a fishing rod. There i
 
 ### Horsepower
 
-![Horsepower](../../assets/professions/herdsman/3left.png)
+![Horsepower](../../assets/professions/herdsman/horsepower.png)
 
 Craft and attach carts to horses for storage.
 
@@ -106,7 +106,7 @@ Video guide:
 
 ### Shepherd
 
-![Shepherd](../../assets/professions/herdsman/3right.png)
+![Shepherd](../../assets/professions/herdsman/shepherd.png)
 
 Gain more wool from sheep.  
 Allows for crafting shepherd's staff.
@@ -122,7 +122,7 @@ This skill also increases wool gain from sheep.
 
 ### Dairy
 
-![Dairy](../../assets/professions/herdsman/4left.png)
+![Dairy](../../assets/professions/herdsman/Dairy.png)
 
 Milk cows more often.
 
@@ -136,7 +136,7 @@ This skill increases how many times each cow can be milked per day.
 
 ### Truffle Hunter
 
-![Truffle Hunter](../../assets/professions/herdsman/4right.png)
+![Truffle Hunter](../../assets/professions/herdsman/truffle.png)
 
 Use pigs to find truffles.
 
@@ -156,7 +156,7 @@ Video guide:
 
 ### Beekeeper
 
-![Beekeeper](../../assets/professions/herdsman/5left.png)
+![Beekeeper](../../assets/professions/herdsman/beekeeper.png)
 
 Increased yields from hives and nests.
 
@@ -169,7 +169,7 @@ This skill increases how much you get from beehives and bee nests.
 
 ### Artificial Selection
 
-![Artificial Selection](../../assets/professions/herdsman/5right.png)
+![Artificial Selection](../../assets/professions/herdsman/artificial.png)
 
 Breed with barley for new breed chance.
 
