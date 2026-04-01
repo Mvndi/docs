@@ -20,7 +20,7 @@ The miner profession contains several skills that improve mining, resource gathe
 
 ### Full Skill Tree
 
-![Miner Skill Tree](../../assets/professions/miner/fulltree.png)
+![Miner Skill Tree](../../assets/professions/miner/minerfulltree.png)
 
 ---
 
@@ -145,6 +145,35 @@ This skill gives coal a chance to drop gunpowder, making explosives easier to pr
 
 ---
 
+### Tool Quenching
 
+![Tool Quenching](../../assets/professions/miner/toolquenching.png)
+
+Advanced tool quenching techniques.
+
+Right click a **water cauldron** with a tool.
+
+Lvl 1–3: Increases efficiency when quenching  
+
+This skill works like the blacksmith quenching skills, but for tools instead of armor or weapons. It gives **Efficiency** enchants to tools through quenching.
+
+---
+
+### Reinforced Tools
+
+![Reinforced Tools](../../assets/professions/miner/reinforced.png)
+
+Unlock reinforced steel tool recipes.
+
+Lvl 1: Reinforced Hoe  
+Lvl 2: Reinforced Axe  
+Lvl 3: Reinforced Shovel  
+Lvl 4: Reinforced Pickaxe  
+Lvl 5: Unbreaking when quenching
+
+This skill unlocks crafting of **reinforced steel tools**.
+Grants **Unbreaking** when quenching
+
+Normal steel tools correspond to **vanilla diamond tools**, while reinforced steel tools correspond to **vanilla netherite tools**.
 
 
