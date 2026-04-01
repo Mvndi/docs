@@ -18,7 +18,7 @@ The herdsman profession contains several skills that improve animal products, br
 
 ### Full Skill Tree
 
-![Herdsman Skill Tree](../../assets/professions/herdsman/fulltree.png)
+![Herdsman Skill Tree](../../assets/professions/herdsman/herdsmantree.png)
 
 ---
 
@@ -200,3 +200,33 @@ Feeding baby horses changes different stats:
 Video guide:
 
 <video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/genetics.mp4" title="genetics"></video>
+
+---
+
+### Trapper
+
+![Trapper](../../assets/professions/herdsman/trapper.png)
+
+Advanced hunting traps.
+
+Lvl 1: Bear Traps  
+Lvl 2: Frisian horse trap  
+Lvl 3: Buried Bear Traps
+
+#### Bear Trap
+
+Place the bear trap on the ground, then use a **shovel** to bury it and conceal it.
+
+Players or mobs that step on it will take damage and be temporarily immobilized.
+
+#### Frisian Horse Trap
+
+To make a Frisian horse trap:
+
+- Place **two logs** next to each other
+- Place **two log slabs** on top of them
+- Right click one of the logs with an **axe**
+
+Video guide:
+
+<video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/traps.mp4" title="Traps"></video>
