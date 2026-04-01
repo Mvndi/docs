@@ -27,7 +27,7 @@ The blacksmith profession contains several skills that unlock new equipment, sie
 
 ### Fletching
 
-![Fletching](../../assets/professions/blacksmith/1left.png)
+![Fletching](../../assets/professions/blacksmith/fletching.png)
 
 Craft advanced ranged weapons.
 
@@ -41,7 +41,7 @@ This skill unlocks advanced ranged weapon crafting and their ammunition.
 
 ### Armor Smithing
 
-![Armor Smithing](../../assets/professions/blacksmith/1right.png)
+![Armor Smithing](../../assets/professions/blacksmith/armorsmith.png)
 
 Create stronger armor pieces.
 
@@ -55,7 +55,7 @@ This skill unlocks progressively better armor types.
 
 ### Backpacking
 
-![Backpacking](../../assets/professions/blacksmith/2left.png)
+![Backpacking](../../assets/professions/blacksmith/backpack.png)
 
 Allows carrying mixed stacks of items.
 
@@ -67,7 +67,7 @@ This skill unlocks the bundle recipe for carrying more mixed items.
 
 ### Weapon Smithing
 
-![Weapon Smithing](../../assets/professions/blacksmith/2right.png)
+![Weapon Smithing](../../assets/professions/blacksmith/weaponsmith.png)
 
 Unlocks more advanced melee weapons.
 
@@ -81,7 +81,7 @@ This skill unlocks progressively stronger melee weapon types.
 
 ### The Handgonne
 
-![The Handgonne](../../assets/professions/blacksmith/3.png)
+![The Handgonne](../../assets/professions/blacksmith/handgonne.png)
 
 Unlocks the first firearm.
 
@@ -93,7 +93,7 @@ This skill gives access to the Handgonne recipe.
 
 ### Warsmithing
 
-![Warsmithing](../../assets/professions/blacksmith/4left.png)
+![Warsmithing](../../assets/professions/blacksmith/warsmith.png)
 
 Allows the crafting of siege weapons.
 
@@ -107,7 +107,7 @@ This skill unlocks siege weapon crafting.
 
 ### Armor Quenching
 
-![Armor Quenching](../../assets/professions/blacksmith/4right.png)
+![Armor Quenching](../../assets/professions/blacksmith/armorquench.png)
 
 Advanced quenching techniques for armor pieces.
 
@@ -132,7 +132,7 @@ You can quench any "hot" item held in tongs, such as ingots or armor pieces.
 
 ### Durable Siegeworking
 
-![Durable Siegeworking](../../assets/professions/blacksmith/5left.png)
+![Durable Siegeworking](../../assets/professions/blacksmith/durables.png)
 
 Reinforces siege weapons.
 
@@ -144,7 +144,7 @@ This skill increases siege weapon durability by 10% per level, up to 30%.
 
 ### Weapon Quenching
 
-![Weapon Quenching](../../assets/professions/blacksmith/5right.png)
+![Weapon Quenching](../../assets/professions/blacksmith/weaponquench.png)
 
 Advanced weapon quenching techniques.
 
