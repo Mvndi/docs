@@ -43,7 +43,7 @@
 
 _- This includes XRay, Minimaps displaying other player locations, Freecam and Player health indicators._
 
-_- Minimaps that does not display other player locations are allowed. Mods that provide a replay of the game (as Flashback) are allowed as long as the replay has to be seen after closing the game._
+_- Minimaps that does not display other player locations are allowed. Mods that provide a replay of the game (as Flashback) are allowed as long as the replay has to be seen after closing the game. Light mods/shaders are allowed._
 
 1.1 Auto build/break mods are not allowed. However schematic rendering is allowed.
 
