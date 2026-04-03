@@ -62,7 +62,7 @@ Temperatures work by combining modifiers together. Each modifiers can be check w
 - day night temperature (for most biome it's -5 at midnight and +5 at noon (or +10 under greenhouse). It follow a sinusoidal function)
 - weather temperature (if it rains -2, if its' thunder -5)
 - north south temperature (Based on z coordinates. At z=0 -> -5 At z = 30 000 +5)
-- Under block temperature. To warn the crops use: HAY_BLOCK -> 5, FIRE -> 10, LAVA -> 20. To cool the crops use: WATER -> -5, SNOW_BLOCK -> -10, ICE -> -10, PACKED_ICE -> -20, BLUE_ICE -> -30. Ices can be collected without silk touch.
+- Under block temperature. To warn the crops use: HAY_BLOCK, REDSTONE_TORCH -> +5, TORCH, FIRE, SOUL_FIRE -> +10, CAMPFIRE, SOUL_CAMPFIRE -> +15, LAVA -> +20. To cool the crops use: WATER -> -5, SNOW_BLOCK, ICE -> -10, PACKED_ICE -> -20, BLUE_ICE -> -30. Ices can be collected without silk touch.
 
 ## Players
 
