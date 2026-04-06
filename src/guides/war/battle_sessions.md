@@ -1,7 +1,7 @@
 # Battle Sessions
 
 A siege is split into two 2-hour-long battle sessions.
-A battle session starts every Saturday and Sunday at 6:30 PM UTC.
+A battle session starts bi-weekly (every two weeks), Saturday and Sunday at 6:30 PM UTC.
 
 You can see when the next battle session is with the `/sw nextsession` command.
 
