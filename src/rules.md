@@ -224,3 +224,10 @@ tldr your town spawn has to be accessible with siege weapons. walls are okay, no
 --------
 
 9.0 Trading real money in exchange for anything in game is not allowed
+
+## Store
+
+--------
+
+10.0 Chargebacks, payment reversals, or any forced refunds will result in a permanent, non-appealable ban
+
