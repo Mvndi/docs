@@ -104,7 +104,7 @@ tldr your town spawn has to be accessible with siege weapons. walls are okay, no
 
 4.2.4 Gravity blocks in walls are allowed within reason, therefore walls that go beyond ~30 blocks in height filled with gravity blocks in that case would not be allowed
 
-4.2.5 Placing buttons on walls or near town with the intention to prevent siege weapons or scaffoldings from being placed is not allowed. However, it is allowed to place a single layer of buttons on walls to prevent block glitching.
+4.2.5 Placing buttons or kelp on walls or near town with the intention to prevent siege weapons or scaffoldings from being placed is not allowed. However, it is allowed to place a single layer of buttons on walls to prevent block glitching.
 
 4.2.6 You can have multiple walls but for two walls to count as "seperate" walls (and not 1 wall with a gap between them), the distance between them has to be greater than the height of the smaller wall. No more than 3 of these (excluding a central keep/citadel) though, use common sense don't try and make an onion base
 
