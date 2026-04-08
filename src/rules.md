@@ -104,11 +104,9 @@ tldr your town spawn has to be accessible with siege weapons. walls are okay, no
 
 4.2.4 Gravity blocks in walls are allowed within reason, therefore walls that go beyond ~30 blocks in height filled with gravity blocks in that case would not be allowed
 
-4.2.5 "Bedwars" defences around the siege banner is not allowed
+4.2.5 Placing buttons on walls or near town with the intention to prevent siege weapons or scaffoldings from being placed is not allowed. However, it is allowed to place a single layer of buttons on walls to prevent block glitching.
 
-4.2.6 Placing buttons on walls or near town with the intention to prevent siege weapons from being placed is not allowed
-
-4.2.7 You can have multiple walls but for two walls to count as "seperate" walls (and not 1 wall with a gap between them), the distance between them has to be greater than the height of the smaller wall. No more than 3 of these (excluding a central keep/citadel) though, use common sense don't try and make an onion base
+4.2.6 You can have multiple walls but for two walls to count as "seperate" walls (and not 1 wall with a gap between them), the distance between them has to be greater than the height of the smaller wall. No more than 3 of these (excluding a central keep/citadel) though, use common sense don't try and make an onion base
 
 ### Traps
 
@@ -173,6 +171,14 @@ tldr your town spawn has to be accessible with siege weapons. walls are okay, no
 4.7.1 Scamming and lying in peace treaties is allowed - admins can serve as middlemen in certain exchanges where possible and are not allowed to be knowingly involved in scams
 
 4.7.2 Mass leaving your town after it gets occupied is not allowed
+
+### Siege Banner / Town spawn
+
+4.8.1 Placing town spawn in a tower is NOT allowed, you may only place town spawn where a reasonable platform is present and reachable
+
+4.8.2 "Bedwars" defence around the siege banner is not allowed, a reasonable platform is required at the banner level with no block covering the banner
+
+4.8.3 No water can be used around the siege banner
 
 ## Alts
 
