@@ -158,7 +158,7 @@ tldr your town spawn has to be accessible with siege weapons. walls are okay, no
 
 4.6.6 No temporary towns for the sole purpose of acting as an outpost to siege from - building siege bases is allowed but they may not be claimed as towns
 
-4.6.7 The town spawn point must be reachable via siege weapons and cannot be underground or in the sky
+4.6.7 The town spawn point must be reachable via siege weapons and cannot be underground or in the sky or in water or use common sense im not going to add every single case here, we will just delete it if you do dumb shit to try and get around this rule
 
 4.6.8 Builds must be decently realistic for the time period (476-1550)
 
