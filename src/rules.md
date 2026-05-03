@@ -122,95 +122,117 @@ tldr your town spawn has to be accessible with siege weapons. walls are okay, no
 
 ### Tunnels
 
-4.4.1 It is forbidden to build underground tunnels and underground bunkers that could be used for siege now or later
+4.4.1 Building underground tunnels or bunkers that could be used for siege purposes is forbidden. Any tunnel connecting fortifications, allowing exit behind an attacking army, or exiting outside town claims is presumed a siege tunnel unless clearly demonstrated otherwise.
 
-4.4.2 Storing items in underground vaults that are unreachable via siege weapons is not allowed
+4.4.2 Storing items in underground vaults unreachable via siege weapons is not allowed.
 
-4.4.3 Using underground tunnels during a siege for any reason is not allowed
+4.4.3 Using underground tunnels during an active siege for any reason is not allowed.
 
 > An underground bunker is a room for use during sieges that has roughly 5-10+ solid blocks above it, staff will make case-by-case decisions as to if underground rooms constitute siege bunkers or not.
 > Tunnels only refer to tunnels for use during pvp/sieges, e.g. tunnels between fortresses, towns or ones which allow you to exit behind an attacking army, again staff will make case-by-case decisions on if tunnels are breaking the rules or not.
 > Digging to attack an underground player is not considered building a tunnel.
 
-### Attacking
+### Attacking and Defending
 
-4.5.1 The attacking team should not cause excessive damage with the sole purpose of griefing a town
+4.5.1 The attacking team may not cause excessive damage with the sole purpose of griefing a town beyond what siege warfare requires.
 
-4.5.2 Using boats to get over the walls of a town is not allowed
+4.5.2 Using boats to get over town walls is not allowed.
 
-4.5.3 Block glitching into a town is not allowed
+4.5.3 Block glitching into a town is not allowed.
 
-4.5.4 Building a tower to pass over walls in a town is allowed. It is recommended towns claim 1 chunk around their base to prevent pillaring over walls.
+4.5.4 Building a tower to pass over walls is allowed up to a maximum height of 12 blocks. Towers must be freestanding. Nerdpoling (single-block pillar spam with no structural logic) is not allowed.
 
-4.5.5 Attackers ARE allowed to use siege weapons to destroy chests to steal their contents
+4.5.5 Attackers may use siege weapons to destroy chests and take their contents.
+
+4.5.6 Pre-positioning is allowed for defenders within reason. Camping within 10 blocks of a siege camp — defined as stationary positioning for more than 30 seconds without active engagement — is not allowed.
+
+4.5.7 Building or destroying blocks with the deliberate intent of denying siege weapon placement is not allowed.
+
+4.5.8 Door defenses must not be excessively obstructive. Doors requiring more than 2 sequential interactions to pass, or designed to trap or cycle players, are not allowed.
 
 ### Misc
 
-4.6.1 No building nazi/communist imagery
+4.6.1  No building Nazi, Communist, or any other hate-related imagery.
 
-4.6.2 No ice roads (realism) - You can create gravel paths to increase horse speed
+4.6.2 No ice roads (realism). Gravel paths are allowed to increase horse speed.
 
-4.6.3 No automated or redstone-assisted farms
+4.6.3 No automated or redstone-assisted farms, including rat farms. Natural unmodified caves may be used. Any constructed platform, enclosed space, or lighting arrangement designed to funnel mob spawning is not allowed regardless of redstone use.
 
-4.6.4 No using [Big Doors](./guides/big_doors.md) in unintended ways
+4.6.4 No using [Big Doors](./guides/big_doors.md) in unintended ways.
 
-4.6.5 No Sky/Ocean bases
+4.6.5 No sky or ocean bases.
 
-4.6.6 No temporary towns for the sole purpose of acting as an outpost to siege from - building siege bases is allowed but they may not be claimed as towns
+4.6.6 No temporary towns created solely as siege outposts. Siege bases are allowed but may not be claimed as towns.
 
-4.6.7 The town spawn point must be reachable via siege weapons and cannot be underground or in the sky
+4.6.7 Town spawn must be reachable via siege weapons. It may not be underground, in the sky, underwater, or engineered to be inaccessible. Staff will rule on edge cases.
 
-4.6.8 Builds must be decently realistic for the time period (476-1550)
+4.6.8 Builds must be realistic for the server time period (476–1550 AD).
 
-4.6.9 Builds must be similar to actual medieval architecture of the area you are building in. For example, you can't build andalusian architecture in Denmark for example
+4.6.9 Builds must reflect the architectural style of their in-game region. You cannot build Andalusian architecture in Denmark, for example.
 
-4.6.10 Statues that go beyond humanly possible scale when it comes to the middle ages, so statues equivalent to the colossus of Rhodes are not allowed is they don't respect the proper proportions of the time
+4.6.10 Statues may not exceed a scale feasible in the Middle Ages. Structures equivalent in scale to the Colossus of Rhodes are not allowed if they violate realistic proportions.
 
-4.6.11 You may not cause major destruction to the landscape
+4.6.11 Landscape griefing is not allowed: unrealistic or visually destructive modification of unclaimed land, including ugly structures, mass deforestation, or terrain alteration.
+
+4.6.12 Bridges across mountains or terrain must be at least 3 blocks wide and have some structural logic. Single-block crossing paths are not allowed.
+
+4.6.13 REALISM — the core principle of Mvndicraft. Builds, tactics, and actions must pass the basic test: could this plausibly have existed or occurred in 476–1550 AD? Staff makes case-by-case decisions. Minor violations receive warnings first; significant or repeated violations are punished.
 
 ### Peace
 
-4.7.1 Scamming and lying in peace treaties is allowed - admins can serve as middlemen in certain exchanges where possible and are not allowed to be knowingly involved in scams
+4.7.1 Scamming and lying in peace treaties is allowed. Admins may serve as neutral middlemen but will not knowingly participate in scams.
 
-4.7.2 Mass leaving your town after it gets occupied is not allowed
+4.7.2 Mass-leaving your town after it becomes occupied is not allowed. Staff makes case-by-case decisions.
 
-### Siege Banner / Town spawn
+### Siege Banner / Town Spawn / Siege Camp
 
-4.8.1 Placing town spawn in a tower is NOT allowed, you may only place town spawn where a reasonable platform is present and reachable
+4.8.1 Town and siege camp spawns may not be placed in towers. The spawn must be on a reasonable, accessible platform.
 
-4.8.2 "Bedwars" defence around the siege banner is not allowed, a reasonable platform is required at the banner level with no block covering the banner
+4.8.2  "Bedwars"-style defenses around the siege banner are not allowed. A clear, flat platform must exist at banner level with no blocks obstructing the banner.
 
-4.8.3 No water can be used around the siege banner
+4.8.3 No water, lava, or traps of any kind may be placed around a siege banner.
+
+4.8.4 Siege camps may not be placed in the sky, on open water, or in any location that is not realistically reachable.
+
+4.8.5 Siege camps must have multiple accessible entry routes. A tower with a single ladder-and-hatch entrance is not allowed. If a tower is used, at least two distinct means of reaching the banner platform must exist.
+
+4.8.6 Siege camp banner must be at the natural ground level of the siege camp structure. If the siege camp structure is in the ocean, it must not be further than 2 chunks away from any naturally generated land.
+
+4.8.7 Siege camp structures must be at or less than 30 blocks high from natural ground level.
 
 ## Alts
 
 --------
 
-5.0 Using alts is not allowed and will lead to a permanent ban of the alt and a tempban for the player's main account.
+5.0 Using alt accounts is not allowed. Results in a permanent ban on the alt and a temporary ban on the main account, with length scaling on repeat offenses.
 
 ## Exploits
 
 --------
 
-6.0 Any Glitch or Bug should be reported. Abusing these bugs intentionally is punishable
+6.0 All glitches and bugs must be reported. Intentional abuse of bugs is punishable. Severity scales with the impact of the exploit.
 
-6.1 AFK bypassing is not allowed
+6.1 AFK bypassing is not allowed.
 
-6.2 Abusing bugs, lag, and other unintended features such as block glitching and dupes is not allowed
+6.2 Abusing bugs, lag, block glitching, duplication glitches, or any other unintended game mechanics is not allowed. Punishment scales with impact.
 
 ## Towny
 
 --------
 
-7.0 No snake claiming. Claims must be sensible and cannot extend as lines.
+7.0 No snake claiming. Claims must be spatially sensible and may not extend as thin lines or single-chunk chains to reach resources or cut off other towns.
 
-7.1 Joining a town just to spawn kill residents is forbidden.
+7.1 Joining a town with the intent to spawn-kill residents is forbidden.
 
-7.2. All towns must be named after places (towns, cities, castles, monasteries, etc.) that existed within the servers timeframe (476-1550).
+7.2. All towns must be named after real places (towns, cities, castles, monasteries, etc.) that existed within the server's timeframe (476–1550 AD).
 
-7.3. The town must have at least one chunk over the area which corresponds to where it would have existed in the middle ages.
+7.3. The town must have at least one chunk over the area corresponding to where that settlement historically existed.
 
-7.4 Towns are allowed to build bridges or barrages over major rivers in their claim as long as they are medieval looking. Bridges and barrages can’t entirely block major rivers, a row boat still need to be able to pass by the river. Row boats need 4 blocks wide, 3 air blocks high, and 2 water blocks deep space to pass by. Man-made canals & small rivers are not affected by this rule. Bridges or barrages outside of claims are not affected by this rule.
+7.4 Towns may build bridges or barrages over major rivers within their claims as long as they are architecturally medieval. Bridges and barrages may not entirely block major rivers. Row boats must be able to pass: minimum 4 blocks wide, 3 air blocks high, 2 water blocks deep. Man-made canals and small rivers are exempt. Structures outside claims are not affected. Single- to three-block-thick dirt platforms are not allowed; realistic gated structures are acceptable.
+
+7.5 Towns founded during siege week periods until the siege week ends on Sunday can't take part in any way in sieges.
+
+7.6 Canals may be built as long as they are realistic in appearance and construction logic.
 
 ## Nations
 
