@@ -22,3 +22,7 @@ Control the siege banner to gain points for your team. Defenders typically hold 
 - **Check Control List**: Use `/t <besieged town>` and hover over `[Sieged]` to see the list.
 - **Point Boost**: More soldiers controlling the banner earn points faster.
 - **Defender Advantage**: The banner’s location at the town’s spawn makes it easier for defenders to hold. If the attackers ever capture the banner at any point the attackers win the siege.
+
+### Pillage
+
+If the attackers take control of the banner, and they kill more than the defender, they get 5 mins to 10 mins to pillage the town. They have permission to open chests, doors, etc., and to break blocks with a 1 min cooldown.

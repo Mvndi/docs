@@ -17,3 +17,8 @@ There's a [video](https://www.youtube.com/watch?v=raiAhk2Ru5Y) that showcases so
 ## Respawn Cooldown
 
 All siege participants have a 30 second respawn cooldown during a battle session
+
+## Surrendering
+
+Town can surrender by placing a white banner outside of the town.
+Surrendering protects from pillage, except if surrendering during a battle session.
