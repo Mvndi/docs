@@ -184,8 +184,6 @@ If any violations are discovered by admins, changes will be reverted and punishm
 
 4.6.12 Bridges across mountains or terrain must be at least 3 blocks wide and have some structural logic. Single-block crossing paths are not allowed.
 
-4.6.13 REALISM — the core principle of Mvndicraft. Builds, tactics, and actions must pass the basic test: could this plausibly have existed or occurred in 476–1550 AD? Staff makes case-by-case decisions. Minor violations receive warnings first; significant or repeated violations are punished.
-
 ### Non-Aggression Pacts
 
 Non-aggression pacts (NAPs) are allowed as part of roleplay diplomacy but are not enforceable by staff. If a nation breaks a NAP, staff will not intervene on that basis alone. The only agreements staff will enforce are direct item or currency exchanges where an Admin acted as middleman.
