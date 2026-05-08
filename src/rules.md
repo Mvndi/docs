@@ -51,62 +51,70 @@ _- Minimaps that does not display other player locations are allowed. Mods that 
 
 --------
 
-2.0 You may not speak in languages besides English in public chats
+2.0 English or a language an active in-game staff member can speak must be spoken in all chat. Proximity Voice Chat, Local Chat, Town Chat and Nation Chat are exempt from this rule. Unless a moderator is present and asking questions about a situation.
 
-2.1 Constant Harassment is punishable
+2.1 Constant harassment is punishable. Severity scales with nature and frequency: verbal harassment, targeted personal harassment, sexual harassment.
 
-2.2 Blasphemy towards any religion is forbidden
+2.2 Blasphemy directed at any religion is forbidden.
 
-2.3 Spamming is prohibited
+2.3 Spamming is prohibited.
 
-2.4 Impersonating staff is prohibited
+2.4 Impersonating staff is prohibited.
 
 2.5 Racial slurs are forbidden.
+
+2.6 Any joke referencing pedophilia, child abuse, or similarly reprehensible subjects will not be tolerated.
 
 ## War & Building
 
 --------
 
-If any of these are discovered by admins the changes shall be reverted.
-tldr your town spawn has to be accessible with siege weapons. walls are okay, no dumb water elevator larp putting ur spawn far underground far above ground blah blah blah
+If any violations are discovered by admins, changes will be reverted and punishment applied. Core principle: your town spawn must be reachable via siege weapons. Staff will make case-by-case decisions on ambiguous situations, but attempting to rule-lawyer obvious violations will be treated as intentional evasion.
+(Nations are given a verbal warning before a punishment)
 
 ### Moats
 
-4.1.1 The width of the moat may not exceed 10% of the width of the area that it surrounds, however it can never be wider than 20 blocks
+4.1.1 Moat width may not exceed 10% of the longest straight-line dimension of the enclosed area, and can never exceed 20 blocks regardless of town size.
 
-> So for example, the moat in the attached picture is 20 blocks wide (16 on the diagonals) but length of what it surrounds (measured with the purple amethyst blocks) is ~86 blocks so a moat length that doesn't break the rules would be 8-9 blocks
+> Example: a moat surrounding an 86-block-wide area may be at most 8–9 blocks wide.
 
 ![moat](assets/moat.png)
 
-4.1.2 Moats must be filled with water up to at least 2 blocks down from the ground level on the inside of the moat
+4.1.2 Moats must be filled with water to at least 2 blocks below ground level on the interior side.
 
-4.1.3 Moats may not be filled with lava or dripstone spikes
+4.1.3 Moats may not be filled with lava or dripstone spikes.
 
-4.1.4 Lava is not allowed during sieges at all
+4.1.4 Lava is not permitted during sieges or PvP under any circumstance.
 
-4.1.5 Drymoats have a maximum depth of 5 blocks
+4.1.5 Dry moats have a maximum depth of 5 blocks.
 
-4.1.6 Filled moats have a maximum depth of 30 blocks
+4.1.6 Filled moats have a maximum depth of 30 blocks.
 
-4.1.7 Using natural rivers or oceans for defense is allowed. Extending oceans or rivers beyond their natural limits is considered to be a moat and needs to follow the moat rules
+4.1.7 Using natural rivers or oceans for defense is allowed. Any extension or modification of natural water bodies beyond their original boundaries is treated as a constructed moat and must follow all moat rules.
 
-4.1.8 It is allowed to build several moats as long as each moats does not exceed 10% of the width of the area that it surrounds minus the inner moat's side
+4.1.8 Multiple moats are allowed. Each moat's width must not exceed 10% of its own enclosed area minus the inner moat's width. Stacking moats to circumvent the formula is not allowed.
 
-> So for example, if you build a 10 block moat over a 100 block area and want to do a 2nd one over a 160 block area, the 2nd moat width would be max 6 (160/10 - 10 = 16 - 10 = 6)
+> Example: a 10-block moat over a 100-block area, with a second moat over a 160-block area, makes the second moat's max width 6 blocks (160/10 − 10 = 6).
 
 ### Walls
 
-4.2.1 Walls must not be "factions" walls (ugly cubes)
+4.2.1 Walls must not be plain "factions-style" cube walls. They must have architectural character appropriate to the server's time period.
 
-4.2.2 Walls must not contain any water, lava or obsidian
+4.2.2 Walls may not contain water, lava, or obsidian.
 
-4.2.3 Walls must not be thicker than 7 blocks, however they may have an additional 3 blocks of non-[blast resistant materials](./guides/siege_weapons/siege_weapons.md#blast-resistant-materials) in the manner of a bastion fort
+4.2.3 Walls may not exceed 7 blocks in thickness. An additional 3 blocks of non-[blast resistant materials](./guides/siege_weapons/siege_weapons.md#blast-resistant-materials) is allowed in the style of a bastion parapet. 
 
-4.2.4 Gravity blocks in walls are allowed within reason, therefore walls that go beyond ~30 blocks in height filled with gravity blocks in that case would not be allowed
+4.2.4 Gravity blocks in walls are allowed, may not exceed 3 blocks. Gravity blocks count to the 7 block thickness rule.
 
-4.2.5 Placing buttons or kelp on walls or near town with the intention to prevent siege weapons or scaffoldings from being placed is not allowed. However, it is allowed to place a single layer of buttons on walls to prevent block glitching.
+4.2.5 Placing buttons, kelp, or any block with the deliberate intent of preventing siege weapon placement or blocking ship passage is not allowed. A single layer of buttons to prevent block glitching is the sole exception. Inside or outside the walls.
 
-4.2.6 You can have multiple walls but for two walls to count as "seperate" walls (and not 1 wall with a gap between them), the distance between them has to be greater than the height of the smaller wall. No more than 3 of these (excluding a central keep/citadel) though, use common sense don't try and make an onion base
+4.2.6 You may have multiple walls. For two walls to count as separate, the distance between them must exceed the height of the shorter wall. Maximum 3 separate walls, not counting a central keep or citadel. Constructing layered "onion" walls to exploit this rule is not allowed.
+
+4.2.7 Towers must not exceed 15 blocks thick (wall included) and must be architecturally realistic and viable for the time period. A tower that is disproportionately thick relative to its design will not be accepted.
+
+4.2.8 Keep exterior walls may not exceed 5 blocks in thickness. Interior walls are limited to 1 block. Corner sections may be up to 7 blocks. These limits apply to the keep structure itself and are measured independently from the surrounding town walls. 
+
+4.2.9 Walls may not exceed 30 blocks in height. Interior structures inside the wall allow up to 4 blocks from the interior structure wall. Interior structure may not exceed 7 blocks, and must  include ground level passages.
 
 ### Traps
 
@@ -177,6 +185,12 @@ tldr your town spawn has to be accessible with siege weapons. walls are okay, no
 4.6.12 Bridges across mountains or terrain must be at least 3 blocks wide and have some structural logic. Single-block crossing paths are not allowed.
 
 4.6.13 REALISM — the core principle of Mvndicraft. Builds, tactics, and actions must pass the basic test: could this plausibly have existed or occurred in 476–1550 AD? Staff makes case-by-case decisions. Minor violations receive warnings first; significant or repeated violations are punished.
+
+### Non-Aggression Pacts
+
+Non-aggression pacts (NAPs) are allowed as part of roleplay diplomacy but are not enforceable by staff. If a nation breaks a NAP, staff will not intervene on that basis alone. The only agreements staff will enforce are direct item or currency exchanges where an Admin acted as middleman.
+> This is a clarification, not a punishable rule.
+
 
 ### Peace
 
@@ -253,11 +267,11 @@ tldr your town spawn has to be accessible with siege weapons. walls are okay, no
 
 --------
 
-9.0 Trading real money in exchange for anything in game is not allowed
+9.0 Trading real money in exchange for any in-game goods, currency, or advantages is not allowed.
 
 ## Store
 
 --------
 
-10.0 Chargebacks, payment reversals, or any forced refunds will result in a permanent, non-appealable ban
+10.0 Chargebacks, payment reversals, or any forced refunds will result in a permanent, non-appealable ban.
 
