@@ -27,11 +27,13 @@ Check current server time & next new day with `/towny time`.
 
 To create a town it must be at least *320 blocks** (20 chunks) from an existing towns claim.
 
-To join a nation, your town's **homeblock** must be within roughly **6000 blocks** (~375 chunks) of **at least one** existing town in that nation (not just the capital).  
+To join a nation, your town's **homeblock** must be within roughly **6000 blocks** (~375 chunks) of the capital of the nation.
+
+<!-- To join a nation, your town's **homeblock** must be within roughly **6000 blocks** (~375 chunks) of **at least one** existing town in that nation (not just the capital).  
 
 This uses "chaining": a new town can join if it's close to any member town, allowing nations to spread out gradually as long as towns stay connected in range. Very spread-out nations are possible if players keep adding edge towns.
 
-(Exact limit: 375 townblocks from nearest nation town homeblock.)
+(Exact limit: 375 townblocks from nearest nation town homeblock.) -->
 
 ## Taxes Explained
 
