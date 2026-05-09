@@ -2,6 +2,7 @@
 
 - [Welcome](./welcome.md)
 - [Rules](./rules.md)
+  - [Appeals](./appeals.md)
 - [Guides](./guides/guides.md)
   - [Recipes](./guides/recipes.md)
   - [Professions](./guides/professions/professions.md)
