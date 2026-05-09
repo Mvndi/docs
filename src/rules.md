@@ -238,6 +238,8 @@ Any mod not listed as explicitly allowed whose primary purpose is to provide inf
 
 > **Example (4.1.1):** A moat surrounding an 86-block-wide area may be at most 8–9 blocks wide.
 
+![moat](assets/moat.png)
+
 > **Example (4.1.8):** A 10-block moat over a 100-block area, with a second moat over a 160-block area, makes the second moat's max width 6 blocks (160/10 − 10 = 6).
 
 ---
