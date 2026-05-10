@@ -162,7 +162,6 @@ Any mod not listed as explicitly allowed whose primary purpose is to provide inf
 
 - X-Ray texture packs or mods
 - Minimap (all different kinds)
-- Fullbright / gamma mods that exceed the normal in-game slider range
 - Auto-fish / AFK fishing bots
 - Schematica printer mode (automated block placement)
 
@@ -252,7 +251,7 @@ Any mod not listed as explicitly allowed whose primary purpose is to provide inf
 |------|------|--------|-------------|
 | 4.2.1 | T2 | [V: 8pts] | Walls must not be plain "factions-style" cube walls. They must have architectural character appropriate to the server's time period. |
 | 4.2.2 | T3 | [V: 20pts] | Walls may not contain water, lava, or obsidian. |
-| 4.2.3 | T2 | [V: 8pts] | Walls may not exceed 7 blocks in thickness. An additional 3 blocks of non-blast-resistant material is allowed in the style of a bastion parapet. |
+| 4.2.3 | T2 | [V: 8pts] | Walls may not exceed 7 blocks in thickness. An additional 3 blocks of non-blast-resistant material is allowed in the style of a bastion parapet. Keeps however are limited to only having 6 blocks maximum of thickness. Anti gravity blocks for keeps are NOT permitted |
 | 4.2.4 | T3 | [V: 20pts] | Gravity blocks in walls are allowed within reason. Walls exceeding ~25 blocks in height that are primarily composed of gravity blocks are not allowed. |
 | 4.2.5 | T3 | [V: 20pts] | Placing buttons, kelp, or any block to prevent siege weapon placement or block ship passage is not allowed. A single layer of buttons to prevent block glitching is the sole exception. |
 | 4.2.6 | T3 | [V: 20pts] | You may have multiple walls. For two walls to count as separate, the distance between them must exceed the height of the shorter wall. Maximum 3 separate walls, not counting a central keep or citadel. |
@@ -366,9 +365,7 @@ NAPs are allowed as part of roleplay diplomacy but are **not enforceable by staf
 - **7.2 (T1) [V: 3pts]** All towns must be named after real places that existed within the server's timeframe (476–1550 AD).
 - **7.3 (T1) [V: 3pts]** The town must have at least one chunk over the area where that settlement historically existed.
 - **7.4 (T3–T4)** Towns may build bridges or barrages over major rivers within their claims as long as they are architecturally medieval. Row boats must be able to pass: minimum 4 blocks wide, 3 air blocks high, 2 water blocks deep.
-- **7.5 (T2) [V: 8pts]** Towns may not be founded on Wednesdays during siege week periods.
-  - **7.5.1 (T2) [V: 8pts]** Alt towns are not allowed.
-- **7.6** Canals may be built as long as they are realistic in appearance and construction logic.
+- **7.5** Canals may be built as long as they are realistic in appearance and construction logic.
 
 #### ⚠ Siege Towns Are Not Allowed
 
