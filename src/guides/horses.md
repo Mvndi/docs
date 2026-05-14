@@ -15,8 +15,10 @@ Suspicious gravel & sand can be craft by adding stone & sandstone to gravel & sa
 
 The road speed bonus will not work in combat.
 
-Horse & Camel stats have been limited:
+Horse & Camel stats have been changed:
 
-- Jump: 1.4 to 1.5 blocks (A fence height)
+- Heal point: 15 to 30 without herdsman. Up to 40 with herdsman.
+- Speed: 4.86 m/s to 14.57 m/s without herdsman. Up to 17 m/s with herdsman.
+- Jump: 1.4 to 1.9 blocks high (A fence height)
 
 Hitting other players or mobs with a horse does trample damage to the players or mobs if your riding fast enough.

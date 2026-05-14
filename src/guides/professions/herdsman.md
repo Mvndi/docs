@@ -197,6 +197,12 @@ Feeding baby horses changes different stats:
 - **Sugar** increases speed
 - **Horse hay bale blocks** increase bravery
 
+Higher than vanilla stats can be reach by feeding baby horses:
+- 100% in speed will make 17 m/s horse
+- 100% in health will make 40 hp horse
+
+You can't reach the max value for each stat, choose wisely.
+
 Video guide:
 
 <video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/genetics.mp4" title="genetics"></video>
