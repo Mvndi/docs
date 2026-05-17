@@ -139,7 +139,7 @@ Your maximum claims scale with the number of residents in your town. More reside
 
 ---
 
-## 5. Upkeep & the Town Bank
+## 5. [Upkeep & the Town Bank](./towny_upkeep.md)
 
 Towns charge daily upkeep based on your number of claims. If the town bank runs dry, the town falls into ruin and is eventually deleted automatically.
 
