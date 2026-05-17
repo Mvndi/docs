@@ -32,6 +32,7 @@
   - [Temperature](./guides/temperature.md)
   - [Voice Chat](./guides/voicechat.md)
   - [Towny](./guides/towny.md)
+    - [Towny Upkeep](./guides/towny_upkeep.md)
   - [Towny Resources](./guides/towny_resources.md)
   - [Towny Waypoints](./guides/towny_waypoints.md)
   - [Raids](./guides/raids.md)
