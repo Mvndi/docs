@@ -4,8 +4,8 @@ Siege banners can only be placed on Fridays, right before Battle Sessions.
 
 - You **need a nation** to attack a town. It does not matter if the defending town has a nation, but if they do, your nation must be enemies with the defending town's nation before you can start the siege.
 - Your nation bank needs enough money to pay both:
-  1. A declaration fee of **5 Ducats per plot claimed by the defending town** from your nation bank.
-  2. A war chest worth **25 Ducats per plot claimed by the defending town** from your nation bank.
+  1. A declaration fee of **100 Ducats per plot claimed by the defending town** from your nation bank.
+  2. A war chest worth **100 Ducats per plot claimed by the defending town** from your nation bank.
 - To start the siege, go right outside the defending town's border in unclaimed lands and **place a non-white banner on the ground**.
 
 **Once the war chest is paid, the banner is _MOVED TO THE DEFENDING TOWN'S SPAWN_ and the siege begins.**
