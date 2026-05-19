@@ -16,6 +16,7 @@
     - [Dromon](./guides/boats/dromon.md)
     - [Galley](./guides/boats/galley.md)
     - [Longship](./guides/boats/longship.md)
+    - [Fishing Boat](./guides/boats/fishing_boat.md)
     - [Rowboat](./guides/boats/rowboat.md)
   - [Brewery](./guides/brewery.md)
   - [Brewery App](./guides/brewery_app.html)
