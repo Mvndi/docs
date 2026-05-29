@@ -1,7 +1,7 @@
 # Towny Upkeep
 
-- town upkeep is `$30 * number of plots * upkeep multiplier`
-- nation upkeep is `$250 *  number of plots * upkeep multiplier`
+- town upkeep is `$5 * number of plots * upkeep multiplier`
+- nation upkeep is `$2 *  number of plots * upkeep multiplier`
 
 upkeep multiplier is based off town/nation level (which is based off number of residents/towns) as seen in the tables below
 
