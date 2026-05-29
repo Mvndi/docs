@@ -29,6 +29,8 @@ Rules for listings:
 
 To view and manage your own listings:
 
+The market you are in when you sell an item is the market a place has to stand in if they want to buy it.
+
 ```mcfunction
 /mt market mylistings
 ```
@@ -37,7 +39,7 @@ From that menu, you can cancel your own listings and get the item back if you ha
 
 ## Browsing and Buying
 
-While standing in a market chunk, you can browse another player's active listings with:
+While standing in any market chunk, you can browse another player's active listings with:
 
 ```mcfunction
 /mt market browse <player>
@@ -47,6 +49,7 @@ Inside the market GUI:
 
 - Click the lime wool button to buy a listing instantly for its full price.
 - You need enough ducats and enough empty inventory space to receive the item.
+- You can only buy an item if you're standing in the same market chunk the item was put to sell in (you can browse all listings in any market)
 
 ## Making Offers
 
