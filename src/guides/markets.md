@@ -29,7 +29,7 @@ Rules for listings:
 
 To view and manage your own listings:
 
-The market you are in when you sell an item is the market a place has to stand in if they want to buy it.
+**The market you are in when you sell an item is the market a player has to stand in if they want to buy it.**
 
 ```mcfunction
 /mt market mylistings
