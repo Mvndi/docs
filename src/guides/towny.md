@@ -137,9 +137,25 @@ Your maximum claims scale with the number of residents in your town. More reside
 | `/towny time` | See when the next Towny tax cycle runs |
 | `/town here` | See info about the town you're currently standing in |
 
+### 4.4 — Town Levels
+
+- town upkeep is `$5 * number of plots * upkeep multiplier`
+
+| Level | Mayor Title | Required Residents | Upkeep Multiplier |
+|--------|------------|-------------------|-------------------|
+| 1 | Spirit | 0 | ×1.0 |
+| 2 | Hermit | 1 | ×1.0 |
+| 3 | Elder | 2 | ×1.0 |
+| 4 | Mayor | 5 | ×1.0 |
+| 5 | Lord | 10 | ×1.1 |
+| 6 | Count | 15 | ×1.2 |
+| 7 | Magistrate | 20 | ×1.3 |
+| 8 | Prefect | 25 | ×1.4 |
+| 9 | Eparch | 30 | ×1.5 |
+
 ---
 
-## 5. [Upkeep & the Town Bank](./towny_upkeep.md)
+## 5. [Upkeep & the Town Bank](./towny.md#44--town-levels)
 
 Towns charge daily upkeep based on your number of claims. If the town bank runs dry, the town falls into ruin and is eventually deleted automatically.
 
@@ -201,6 +217,22 @@ You must already have a town. Check `/towny prices` — nations are expensive to
 | `/nation enemy remove <nation>` | Remove enemy status |
 
 > 💡 **Tip:** Alliances are public and affect how sieges treat your towns. Manage them deliberately.
+
+---
+
+## 6.4 — Nation Levels
+
+- nation upkeep is `$1 *  number of plots * upkeep multiplier`
+
+| Level | Nation Type | Required Towns | Town Block Bonus | Upkeep Multiplier | Max Offensive Sieges |
+|--------|-------------|----------------|------------------|-------------------|
+| 1 | Lordship | 0 | +10 | ×1.0 | 0 |
+| 2 | Barony | 2 | +20 | ×1.5 | 1 |
+| 3 | County | 5 | +30 | ×2.5 | 2 |
+| 4 | Duchy | 10 | +60 | ×3.5 | 3 |
+| 5 | Kingdom | 15 | +100 | ×4.0 | 3 |
+| 6 | Empire | 20 | +140 | ×5.0 | 3 |
+| 7 | Hegemony | 30 | +200 | ×8.0 | 3 |
 
 ---
 
