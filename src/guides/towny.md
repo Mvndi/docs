@@ -16,7 +16,7 @@ Before founding a town, ask yourself:
 
 > ⚠ Founding a throwaway town for siege purposes or abandoning a town shortly after founding it is against the rules.
 
-To create a town it must be at least *320 blocks** (20 chunks) from an existing towns claim.
+To create a town it must be at least *272 blocks** (17 chunks) from an existing towns claim.
 
 To join a nation, your town's **homeblock** must be within roughly **6000 blocks** (~375 chunks) of the capital of the nation.
 
