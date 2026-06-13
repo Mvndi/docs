@@ -37,6 +37,7 @@
   - [Towny](./guides/towny.md)
   - [Towny Resources](./guides/towny_resources.md)
   - [Towny Waypoints](./guides/towny_waypoints.md)
+  - [Towny Roads](./guides/towny_roads.md)
   - [Raids](./guides/raids.md)
   - [War](./guides/war/war.md)
     - [Starting a Siege](./guides/war/starting_a_siege.md)
