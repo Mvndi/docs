@@ -6,10 +6,10 @@ Ice roads are banned in the rules.
 
 You can create paths to increase mounts speed instead:
 
-- **Gravel** increase horse, donkey and mule speed by 30%.
-- **Suspicious gravel** increase horse, donkey and mule speed by 50%.
+- **Gravel** increase horse, donkey and mule speed by 10% in wilderness & 20% in towns and roads.
+- **Suspicious gravel** increase horse, donkey and mule speed by 30% in wilderness & 60% in towns and roads.
 - **Sand** slow down horse, donkey and mule by 30% but increase camel speed by 20%.
-- **Suspicious sand** make camels faster by 40%
+- **Suspicious sand** make camels faster by 20% in wilderness & 40% in towns and roads.
 
 Suspicious gravel & sand can be craft by adding stone & sandstone to gravel & sand respectively. Check blocks recipes ingame `/recipes`.
 
