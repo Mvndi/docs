@@ -1,4 +1,4 @@
-# Horses
+# Horses & Mounts
 
 Golden carrots and apples are disabled. You can breed horses, donkeys and mules with a [special hay bales](./recipes.md#horse-hay-block) instead (the horses must be tamed to breed). The horse hay bale is made of 8 wheat and 1 carrot cf `/recipes`.
 

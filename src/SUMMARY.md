@@ -28,7 +28,7 @@
   - [Flags](./guides/flags.md)
   - [Big Doors](./guides/big_doors.md)
   - [Animals](./guides/animals.md)
-  - [Horses](./guides/horses.md)
+  - [Horses & Mounts](./guides/horses.md)
   - [Hostile Mobs](./guides/hostile_mobs.md)
   - [Parties](./guides/parties.md)  
   - [Seasons](./guides/seasons.md)

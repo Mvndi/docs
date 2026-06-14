@@ -45,9 +45,8 @@ Soon stable will only work if both towns are connected by roads (Does not need a
 
 ### RoadSpeedMounts
 
-Horse, donkey, mule, camel and player are faster on roads than in wilderness.
-Mounts are 60% faster on supicious gravel in roads & in towns (30% in wilderness). And 20% faster on gravel in roads & in towns (10% in wilderness).
-Player is 10% faster on gravel & supicious gravel in roads & in towns (0% in wilderness).
+Horses, donkeys, mules, camels and players are faster on roads than in wilderness.
+See [Horses & Mounts](./horses.md) for exact speed values.
 
 ### Bonus chunks
 
