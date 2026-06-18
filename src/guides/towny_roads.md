@@ -64,6 +64,7 @@ A town can't have more bonus chunks than regular chunks.
 To extend a road, you need to create a new road between the road and the town you want to be included in the road.
 They need to accept to join the road.
 Then you can merge both roads with `/tr merge <road1> <road2>`. To merge 2 roads, your town need to be part of both roads.
+`<road1>` must be validated while `<road2>` doesn't need to.
 By merging several new roads, you can add several towns to the road.
 
 The final road need to be validated once again with `/tr validate <road>`
