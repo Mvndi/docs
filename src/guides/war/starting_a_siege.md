@@ -1,6 +1,6 @@
 # Starting a Siege
 
-Siege banners can only be placed on Fridays, right before Battle Sessions.
+Siege banners can only be placed on Thursday & Fridays, right before Battle Sessions.
 
 - You **need a nation** to attack a town. It does not matter if the defending town has a nation, but if they do, your nation must be enemies with the defending town's nation before you can start the siege.
 - Your nation bank needs enough money to pay both:
