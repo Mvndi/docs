@@ -13,8 +13,3 @@ Siege banners can only be placed on Thursday & Fridays, right before Battle Sess
 - Siege weapons can be placed and destroyed in the defending town's claims, but other blocks cannot be placed or destroyed (by attackers).
 - Defenders have a 60-second block place and destroy cooldown, which also applies to attackers in the surrounding wilderness chunks of the defending town (attackers cannot build/destroy inside the defending town; only siege weapons can break blocks in the defending town).
 - Siege weapons only break blocks during active battle sessions to prevent griefing when no fights are happening.
-
-## Upfront Price / War Chest
-
-When you start a siege, an upfront price of **5 Ducats per chunk claimed** is paid to the server to prevent nations from sieging their allies to provide immunity.
-Additionally, a war chest worth **25 Ducats per chunk claimed** is deposited into the siege. The winner receives the war chest at the end of the siege.
