@@ -15,7 +15,7 @@ The server will automatically decide whether the raid becomes **Land** or **Nava
 
 ### Requirements & Limits
 
-- At least 5 residents of defending town’s residents must be online  
+- At least 2 residents of defending town’s residents must be online  
 - The wager cannot exceed 10 % of the defending town’s current balance
 - A town can only be raided once every 24 hours
 - Only one raid can be active on a town at a time
