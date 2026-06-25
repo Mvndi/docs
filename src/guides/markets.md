@@ -12,6 +12,12 @@ Each town can have 5 market chunks.
 
 You must stand inside a market chunk to browse listings, sell items, and make offers.
 
+If you wish to remove a market chunk (and get refunded) you do so with:
+
+```mcfunction
+/mt market sell
+```
+
 ## Selling Items
 
 Hold the item you want to sell in your main hand, then use:
