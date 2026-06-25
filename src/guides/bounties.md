@@ -36,7 +36,7 @@ To check the bounties you have accepted from anywhere:
 
 More details and additional commands will be posted on the wiki.
 
-To create a [market](./markets.md)  chunk, your town must pay 50,000.
+To create a [market](./markets.md)  chunk, your town must pay 10,000.
 
 The market is created inside one of your town’s claimed chunks with the command:
 
