@@ -1,6 +1,6 @@
 # Market Guide
 
-To create a market chunk, your town must pay 50,000.
+To create a market chunk, your town must pay 10,000 (for each market chunk)
 
 The market must be placed inside one of your town's claimed chunks with:
 
@@ -8,7 +8,7 @@ The market must be placed inside one of your town's claimed chunks with:
 /mt market set
 ```
 
-Each town can only have 1 market chunk.
+Each town can have 5 market chunks.
 
 You must stand inside a market chunk to browse listings, sell items, and make offers.
 
@@ -23,9 +23,7 @@ Hold the item you want to sell in your main hand, then use:
 Rules for listings:
 
 - Prices must be between 1 and 1,000,000 ducats.
-- Each player can have up to 5 active listings at once.
-- Listings last 48 hours.
-- When you list an item, it is removed from your hand and stored in the market until it is sold, cancelled, or expires.
+- When you list an item, it is removed from your hand and stored in the market until it is sold or cancelled.
 
 To view and manage your own listings:
 
@@ -105,5 +103,3 @@ If any of those are not true, the sale will not go through.
 
 - `/mt market browse`, `/mt market sell`, and `/mt market offer` require you to be inside a market chunk.
 - `/mt market mylistings`, `/mt market incomingoffers`, and `/mt market outgoingoffers` can be used from anywhere.
-- Expired listings are only auto-returned if you are online and have room in your inventory.
-- If a listing expires and your inventory is full, the item is lost.
