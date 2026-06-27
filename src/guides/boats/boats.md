@@ -46,7 +46,8 @@ Some boats are not meant for deep oceans and will take a large amount of damage 
   - **Function**: Controls boat speed via sail positioning.
   - **Interactions**:
     - **Left-click**: Lowers the sails (increases speed).
-    - **Right-click**: Raises the sails (reduces speed or stows them).
+    - **Right-click**: Raises the sails (reduces speed or stows them)
+    - **Hand Swap**: The driver can press the button to swap hands (default `F`) to toggle through sail states.
   - **States**: Sails can be fully stowed (no movement), half (partial speed), or full (maximum speed contribution).
 
 - **Seat**  

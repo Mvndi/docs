@@ -27,9 +27,20 @@ Dimensions  | 3.0 x 3.0 x 12.0
 
 | HP Section | Value |
 |------------|-------|
-| Bow        | 6.0  |
-| Hull       | 9.0  |
-| Mast       | 5.0  |
-| Stern      | 7.0  |
+| Bow        | 6.0   |
+| Hull       | 9.0   |
+| Mast       | 5.0   |
+| Stern      | 7.0   |
 
-The Fishing Boast has a single chest sized inventory, it can't store horses and it doesn't have any siege weapon slots.
+The Fishing Boat has a single chest-sized inventory. It can't store horses and has no siege weapon slots.
+
+## Fishing Net
+
+The fishing net is in /reipces tools section. Place it in the ship inventory before setting sail.
+
+While the boat is moving in a **deep ocean** biome with a fishing net in storage:
+
+- Fish are passively collected into the ship inventory (stacks with existing fish)
+- Max speed is reduced by 25%
+- The net loses durability over time and breaks when worn out
+- Seamen aboard gain profession XP on each catch (the driver earns more than crew)
