@@ -25,47 +25,47 @@ Coffee and potion effects are disabled.
 
 ## Base XP
 
-| Brew | Config key | Base XP |
-| --- | --- | ---: |
-| Wheat Beer | `wheat_beer` | 4 |
-| Dark Beer | `dark_beer` | 6 |
-| Klosterbier | `klosterbier` | 8 |
-| Ale | `ale` | 4 |
-| Grodziskie | `grodziskie` | 8 |
-| Bock Beer | `bock_beer` | 11 |
-| Koyt Beer | `koyt_beer` | 8 |
-| Red Ale | `red_ale` | 6 |
-| Bragawd | `bragawd` | 11 |
-| Budweiser | `budweiser` | 6 |
-| Red Wine | `red_wine` | 12 |
-| White Wine | `white_wine` | 11 |
-| Raisin Wine | `raisin_wine` | 11 |
-| Resinated Wine | `resinated_wine` | 13 |
-| Herbal Wine | `herbal_wine` | 12 |
-| Date Wine | `date_wine` | 11 |
-| Honeyed Wine | `honeyed_wine` | 14 |
-| Sparkling Wine | `sparkling_wine` | 13 |
-| Wormwood Wine | `wormwood_wine` | 14 |
-| Sherry | `sherry` | 16 |
-| Port Wine | `port_wine` | 17 |
-| Sugarcane Wine | `sugarcane_wine` | 10 |
-| Clairet | `clairet` | 10 |
-| Apple Cider | `apple_cider` | 8 |
-| Mead | `mead` | 7 |
-| Metheglin | `metheglin` | 11 |
-| Melomel | `melomel` | 11 |
-| Airag | `airag` | 10 |
-| Braggot | `braggot` | 12 |
-| Medovukha | `medovukha` | 8 |
-| Tej | `tej` | 11 |
-| Bochet | `bochet` | 14 |
-| Aqua Vitae | `aqua_vitae` | 20 |
-| Aqua Ardens | `aqua_ardens` | 21 |
-| Whiskey | `whiskey` | 24 |
-| Brandy | `brandy` | 23 |
-| Amaretto | `amaretto` | 17 |
-| Khrenovukha | `khrenovukha` | 18 |
-| Vinegar | `vinegar` | 6 |
+| Brew           | Config key       | XP Gain |
+| -------------- | ---------------- | ------: |
+| Wheat Beer     | `wheat_beer`     |      49 |
+| Dark Beer      | `dark_beer`      |      69 |
+| Klosterbier    | `klosterbier`    |      88 |
+| Ale            | `ale`            |      49 |
+| Grodziskie     | `grodziskie`     |      78 |
+| Bock Beer      | `bock_beer`      |     127 |
+| Koyt Beer      | `koyt_beer`      |      98 |
+| Red Ale        | `red_ale`        |      69 |
+| Bragawd        | `bragawd`        |     137 |
+| Budweiser      | `budweiser`      |      59 |
+| Red Wine       | `red_wine`       |     137 |
+| White Wine     | `white_wine`     |     127 |
+| Raisin Wine    | `raisin_wine`    |     137 |
+| Resinated Wine | `resinated_wine` |     147 |
+| Herbal Wine    | `herbal_wine`    |     147 |
+| Date Wine      | `date_wine`      |     127 |
+| Honeyed Wine   | `honeyed_wine`   |     167 |
+| Sparkling Wine | `sparkling_wine` |     147 |
+| Wormwood Wine  | `wormwood_wine`  |     157 |
+| Sherry         | `sherry`         |     186 |
+| Port Wine      | `port_wine`      |     206 |
+| Sugarcane Wine | `sugarcane_wine` |     118 |
+| Clairet        | `clairet`        |     118 |
+| Apple Cider    | `apple_cider`    |      88 |
+| Mead           | `mead`           |      98 |
+| Metheglin      | `metheglin`      |     147 |
+| Melomel        | `melomel`        |     137 |
+| Airag          | `airag`          |     118 |
+| Braggot        | `braggot`        |     147 |
+| Medovukha      | `medovukha`      |      98 |
+| Tej            | `tej`            |     137 |
+| Bochet         | `bochet`         |     176 |
+| Aqua Vitae     | `aqua_vitae`     |     235 |
+| Aqua Ardens    | `aqua_ardens`    |     245 |
+| Whiskey        | `whiskey`        |     294 |
+| Brandy         | `brandy`         |     284 |
+| Amaretto       | `amaretto`       |     216 |
+| Khrenovukha    | `khrenovukha`    |     225 |
+| Vinegar        | `vinegar`        |       0 |
 
 ## Whiskey
 
