@@ -274,10 +274,8 @@ Any mod not listed as explicitly allowed whose primary purpose is to provide inf
 
 ### 4.4 — Tunnels
 
-- **4.4.1 (T3) [V: 20pts]** Building underground tunnels or bunkers that could be used for siege purposes is forbidden.
-- **4.4.2 (T2) [V: 8pts]** Storing items in underground vaults unreachable via siege weapons is not allowed.
-- **4.4.3 (T3) [V: 20pts]** Using underground tunnels during an active siege for any reason is not allowed.
-- **4.4.4 (T3) [V: 20pts]** Creating unrealistically large tunnels through mountains constitutes landscape griefing.
+- **4.4.1 (T2) [V: 8pts]** Storing items in underground vaults unreachable via siege weapons is not allowed.
+- **4.4.2 (T3) [V: 20pts]** Creating unrealistically large tunnels through mountains constitutes landscape griefing.
 
 > An underground bunker is defined as a room with roughly 5–10+ solid blocks above it. Digging to attack an underground player is not considered tunnel construction.
 
