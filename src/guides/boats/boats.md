@@ -25,7 +25,7 @@ Some boats are not meant for deep oceans and will take a large amount of damage 
 ### Interactive Entities (Press `F3+B` to see hitboxes)
 
 - **Anchor**  
-  - **Function**: Controls whether the boat is docked or undocked.
+  - **Function**: Controls whether the boat is docked or undocked. If the driver of a boat drops an item (default `Q`) the ship will anchor (item wont actually drop).
   - **Docking**: If the boat is undocked, interacting with the anchor will dock it, but only if:
     - The boat is aligned within 5 degrees of a cardinal axis (-180, -90, 0, 90, 180).
     - All sails (if present) are fully stowed.
