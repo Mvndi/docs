@@ -224,15 +224,15 @@ You must already have a town. Check `/towny prices` — nations are expensive to
 
 - nation upkeep is `$1 *  number of plots * upkeep multiplier`
 
-| Level | Nation Type | Required Towns | Town Block Bonus | Upkeep Multiplier | Max Offensive Sieges |
-|--------|-------------|----------------|------------------|-------------------|----------------------|
+| Level | Nation Type | Required Residents | Town Block Bonus | Upkeep Multiplier | Max Offensive Sieges |
+|--------|-------------|--------------------|------------------|-------------------|----------------------|
 | 1 | Lordship | 0 | +10 | ×1.0 | 0 |
-| 2 | Barony | 2 | +20 | ×1.5 | 1 |
-| 3 | County | 5 | +30 | ×2.5 | 2 |
-| 4 | Duchy | 10 | +60 | ×3.5 | 3 |
-| 5 | Kingdom | 15 | +100 | ×4.0 | 3 |
-| 6 | Empire | 20 | +140 | ×5.0 | 3 |
-| 7 | Hegemony | 30 | +200 | ×8.0 | 3 |
+| 2 | Barony | 3 | +20 | ×1.5 | 1 |
+| 3 | County | 8 | +30 | ×2.5 | 2 |
+| 4 | Duchy | 15 | +60 | ×3.5 | 3 |
+| 5 | Kingdom | 25 | +100 | ×4.0 | 3 |
+| 6 | Empire | 40 | +140 | ×5.0 | 3 |
+| 7 | Hegemony | 60 | +200 | ×8.0 | 3 |
 
 ---
 
