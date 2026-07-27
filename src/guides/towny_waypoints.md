@@ -31,3 +31,5 @@ Max travel distance are:
 - 8000 for seaports
 
 You can travel to a stable with your mounts (horse, camel etc).
+
+Each travel has a few minutes cooldown. Stable have a short cooldown if connected to more roads directly.
