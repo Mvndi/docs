@@ -9,7 +9,10 @@ resource income.
 
 ## How do I use Towny Resources?
 
-You start by surveying with the command `/t resource survey`. This will add a resource to your towns
+Start by oppening a ticket on [Mvndicraft Discord](https://discord.mvndicraft.net/) and ask for your town to be rated (Overall beauty & how realistic the town is).
+The most beatiful towns will get 100% of the aviable resources, other will have between 20% & 80% of the aviable resources according to their rating.
+
+Then continue by surveying with the command `/t resource survey`. This will add a resource to your towns.
 production and will allow you to collect the income 1. per towny day.
 Each consequent survey will be more expensive.
 The following table provides an overview of the levels:
