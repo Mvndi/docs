@@ -35,6 +35,8 @@ Most mvndi plugins have help command in `/mu`.
 The most usefull one is `/mu give <player_name> <item_name> <amount (1 if not specified)>`.
 Ships command are included in `/mu`.
 Stats command are in `/mu debug ...`.
+To give a player stats levels: `/mu debug setlevel 99 <player_name>`.
+To give a player profession levels: `/mp level <player_name> <PROFESSION> <level_number> 0`.
 
 MvndiSeasons has admin command in `/season`.
 
