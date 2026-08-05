@@ -2,7 +2,7 @@
 
 Waypoints are the only feature that allow for instant public travel on Mvndicraft
 There is 2 type of waypoint and it is the **stable** & the **seaport**
-Each town has access to creating 3 stables and 3 seaports. Stables can only be created in land biomes. Ports can only be created in ocean biomes, beach biomes and island biomes.
+Each town has access to creating 3 stables and 3 seaports. Stables can only be created in land biomes. Ports can only be created in ocean biomes, beach biomes, island biomes and major rivers.
 
 ## Commands
 
@@ -19,7 +19,7 @@ Only mayors and comayors can create waypoints.
 
 1. Go to a nearby waypoint plot.
 2. Find a nearby waypoint of the same type connected by [road](./towny_roads.md).
-3. Type `/twp travel <town-name> <stable> <waypoint-name>`.
+3. Type `/twp travel <town-name> <stable/seaport> <waypoint-name>`.
 
 It costs 450 ducats to travel to a stable/seaport (50% of this goes to the waypoint towns bank and the other 50% to the waypoints nations bank).
 
