@@ -393,7 +393,7 @@ Coffee and potion effects are disabled.
 
 ## Wheat Beer
 
-- **Ingredients:** WHEAT/5
+- **Ingredients:** WHEAT/3
 - **Cooking Time:** 8 min.
 - **Distill Runs:** 0
 - **Barrel Wood:** Any
