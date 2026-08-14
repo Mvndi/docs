@@ -3,8 +3,6 @@
 On Mvndicraft, you can brew almost any drink you can think of.
 The following links will help you understand the brewing system more:
 
-Birch Stairs are thatch stairs you make them with hay blocks.
-
 Coffee and potion effects are disabled.
 
 - [Brewery Plugin Usage](https://github.com/DieReicheErethons/Brewery/wiki/Usage)
@@ -398,18 +396,8 @@ Coffee and potion effects are disabled.
 - **Ingredients:** WHEAT/5
 - **Cooking Time:** 8 min.
 - **Distill Runs:** 0
-- **Barrel Wood:** Birch
+- **Barrel Wood:** Any
 - **Aging Time:** 3 years
-- **Difficulty:** 1
-- **Alcohol:** 5
-
-## Wheatbeer
-
-- **Ingredients:** WHEAT/3
-- **Cooking Time:** 8 min.
-- **Distill Runs:** 0
-- **Barrel Wood:** Birch
-- **Aging Time:** 2 years
 - **Difficulty:** 1
 - **Alcohol:** 5
 
