@@ -22,7 +22,6 @@ Check with **`/sw siegeinfo`**. It tells you if this is a siege week + some more
 Enemy **towns** can be sieged any siege week. Enemy **capitals** are locked until you've defeated enough of their towns **in the previous siege week**.
 
 | Defending nation level | Town siege wins required |
-| Their nation level | Town wins needed |
 |:---:|:---:|
 | 1–3 | 0 (capital always siegeable) |
 | 4–5 | 1 |
