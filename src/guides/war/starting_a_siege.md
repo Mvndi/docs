@@ -3,6 +3,7 @@
 Siege banners can only be placed on Thursday & Fridays, right before Battle Sessions.
 
 - You **need a nation** to attack a town. It does not matter if the defending town has a nation, but if they do, your nation must be enemies with the defending town's nation before you can start the siege.
+- You need to be able to annex the town to siege it. So you need to be less than 6k blocks away. Use Pytagore to test distances if you're not sure: `sqrt((x1-x2)^2 + (z1-z2)^2)`.
 - Your nation bank needs enough money to pay both:
   1. A declaration fee of **100 Ducats per plot claimed by the defending town** from your nation bank.
   2. A war chest worth **100 Ducats per plot claimed by the defending town** from your nation bank.

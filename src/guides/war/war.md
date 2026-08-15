@@ -1,6 +1,6 @@
 # War Introduction
 
-On odd weeks only nation capitals can be sieged, and on even weeks only non nation capital towns can be sieged (there's a 2 week cooldown for a nation changing its capital)
+Every towns (without new town protection) can be sieged every 2 weeks on Saturdays and Sundays at 18:30 UTC.
 
 [SiegeWar](https://github.com/TownyAdvanced/SiegeWar/wiki/Siege-War-User-Guide) is the plugin used on Mvndicraft for players to start war/diplomacy.
 Even if you are familiar with this system, it is recommended you read all related war guides to understand how it works on Mvndi, as it has been highly modified for the server's needs.
