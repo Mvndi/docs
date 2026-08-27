@@ -286,12 +286,11 @@ Any mod not listed as explicitly allowed whose primary purpose is to provide inf
 - **4.5.1 (T3) [V: 20pts]** The attacking team may not cause excessive damage with the sole purpose of griefing a town beyond what siege warfare requires.
 - **4.5.2 (T3) [V: 20pts]** Using boats to get over town walls is not allowed.
 - **4.5.3 (T2) [V: 8pts]** Block glitching into a town is not allowed.
-- **4.5.4** Building a tower to pass over walls is allowed up to a maximum height of 12 blocks. Towers must be freestanding. Nerdpoling is not allowed.
-- **4.5.5** Attackers may use siege weapons to destroy chests and take their contents.
-- **4.5.6 (T3) [V: 20pts]** Camping within 10 blocks of a siege camp — stationary positioning for more than 30 seconds without active engagement — is not allowed.
-- **4.5.7 (T2) [V: 8pts]** Building or destroying blocks with the deliberate intent of denying siege weapon placement is not allowed.
-- **4.5.8 (T2–T3) [V: 8pts]** Door defenses requiring more than 2 sequential interactions to pass, or designed to trap or cycle players, are not allowed.
-- **4.5.9 (T3) [V: 20pts]** Spawn killing — repeatedly killing the same player at or near their spawn point outside of an active siege or declared war — is not allowed.
+- **4.5.4** Attackers may use siege weapons to destroy chests and take their contents.
+- **4.5.5 (T3) [V: 20pts]** Camping within 10 blocks of a siege camp — stationary positioning for more than 30 seconds without active engagement — is not allowed.
+- **4.5.6 (T2) [V: 8pts]** Building or destroying blocks with the deliberate intent of denying siege weapon placement is not allowed.
+- **4.5.7 (T2–T3) [V: 8pts]** Door defenses requiring more than 2 sequential interactions to pass, or designed to trap or cycle players, are not allowed.
+- **4.5.8 (T3) [V: 20pts]** Spawn killing — repeatedly killing the same player at or near their spawn point outside of an active siege or declared war — is not allowed.
 
 > "Repeatedly" is defined as 3+ kills of the same player within a 10-minute window without the victim initiating combat.
 
@@ -309,7 +308,7 @@ Any mod not listed as explicitly allowed whose primary purpose is to provide inf
 - **4.6.8 (T2) [V: 8pts]** Builds must be realistic for the server time period (476–1550 AD).
 - **4.6.9 (T3) [V: 20pts]** Builds must reflect the architectural style of their in-game region.
 - **4.6.10 (T2) [V: 8pts]** Statues may not exceed a scale feasible in the Middle Ages.
-- **4.6.11 (T2–T3) [V: 8pts]** Landscape griefing is not allowed: unrealistic or visually destructive modification of unclaimed land.
+- **4.6.11 (T2–T3) [V: 8pts]** Landscape griefing is not allowed: unrealistic or visually destructive modification of unclaimed land. Reasonable griefing is allowed during war.
 - **4.6.12 (T1) [V: 3pts]** Bridges across mountains or terrain must be at least 3 blocks wide and have some structural logic.
 
 ---
