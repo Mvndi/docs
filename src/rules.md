@@ -155,7 +155,12 @@ Any mod not listed as explicitly allowed whose primary purpose is to provide inf
 - **2.3 (T3)** Spamming is prohibited.
 - **2.4 (T3)** Impersonating staff is prohibited.
 - **2.5 (T2)** Racial slurs are forbidden.
-- **2.6 (T4, unappealable)** Any joke referencing pedophilia, child abuse, or similarly reprehensible subjects will not be tolerated.
+- **2.6 (T2–T4)** Jokes, statements, encouragement, or targeted remarks involving suicide or self-harm, pedophilia, child abuse, or similarly severe and reprehensible subjects are prohibited.
+*Severity is determined by the nature of the statement, whether it was directed at another person, its apparent intent, repetition, surrounding context, and relevant recent offenses.*
+__T2__: Non-targeted or comparatively less severe references made without apparent malicious intent.
+__T3__: Targeted, hostile, repeated, or otherwise aggravated remarks.
+__T4__: Direct encouragement, wishes, or instructions for another person to seriously harm or kill themselves, credible threats, or exceptionally severe conduct.
+Provocation or surrounding circumstances may be considered when determining severity, but do not excuse otherwise unacceptable conduct. Any misconduct by other involved players should be evaluated separately.
 
 ---
 
