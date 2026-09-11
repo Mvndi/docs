@@ -10,6 +10,7 @@ It's like a a 20-minute deathmatch (land) or ship battle (naval)
    `/raid <town name> <wager>`  
    Example: `/raid Rome 25000`
 3. You cannot be within the claim of the town you are trying to raid
+4. If the target town is coastal (the raid will be naval), you must be **on a ship** to run `/raid`
 
 The server will automatically decide whether the raid becomes **Land** or **Naval** based on the defending town's claims (see Naval Raid section below)
 
@@ -34,11 +35,14 @@ The server will automatically decide whether the raid becomes **Land** or **Nava
 
 - Triggered if the defending town **owns or borders ocean chunks**  
   → This happens automatically for coastal towns — even if players expect a land raid, it will become naval if the town touches ocean biome chunks.
+- You must be **on a ship** to start a naval raid (`/raid` fails if you are on land)
 - **No beacon, no kill counter**
 - Only **valid ships** count toward defense:
   - Rowboats, boats, or any vessels **with pending upgrades/installs** (e.g. initial construction) **do not count** as ships in the town’s claim
   - Only fully completed, no-pending-install ships are considered
 - Damage dealt to ships is tracked instead of player kills
+- **Attacker score** only counts **naval** damage: ship siege weapons and ramming. Damage from **land-based siege weapons** does **not** count toward attacker score
+- **Defender score** still counts land-based siege weapon damage (and ship weapons / ramming)
 - Attackers win if they deal **at least 1 more damage** to defending ships than defenders deal to attacking ships
 - **Important:** If the defending town has **0 valid ships** (no completed ships without pending installs) in their town claim when the raid starts, **attackers instantly win**
 
@@ -52,8 +56,9 @@ The server will automatically decide whether the raid becomes **Land** or **Nava
 
 ### Winning & Rewards
 
-- Winner’s town receives the full wager.  
-- Loser’s town loses the wager.  
+- If the **attacking town is in a nation**, the attacker’s wager is paid from and paid to the **nation bank**, not the town that started the raid (start, win, loss, and cancel refund).  
+- Defenders always use the defending **town** bank.  
+- If the attacking town has no nation, the attacker’s wager uses that town’s bank as usual.  
 - The final result is announced globally:  
   `AttackTown won the raid and received $50,000!`
 
@@ -66,10 +71,14 @@ The server will automatically decide whether the raid becomes **Land** or **Nava
 | Feature                     | Land Raid                      | Naval Raid                                          |
 |-----------------------------|--------------------------------|-----------------------------------------------------|
 | Trigger                     | Default (no ocean border)      | Town owns or borders ocean chunks                   |
+| Must be on a ship to start  | No                             | Yes                                                 |
 | Objective                   | Most player kills              | Deal more ship damage                               |
 | Banner & Beacon             | Yes (with fake beacon)         | No                                                  |
 | Kill radius                 | 16 blocks                      | N/A                                                 |
 | Valid counting units        | Player kills in radius         | Damage to fully completed ships only                |
+| Attacker scoring            | Kills                          | Ship siege weapons and ramming only (not land siege)|
+| Defender scoring            | Kills                          | Ship weapons, ramming, and land siege still count   |
 | Pending Ship Upgrades       | N/A                            | Do **not** count as defending ships                 |
 | Instant win                 | —                              | Defending town has 0 valid defending ships at start |
 | Win condition               | Higher kill count              | Damage dealt difference ≥ +1                        |
+| Attacker wager destination  | Nation bank if the attacking town has a nation, otherwise the town | Same |
