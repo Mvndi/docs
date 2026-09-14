@@ -300,6 +300,8 @@ Eating fresh or aged cheese gives player XP. Better cheese gives more XP.
 | 4 | 1.25x |
 | 5 | 1.5x |
 
+Eating cheese as a heardsman give +10% XP per level of Cheese Making skill.
+
 ---
 
 ### Truffle Hunter
