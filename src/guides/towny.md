@@ -2,6 +2,10 @@
 
 > Everything you need to found, run, and grow a town — and eventually a nation · mc.mvndicraft.net
 
+## ChatPDF
+
+This is a very helpful [ChatPDF document](https://www.chatpdf.com/share/PCoMCWTyW3wI2m03EE5DM) — ask it Towny questions like you're chatting with someone before pinging staff!
+
 ---
 
 ## 1. Before You Start
