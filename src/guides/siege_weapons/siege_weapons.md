@@ -20,9 +20,10 @@ Blocks which name contains a word in this list or which name is a word in this l
 - "DIORITE"
 - "CONCRETE"
 - "DEEPSLATE"
-- "STONE_BRICKS"
 - "TERRACOTTA"
-- "SANDSTONE"
+- "PRISMARINE"
+- "PURPUR"
+- "TUFF"
 - "QUARTZ"
 
 For example, "Polished Diorite" is more resistent than a block named "Dirt".
