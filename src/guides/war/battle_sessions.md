@@ -9,6 +9,8 @@ You can see when the next battle session is with the `/sw nextsession` command.
 
 Control the siege banner to gain points for your team. Defenders typically hold the banner since it’s at their spawn, earning passive points during the siege.
 
+The banner can be moved by the defenders mayor or comayors to an other location using `/mt setbanner`. It can be replaced at the `/t spawn` with `/mt resetbanner`.
+
 ### How to Capture
 
 - **Requirement**: Stand within 8 blocks of the banner on the same y-level for 7 minutes without dying.
