@@ -20,6 +20,7 @@ Check with **`/sw siegeinfo`**. It tells you if this is a siege week + some more
 ## Sieging a capital
 
 Enemy **towns** can be sieged any siege week. Enemy **capitals** are locked until you've defeated enough of their towns **in the previous siege week**.
+- The defeated towns must all be from the attacking nations sieges for it to count towards the capital requirement. (alliance victories do not stack)
 
 | Defending nation level | Town siege wins required |
 |:---:|:---:|
