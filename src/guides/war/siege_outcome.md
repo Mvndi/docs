@@ -21,6 +21,10 @@ Default pillage time is 5 mins and this gets multiplied by attacker kd ratio, mi
 
 Getting counquered DOES NOT give the conquereror perms for the town, the mayor and such of the conquered town stays the same they're just forced into the conquerers nation where they're unable to leave the nation until the declare a [revolt siege](https://github.com/TownyAdvanced/SiegeWar/wiki/Siege-War-User-Guide#statue_of_liberty-revolt) (more info on the siege war wiki below).
 
+The occupying nation can force the town to leave existing roads with the command /tr leavenation <road> and the town wont be able to start any new roads themselves
+
+In the event of a liberation/reconquest siege, the occupying nation will gain switch perms during the siege and it is recommended that important chests and assets are setup in secure plots. Stable accsess will also be given to the nation to allow them to defend the town.
+
 However, if the conquered town stops paying the 100 Ducats per plot daily tax, it will fall into ruins and the conquering nation will be able to change the mayor of the town. A player with the nation rank `settler` can reclaim the town by standing in a claim of the town and running `/sw takefullcontrol`. After a day, anyone in the town will also be able to reclaim the town if the conquering nation hasn't done it yet.
 
 Read more at the [SiegeWar Guide](https://github.com/TownyAdvanced/SiegeWar/wiki/Siege-War-User-Guide#trophy-win-siege).
