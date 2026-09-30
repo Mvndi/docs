@@ -117,7 +117,6 @@ Your maximum claims scale with the number of residents in your town. More reside
 | `/town set perm outsider build off` | Prevent outsiders from building |
 | `/plot forsale` | Allows a plot to be setup and sold with unique perms to the buying member of the town |
 | `/plot set embassy` | Allows a plot to be setup and sold with unique perms to someone outside the town |
-| `/plot claim` | Allows an individual to buy a plot for sale |
 | `/plot clear` | Allows mayor to clear existing plot configuration |
 | `/plot perm add` | Allows individuals to be added to the perm list |
 | `/plot perm gui` | Interface to configure plot |
