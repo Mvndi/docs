@@ -322,7 +322,7 @@ A siege town is defined as any town within the attacking nation that is used to 
 
 - A town positioned to function as a closer respawn point against an enemy nation is not allowed.
 - A town may not be made a capital for the sole purpose of extending siege range to attacking towns.
-- A vassal nation started by prior members of the attacking nation may not be allowed to create a capital closer to the enemy nation. They must stay in within similar range of the parent nation.
+- A vassal nation started by prior members of the attacking nation may not be allowed to create a capital closer to a pre-existing enemy nation. They must stay in within similar range of the parent nation.
 
 - **7.7 (T4)** You may not deliberately drain your town's funds to cause it to ruin with the intent to later reclaim it. Towns found to have done this will be returned to the occupying nation.
 
