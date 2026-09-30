@@ -285,7 +285,7 @@ NAPs are allowed as part of roleplay diplomacy but are **not enforceable by staf
 - **4.8.5 (T3)** Siege camps must have multiple accessible entry routes.
 - **4.8.6 (T3)** Siege camp banner must be at the natural ground level. Ocean siege camps must not be further than 2 chunks from naturally generated land, with a bridge connecting to the mainland.
 - **4.8.7 (T3)** Siege camp structures must be at or less than 30 blocks high from natural ground level.
-- **4.8.8 (T3)** Stable plots may not be overlap or be placed within two chunk of the town spawn
+- **4.8.8 (T3)** Stable plots may not overlap or be placed within two chunk of the town spawn
 - **4.8.9 (T3)** Keeps need clear path to entryways with enough space Infront of them to place down siege machines 
 
 ---
