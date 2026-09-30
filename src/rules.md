@@ -93,7 +93,7 @@ Any mod, client, or tool that provides an unfair advantage over other players is
 
 ### Allowed Mods
 
-Optifine zoom, shaders, light mods, armor/status HUD mods (your own stats only), and replay mods such as Flashback — provided the replay is only viewable after fully closing the active game session.
+Optifine zoom, shaders, light mods, minimap (without player icons), armor/status HUD mods (your own stats only), and replay mods such as Flashback — provided the replay is only viewable after fully closing the active game session.
 
 ### Disallowed by Default
 
@@ -104,7 +104,6 @@ Any mod not listed as explicitly allowed whose primary purpose is to provide inf
 #### Tier 1 — Minor Violation
 
 - X-Ray texture packs or mods
-- Minimap (all different kinds)
 - Auto-fish / AFK fishing bots
 - Schematica printer mode (automated block placement)
 
@@ -199,12 +198,12 @@ Provocation or surrounding circumstances may be considered when determining seve
 |------|------|-------------|
 | 4.2.1 | T2 | Walls must not be plain "factions-style" cube walls. They must have architectural character appropriate to the server's time period. |
 | 4.2.2 | T3 | Walls may not contain water, lava, or obsidian. |
-| 4.2.3 | T2 | Walls may not exceed 10 blocks in thickness. The 10 thickness consists of 7 blast resistant blocks and an additional 3 gravity blocks. Keeps however are limited to only having 6 blocks maximum of thickness. Gravity blocks for keeps are NOT permitted
+| 4.2.3 | T2 | Walls may not exceed 10 blocks in thickness. The 10 thickness consists of 7 blast resistant blocks and an additional 3 non-blast resistant blocks. Keeps however are limited to only having 6 blocks maximum of thickness. Gravity blocks for keeps are NOT permitted
 | 4.2.4 | T3 | Gravity blocks in walls are allowed within reason. Walls exceeding ~25 blocks in height that are primarily composed of gravity blocks are not allowed. |
 | 4.2.5 | T3 | Placing buttons, kelp, or any block to prevent siege weapon placement or block ship passage is not allowed. A single layer of buttons to prevent block glitching is the sole exception. |
 | 4.2.6 | T3 | You may have multiple walls. For two walls to count as separate, the distance between them must exceed the height of the shorter wall. Maximum 3 separate walls, not counting a central keep or citadel. |
 | 4.2.7 | T3 | Towers must not exceed 15 blocks thick (wall included) and must be architecturally realistic and viable for the time period. However some exceptions can be made depending on severity, siegability, design, and overall ergonomics.
-| 4.2.8 | T2 | Keep exterior walls may not exceed 5 blocks in thickness. Interior walls are limited to 1 block. Corner sections may be up to 7 blocks. |
+| 4.2.8 | T2 | Keep exterior walls may not exceed 6 blocks in thickness. Interior walls are limited to 1 block. Corner sections may be up to 7 blocks. |
 
 ---
 
@@ -217,6 +216,7 @@ Provocation or surrounding circumstances may be considered when determining seve
 - **4.3.3** Luring a player into your base and closing the door behind them IS allowed.
 - **4.3.4** Ports must always have a clear, accessible exit for any player without build permissions.
 - **4.3.5** Siege banner platforms may not be made into death traps.
+- **4.3.6** tunnel traps used to flood invaders with Greek fire are not allowed
 
 ---
 
@@ -237,7 +237,8 @@ Provocation or surrounding circumstances may be considered when determining seve
 - **4.5.4 (T3)** Camping within 10 blocks of a siege camp — stationary positioning for more than 30 seconds without active engagement — is not allowed.
 - **4.5.5 (T2)** Building or destroying blocks with the deliberate intent of denying siege weapon placement is not allowed.
 - **4.5.6 (T2–T3)** Door defenses requiring more than 2 sequential interactions to pass, or designed to trap or cycle players, are not allowed.
-- **4.5.7 (T3)** Spawn killing — repeatedly killing the same player at or near their spawn point outside of an active siege or declared war — is not allowed.
+- **4.5.7 (T3)** Spawn killing — repeatedly killing the same player at or near their spawn point outside of an active siege or raid — is not allowed.
+- **4.5.8 (T2)** Damaging livestock or ships present in town claims outside of an active siege or raid - is not allowed
 
 > "Repeatedly" is defined as 3+ kills of the same player within a 10-minute window without the victim initiating combat.
 
@@ -284,6 +285,8 @@ NAPs are allowed as part of roleplay diplomacy but are **not enforceable by staf
 - **4.8.5 (T3)** Siege camps must have multiple accessible entry routes.
 - **4.8.6 (T3)** Siege camp banner must be at the natural ground level. Ocean siege camps must not be further than 2 chunks from naturally generated land, with a bridge connecting to the mainland.
 - **4.8.7 (T3)** Siege camp structures must be at or less than 30 blocks high from natural ground level.
+- **4.8.8 (T3)** Stable plots may not be overlap or be placed within two chunk of the town spawn
+- **4.8.9 (T3)** Keeps need clear path to entryways with enough space Infront of them to place down siege machines 
 
 ---
 
@@ -310,15 +313,16 @@ NAPs are allowed as part of roleplay diplomacy but are **not enforceable by staf
 - **7.3 (T1)** The town must have at least one chunk over the area where that settlement historically existed.
 - **7.4 (T3–T4)** Towns may build bridges or barrages over major rivers within their claims as long as they are architecturally medieval. Row boats must be able to pass: minimum 4 blocks wide, 3 air blocks high, 2 water blocks deep.
 - **7.5** Canals may be built as long as they are realistic in appearance and construction logic.
+- **7.8** Unintended use of agriculture such as a perimeter of grapes/crops, and moat filled with kelp are not allowed
+- **7.9** Underground farms such as rennet or bee farms are not allowed
 
 #### ⚠ Siege Towns Are Not Allowed
 
-A siege town is defined as any town that meets one or more of the following:
+A siege town is defined as any town within the attacking nation that is used to provide an unfair advantage in war:
 
-- An underdeveloped or single-resident town created to enable additional siege operations
-- A town positioned to function as a closer respawn point against an enemy nation
-- A town built with the primary intent of serving as a forward operating base (FOB)
-- A town operated by members of another nation that effectively functions as an extension of that nation
+- A town positioned to function as a closer respawn point against an enemy nation is not allowed.
+- A town may not be made a capital for the sole purpose of extending siege range to attacking towns.
+- A vassal nation started by prior members of the attacking nation may not be allowed to create a capital closer to the enemy nation. They must stay in within similar range of the parent nation.
 
 - **7.7 (T4)** You may not deliberately drain your town's funds to cause it to ruin with the intent to later reclaim it. Towns found to have done this will be returned to the occupying nation.
 
@@ -360,10 +364,14 @@ Fail RP is defined as the failure to commit to roleplay or act in a manner consi
 Rebellion, espionage, and scheming for your previous nation are allowed and encouraged. The following are NOT allowed:
 - Deliberately sending your town to ruin to spite an occupying nation
 - Mass-griefing towns of the occupying nation
+- Mass-leaving a town after it has been occupied
+- disconnecting a road made by the occupying nation with towny claims
+- outlawing the occupying nation members
+- changing spawn to a less defensive position
 - Removing large sums of town funds solely to deprive the occupying nation
 - Rebelling against the occupying nation when rebellion isn't declared through the towny plugins
 - If a town that is occupied has sympathies for its previous nation it may do so but they may not give trust to previous members of the former nation.
-- A town that is occupied may not have stables turned on to all if the former nation, or an ally of the former nation of whome the town was part of is doing a reconquest siege of that occupied town. However stables may be set to all if they revolt.
+- A town that is occupied may not have stables turned on to all if the former nation, or an ally of the former nation of whome the town was part of is doing a liberation siege of that occupied town. However stables may be set to all if they revolt.
 
 **2. Any action that constitutes an obvious, deliberate attempt to break the server's medieval roleplay setting in a way that harms other players' experience.**
 
