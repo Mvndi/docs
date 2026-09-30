@@ -322,7 +322,7 @@ A siege town is defined as any town within the attacking nation that is used to 
 
 - A town created to function as a closer respawn point against an enemy nation is not allowed.
 - A town may not be made a capital for the sole purpose of extending siege range to attacking towns.
-- A vassal nation started by prior members of the attacking nation may not be allowed to create a capital closer to a pre-existing enemy nation. They must stay in within similar range of the parent nation.
+- A vassal nation started by prior members of the attacking nation may not be allowed to create a capital closer to a pre-existing enemy nation. They must stay in within similar range of the parent nation. (A pre-exisiting enemy is defined as a nation who has had a siege decleration put on them in the past)
 
 > Reports of a town created must be made during the siege immunity period for that town (two weeks), otherwise it will be considered that permission was given by the opposing nation.
 
