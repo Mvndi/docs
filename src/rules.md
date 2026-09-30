@@ -198,7 +198,7 @@ Provocation or surrounding circumstances may be considered when determining seve
 |------|------|-------------|
 | 4.2.1 | T2 | Walls must not be plain "factions-style" cube walls. They must have architectural character appropriate to the server's time period. |
 | 4.2.2 | T3 | Walls may not contain water, lava, or obsidian. |
-| 4.2.3 | T2 | Walls may not exceed 10 blocks in thickness. The 10 thickness consists of 7 blast resistant blocks and an additional 3 non-blast resistant blocks. Keeps however are limited to only having 6 blocks maximum of thickness. Gravity blocks for keeps are NOT permitted
+| 4.2.3 | T2 | Walls may not exceed 10 blocks in thickness. The 10 thickness consists of 7 blast resistant blocks and an additional 3 non-blast resistant blocks (including gravity blocks). Keeps however are limited to only having 6 blocks maximum of thickness. Gravity blocks for keeps are NOT permitted
 | 4.2.4 | T3 | Gravity blocks in walls are allowed within reason. Walls exceeding ~25 blocks in height that are primarily composed of gravity blocks are not allowed. |
 | 4.2.5 | T3 | Placing buttons, kelp, or any block to prevent siege weapon placement or block ship passage is not allowed. A single layer of buttons to prevent block glitching is the sole exception. |
 | 4.2.6 | T3 | You may have multiple walls. For two walls to count as separate, the distance between them must exceed the height of the shorter wall. Maximum 3 separate walls, not counting a central keep or citadel. |
