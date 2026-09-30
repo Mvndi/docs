@@ -8,6 +8,8 @@ Siege banners can only be placed on Thursdays & Fridays (UTC time), right before
   1. A declaration fee of **100 Ducats per plot claimed by the defending town** from your nation bank.
   2. A war chest worth **100 Ducats per plot claimed by the defending town** from your nation bank.
 - To start the siege, go right outside the defending town's border in unclaimed lands and **place a non-white banner on the ground**.
+- Newly established towns have 2 weeks of siege immunity
+- New nations that are protected by siege immunity can forfeit the immunity by placing a siege on another nation, the defending nation will then get an additional 2 hours past the siege war declaration period for an admin to place a counter siege so long as that nation has not reached its siege limit for the session.
 
 **Once the war chest is paid, the banner is _MOVED TO THE DEFENDING TOWN'S SPAWN_ and the siege begins.**
 
