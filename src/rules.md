@@ -369,7 +369,6 @@ Rebellion, espionage, and scheming for your previous nation are allowed and enco
 - Mass-leaving a town after it has been occupied
 - disconnecting a road made by the occupying nation with towny claims
 - outlawing the occupying nation members
-- changing spawn to a less defensive position
 - Removing large sums of town funds solely to deprive the occupying nation
 - Rebelling against the occupying nation when rebellion isn't declared through the towny plugins
 - If a town that is occupied has sympathies for its previous nation it may do so but they may not give trust to previous members of the former nation.
