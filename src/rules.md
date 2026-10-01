@@ -313,7 +313,7 @@ NAPs are allowed as part of roleplay diplomacy but are **not enforceable by staf
 - **7.3 (T1)** The town must have at least one chunk over the area where that settlement historically existed.
 - **7.4 (T3–T4)** Towns may build bridges or barrages over major rivers within their claims as long as they are architecturally medieval. Row boats must be able to pass: minimum 4 blocks wide, 3 air blocks high, 2 water blocks deep.
 - **7.5** Canals may be built as long as they are realistic in appearance and construction logic.
-- **7.8** Unintended use of agriculture such as a perimeter of grapes/crops, and moat filled with kelp are not allowed
+- **7.8** Unintended excess use of agriculture such as a layered perimeter of grapes/crops, and moat filled with kelp are not allowed
 - **7.9** Underground farms such as rennet or bee farms are not allowed
 
 #### ⚠ Siege Towns Are Not Allowed
