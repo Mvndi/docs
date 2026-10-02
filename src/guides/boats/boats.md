@@ -88,7 +88,7 @@ Some boats are not meant for deep oceans and will take a large amount of damage 
   - At full strength, similarly sized ships lose up to 65% of their horizontal speed, or 80% when struck by a ship with a ram upgrade. Smaller attackers have a weaker effect. The target can accelerate normally afterward.
   - The same rammer cannot apply another hit to the same target within 0.5 seconds.
 - **Foliage Interaction**: Boats break foliage like kelp and leaves when moving through them.
-- **Roadkill**: Players in the collision path of ships will take damage and knockback from them based off the ships speed
+- **Roadkill**: Players in the collision path of ships will take damage and knockback from them based off the ships speed.
 
 ### Combat and Damage
 
