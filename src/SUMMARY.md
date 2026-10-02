@@ -10,6 +10,7 @@
   - [Professions](./guides/professions/professions.md)
     - [Farmer](./guides/professions/farmer.md)
     - [Herdsman](./guides/professions/herdsman.md)
+      - [Breeding & Genetics](./guides/professions/breeding.md)
     - [Blacksmith](./guides/professions/blacksmith.md)
     - [Miner](./guides/professions/miner.md)
     - [Seaman](./guides/professions/seaman.md)

@@ -14,7 +14,7 @@ There are a couple of ways to gain XP for the herdsman profession:
 
 ## Skill Tree
 
-The herdsman profession contains several skills that improve animal products, breeding, fishing, carts, and animal genetics.
+The herdsman profession contains several skills that improve animal products, breeding, fishing, carts, and [animal genetics](./breeding.md).
 
 ### Full Skill Tree
 
@@ -160,6 +160,8 @@ Hold an empty bucket and right click one of these animals:
 
 Each animal stores its own milk. If one is dry, wait for it to regenerate.
 
+A custom breed uses the milk capacity in the [Breeding & Genetics](./breeding.md#milk-storage-and-regeneration) guide instead of the cow or sheep range in this table.
+
 ## Getting Rennet
 
 Rennet is a custom leather item. Cows, sheep, and goats have a 25% chance to drop it when they die.
@@ -223,7 +225,7 @@ Where:
 5. Right click the press with a clock again if you want to check elapsed time.
 6. Right click the press with a stick to unlock it.
 
-Unlocking too early gives the curds back. Unlocking close to the target time gives better quality. 
+Unlocking too early gives the curds back. Unlocking close to the target time gives better quality.
 
 | Cheese | Curds | Curds needed | Target press time | Fresh output |
 | --- | --- | ---: | ---: | --- |
@@ -341,20 +343,19 @@ This skill increases how much you get from beehives and bee nests.
 
 ![Artificial Selection](../../assets/professions/herdsman/artificial.png)
 
-Breed with barley for new breed chance.
+Unlocks custom livestock breeds and the genetics book. Harvesting wheat can drop **Barley** once any level of this skill is unlocked.
 
-Lvl 1: Unlocks genetics menu  
-Lvl 1: New cow breeds  
-Lvl 2: New chicken breeds  
-Lvl 3: New sheep breeds
+| Skill level | Genetics for |
+| --- | --- |
+| 1 | Cows, and the genetics book |
+| 2 | Chickens |
+| 3 | Sheep |
 
-To work with cow, sheep, and chicken genetics, the animals must be bred with **barley**. Then you can **Shift + right click** them to open the genetics menu. They do not need to be babies.
-
-The temperature where cows are bred affects their genetics, along with some randomness.
-
-You can also get **barley seeds** randomly when breaking wheat if you have the relevant skill unlocked.
+Breeding, climate breeds, trait blending, and mutations are in the [Breeding & Genetics](./breeding.md) guide.
 
 ## Horse Genetics
+
+Cow, sheep, and chicken breeding is in the [Breeding & Genetics](./breeding.md) guide. Horses use the menu below.
 
 To open the horse genetics menu, you need the relevant herdsman skill and must **Shift + right click a baby horse with an empty hand**.
 
@@ -368,6 +369,7 @@ Feeding baby horses changes different stats:
 - **Horse hay bale blocks** increase bravery
 
 Higher than vanilla stats can be reach by feeding baby horses:
+
 - 100% in speed will make 17 m/s horse
 - 100% in health will make 40 hp horse
 
