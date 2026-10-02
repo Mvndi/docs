@@ -2,6 +2,8 @@
 
 The trebuchet is a highly adjustable siege weapon with a large area of effect. It does 80% of the max HP of whatever part of the ship it hit to ships. Breaks after 400 shots.
 
+A probable fix has been added for ship-mounted trebuchets occasionally drifting away from the boat or stopping while the boat continues moving. This still needs confirmation through continued gameplay testing.
+
 <img src="../../assets/trebuchet.png" align="left" alt="trebuchet" width="200"/>
 
 ## Adjusting

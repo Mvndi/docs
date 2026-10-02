@@ -16,4 +16,12 @@ To load the greek fire, first mount it. Then, right click the weapon with blocks
 
 Once the greek fire is loaded, left click with a flint and steel to activate it.
 
+## Greek Fire Grenades and Ships
+
+Greek fire grenades deal 0.5 damage to the ship part they hit, ignite it for 60 seconds, and burn nearby players. The turret's random chance to damage a ship does not apply to grenades.
+
+Ship hit registration now checks the grenade's travelled path, including its first movement after being thrown. Hits near the ends of long ships and between projectile updates should register more reliably. The first ship hit receives the impact, and native collision handling no longer consumes a registered ship hit a second time.
+
+A grenade thrown from inside a ship's hull can leave that hull without immediately hitting it; if it returns, it can hit that ship. See [boats](../boats/boats.md) for ship damage and boarding mechanics.
+
 <video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/greek_fire.mp4" title="Greek Fire"></video>

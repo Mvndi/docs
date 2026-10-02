@@ -14,6 +14,8 @@ The boat items can't be crafted unless the crafter has the necesary skill in the
 
 Once the item is made it can be placed in the water (placer must have necesary amount of money to place the boat/start it's construction) in a dock towny plot (`/plot set dock`) which can only be made in ocean/beach/river biomes and by a farmer with pre industrial skill, the boat will spawn and immediantly dock and it's construction timer will start, the boat can't be undocked and used until it's finished constructing.
 
+Boats can be placed at any angle. The entire rotated hull footprint must be over water, with enough clearance from blocks and other ships.
+
 Boats can be repaired with the repair patch item in /recipes.
 Boats a miniscule amount of damage when sailing and need to be repaired after (weeks of) sailing.
 Some boats are not meant for deep oceans and will take a large amount of damage when sailing in deep oceans and will sink eventually unless the boat returns to coastal waters.
@@ -27,11 +29,11 @@ Some boats are not meant for deep oceans and will take a large amount of damage 
 - **Anchor**  
   - **Function**: Controls whether the boat is docked or undocked. If the driver of a boat drops an item (default `Q`) the ship will anchor (item wont actually drop).
   - **Docking**: If the boat is undocked, interacting with the anchor will dock it, but only if:
-    - The boat is aligned within 5 degrees of a cardinal axis (-180, -90, 0, 90, 180).
     - All sails (if present) are fully stowed.
     - The boat is stationary.
     - There is enough room (empty/water blocks) to dock.
   - **Undocking**: If the boat is docked, interacting with the anchor will undock it, allowing movement.
+  - **Heading**: Boats can dock at any angle and keep their current heading, without snapping to a cardinal direction.
   - **Winch**: If the ship has the winch upgrade installed the ship takes half the time it normally does to deanchor.
 
 - **Inventory**  
@@ -72,14 +74,20 @@ Some boats are not meant for deep oceans and will take a large amount of damage 
 
 ### Movement and Physics
 
-- **Docked State**: Players can walk on the boat through barrier blocks that spawn, and it remains stationary.
-- **Undocked State**:
-  - Players pass through the boat (no walking on it).
-  - The boat only collides with the world (blocks) and other boats.
+- **Walking on Deck**: Players can stand and walk on ships while docked, undocked, or moving. The ship carries you along while you move around the deck. Deck support follows the ship model and no longer uses docking barrier blocks.
+  - Use the jump key (default `Space`) to reach stairs, raised platforms, or higher decks. Walking does not automatically lift you up to a higher surface.
+  - Walking on deck plays wooden footsteps.
+- **Docked State**: The boat remains stationary.
+- **Undocked State**: The boat can move and collides with world blocks and other boats.
+- **Attached Entities**: Shield displays and interaction hitboxes follow moving ships more smoothly, reducing the jitter and delay when sailing or turning.
 - **Ramming**:  
-  - When one boat collides with another, the boat with higher speed is the “rammer.”
-  - The rammed boat takes significant damage; the rammer takes less damage.
+  - Damage depends on the rammer's speed toward the target and the relative size of their hulls. Small ships deal less damage to larger ships.
+  - The speed contribution to ram damage is capped at 20 m/s; sailing faster does not add more ram damage.
+  - The rammer also takes recoil damage. Rowboats deal much less damage and take more recoil damage.
   - Boats with a ram upgrade deal increased damage to the rammed boat and take even less damage themselves.
+  - Fast impacts also slow the target, helping crews board it while both ships are undocked. Slowdown starts above 8 m/s and reaches full strength at 20 m/s.
+  - At full strength, similarly sized ships lose up to 65% of their horizontal speed, or 80% when struck by a ship with a ram upgrade. Smaller attackers have a weaker effect. The target can accelerate normally afterward.
+  - The same rammer cannot apply another hit to the same target within 0.5 seconds.
 - **Foliage Interaction**: Boats break foliage like kelp and leaves when moving through them.
 
 ### Combat and Damage
@@ -89,6 +97,8 @@ Boats inside of town claim can only be damaged if there's an active raid on the 
 Any boat not meant for deep ocean get's 1 shot by any siege weapon (or greek fire grenade)
 
 For any greekfire damage the ship will burn for 60 seconds
+
+Siege projectiles and Greek fire grenades check their travelled path for the first ship hit, improving registration for fast shots and hits near the ends of long ships. The impact point determines the damaged part in the ship's own orientation: bow, hull, mast, or stern. Low and underwater hits count toward the hull, bow, or stern rather than the mast. Walls or entities hit before the ship still block the shot.
 
 - **Damage Sources**:
   - **Ramming**: As described above.  
@@ -101,11 +111,11 @@ For any greekfire damage the ship will burn for 60 seconds
   - **Greek Fire Grenade**: Does 0.5 damage and create's a fire on the boat and does passive damage, and passengers in nearby seats catch fire and take damage.
 - **Destruction**:  
   - Damage is visually represented by the model looking more destroyed or normal.
-  - When fully destroyed (any part of the ship reaches 0 hp), the boat sinks, and any inventory contents spawn as chests on the seafloor.
+  - When the bow, hull, or stern reaches 0 HP, the boat sinks, and any inventory contents spawn as chests on the seafloor.
 
 ### Alignment and Navigation
 
-- **Chunk Alignment**: Boats must be aligned with chunk boundaries for docking. Use `F3` to check coordinates.  
+- **Docking and Placement**: Any heading is allowed; boats do not need to align with cardinal directions or chunk boundaries. Docking still requires a stationary boat, stowed sails, and enough room.
 - **Turning**: Boats have slow turning mechanics, so plan your direction early to avoid long turnarounds.
 - **Speed Control**:
   - Adjust sails (full, half, or stowed) to control speed.
