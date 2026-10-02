@@ -76,7 +76,6 @@ Some boats are not meant for deep oceans and will take a large amount of damage 
 
 - **Walking on Deck**: Players can stand and walk on ships while docked, undocked, or moving. The ship carries you along while you move around the deck. Deck support follows the ship model and no longer uses docking barrier blocks.
   - Use the jump key (default `Space`) to reach stairs, raised platforms, or higher decks. Walking does not automatically lift you up to a higher surface.
-  - Walking on deck plays wooden footsteps.
 - **Docked State**: The boat remains stationary.
 - **Undocked State**: The boat can move and collides with world blocks and other boats.
 - **Attached Entities**: Shield displays and interaction hitboxes follow moving ships more smoothly, reducing the jitter and delay when sailing or turning.
@@ -89,6 +88,7 @@ Some boats are not meant for deep oceans and will take a large amount of damage 
   - At full strength, similarly sized ships lose up to 65% of their horizontal speed, or 80% when struck by a ship with a ram upgrade. Smaller attackers have a weaker effect. The target can accelerate normally afterward.
   - The same rammer cannot apply another hit to the same target within 0.5 seconds.
 - **Foliage Interaction**: Boats break foliage like kelp and leaves when moving through them.
+- **Roadkill**: Players in the collision path of ships will take damage and knockback from them based off the ships speed
 
 ### Combat and Damage
 
