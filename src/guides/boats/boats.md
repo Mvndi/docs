@@ -1,122 +1,218 @@
 # Boats
 
-<video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/boats.mp4" title="Boats"></video>
+<video controls
+  src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/boats.mp4"
+  title="Boats"></video>
 
 ## I placed boat and it's not moving
 
-it's probably under construction do `/modifyship` while looking at it and you can see the initial construction timer, it will undock after this and be usable
+it's probably under construction do `/modifyship` while looking at it and you
+can see the initial construction timer, it will undock after this and be usable
 
 ## Building Boats
 
-Boats have items with recipes that can be found in /recipes and must be crafted in a smithing table, the size of the items in the itemstack are important.
+Boats have items with recipes that can be found in /recipes and must be crafted
+in a smithing table, the size of the items in the itemstack are important.
 
-The boat items can't be crafted unless the crafter has the necesary skill in the seaman profession.
+The boat items can't be crafted unless the crafter has the necesary skill in the
+seaman profession.
 
-Once the item is made it can be placed in the water (placer must have necesary amount of money to place the boat/start it's construction) in a dock towny plot (`/plot set dock`) which can only be made in ocean/beach/river biomes and by a farmer with pre industrial skill, the boat will spawn and immediantly dock and it's construction timer will start, the boat can't be undocked and used until it's finished constructing.
+Once the item is made it can be placed in the water (placer must have necesary
+amount of money to place the boat/start it's construction) in a dock towny plot
+(`/plot set dock`) which can only be made in ocean/beach/river biomes and by a
+farmer with pre industrial skill, the boat will spawn and immediantly dock and
+it's construction timer will start, the boat can't be undocked and used until
+it's finished constructing.
 
-Boats can be placed at any angle. The entire rotated hull footprint must be over water, with enough clearance from blocks and other ships.
+Boats can be placed at any angle. The entire rotated hull footprint must be over
+water, with enough clearance from blocks and other ships.
 
 Boats can be repaired with the repair patch item in /recipes.
-Boats a miniscule amount of damage when sailing and need to be repaired after (weeks of) sailing.
-Some boats are not meant for deep oceans and will take a large amount of damage when sailing in deep oceans and will sink eventually unless the boat returns to coastal waters.
+Boats a miniscule amount of damage when sailing and need to be repaired after
+(weeks of) sailing.
+Some boats are not meant for deep oceans and will take a large amount of damage
+when sailing in deep oceans and will sink eventually unless the boat returns to
+coastal waters.
 
-(construction/upgrade times lowered for demonstration purposes, gui isn't massive the recorder just has scale 4)
+(construction/upgrade times lowered for demonstration purposes, gui isn't
+massive the recorder just has scale 4)
 
 <video controls src="https://files.catbox.moe/7uf3vf.mp4" title="shipbuilding"></video>
 
 ### Interactive Entities (Press `F3+B` to see hitboxes)
 
 - **Anchor**  
-  - **Function**: Controls whether the boat is docked or undocked. If the driver of a boat drops an item (default `Q`) the ship will anchor (item wont actually drop).
-  - **Docking**: If the boat is undocked, interacting with the anchor will dock it, but only if:
+  - **Function**: Controls whether the boat is docked or undocked. If the driver
+    of a boat drops an item (default `Q`) the ship will anchor (item wont
+    actually drop).
+  - **Docking**: If the boat is undocked, interacting with the anchor will dock
+    it, but only if:
     - All sails (if present) are fully stowed.
     - The boat is stationary.
     - There is enough room (empty/water blocks) to dock.
-  - **Undocking**: If the boat is docked, interacting with the anchor will undock it, allowing movement.
-  - **Heading**: Boats can dock at any angle and keep their current heading, without snapping to a cardinal direction.
-  - **Winch**: If the ship has the winch upgrade installed the ship takes half the time it normally does to deanchor.
+  - **Undocking**: If the boat is docked, interacting with the anchor will
+    undock it, allowing movement.
+  - **Heading**: Boats can dock at any angle and keep their current heading,
+    without snapping to a cardinal direction.
+  - **Winch**: If the ship has the winch upgrade installed the ship takes half
+    the time it normally does to deanchor.
 
 - **Inventory**  
   - **Access**: Only interactable when the boat is docked.
   - **Function**: Opens a chest interface with multiple pages (if available).
-    - If a player has a horse (or donkey/mule) on a lead and there’s an empty page, interacting with the inventory stores the horse, locking that page from being used as a chest.
-    - If all pages contain horses, nothing will happen when interacting while not sneaking.
-    - Sneaking while interacting removes the first horse found, freeing the page for chest use.  
-  - **Destruction**: If the boat is sunk, chests containing the inventory’s contents spawn on the seafloor.
+    - If a player has a horse (or donkey/mule) on a lead and there’s an empty
+      page, interacting with the inventory stores the horse, locking that page
+      from being used as a chest.
+    - If all pages contain horses, nothing will happen when interacting while
+      not sneaking.
+    - Sneaking while interacting removes the first horse found, freeing the page
+      for chest use.
+  - **Destruction**: If the boat is sunk, chests containing the inventory’s
+    contents spawn on the seafloor.
 
 - **Sail**  
   - **Function**: Controls boat speed via sail positioning.
   - **Interactions**:
     - **Left-click**: Lowers the sails (increases speed).
     - **Right-click**: Raises the sails (reduces speed or stows them)
-    - **Hand Swap**: The driver can press the button to swap hands (default `F`) to toggle through sail states.
-  - **States**: Sails can be fully stowed (no movement), half (partial speed), or full (maximum speed contribution).
+    - **Hand Swap**: The driver can press the button to swap hands (default `F`)
+      to toggle through sail states.
+  - **States**: Sails can be fully stowed (no movement), half (partial speed),
+    or full (maximum speed contribution).
 
 - **Seat**  
   - **Types**:  
-    - **Controller Seat**: Located near the rudder (usually at the back), this seat allows the player to steer the boat using standard movement keys (e.g., A/D for left/right).
-    - **Rowing Seats**: Found on rowing boats, these contribute to the boat’s speed based on the number of occupied seats and the boat’s rowing factor.
-    - **Drumming**: If the ship has the drum upgrade installed and the seat for the drum is occupied, if the person in the controller seat presses the sprint key (ctrl) the boat will activate a speed boost that takes 20 seconds to reach it peak 2x multiplier which lasts for 10 seconds, this ability has a 10 minute cool down.
-    - **Bells**: If the ship has the bells upgrade installed and the seat for the bells is occupied, if the person in the controller seat presses the jump key (space) the boat will activate a 10 second triple turning-speed boost, this ability has a 10 minute cool down.
+    - **Controller Seat**: Located near the rudder (usually at the back), this
+      seat allows the player to steer the boat using standard movement keys
+      (e.g., A/D for left/right).
+    - **Rowing Seats**: Found on rowing boats, these contribute to the boat’s
+      speed based on the number of occupied seats and the boat’s rowing factor.
+    - **Drumming**: If the ship has the drum upgrade installed and the seat for
+      the drum is occupied, if the person in the controller seat presses the
+      sprint key (ctrl) the boat will activate a speed boost that takes 20
+      seconds to reach it peak 2x multiplier which lasts for 10 seconds, this
+      ability has a 10 minute cool down.
+    - **Bells**: If the ship has the bells upgrade installed and the seat for
+      the bells is occupied, if the person in the controller seat presses the
+      jump key (space) the boat will activate a 10 second triple turning-speed
+      boost, this ability has a 10 minute cool down.
   - **Rowing Mechanics**:
-    - The rowing factor determines the percentage of max speed achievable through rowing alone (e.g., a 60% rowing factor means 60% max speed with all rowing seats filled and sails stowed).
-    - Full sails with all rowing seats filled achieve 100% max speed. Partial rowing seat occupancy scales speed accordingly (e.g., half rowing seats + full sails = 70% max speed for a 60% rowing factor boat).  
-    - Holding the backward key (`S` default) in the controller seat cancels all rowing allowing a rowing ship to come to a stop (if any sails are stowed).
-    - Holding the backward key and the spring key (`CTRL+S` default) in the controller seat starts to gradually make the ship go backwards (if any sails are stowed), the maximum speed a ship can go backwards is 20% of it's maxiumum speed times it's rowing factor.
+    - The rowing factor determines the percentage of max speed achievable
+      through rowing alone (e.g., a 60% rowing factor means 60% max speed with
+      all rowing seats filled and sails stowed).
+    - Full sails with all rowing seats filled achieve 100% max speed. Partial
+      rowing seat occupancy scales speed accordingly (e.g., half rowing seats +
+      full sails = 70% max speed for a 60% rowing factor boat).
+    - Holding the backward key (`S` default) in the controller seat cancels all
+      rowing allowing a rowing ship to come to a stop (if any sails are stowed).
+    - Holding the backward key and the spring key (`CTRL+S` default) in the
+      controller seat starts to gradually make the ship go backwards (if any
+      sails are stowed), the maximum speed a ship can go backwards is 20% of
+      it's maxiumum speed times it's rowing factor.
 
 - **Siege Weapon Slot**  
-  - **Function**: When the boat is docked, specific siege weapons (e.g., ballista for cogs, galleys, and dromons; Greek fire for galleys) can be installed.
-  - **Operation**: A dedicated seat next to the slot allows a player to control the weapon.
+  - **Function**: When the boat is docked, specific siege weapons (e.g.,
+    ballista for cogs, galleys, and dromons; Greek fire for galleys) can be
+    installed.
+  - **Operation**: A dedicated seat next to the slot allows a player to control
+    the weapon.
 
 - **Shield Slot**  
   - **Function**: When the boat is docked, shields can be installed.
-  - **Damage Reduction**: Whenever a ship takes damage, the damage is divided by `1 + 0.15 * shields_percentage` where shields_percentage is how many shields are installed divided by how many shields slots a ship has.
+  - **Damage Reduction**: Whenever a ship takes damage, the damage is divided by
+    `1 + 0.15 * shields_percentage` where shields_percentage is how many shields
+    are installed divided by how many shields slots a ship has.
 
 ### Movement and Physics
 
-- **Walking on Deck**: Players can stand and walk on ships while docked, undocked, or moving. The ship carries you along while you move around the deck. Deck support follows the ship model and no longer uses docking barrier blocks.
-  - Use the jump key (default `Space`) to reach stairs, raised platforms, or higher decks. Walking does not automatically lift you up to a higher surface.
+- **Walking on Deck**: Players can stand and walk on ships while docked,
+  undocked, or moving. The ship carries you along while you move around the
+  deck. Deck support follows the ship model and no longer uses docking barrier
+  blocks.
+  - Use the jump key (default `Space`) to reach stairs, raised platforms, or
+    higher decks. Walking does not automatically lift you up to a higher
+    surface.
 - **Docked State**: The boat remains stationary.
-- **Undocked State**: The boat can move and collides with world blocks and other boats.
-- **Attached Entities**: Shield displays and interaction hitboxes follow moving ships more smoothly, reducing the jitter and delay when sailing or turning.
+- **Undocked State**: The boat can move and collides with world blocks and other
+  boats.
+- **Attached Entities**: Shield displays and interaction hitboxes follow moving
+  ships more smoothly, reducing the jitter and delay when sailing or turning.
 - **Ramming**:  
-  - Damage depends on the rammer's speed toward the target and the relative size of their hulls. Small ships deal less damage to larger ships.
-  - The speed contribution to ram damage is capped at 20 m/s; sailing faster does not add more ram damage.
-  - The rammer also takes recoil damage. Rowboats deal much less damage and take more recoil damage.
-  - Boats with a ram upgrade deal increased damage to the rammed boat and take even less damage themselves.
-  - Fast impacts also slow the target, helping crews board it while both ships are undocked. Slowdown starts above 8 m/s and reaches full strength at 20 m/s.
-  - At full strength, similarly sized ships lose up to 65% of their horizontal speed, or 80% when struck by a ship with a ram upgrade. Smaller attackers have a weaker effect. The target can accelerate normally afterward.
-  - The same rammer cannot apply another hit to the same target within 0.5 seconds.
-- **Foliage Interaction**: Boats break foliage like kelp and leaves when moving through them.
-- **Roadkill**: Players in the collision path of ships will take damage and knockback from them based off the ships speed.
+  - Damage depends on the rammer's speed toward the target and the relative size
+    of their hulls. Small ships deal less damage to larger ships.
+  - The speed contribution to ram damage is capped at 20 m/s; sailing faster
+    does not add more ram damage.
+  - The rammer also takes recoil damage. Rowboats deal much less damage and take
+    more recoil damage.
+  - Boats with a ram upgrade deal increased damage to the rammed boat and take
+    even less damage themselves.
+  - Fast impacts also slow the target, helping crews board it while both ships
+    are undocked. Slowdown starts above 8 m/s and reaches full strength at 20
+    m/s.
+  - At full strength, similarly sized ships lose up to 65% of their horizontal
+    speed, or 80% when struck by a ship with a ram upgrade. Smaller attackers
+    have a weaker effect. The target can accelerate normally afterward.
+  - The same rammer cannot apply another hit to the same target within 0.5
+    seconds.
+- **Foliage Interaction**: Boats break foliage like kelp and leaves when moving
+  through them.
+- **Roadkill**: Players in the collision path of ships will take damage and
+  knockback from them based off the ships speed.
 
 ### Combat and Damage
 
-Boats inside of town claim can only be damaged if there's an active raid on the town or if the town is sieged and it's an active battle seassion. Boats in wilderness can always be damaged.
+Boats inside of town claim can only be damaged if there's an active raid on the
+town or if the town is sieged and it's an active battle seassion. Boats in
+wilderness can always be damaged.
 
-Any boat not meant for deep ocean get's 1 shot by any siege weapon (or greek fire grenade)
+Any boat not meant for deep ocean get's 1 shot by any siege weapon (or greek
+fire grenade)
 
 For any greekfire damage the ship will burn for 60 seconds
 
-Siege projectiles and Greek fire grenades check their travelled path for the first ship hit, improving registration for fast shots and hits near the ends of long ships. The impact point determines the damaged part in the ship's own orientation: bow, hull, mast, or stern. Low and underwater hits count toward the hull, bow, or stern rather than the mast. Walls or entities hit before the ship still block the shot.
+Siege projectiles and Greek fire grenades check their travelled path for the
+first ship hit, improving registration for fast shots and hits near the ends of
+long ships. The impact point determines the damaged part in the ship's own
+orientation: bow, hull, mast, or stern. Low and underwater hits count toward the
+hull, bow, or stern rather than the mast. Walls or entities hit before the ship
+still block the shot.
 
 - **Damage Sources**:
   - **Ramming**: As described above.  
-  - **Siege Weapons**: Both land-based and ship-based siege weapons can damage boats. Don't have durability. During a [naval raid](../raids.md), land siege damage to defender ships does not count toward attacker raid score (ramming and ship siege weapons still do).
+  - **Siege Weapons**: Both land-based and ship-based siege weapons can damage
+    boats. Don't have durability. During a [naval raid](../raids.md), land siege
+    damage to defender ships does not count toward attacker raid score (ramming
+    and ship siege weapons still do).
     - Ballista does 5% of the max HP of whatever part of the ship it hit
     - Trebuchet does 80% of the max HP of whatever part of the ship it hit
-    - Greekfire does 0.1 damage but there's some RNG because it shoots a lot of projectiles (without the RNG it was a death lazer that sawed ships in half). Also ship takes passive damage and passengers nearby where the greekfire impacted start to burn and take damage.
-    - Cannon does 15% of the max HP of whatever part of the ship it hit. Canister shot does not damage ships
-  - **Greek Fire**: Creates fire on the water’s surface. Boat parts passing through fire take damage, and passengers in nearby seats catch fire and take damage.
-  - **Greek Fire Grenade**: Does 0.5 damage and create's a fire on the boat and does passive damage, and passengers in nearby seats catch fire and take damage.
+    - Greekfire does 0.1 damage but there's some RNG because it shoots a lot of
+      projectiles (without the RNG it was a death lazer that sawed ships in
+      half). Also ship takes passive damage and passengers nearby where the
+      greekfire impacted start to burn and take damage.
+    - Cannon does 15% of the max HP of whatever part of the ship it hit.
+      Canister shot does not damage ships
+  - **Greek Fire**: Creates fire on the water’s surface. Boat parts passing
+    through fire take damage, and passengers in nearby seats catch fire and take
+    damage.
+  - **Greek Fire Grenade**: Does 0.5 damage and create's a fire on the boat and
+    does passive damage, and passengers in nearby seats catch fire and take
+    damage.
 - **Destruction**:  
-  - Damage is visually represented by the model looking more destroyed or normal.
-  - When the bow, hull, or stern reaches 0 HP, the boat sinks, and any inventory contents spawn as chests on the seafloor.
+  - Damage is visually represented by the model looking more destroyed or
+    normal.
+  - When the bow, hull, or stern reaches 0 HP, the boat sinks, and any inventory
+    contents spawn as chests on the seafloor.
+
+Ships travel 30% faster on validated [sea roads](../towny_roads.md#sea-roads).
 
 ### Alignment and Navigation
 
-- **Docking and Placement**: Any heading is allowed; boats do not need to align with cardinal directions or chunk boundaries. Docking still requires a stationary boat, stowed sails, and enough room.
-- **Turning**: Boats have slow turning mechanics, so plan your direction early to avoid long turnarounds.
+- **Docking and Placement**: Any heading is allowed; boats do not need to align
+  with cardinal directions or chunk boundaries. Docking still requires a
+  stationary boat, stowed sails, and enough room.
+- **Turning**: Boats have slow turning mechanics, so plan your direction early
+  to avoid long turnarounds.
 - **Speed Control**:
   - Adjust sails (full, half, or stowed) to control speed.
-  - Rowing boats rely on occupied rowing seats and the rowing factor for speed, with sails providing additional speed.
+  - Rowing boats rely on occupied rowing seats and the rowing factor for speed,
+    with sails providing additional speed.

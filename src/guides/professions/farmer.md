@@ -1,14 +1,17 @@
 # Farmer
 
-**Important note: You need to have the farmer profession to use the abilities in this guide. You can select a profession by using the `/mp` command.**
+**Important note: You need to have the farmer profession to use the abilities in
+this guide. You can select a profession by using the `/mp` command.**
 
 ## XP Gain
 
-The farmer profession gains XP from breaking fully grown crops such as wheat, cabbage, carrots, and other harvestable plants.
+The farmer profession gains XP from breaking fully grown crops such as wheat,
+cabbage, carrots, and other harvestable plants.
 
 ## Skill Tree
 
-The farmer profession contains several skills that improve harvesting, crop management, herbs, machines, and food production.
+The farmer profession contains several skills that improve harvesting, crop
+management, herbs, machines, and food production.
 
 ### Full Skill Tree
 
@@ -58,7 +61,9 @@ Unlocks flax planting and crafting, and increases flax drops.
 +5% flax drops per level  
 Maximum bonus: +25%
 
-If you have the Flax skill unlocked, you can get flax seeds by breaking normal foliage. Flax seeds can also be obtained by breaking **blue flax flowers** with a **scythe**.
+If you have the Flax skill unlocked, you can get flax seeds by breaking normal
+foliage. Flax seeds can also be obtained by breaking **blue flax flowers** with
+a **scythe**.
 
 To plant flax, right click grass with the seeds.
 
@@ -81,7 +86,11 @@ Ploughing only works in claimed chunks belonging to your town.
 
 Video guide:
 
-<video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/plough.mp4" title="Plough"></video>
+<video
+  controls
+src="<https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/plough.mp4>"
+  title="Plough"
+></video>
 
 ---
 
@@ -95,7 +104,8 @@ Lvl 1: Sage
 Lvl 2: N/A  
 Lvl 3: Rosemary
 
-If you have the Herbalism skill unlocked, you can get herb seeds by breaking normal foliage.
+If you have the Herbalism skill unlocked, you can get herb seeds by breaking
+normal foliage.
 
 - **Sage** unlocks at Lvl 1
 - **Rosemary** unlocks at Lvl 3
@@ -131,7 +141,9 @@ Machines require the **Pre Industrial** skill from the Farmer skill tree.
 
 Machines must be connected to a generator such as a **windmill**.
 
-After every server restart, machines need to be reconnected manually by right clicking them with a **wrench**.
+Machine networks are saved and reconnect automatically after server restarts.
+For a network created before this update, right click once with a **wrench** to
+register it; later restarts load it automatically.
 
 Current machine functions shown in the skill tree:
 
@@ -140,7 +152,11 @@ Current machine functions shown in the skill tree:
 
 Video guide:
 
-<video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/machines.mp4" title="Machines"></video>
+<video
+  controls
+src="<https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/machines.mp4>"
+  title="Machines"
+></video>
 
 ---
 
@@ -165,12 +181,14 @@ They are also used to power farmer machines.
 
 Crops cut with a scythe are automatically replanted.
 
-Crop Reaper makes harvesting large fields faster and reduces the need to replant by hand.
+Crop Reaper makes harvesting large fields faster and reduces the need to replant
+by hand.
 
 ---
 
 ## Seedbags
 
-Seedbags work similarly to bundles, but are made for storing seeds. They were added before vanilla bundles.
+Seedbags work similarly to bundles, but are made for storing seeds. They were
+added before vanilla bundles.
 
 To use them, place the seedbag into a crafting table with seeds.

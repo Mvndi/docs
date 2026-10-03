@@ -9,15 +9,25 @@ resource income.
 
 ## How do I use Towny Resources?
 
-Start by oppening a ticket on [Mvndicraft Discord](https://discord.mvndicraft.net/) and ask for your town to be rated (Overall beauty & how realistic the town is).
-The most beatiful towns will get 100% of the aviable resources, other will have between 20% & 80% of the aviable resources according to their rating.
+Start by oppening a ticket on [Mvndicraft
+Discord](https://discord.mvndicraft.net/) and ask for your town to be rated
+(Overall beauty & how realistic the town is).
+The most beatiful towns will get 100% of the aviable resources, other will have
+between 20% & 80% of the aviable resources according to their rating.
 
-Then continue by surveying with the command `/t resource survey`. This will add a resource to your towns.
+Your town's build rating and its last update date appear in `/town`.
+Use `/town list by rating` to compare towns by rating.
+Staff ratings can also be announced in Discord's #town-ratings channel with the
+moderator's name.
+
+Then continue by surveying with the command `/t resource survey`. This will add
+a resource to your towns.
 production and will allow you to collect the income 1. per towny day.
 Each consequent survey will be more expensive.
 The following table provides an overview of the levels:
 
-You can see the resources production of a town with `/t <town name>` or look on the map
+You can see the resources production of a town with `/t <town name>` or look on
+the map
 
 | Survey Count: | Survey Cost | Required Town Size | Resource Production Mutiplier | Required Players to gain income |
 | ------------- | ----------- | ------------------ | ----------------------------- | ------------------------------- |
@@ -26,7 +36,8 @@ You can see the resources production of a town with `/t <town name>` or look on 
 | 3             | 5000        | 100                | 3                             | 14                              |
 | 4             | 20000       | 200                | 4                             | 24                              |
 
-You can also reroll ALL of your resources with `/t resources reroll` for `50k` ducats.
+You can also reroll ALL of your resources with `/t resources reroll` for `50k`
+ducats.
 Available resources are:
 
 - coal
@@ -50,19 +61,27 @@ Available resources are:
 - gunpowder pouches
 
 Some resources are rarer than others.
-More info can be found [here](https://github.com/TownyAdvanced/TownyResources/blob/master/README.md).
+Read the [TownyResources
+documentation](https://github.com/TownyAdvanced/TownyResources/blob/master/README.md).
 
 ## Who is getting the resources
 
-A free town with no nation get 100% of the resources.
+A free town with no nation gets 100% of the resources, including after leaving a
+nation.
 
-A free town in a nation gets 50% of the resources and the nation gets the other 50% of the resources.
+A free town in a nation gets 50% of the resources and the nation gets the other
+50% of the resources.
 
-An occupied town gets 25% of the resources & the occupying nation gets the other 75% of the resources.
+An occupied town gets 25% of the resources & the occupying nation gets the other
+75% of the resources.
 
-If there are not enough players in your town to collect a resources, it will display 0 of that resource & you won't get these resources. Once enough players are in your town, the resource will start to generate again.
+If there are not enough players in your town to collect a resources, it will
+display 0 of that resource & you won't get these resources. Once enough players
+are in your town, the resource will start to generate again.
 
-Once resources are produced, they belong to the town or nation that produced them. Sieging a town that had a lot of resources to collect won't grant you any of the already produced resources.
+Once resources are produced, they belong to the town or nation that produced
+them. Sieging a town that had a lot of resources to collect won't grant you any
+of the already produced resources.
 
-
-Make sure to collect resources every 10 days at max; otherwise, extra resources will be lost.
+Make sure to collect resources every 10 days at max; otherwise, extra resources
+will be lost.

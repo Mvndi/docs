@@ -1,6 +1,7 @@
 # Herdsman
 
-**Important note: You need to have the herdsman profession to use the abilities in this guide. You can select a profession by using the `/mp` command.**
+**Important note: You need to have the herdsman profession to use the abilities
+in this guide. You can select a profession by using the `/mp` command.**
 
 ## XP Gain
 
@@ -11,10 +12,12 @@ There are a couple of ways to gain XP for the herdsman profession:
 2. **Hunting domestic mobs** such as cows, sheep, and pigs
 3. **Shearing sheep**
 4. **Milking Cows**
+5. **Collecting honey bottles or honeycomb**
 
 ## Skill Tree
 
-The herdsman profession contains several skills that improve animal products, breeding, fishing, carts, and [animal genetics](./breeding.md).
+The herdsman profession contains several skills that improve animal products,
+breeding, fishing, carts, and [animal genetics](./breeding.md).
 
 ### Full Skill Tree
 
@@ -58,7 +61,8 @@ Craft bowl of eggs
 +15% per level  
 Maximum bonus: +45%
 
-This skill increases egg drops from chickens and unlocks the bowl of eggs crafting recipe.
+This skill increases egg drops from chickens and unlocks the bowl of eggs
+crafting recipe.
 
 ---
 
@@ -73,13 +77,21 @@ Catch larger fish.
 +20% per level  
 Maximum bonus: +60%
 
-To collect worms, right click **grass blocks** with a **trowel** while it is **raining**.
+To collect worms, right click **grass blocks** with a **trowel** while it is
+**raining**.
 
-When fishing, hold a **worm in your offhand** while using a fishing rod. There is a random chance to start a fishing minigame. When it starts, a bar appears at the top of the screen. You need to right click and fill the bar within the time limit to win the minigame and receive a better fish.
+When fishing, hold a **worm in your offhand** while using a fishing rod. There
+is a random chance to start a fishing minigame. When it starts, a bar appears at
+the top of the screen. You need to right click and fill the bar within the time
+limit to win the minigame and receive a better fish.
 
 <!-- Add fishmonger video here -->
 <!-- Example:
-<video controls src="VIDEO_LINK_HERE" title="Fishmonger"></video>
+<video
+  controls
+  src="VIDEO_LINK_HERE"
+  title="Fishmonger"
+></video>
 -->
 
 ---
@@ -100,7 +112,11 @@ To attach a cart:
 
 Video guide:
 
-<video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/cart.mp4" title="cart"></video>
+<video
+  controls
+src="<https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/cart.mp4>"
+  title="cart"
+></video>
 
 ---
 
@@ -133,38 +149,43 @@ This skill also increases wool gain from sheep.
 5. Build a cheese vat with a cauldron over fire or a campfire.
 6. Add milk, add rennet, then stir with a stick until curds form.
 7. Craft and place a Cheese Press.
-8. Put curds into the press, start it with a clock, then unlock it with a stick after the target time.
+8. Put curds into the press, start it with a clock, then unlock it with a stick
+   after the target time.
 9. Eat the fresh cheese or age it in a Cheese Cellar.
 
 ## Requirements
 
-You need Herdsman to use the custom milking system. You also need at least 1 point in Cheese Making before animals can be milked.
+You need Herdsman to use the custom milking system. You also need at least 1
+point in Cheese Making before animals can be milked.
 
-| Level | Unlock |
-| --- | --- |
-| 1 | Milk animals and make curds |
-| 2 | Make fresh cheeses |
-| 3 | Age fresh cheeses |
+| Level | Unlock                      |
+| ---   | ---                         |
+| 1     | Milk animals and make curds |
+| 2     | Make fresh cheeses          |
+| 3     | Age fresh cheeses           |
 
 ## Getting Milk
 
 Hold an empty bucket and right click one of these animals:
 
-| Animal | Milk item | Milk capacity | Regeneration time |
-| --- | --- | ---: | --- |
-| Cow | Cow's Milk | 2-3 | 10-20 minutes |
-| Sheep | Sheep's Milk | 1-2 | 13m 20s-23m 20s |
-| Goat | Goat's Milk | 1-2 | 11m 40s-21m 40s |
-| Horse | Mare's Milk | 1-2 | 20m-33m 20s |
-| Donkey | Donkey's Milk | 1 | 25m-41m 40s |
+| Animal | Milk item     | Milk capacity | Regeneration time |
+| ---    | ---           | ---:          | ---               |
+| Cow    | Cow's Milk    | 2-3           | 10-20 minutes     |
+| Sheep  | Sheep's Milk  | 1-2           | 13m 20s-23m 20s   |
+| Goat   | Goat's Milk   | 1-2           | 11m 40s-21m 40s   |
+| Horse  | Mare's Milk   | 1-2           | 20m-33m 20s       |
+| Donkey | Donkey's Milk | 1             | 25m-41m 40s       |
 
 Each animal stores its own milk. If one is dry, wait for it to regenerate.
 
-A custom breed uses the milk capacity in the [Breeding & Genetics](./breeding.md#milk-storage-and-regeneration) guide instead of the cow or sheep range in this table.
+A custom breed uses the milk capacity in the [Breeding &
+Genetics](./breeding.md#milk-storage-and-regeneration) guide instead of the cow
+or sheep range in this table.
 
 ## Getting Rennet
 
-Rennet is a custom leather item. Cows, sheep, and goats have a 25% chance to drop it when they die.
+Rennet is a custom leather item. Cows, sheep, and goats have a 25% chance to
+drop it when they die.
 
 You need 1 rennet per vat of milk.
 
@@ -173,11 +194,11 @@ You need 1 rennet per vat of milk.
 Make a vat by placing a cauldron directly above one of these:
 
 | Valid heat source |
-| --- |
-| Fire |
-| Soul Fire |
-| Campfire |
-| Soul Campfire |
+| ---               |
+| Fire              |
+| Soul Fire         |
+| Campfire          |
+| Soul Campfire     |
 
 Use it in this order:
 
@@ -188,13 +209,13 @@ Use it in this order:
 
 Different milks give different curds:
 
-| Milk | Stirs needed | Curds produced |
-| --- | ---: | ---: |
-| Cow | 4 | 8 Cow Curds |
-| Sheep | 5 | 6 Sheep Curds |
-| Goat | 3 | 6 Goat Curds |
-| Horse | 4 | 5 Horse Curds |
-| Donkey | 3 | 4 Donkey Curds |
+| Milk   | Stirs needed | Curds produced |
+| ---    | ---:         | ---:           |
+| Cow    | 4            | 8 Cow Curds    |
+| Sheep  | 5            | 6 Sheep Curds  |
+| Goat   | 3            | 6 Goat Curds   |
+| Horse  | 4            | 5 Horse Curds  |
+| Donkey | 3            | 4 Donkey Curds |
 
 After the curds are made, the vat turns back into an empty cauldron.
 
@@ -211,10 +232,10 @@ Craft the Cheese Press with this shaped recipe:
 Where:
 
 | Symbol | Ingredient |
-| --- | --- |
-| P | Any plank |
-| S | Stick |
-| B | Barrel |
+| ---    | ---        |
+| P      | Any plank  |
+| S      | Stick      |
+| B      | Barrel     |
 
 ## Pressing Curds Into Fresh Cheese
 
@@ -225,32 +246,36 @@ Where:
 5. Right click the press with a clock again if you want to check elapsed time.
 6. Right click the press with a stick to unlock it.
 
-Unlocking too early gives the curds back. Unlocking close to the target time gives better quality.
+Unlocking too early gives the curds back. Unlocking close to the target time
+gives better quality.
 
-| Cheese | Curds | Curds needed | Target press time | Fresh output |
-| --- | --- | ---: | ---: | --- |
-| Brie | Cow | 6 | 200s | Fresh Brie |
-| Cheddar | Cow | 8 | 300s | Fresh Cheddar |
-| Gloucester | Cow | 7 | 320s | Single Gloucester |
-| Pecorino | Sheep | 6 | 400s | Fresh Pecorino |
-| Manchego | Sheep | 7 | 420s | Fresh Manchego |
-| Chevre | Goat | 6 | 240s | Fresh Chevre |
+| Cheese     | Curds | Curds needed | Target press time | Fresh output      |
+| ---        | ---   | ---:         | ---:              | ---               |
+| Brie       | Cow   | 6            | 200s              | Fresh Brie        |
+| Cheddar    | Cow   | 8            | 300s              | Fresh Cheddar     |
+| Gloucester | Cow   | 7            | 320s              | Single Gloucester |
+| Pecorino   | Sheep | 6            | 400s              | Fresh Pecorino    |
+| Manchego   | Sheep | 7            | 420s              | Fresh Manchego    |
+| Chevre     | Goat  | 6            | 240s              | Fresh Chevre      |
 
-Horse and donkey curds exist, but there are no pressed cheese recipes for them right now.
+Horse and donkey curds exist, but there are no pressed cheese recipes for them
+right now.
 
 ## Cheese Quality
 
 Fresh cheese quality comes from timing the press well.
 
-| Timing result | Quality |
-| --- | --- |
-| Very close to target | 5 stars |
-| Close to target | 4 stars |
-| Somewhat close | 3 stars |
-| Barely close | 2 stars |
-| Outside the best timing window, but still valid | 1 star |
+| Timing result                                   | Quality |
+| ---                                             | ---     |
+| Very close to target                            | 5 stars |
+| Close to target                                 | 4 stars |
+| Somewhat close                                  | 3 stars |
+| Barely close                                    | 2 stars |
+| Outside the best timing window, but still valid | 1 star  |
 
-Too early returns the curds. Very late can still make cheese, but usually at low quality. If multiple cheeses use the same curds, the press picks the recipe closest to your timing.
+Too early returns the curds. Very late can still make cheese, but usually at low
+quality. If multiple cheeses use the same curds, the press picks the recipe
+closest to your timing.
 
 ## Making a Cheese Cellar
 
@@ -266,41 +291,45 @@ To make one:
 
 Once the sign is accepted, the chest is a Cheese Cellar.
 
-Put fresh or already aged cheese inside. Aging starts when the cellar inventory is processed, usually when it is opened or closed. Right click the cellar chest with a clock to check progress.
+Put fresh or already aged cheese inside. Aging starts when the cellar inventory
+is processed, usually when it is opened or closed. Right click the cellar chest
+with a clock to check progress.
 
 Taking cheese out clears its aging timer. Put it back in to start aging again.
 
 ## Aging Recipes
 
-| Base cheese | Aging time | Aged output |
-| --- | ---: | --- |
-| Cheddar | 600s | Mild Cheddar |
-| Cheddar | 1800s | Mature Cheddar |
-| Cheddar | 3600s | Clothbound Cheddar |
-| Gloucester | 900s | Young Gloucester |
-| Gloucester | 2400s | Double Gloucester |
-| Brie | 600s | Young Brie |
-| Brie | 1800s | Ripe Brie |
-| Pecorino | 1200s | Pecorino Fresco |
-| Pecorino | 3600s | Pecorino Romano |
-| Manchego | 1500s | Semi-Curado Manchego |
-| Manchego | 4000s | Curado Manchego |
-| Chevre | 600s | Crottin |
-| Chevre | 1600s | Chevre Affine |
+| Base cheese | Aging time | Aged output          |
+| ---         | ---:       | ---                  |
+| Cheddar     | 600s       | Mild Cheddar         |
+| Cheddar     | 1800s      | Mature Cheddar       |
+| Cheddar     | 3600s      | Clothbound Cheddar   |
+| Gloucester  | 900s       | Young Gloucester     |
+| Gloucester  | 2400s      | Double Gloucester    |
+| Brie        | 600s       | Young Brie           |
+| Brie        | 1800s      | Ripe Brie            |
+| Pecorino    | 1200s      | Pecorino Fresco      |
+| Pecorino    | 3600s      | Pecorino Romano      |
+| Manchego    | 1500s      | Semi-Curado Manchego |
+| Manchego    | 4000s      | Curado Manchego      |
+| Chevre      | 600s       | Crottin              |
+| Chevre      | 1600s      | Chevre Affine        |
 
-Each cheese has a preferred age. Hitting that stage can raise quality by 1 star. Nearby stages keep the same quality. Aging too far past the preferred stage can lower it.
+Each cheese has a preferred age. Hitting that stage can raise quality by 1 star.
+Nearby stages keep the same quality. Aging too far past the preferred stage can
+lower it.
 
 ## Eating Cheese
 
 Eating fresh or aged cheese gives player XP. Better cheese gives more XP.
 
 | Stars | XP multiplier |
-| ---: | ---: |
-| 1 | 0.5x |
-| 2 | 0.75x |
-| 3 | 1.0x |
-| 4 | 1.25x |
-| 5 | 1.5x |
+| ---:  | ---:          |
+| 1     | 0.5x          |
+| 2     | 0.75x         |
+| 3     | 1.0x          |
+| 4     | 1.25x         |
+| 5     | 1.5x          |
 
 Eating cheese as a heardsman give +10% XP per level of Cheese Making skill.
 
@@ -316,13 +345,19 @@ Increased truffle chance
 +1% per level  
 Maximum bonus: +3%
 
-To start the truffle minigame, leash a pig. The pig will begin moving in the direction of nearby truffles. You then need to find them by right clicking the ground.
+To start the truffle minigame, leash a pig. The pig will begin moving in the
+direction of nearby truffles. You then need to find them by right clicking the
+ground.
 
 Eating a truffle gives **Speed for 10 seconds**.
 
 Video guide:
 
-<video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/truffle.mp4" title="truffle"></video>
+<video
+  controls
+src="<https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/truffle.mp4>"
+  title="truffle"
+></video>
 
 ---
 
@@ -343,23 +378,28 @@ This skill increases how much you get from beehives and bee nests.
 
 ![Artificial Selection](../../assets/professions/herdsman/artificial.png)
 
-Unlocks custom livestock breeds and the genetics book. Harvesting wheat can drop **Barley** once any level of this skill is unlocked.
+Unlocks custom livestock breeds and the genetics book. Harvesting wheat can drop
+**Barley** once any level of this skill is unlocked.
 
-| Skill level | Genetics for |
-| --- | --- |
-| 1 | Cows, and the genetics book |
-| 2 | Chickens |
-| 3 | Sheep |
+| Skill level | Genetics for                |
+| ---         | ---                         |
+| 1           | Cows, and the genetics book |
+| 2           | Chickens                    |
+| 3           | Sheep                       |
 
-Breeding, climate breeds, trait blending, and mutations are in the [Breeding & Genetics](./breeding.md) guide.
+Breeding, climate breeds, trait blending, and mutations are in the [Breeding &
+Genetics](./breeding.md) guide.
 
 ## Horse Genetics
 
-Cow, sheep, and chicken breeding is in the [Breeding & Genetics](./breeding.md) guide. Horses use the menu below.
+Cow, sheep, and chicken breeding is in the [Breeding & Genetics](./breeding.md)
+guide. Horses use the menu below.
 
-To open the horse genetics menu, you need the relevant herdsman skill and must **Shift + right click a baby horse with an empty hand**.
+To open the horse genetics menu, you need the relevant herdsman skill and must
+**Shift + right click a baby horse with an empty hand**.
 
-Most of the stats are self explanatory, but **bravery** decreases the chance for the horse to rear when taking damage.
+Most of the stats are self explanatory, but **bravery** decreases the chance for
+the horse to rear when taking damage.
 
 Feeding baby horses changes different stats:
 
@@ -377,7 +417,11 @@ You can't reach the max value for each stat, choose wisely.
 
 Video guide:
 
-<video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/genetics.mp4" title="genetics"></video>
+<video
+  controls
+src="<https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/genetics.mp4>"
+  title="genetics"
+></video>
 
 ---
 
@@ -393,7 +437,8 @@ Lvl 3: Buried Bear Traps
 
 #### Bear Trap
 
-Place the bear trap on the ground, then use a **shovel** to bury it and conceal it.
+Place the bear trap on the ground, then use a **shovel** to bury it and conceal
+it.
 
 Players or mobs that step on it will take damage and be temporarily immobilized.
 
@@ -407,4 +452,8 @@ To make a Frisian horse trap:
 
 Video guide:
 
-<video controls src="https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/traps.mp4" title="Traps"></video>
+<video
+  controls
+src="<https://github.com/Mvndi/docs/raw/refs/heads/main/src/assets/video/traps.mp4>"
+  title="Traps"
+></video>
