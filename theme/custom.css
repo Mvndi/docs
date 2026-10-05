@@ -1,3 +1,4 @@
+#menu-bar,
 #mdbook-menu-bar,
 .left-buttons,
 .right-buttons {
@@ -29,20 +30,32 @@
     margin-right: 10px;
 }
 
-#mdbook-menu-bar .right-buttons i {
-    position: relative;
+.right-buttons .mvndi-menu-link {
+    display: inline-flex;
+    align-items: center;
     padding: 0 8px;
-    line-height: var(--menu-bar-height);
+    height: var(--menu-bar-height);
     color: var(--icons);
     transition: color 0.5s;
 }
 
-#mdbook-menu-bar .right-buttons i:hover {
+.right-buttons .mvndi-menu-link:hover {
     color: var(--icons-hover);
 }
 
+.mvndi-menu-icon {
+    display: inline-flex;
+}
+
+.mvndi-menu-icon svg {
+    display: block;
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+}
+
 @media only screen and (max-width: 420px) {
-    #mdbook-menu-bar .right-buttons i {
+    .right-buttons .mvndi-menu-link {
         padding: 0 5px;
     }
 }
