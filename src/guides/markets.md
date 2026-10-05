@@ -1,111 +1,56 @@
 # Market Guide
 
-To create a market chunk, your town must pay 10,000 (for each market chunk)
+## Market chunks
 
-The market must be placed inside one of your town's claimed chunks with:
-
-```mcfunction
-/mt market set
-```
-
-Each town can have 5 market chunks.
-
-You must stand inside a market chunk to browse listings, sell items, and make offers.
-
-If you wish to remove a market chunk (and get refunded) you do so with:
+To create a market chunk, your town must pay 10,000 for each market chunk. Stand in one of your town's claimed chunks and use:
 
 ```mcfunction
-/mt market sell
+/market set
 ```
 
-## Selling Items
+Each town can have 5 market chunks. Browsing works from anywhere. Selling requires a market chunk in your own town; buying locally also requires a market chunk in the listing town.
 
-Hold the item you want to sell in your main hand, then use:
+The mayor can remove a market chunk and refund its purchase cost to the town with:
 
 ```mcfunction
-/mt market sell <price>
+/market remove
 ```
 
-Rules for listings:
+## Browsing and buying
 
-- Prices must be between 1 and 1,000,000 ducats.
-- When you list an item, it is removed from your hand and stored in the market until it is sold or cancelled.
-
-To view and manage your own listings:
-
-**The market you are in when you sell an item is the market a player has to stand in if they want to buy it.**
+Open a town's market with:
 
 ```mcfunction
-/mt market mylistings
+/market <town>
 ```
 
-From that menu, you can cancel your own listings and get the item back if you have space in your inventory.
+Town names autocomplete for towns with items for sale. If you use `/market` without a town name while standing in a market chunk, it opens that town's market. Elsewhere, it opens the town directory, where you can select a market.
 
-## Browsing and Buying
+Click an item, then click `[Confirm]` in chat to buy it at the listed price. The confirmation expires after one minute. You need enough ducats, and the payment goes directly to the seller, even if they are offline. You can browse every town's listings, but where you stand determines which purchases are available:
 
-While standing in any market chunk, you can browse another player's active listings with:
+- For remote buying, stand in a claimed chunk of a town connected to the listing town through the [road network](./towny_roads.md). You do not need to belong to the town you are standing in.
+- Connections can pass through several towns. Only valid, unblocked routes count. Sharing a nation or an alliance does not establish a route by itself.
+- To buy from a disconnected town, visit one of that town's market chunks and buy locally.
+- You cannot buy from wilderness or buy your own listings.
+
+The route and your location are checked again when you confirm. If a route closes before confirmation, no payment is taken; reopen the listing after reaching a valid purchase location. Successful purchases deliver immediately, so a later route closure does not affect items you have already bought.
+
+The purchased item goes into your inventory. If there is not enough room, the remainder drops at your feet, so make space before buying.
+
+## Selling items
+
+Stand in a market chunk belonging to your own town, hold the item or stack in your main hand, and use:
 
 ```mcfunction
-/mt market browse <player>
+/market sell <price>
 ```
 
-Inside the market GUI:
+The price is for the entire held stack, not each item. Prices must be between 1 and 1,000,000 ducats. Listing removes the stack from your hand and places it in that town's market, with you recorded as the seller.
 
-- Click the lime wool button to buy a listing instantly for its full price.
-- You need enough ducats and enough empty inventory space to receive the item.
-- You can only buy an item if you're standing in the same market chunk the item was put to sell in (you can browse all listings in any market)
+## Taking items back
 
-## Making Offers
+Click your own listing to take it off the market and receive the item. The `My items` button shows your listings across all towns and can be used from anywhere. Returned items also drop at your feet if your inventory is full.
 
-If you do not want to pay the full listed price, you can send an offer instead.
+Leaving a town keeps your items listed in its market. You still receive payment when they sell and can still take them back.
 
-First, while browsing a player's market, click the blue wool button on the listing you want.
-
-Then send the offer with:
-
-```mcfunction
-/mt market offer <amount>
-```
-
-Offer rules:
-
-- You must be in a market chunk to send the offer command.
-- Offers must also be between 1 and 1,000,000 ducats.
-- You cannot make an offer on your own listing.
-- If you send another offer on the same listing, your previous pending offer is replaced.
-
-To view offers you have sent:
-
-```mcfunction
-/mt market outgoingoffers
-```
-
-From there, you can retract your pending offers.
-
-## Receiving Offers
-
-When somebody makes an offer on one of your listings, you will be notified in chat.
-
-To review offers on your own items:
-
-```mcfunction
-/mt market incomingoffers
-```
-
-From that menu, you can:
-
-- Accept the offer
-- Decline the offer
-
-If you accept an offer:
-
-- The buyer must be online
-- The buyer must still have enough ducats
-- The buyer must have enough inventory space for the item
-
-If any of those are not true, the sale will not go through.
-
-## Important Notes
-
-- `/mt market browse`, `/mt market sell`, and `/mt market offer` require you to be inside a market chunk.
-- `/mt market mylistings`, `/mt market incomingoffers`, and `/mt market outgoingoffers` can be used from anywhere.
+If the town is deleted, its listings are returned to their sellers. Online sellers receive them immediately; offline sellers receive them on their next login.

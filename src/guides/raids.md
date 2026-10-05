@@ -28,6 +28,7 @@ All of these must be true:
 - The leader is outside the target town's claims. For a naval raid, the leader is also on a ship. `/raid` fails if a naval raid is started from land.
 - Every party member is online, alive, and within 128 blocks of the target town's claims.
 - The target town has at least 2 residents online.
+- Your party includes at least 2 online residents of the attacking town, matching the minimum needed for that town to be raided back. Party members from other towns do not count toward this requirement.
 - The target is not your own town, a town in your nation, a town in an allied nation, or a town already in a raid.
 
 ## Raid area

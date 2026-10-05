@@ -100,5 +100,5 @@ To create a [market](./markets.md)  chunk, your town must pay 10,000.
 The market is created inside one of your town’s claimed chunks with the command:
 
 ```mcfunction
-/mt market set
+/market set
 ```

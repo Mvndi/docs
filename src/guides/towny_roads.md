@@ -53,6 +53,12 @@ A town connected to its capital pays 50% less upkeep.
 A capital connected to other nation towns pays less upkeep, up to 50% if all
 nation towns are connected. It also makes the nation pay up to 50% less upkeep.
 
+### Markets
+
+While standing in a connected town, you can buy from other towns' [markets](./markets.md) without travelling to them. Connections can pass through several towns and use valid, unblocked land or sea roads. The towns do not need to share a nation or alliance.
+
+You can browse every market from anywhere. If there is no connection, visit a market chunk in the listing town to buy locally.
+
 ### TownyWaypoints
 
 Soon, stables will only work if both towns are connected by roads (this does not
