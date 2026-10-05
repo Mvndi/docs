@@ -1,0 +1,48 @@
+#mdbook-menu-bar,
+.left-buttons,
+.right-buttons {
+    align-items: center;
+}
+
+.left-buttons,
+.right-buttons,
+.menu-title,
+.menu-title .logo {
+    display: flex;
+}
+
+.menu-title {
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.menu-title .logo {
+    align-items: center;
+    color: var(--icons);
+    text-decoration: none;
+}
+
+.logo-favicon {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+#mdbook-menu-bar .right-buttons i {
+    position: relative;
+    padding: 0 8px;
+    line-height: var(--menu-bar-height);
+    color: var(--icons);
+    transition: color 0.5s;
+}
+
+#mdbook-menu-bar .right-buttons i:hover {
+    color: var(--icons-hover);
+}
+
+@media only screen and (max-width: 420px) {
+    #mdbook-menu-bar .right-buttons i {
+        padding: 0 5px;
+    }
+}

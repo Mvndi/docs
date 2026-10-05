@@ -1,10 +1,14 @@
 [book]
 authors = ["ewof"]
 language = "en"
-multilingual = false
 src = "src"
 title = "Mvndicraft"
 
 [output.html]
 mathjax-support = true
 preferred-dark-theme = "ayu"
+additional-css = ["theme/custom.css"]
+additional-js = ["theme/custom.js"]
+
+[output.html.print]
+enable = false
