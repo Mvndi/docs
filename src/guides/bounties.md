@@ -18,9 +18,11 @@ you click **[Confirm]** in chat. The confirmation expires after 60 seconds, and
 you must still be in a market chunk when you confirm. Confirmed contributions
 cannot be cancelled by the player who posted them.
 
-The default minimum contribution is 1 ducat and the maximum is 1,000,000 ducats.
+The minimum contribution is 5,000 ducats and the maximum is 1,000,000 ducats.
+You can have active bounties on up to 5 different targets at once.
 Use the same command to add money to an existing bounty, including one whose
-contract has already been taken.
+contract has already been taken. You can still add money to those targets when
+you have reached the limit.
 
 An online target is notified when money is added to their bounty. Wanted players
 also receive a reminder when they join. Contributions of at least 1,000 ducats
@@ -38,12 +40,13 @@ You can also use `/bounties` or `/wanted`. The board lists targets by reward and
 shows their town, online status, expiry, and whether a hunter has taken the
 contract. The **My bounties** filter shows targets you have contributed money to.
 
-- Left-click a target to take an available contract.
+- Left-click a target, then click **[Confirm]** in chat to take an available
+  contract, just like confirming a market purchase.
 - Right-click a target to start adding money to their reward. Posting still
   requires a market chunk.
 
 Taking a contract requires a free inventory slot and enough money for the wager.
-By default, the wager is 20% of the reward when you accept, and the contract lasts
+The wager is currently 5% of the reward when you accept, and the contract lasts
 7 hours. Only one hunter can take a target's
 contract from the board at a time. The target is notified if they are online.
 
