@@ -11,7 +11,7 @@
 - To check how much money you have, use `/money`. You can pay other players your money with `/money pay <name> <amount>`.
 - After the town is created you can build, wage wars, or found a nation. Check the [Towny Wiki](https://github.com/TownyAdvanced/Towny/wiki/How-Towny-Works) for a full guide on Towny.
 - To get weapons, armor, shields, etc; you need to type `/recipes` where you will find all custom recipes on the server. To start with, look at the cudgel, the studded mace, the shortbow.
-## SUMMARY
+## Summary of answers to FAQ 
 - [Good to know](#good-to-know)
 - [Money](#money)
 - [Profession XP in short](#profession-xp-in-short)
@@ -65,7 +65,7 @@ Attribute XP gained from consuming cheese or alcohol will show up as a message i
 You can upgrade or view your health/stamina/etc in the `/attributes` or `/stats` menu.
 
 #### Attribute XP sources:
-* [Hostile mobs](./hostile_mobs):
+* [Hostile mobs](./hostile_mobs.md):
 	* Rats
 	* Wolves
 	* Boars
@@ -74,12 +74,12 @@ You can upgrade or view your health/stamina/etc in the `/attributes` or `/stats`
 * Eating cheese (see [herdsman](./professions/herdsman.md#cheese))
 * Drinking alcohol (see [brewery](./brewery.md))
 * PvP:
-	* XP gain scales based off of the victim's level, more exp given for killing prestiged players) 
+	* XP gain scales based off of the victim's level, more exp given for killing prestiged players 
 	* there's a cooldown per person you kill 
 		* there is no cooldown during a war/raid 
 	* the killer gets 10% of the victims money
 
-Passive mobs, like horses, frogs, cows don't give attribute XP, though they do give profession XP (see [herdsman](./professions/herdsman)).
+Passive mobs, like horses, frogs, cows don't give attribute XP, though they do give profession XP (see [herdsman](./professions/herdsman.md)).
 
 
 
