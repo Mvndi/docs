@@ -97,6 +97,8 @@ Look for them as though you were looking for diamonds in vanilla Minecraft.
 
 With both hands holding no items, crouch and right click on an anvil. The vanilla anvil interface will show up.
 
+Repairing costs nothing, but the vanilla limit for how many times you can work on an item still exists.
+
 To find out what material you need to repair a particular piece of armor or tool, press `F3 + H`, which will enable you to see advanced tooltips. Then, hover over the armour/tool/weapon: if the tooltip says, for example, `iron_sword`, then logically, you repair it with iron, if the tooltip contains `leather`, you repair it with leather, if it contains `diamond`, you repair it with magnetite.
 
 Netherite is unobtainable, thus, you cannot repair those items.
