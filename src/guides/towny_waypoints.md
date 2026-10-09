@@ -23,13 +23,6 @@ island biomes and major rivers.
 
 Only mayors and comayors can create waypoints.
 
-### Occupied Towns
-
-The occupying nation's king can use `/twp set open <status>` in an occupied
-town's stable or seaport.
-The chosen access setting is enforced while that nation occupies the town; town
-staff cannot override it.
-
 ### Traveling to a Waypoint
 
 Use `/twp list` to find accessible waypoints.
