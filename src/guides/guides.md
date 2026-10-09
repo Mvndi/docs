@@ -32,7 +32,8 @@
 	- Almost any weapon besides the cudgel and shortbow
 	- Medium and heavy armors
 	- Siege weapons, like cannons, ballistas, trebuchets 
-- Pay attention to your [equipment load](./combat.md/#equip-load) and the armor you wear, it may drown you
+- Pay attention to your [equipment load](./combat.md#equip-load) and the armor you wear, it may drown you
+
 ### Money
 
 To make money smelt, kill, fish, mine, farm crops etc.
@@ -79,7 +80,7 @@ You can upgrade or view your health/stamina/etc in the `/attributes` or `/stats`
 		* there is no cooldown during a war/raid 
 	* the killer gets 10% of the victims money
 
-Passive mobs, like horses, frogs, cows don't give attribute XP, though they do give profession XP (see [herdsman](./professions/herdsman.md)).
+Passive mobs, like horses, frogs, cows don't give attribute XP, though they do give profession XP (see [herdsman](./professions/herdsman)).
 
 
 
