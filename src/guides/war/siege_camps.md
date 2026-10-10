@@ -4,6 +4,10 @@ Siege camps provide a temporary base for the attacking nation & a temporary
 teleport destination for the attacking nation. While the siege camp is active,
 defenders can also use the `/sc tp` command to teleport to the defending town.
 
+Siege camps can also be placed during revolt sieges. The occupying nation is the
+attacker and can place a camp under the usual rules. The rebels and their
+assisting nation are defenders and cannot place a camp for their side.
+
 - **Setup**: On Thursdays & Fridays (UTC time), when wars are declared,
   attackers may set up a siege camp outside the defending town by placing a bed
   in the desired chunk. The siege camp is a temporary one-chunk claim granted to

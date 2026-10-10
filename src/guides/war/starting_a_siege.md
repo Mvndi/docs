@@ -44,6 +44,11 @@ info.
 An occupied town cannot be attacked in a conquest siege by its former home
 nation; it must revolt against its occupier instead.
 
+During an active revolt, the mayor can use `/sw town revoltassist <nation>` to
+choose a nation to fight alongside the rebels as defenders. The assisting nation
+must be an enemy of the occupier. The choice is locked when the first battle
+session starts; before then, use `/sw town revoltassist none` to clear it.
+
 ## Siege Limits
 
 Your nation's level sets its maximum number of active offensive sieges.
