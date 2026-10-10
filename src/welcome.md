@@ -13,7 +13,7 @@
 
 ### A unique medieval roleplay experience in Minecraft
 
-1.21.11 no mods required
+Versions 1.21.11/26.3 - no mods required
 
 - 1:200 scale map of Eurasia 🗺
 - Medieval weaponry and overhauled combat system ⚔
