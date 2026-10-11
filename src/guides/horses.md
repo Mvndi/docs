@@ -34,6 +34,3 @@ Horses and camels slow down as their passengers carry more [equipment weight](./
 | Over 50 to 100 | 50% |
 | Over 100 | 10% |
 
-These percentages apply to the mount's movement speed. For example, two camel riders carrying 30 equipment weight each have a combined load of 60, so the camel moves at 50% speed.
-
-The speed adjusts automatically when passengers mount or dismount, or when their equipment changes. Carry lighter equipment to reduce the slowdown.
