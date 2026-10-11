@@ -22,3 +22,18 @@ Horse & Camel stats have been changed:
 - Jump: 1.4 to 1.9 blocks high (A fence height)
 
 Hitting other players or mobs with a horse does trample damage to the players or mobs if your riding fast enough.
+
+## Mount equip load
+
+Horses and camels slow down as their passengers carry more [equipment weight](./combat.md#equip-load). Each mount has a carrying capacity of 100. The equipment weight of all passengers counts toward that capacity, including both riders on a camel.
+
+| Combined passenger equipment weight | Mount movement speed |
+| --- | --- |
+| 0 to 25 | 100% |
+| Over 25 to 50 | 70% |
+| Over 50 to 100 | 50% |
+| Over 100 | 10% |
+
+These percentages apply to the mount's movement speed. For example, two camel riders carrying 30 equipment weight each have a combined load of 60, so the camel moves at 50% speed.
+
+The speed adjusts automatically when passengers mount or dismount, or when their equipment changes. Carry lighter equipment to reduce the slowdown.
