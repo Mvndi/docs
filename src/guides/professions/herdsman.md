@@ -21,7 +21,7 @@ breeding, fishing, carts, and [animal genetics](./breeding.md).
 
 ### Full Skill Tree
 
-![Herdsman Skill Tree](../../assets/professions/herdsman/herdsmantree.png)
+![Herdsman Skill Tree](../../assets/professions/herdsman/herdsman_tree.png)
 
 ---
 

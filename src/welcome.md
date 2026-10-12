@@ -24,7 +24,7 @@ Versions 1.21.11/26.3 - no mods required
 
 ### Contact
 
-- Email: <admin@mvndicraft.net>
+- Email: [admin@mvndicraft.net](mailto:admin@mvndicraft.net)
 - Player & Bug Reporting: `#support-ticket` channel in the Discord server.
 
 ### Affiliation Disclaimer
