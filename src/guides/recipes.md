@@ -390,7 +390,7 @@ This might be outdated over time, you should use the in game `/recipes` if you c
 
 ### Gunpowder
 
-![gunpowder](../assets/recipes/gunpowder.png)
+![gunpowder](../assets/recipes/Gunpowder.png)
 
 ## Light Armor
 

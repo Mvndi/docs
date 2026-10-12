@@ -87,7 +87,7 @@ You can upgrade or view your health/stamina/etc in the `/attributes` or `/stats`
     - there is no cooldown during a war/raid
   - the killer gets 10% of the victims money
 
-Passive mobs, like horses, frogs, cows don't give attribute XP, though they do give profession XP (see [herdsman](./professions/herdsman)).
+Passive mobs, like horses, frogs, cows don't give attribute XP, though they do give profession XP (see [herdsman](./professions/herdsman.md)).
 
 ### I placed boat and it's not moving
 
