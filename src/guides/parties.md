@@ -9,9 +9,9 @@ To use the party system, do `/party invite <player>` which invites a player to y
     style="align:left; min-width:10%; max-width: 80%;"
 />
 
-#
 
-A player that is in a party can benefit from **bonus XP** sharing from other members of the party, provided he is eligible. To be eligible, you must be within a radius of 100 blocks from the primary gainer of the XP. See [command #6](#list-of-commands) below for a method of quickly checking the distance. 
+## Bonus XP
+A player that is in a party can benefit from bonus XP sharing from other members of the party, provided he is eligible. To be eligible, you must be within a **100 blocks radius**  from the primary gainer of the XP. See [command #6](#list-of-commands) below for a method of quickly checking the distance. 
 
 The **primary gainer** is the person that, for instance, mined an ore, killed a wolf, farmed a crop, made something as a blacksmith.
 
