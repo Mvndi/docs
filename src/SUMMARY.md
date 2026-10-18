@@ -42,6 +42,7 @@
   - [Towny Roads](./guides/towny_roads.md)
   - [Raids](./guides/raids.md)
   - [War](./guides/war/war.md)
+    - [War Justification and Treaties](./guides/war/war_justification_and_treaties.md)
     - [Starting a Siege](./guides/war/starting_a_siege.md)
     - [Siege Camps](./guides/war/siege_camps.md)
     - [Battle Sessions](./guides/war/battle_sessions.md)
