@@ -14,6 +14,9 @@ bi-weekly [Battle Sessions](./battle_sessions.md).
      from your nation bank.
   2. A war chest worth **100 Ducats per plot claimed by the defending town**
      from your nation bank.
+
+  Capital targets add 25% to both amounts. When [religions](../religion/religion.md)
+  are enabled, a town focused on Holy wars doubles both amounts again.
 - To start the siege, go right outside the defending town's border in unclaimed
   lands and **place a non-white banner on the ground**.
 - Newly established towns have 2 weeks of siege immunity
@@ -57,6 +60,27 @@ slot for the next scheduled siege week.
 Losses stack down to zero slots; administrative siege removal does not count.
 The normal limit returns the following siege week unless further losses apply.
 Use `/nation <name>` to see the current limit and the next week's penalty.
+
+### Holy wars
+
+When the religion system is enabled, a nation whose capital follows a religion
+with Holy wars active can exceed its normal siege limit once every three weeks
+against another religion. Each nation has its own cooldown.
+
+The defending nation's capital determines the target religion. A nationless
+town uses its own religion. Targets without a religion do not qualify.
+
+Place a non-white banner as usual. The extra allowance is used only when a
+successful conquest declaration exceeds the normal limit. Normal declaration
+fees, war chest payments, enemies, immunity, distance, and schedule restrictions
+still apply. Holy wars does not grant a free siege.
+
+The Started Sieges counter in `/nation` shows active offensive sieges against the
+normal limit; it does not add Holy wars to the displayed maximum. A successful
+extra declaration can therefore show a count above that maximum.
+
+See [Religion mechanics](../religion/mechanics.md#holy-wars) for eligibility and
+the focused town's doubled defensive siege cost.
 
 ## Sieging a capital
 

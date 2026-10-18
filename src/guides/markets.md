@@ -47,6 +47,8 @@ Stand in a market chunk belonging to your own town, hold the item or stack in yo
 
 The price is for the entire held stack, not each item. Prices must be between 1 and 1,000,000 ducats. Listing removes the stack from your hand and places it in that town's market, with you recorded as the seller.
 
+Your active listing limit applies across all towns. The market menu shows your current capacity. When [religion mechanics](./religion/mechanics.md) are enabled, Trade patronage adds five listings for followers, or ten if their town focuses it.
+
 ## Taking items back
 
 Click your own listing to take it off the market and receive the item. The `My items` button shows your listings across all towns and can be used from anywhere. Returned items also drop at your feet if your inventory is full.
