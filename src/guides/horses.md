@@ -30,7 +30,7 @@ Horses and camels slow down as their passengers carry more [equipment weight](./
 | Combined passenger equipment weight | Mount movement speed |
 | --- | --- |
 | 0 to 25 | 100% |
-| Over 25 to 50 | 70% |
-| Over 50 to 100 | 50% |
-| Over 100 | 10% |
+| Over 25 to 50 | 80% |
+| Over 50 to 100 | 60% |
+| Over 100 | 20% |
 
