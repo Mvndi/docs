@@ -32,6 +32,7 @@
   - [Animals](./guides/animals.md)
   - [Horses & Mounts](./guides/horses.md)
   - [Hostile Mobs](./guides/hostile_mobs.md)
+  - [LLMNPCs](./guides/llmnpcs.md)
   - [Parties](./guides/parties.md)  
   - [Seasons](./guides/seasons.md)
   - [Temperature](./guides/temperature.md)
