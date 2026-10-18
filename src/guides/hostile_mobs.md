@@ -27,6 +27,20 @@ Brigands have various weapons and armors that depend on the region they spawn in
 Brigands are hard to kill, especially for a solo player. Make sure to be prepared before fighting them.
 Musketeer brigands can have an arquebus that will most likely oneshot you.
 
+### Capturing brigands as rowers
+
+Bandit nets and captured rowers are currently available on the Build test server.
+
+Weaken a regular brigand to below 25% of its maximum health, then right-click with a bandit net to throw it. The net must hit the brigand. A brigand at exactly 25% health cannot be captured. Brigand leaders and musketeers cannot be captured.
+
+Throwing a net consumes it, even if you miss or hit a brigand with too much health. A successful capture turns the brigand into a mannequin with the Steve skin. Its weapons and armor disappear without dropping.
+
+The captured rower belongs to the player who threw the net and starts following them. Right-click your rower to switch between following and staying. Captured rowers cannot speak or change their skin or equipment.
+
+To put a following rower into a ship seat, sneak-right-click an empty passenger or rowing seat with the rower nearby. Your nearest following rower within six blocks boards the seat. Sneak-right-click the seat again to release your rower. Captured rowers cannot use steering, drum, bell, or siege weapon seats.
+
+Each captured rower in a rowing seat contributes as one rower to the ship's speed. See [boats](./boats/boats.md#captured-rowers) for ship seating.
+
 ## Wolves
 
 Wolves spawn in packs of various sizes.

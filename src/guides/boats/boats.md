@@ -123,6 +123,12 @@ massive the recorder just has scale 4)
     `1 + 0.15 * shields_percentage` where shields_percentage is how many shields
     are installed divided by how many shields slots a ship has.
 
+### Captured rowers
+
+Captured rowers are currently available on the Build test server. See [capturing brigands](../hostile_mobs.md#capturing-brigands-as-rowers) for how to capture one with a bandit net and make it follow you.
+
+Sneak-right-click an empty passenger or rowing seat to board your nearest following rower within six blocks. Sneak-right-click the occupied seat again to release it. Each captured rower in a rowing seat contributes as one rower to the ship's speed. They cannot use steering, drum, bell, or siege weapon seats.
+
 ### Movement and Physics
 
 - **Walking on Deck**: Players can stand and walk on ships while docked,
