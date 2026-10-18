@@ -6,6 +6,11 @@ PM UTC.
 
 You can see when the next battle session is with the `/sw nextsession` command.
 
+Saturday sessions can proceed without a [siege camp](./siege_camps.md). For Sunday,
+attackers need a standing camp before the session begins. A siege without one
+ends as a defender victory when the session starts. This also applies to sieges
+declared using [Holy wars](../religion/mechanics.md#holy-wars).
+
 ## Holding/Capturing the Banner
 
 Control the siege banner to gain points for your team. Defenders typically hold
