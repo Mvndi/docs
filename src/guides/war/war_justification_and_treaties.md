@@ -74,6 +74,8 @@ The war system requires active Admin oversight. No war may begin without Admin a
 
 ## Ally Restrictions
 
+Ally limits are enforced automatically through war sickness, rather than by Admins. War sickness is applied dynamically based on the number of allied nations on each side in a siege zone. If a side exceeds its limit, the allied nations that entered most recently receive war sickness until a slot becomes available.
+
 | War type | Ally restriction |
 | --- | --- |
 | Conquest | 4 per side (vassals and protectorates included) |
