@@ -78,18 +78,18 @@ Ally limits are enforced automatically through war sickness, rather than by Admi
 
 | War type | Ally restriction |
 | --- | --- |
-| Conquest | 4 per side (vassals and protectorates included) |
-| Despoliation | 1 for attackers and 2 for defenders (vassals and protectorates included) |
-| Rebellion | 2 per side (vassals and protectorates included) |
-| Subjugation | 3 per side (vassals and protectorates included) |
+| Conquest | 4 per side |
+| Despoliation | 1 for attackers and 2 for defenders |
+| Rebellion | 2 per side |
+| Subjugation | 3 per side |
 | Humiliation | No allies allowed |
-| Liberation | 2 per side (vassals and protectorates included) |
-| Retaliation | 2 per side (vassals and protectorates included) |
-| Secession | 3 per side (vassals and protectorates included) |
-| Economic conflict | 1 per side (vassals and protectorates included) |
-| Treaty violation | 2 per side (vassals and protectorates included) |
-| Coalition war | 9 per side (vassals and protectorates included) |
-| Holy war | 4 per side of the same religion (vassals and protectorates included) |
+| Liberation | 2 per side |
+| Retaliation | 2 per side |
+| Secession | 3 per side |
+| Economic conflict | 1 per side |
+| Treaty violation | 2 per side |
+| Coalition war | 9 per side |
+| Holy war | 4 per side |
 
 ## Truces
 
