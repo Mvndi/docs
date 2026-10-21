@@ -1,23 +1,23 @@
 # Religion Mechanics and Town Focus
 
-Governors choose up to three distinct mechanics in an ordered queue through `/religion faith mechanics`. Town mayors then choose one queued mechanic as their town's focus.
+Religious heads choose up to three distinct mechanics in an ordered queue through `/religion faith mechanics`. Town mayors then choose one queued mechanic as their town's focus.
 
 These are the default values for the [religion system](./religion.md), which is being tested before release on Survival.
 
 ## Unlocking mechanics
 
-Each 100 followers unlocks one slot, up to three:
+Each 300 followers unlocks one slot, up to three:
 
 | Followers | Available slots |
 | --- | --- |
-| Under 100 | 0 |
-| 100–199 | 1 |
-| 200–299 | 2 |
-| 300 or more | 3 |
+| Under 300 | 0 |
+| 300–599 | 1 |
+| 600–899 | 2 |
+| 900 or more | 3 |
 
 The count includes all non-NPC residents of affiliated towns, including offline residents. The first queued mechanic uses the first slot, the second uses the second slot, and the third uses the third slot.
 
-Governors can queue choices before their slots unlock. Population loss locks slots again. Staff can grant a fixed slot allowance to a smaller religion. A mechanic disabled by the server provides no benefit and does not move later choices forward in the queue.
+Religious heads can queue choices before their slots unlock. Population loss locks slots again. Staff can grant a fixed slot allowance to a smaller religion. A mechanic disabled by the server provides no benefit and does not move later choices forward in the queue.
 
 ## Changing the queue and focus
 

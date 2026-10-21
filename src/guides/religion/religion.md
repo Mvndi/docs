@@ -17,6 +17,8 @@ Run `/religion` to open the main menu. Hover over items for requirements, balanc
 | `/religion faith` | Open your religion's profile. |
 | `/religion faith bank` | View the shared bank and transfer funds. |
 | `/religion faith mechanics` | View the religion's mechanic queue. |
+| `/religion faith constitution` | View religious identity and leadership rules. |
+| `/religion faith succession` | View an election, stand as a candidate, or vote. |
 | `/religion faith chat <message>` | Send a message to followers across towns and nations. |
 
 Use `/religion help`, `/religion town help`, or `/religion faith help` for command help. Leadership, ranks, notices, land, and other settings are available through the menus.
@@ -25,7 +27,7 @@ Use `/religion help`, `/religion town help`, or `/religion faith help` for comma
 
 Religion belongs to your town. All residents follow their town's religion automatically. Moving towns changes your religion with it. A nation's religion is its capital's religion; its other towns can choose a different religion or remain unaffiliated.
 
-As mayor, open a religion's profile and apply to join. You can also use `/religion town apply <religion>`. A governor or officer with invitation authority must approve the application.
+As mayor, open a religion's profile and apply to join. You can also use `/religion town apply <religion>`. A religious head or officer with invitation authority must approve the application.
 
 Religious officers can invite a town instead. Its mayor receives a notification and can accept through the invitations menu or `/religion town accept <religion>`. Applications and invitations expire after 72 hours, with reminders on login. They become invalid if the mayor or the town's affiliation changes before acceptance.
 
@@ -33,11 +35,25 @@ Mayors can leave through the town menu. Changing a town's religion normally has 
 
 ## Founding a religion
 
-Only a mayor can found a religion. Select Create religion in `/religion`, enter an ID and display name, and choose a single governor or a council.
+Only a mayor can found a religion. Select Create religion in `/religion`, enter an ID and display name, and choose a single religious head or a council, then select a family and one of its traditions.
 
-Founding costs 1,000,000 ducats from the mayor's personal balance. The founder becomes governor and their town joins automatically. Religions can recruit towns from different nations.
+Founding costs 1,000,000 ducats from the mayor's personal balance. The founder becomes religious head and their town joins automatically. Religions can recruit towns from different nations.
 
-Governors manage [ranks, funds, and religious land](./governance.md), and select the religion's [mechanics](./mechanics.md). Dissolving a religion clears its towns' affiliations and releases its plots. Withdraw shared funds before dissolution. A dissolved religion's ID can be used again.
+Religious heads manage [ranks, funds, and religious land](./governance.md), and select the religion's [mechanics](./mechanics.md). Dissolving a religion clears its towns' affiliations and releases its plots. Withdraw shared funds before dissolution. A dissolved religion's ID can be used again.
+
+## Families and traditions
+
+A religion chooses one family and one tradition within that family. These describe its roleplay identity. Gameplay bonuses come from the separate [mechanic queue](./mechanics.md).
+
+| Family | Traditions |
+| --- | --- |
+| Christianity | Latin Catholic, Eastern Orthodox, Oriental Orthodox, Church of the East, Protestant |
+| Islam | Sunni, Shia, Ibadi |
+| Judaism | Rabbinic, Karaite |
+| Zoroastrianism | Mazdean |
+| Pagan | Germanic, Slavic, Baltic, Steppe |
+
+Open a religion's profile and select Religious constitution to view its family, tradition, and leadership rules. Religious heads can change its family and tradition there, subject to council approval. Religions showing Unassigned can choose a profile through the same menu.
 
 ## Finding your focus
 
