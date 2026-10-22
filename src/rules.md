@@ -13,7 +13,7 @@ All rules apply equally to text and voice — in-game voice chat falls under in-
 #### Tier
 
 | Tier |
-|------|
+| ------ |
 | T1 — Minor |
 | T2 — Medium |
 | T3 — Major |
@@ -32,9 +32,9 @@ All rules apply equally to text and voice — in-game voice chat falls under in-
 
 Chat violations default to mutes rather than bans. Severe chat violations (T4, slurs, sexual harassment) skip the mute track entirely and go straight into the ban system.
 
-|Mute Punishment |
-|----------------|
-|Informal warning only |
+| Mute Punishment |
+| ---------------- |
+| Informal warning only |
 | 1-hour mute |
 | 6-hour mute |
 | 24-hour mute |
@@ -43,11 +43,10 @@ Chat violations default to mutes rather than bans. Severe chat violations (T4, s
 
 ### Discord System
 
-
 #### Discord Punishment Thresholds
 
 | Punishment |
-|-----------|
+| ----------- |
 | Informal warning (not logged) |
 | Formal warning (logged) |
 | 1-hour timeout |
@@ -156,9 +155,9 @@ Any mod not listed as explicitly allowed whose primary purpose is to provide inf
 - **2.5 (T2)** Racial slurs are forbidden.
 - **2.6 (T2–T4)** Jokes, statements, encouragement, or targeted remarks involving suicide or self-harm, pedophilia, child abuse, or similarly severe and reprehensible subjects are prohibited.
 *Severity is determined by the nature of the statement, whether it was directed at another person, its apparent intent, repetition, surrounding context, and relevant recent offenses.*
-__T2__: Non-targeted or comparatively less severe references made without apparent malicious intent.
-__T3__: Targeted, hostile, repeated, or otherwise aggravated remarks.
-__T4__: Direct encouragement, wishes, or instructions for another person to seriously harm or kill themselves, credible threats, or exceptionally severe conduct.
+**T2**: Non-targeted or comparatively less severe references made without apparent malicious intent.
+**T3**: Targeted, hostile, repeated, or otherwise aggravated remarks.
+**T4**: Direct encouragement, wishes, or instructions for another person to seriously harm or kill themselves, credible threats, or exceptionally severe conduct.
 Provocation or surrounding circumstances may be considered when determining severity, but do not excuse otherwise unacceptable conduct. Any misconduct by other involved players should be evaluated separately.
 
 ---
@@ -172,7 +171,7 @@ Provocation or surrounding circumstances may be considered when determining seve
 ### 4.1 — Moats
 
 | Rule | Tier | Description |
-|------|------|-------------|
+| ------ | ------ | ------------- |
 | 4.1.1 | T2 | Moat width may not exceed 10% of the longest straight-line dimension of the enclosed area, and can never exceed 20 blocks regardless of town size. |
 | 4.1.2 | T2 | Moats must be filled with water to at least 2 blocks below ground level on the interior side. |
 | 4.1.3 | T3 | Moats may not be filled with lava or dripstone spikes. |
@@ -195,7 +194,7 @@ Provocation or surrounding circumstances may be considered when determining seve
 > Staff may use world edit to help remove violations if requested.
 
 | Rule | Tier | Description |
-|------|------|-------------|
+| ------ | ------ | ------------- |
 | 4.2.1 | T2 | Walls must not be plain "factions-style" cube walls. They must have architectural character appropriate to the server's time period. |
 | 4.2.2 | T3 | Walls may not contain water, lava, or obsidian. |
 | 4.2.3 | T2 | Walls may not exceed 10 blocks in thickness. The 10 thickness consists of 7 blast resistant blocks and an additional 3 non-blast resistant blocks (including gravity blocks). Keeps however are limited to only having 6 blocks maximum of thickness. Gravity blocks for keeps are NOT permitted
@@ -274,6 +273,7 @@ NAPs are allowed as part of roleplay diplomacy but are **not enforceable by staf
 - **4.7.1** Scamming and lying in peace treaties is allowed. Admins may serve as neutral middlemen but will not knowingly participate in scams.
 - **4.7.2** Mass-leaving your town after it becomes occupied is not allowed.
 - **4.7.3** If the mayor decides to leave the town after losing a siege, the mayor may do so, however the mayor is not allowed to make a new town within the nation, or create a new nation that is vassalized, or create an "allied" nation that is in disguise. The nation the mayor is to make must not have the same people from the previous town, or be allied to or against the same nations that the mayor had relations with. The mayor may join a town within nation but only as a resident.
+
 ---
 
 ### 4.8 — Siege Banner / Town Spawn / Siege Camp
@@ -286,7 +286,7 @@ NAPs are allowed as part of roleplay diplomacy but are **not enforceable by staf
 - **4.8.6 (T3)** Siege camp banner must be at the natural ground level. Ocean siege camps must not be further than 2 chunks from naturally generated land, with a bridge connecting to the mainland.
 - **4.8.7 (T3)** Siege camp structures must be at or less than 30 blocks high from natural ground level.
 - **4.8.8 (T3)** Stable plots may not overlap or be placed within two chunk of the towns homeblock
-- **4.8.9 (T3)** Keeps need clear path to entryways with enough space Infront of them to place down siege machines 
+- **4.8.9 (T3)** Keeps need clear path to entryways with enough space Infront of them to place down siege machines
 
 ---
 
@@ -321,7 +321,6 @@ NAPs are allowed as part of roleplay diplomacy but are **not enforceable by staf
 A siege town is defined as any town within the attacking nation that is used to provide an unfair advantage in war:
 
 - A town created to function as a closer respawn point against an enemy nation is not allowed.
-- A town may not be made a capital for the sole purpose of extending siege range to attacking towns.
 - A vassal nation started by prior members of the attacking nation may not be allowed to create a capital closer to a pre-existing enemy nation. They must stay in within similar range of the parent nation. (A pre-exisiting enemy is defined as a nation who has had a siege decleration put on them in the past)
 
 > Reports of a town created must be made during the siege immunity period for that town (two weeks), otherwise it will be considered that permission was given by the opposing nation.
@@ -366,6 +365,7 @@ Fail RP is defined as the failure to commit to roleplay or act in a manner consi
 
 **1. Failure to cooperate with an occupying nation after conquest.**
 Rebellion, espionage, and scheming for your previous nation are allowed and encouraged. The following are NOT allowed:
+
 - Deliberately sending your town to ruin to spite an occupying nation
 - Mass-griefing towns of the occupying nation
 - Mass-leaving a town after it has been occupied
