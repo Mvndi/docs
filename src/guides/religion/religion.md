@@ -2,8 +2,6 @@
 
 Religions connect towns across national borders through clergy, shared funds, land, and common policies. Followers can organize a community alongside their town and nation.
 
-> Religions are being tested before release on Survival. The values in these guides are the default settings; test servers may use different values.
-
 ## Using the menus
 
 Run `/religion` to open the main menu. Hover over items for requirements, balances, and explanations. Text entry uses private chat prompts, and consequential actions ask for confirmation.
