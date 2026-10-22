@@ -341,6 +341,8 @@ A siege town is defined as any town within the attacking nation that is used to 
 - **8.2 (T3)** Nations may not be created by the same group of players as another existing nation in an unrealistically distant or disconnected region.
   - **8.2.1** This also applies to nations that are formally separate but functionally operate as vassals or extensions of another nation.
 - **8.3** Federations are allowed as long as they make historical sense and formal player agreements are documented.
+- **8.4 (T3)** Religions must have historically plausible names and identities within the server's timeframe (476–1550 AD). Plausible alternate-history branches are allowed.
+  - **8.4.1 (T3)** Joke religions and sect names are not permitted. Choosing a historical family or tradition does not exempt a religion from this rule.
 
 ---
 

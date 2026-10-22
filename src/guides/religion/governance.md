@@ -66,6 +66,14 @@ Every religion has a shared bank, separate from town and nation banks. Open it w
 
 Followers can deposit personal funds. Religious heads and ranks with bank withdrawal power can withdraw to their personal balance. The bank also receives income from Providence and Outsider tax when those [mechanics](./mechanics.md) are active.
 
+## Tithes
+
+Each affiliated town pays a tithe into its religion's bank every Towny day. The default is 1% of the town's daily upkeep, paid in addition to normal upkeep. For example, a town with 1,000 ducats of upkeep pays 10 ducats to its religion at 1%.
+
+Religious heads can change the rate in `/religion faith bank`, up to 10% by default. Council approval applies. A rate of 0% waives tithes for the religion. Tithes do not use a mechanic slot and are separate from Outsider tax.
+
+The amount uses Towny's calculated upkeep, including any overclaim penalty, and rounds down to whole cents. Towns with no positive upkeep, ruined or bankrupt towns, and towns unable to afford the full tithe do not pay. An unpaid tithe does not create debt or accumulate arrears.
+
 ## Religious plots
 
 Religions can own plots inside existing Towny towns. These plots appear as `R` on the Towny map. The surrounding claim remains part of its town.

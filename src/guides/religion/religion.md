@@ -37,6 +37,8 @@ Mayors can leave through the town menu. Changing a town's religion normally has 
 
 Only a mayor can found a religion. Select Create religion in `/religion`, enter an ID and display name, and choose a single religious head or a council, then select a family and one of its traditions.
 
+Religion names and identities must follow the [historical-accuracy rules](../../rules.md#section-8--nations): they must be plausible within 476–1550 AD. Plausible alternate-history branches are allowed; joke religions and sect names are not.
+
 Founding costs 1,000,000 ducats from the mayor's personal balance. The founder becomes religious head and their town joins automatically. Religions can recruit towns from different nations.
 
 Religious heads manage [ranks, funds, and religious land](./governance.md), and select the religion's [mechanics](./mechanics.md). Dissolving a religion clears its towns' affiliations and releases its plots. Withdraw shared funds before dissolution. A dissolved religion's ID can be used again.
