@@ -2,6 +2,19 @@
 
 LLMNPCs are AI characters you can create, dress, and talk to in the world. Each character has a persona and its own conversations.
 
+## Rank access and limits
+
+Donator and higher ranks can talk to NPCs. Sponsor and higher ranks can also create characters and place them in the world.
+
+| Rank | Talk to NPCs | Create characters | NPCs placed at once |
+| --- | --- | --- | --- |
+| Default | No | No | 0 |
+| Donator | Yes | No | 0 |
+| Sponsor | Yes | Yes | 3 |
+| Benefactor | Yes | Yes | 5 |
+
+You can own up to 10 characters. Your placement limit applies across all your characters, with one mannequin per character. Remove a mannequin to free a placement slot without deleting its character.
+
 ## Create a character
 
 1. Run `/npc` (or `/llmnpcs`) and choose **Create character**.
@@ -10,7 +23,7 @@ LLMNPCs are AI characters you can create, dress, and talk to in the world. Each 
 4. Choose the visibility and save.
 5. Open the character's **Spawn & movement** menu and choose **Spawn here**.
 
-Use **View my characters** in `/npc` to return to a character's settings. Creation is available when your server access allows it.
+Use **View my characters** in `/npc` to return to a character's settings. Creating or remixing a character requires Sponsor or higher.
 
 A character can have one mannequin in the world at a time. Use **Move here** to relocate an existing mannequin. **Follow me** makes it follow you; **Stay here** stops it. **Remove mannequin** removes its body, while **Delete character** deletes the character after confirmation.
 
