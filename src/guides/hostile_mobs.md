@@ -1,6 +1,6 @@
 # Hostile Mobs
 
-Killing hostile mobs is the only way to get [combat](./combat) experience.
+Killing hostile mobs is the main way to get [combat](./combat.md) experience.
 There are 5 customized mobs in MvndiCraft, rats, brigands, wolves, boars & bears.
 
 Each of them spawns with vanilla spawing rules. This rules are well explain in [Minecraft.wiki](https://minecraft.wiki/w/Mob_spawning).
@@ -13,6 +13,7 @@ Some mobs are easier to kill with some weapon damage type.
 Rats can be found in caves.
 They spawn in darkness (if the light level is is 7 or less), during daytime & during nighttime, only underground.
 They can spawn in towns, make sure to light your town to avoid rats.
+They have higher spawn rates in ruined towns.
 
 Rats are easy to kill, any weapon will kill them in a single hit and they don't do much damage.
 Just make sure to bring at least a bludgeon to kill them easily when exploring caves.
@@ -21,7 +22,7 @@ Just make sure to bring at least a bludgeon to kill them easily when exploring c
 
 Brigands spawn in small groups almost anywhere on the map.
 They spawn in darkness at nighttime, only on overground.
-They never spawn in town.
+They never spawn in towns, however, they have higher spawn rates in ruined towns.
 
 Brigands have various weapons and armors that depend on the region they spawn in.
 Brigands are hard to kill, especially for a solo player. Make sure to be prepared before fighting them.
@@ -46,6 +47,7 @@ Each captured rower in a rowing seat contributes as one rower to the ship's spee
 Wolves spawn in packs of various sizes.
 Wolves spawn during nighttime no matter the light level.
 Wolves spawn all over the map in most biomes.
+Wolves flee from you if you hold a torch.
 They never spawn in town.
 
 Wolves only hunt during nighttime. During daytime, they are peaceful. If you heard some howling, it's a wolf pack hunting.
