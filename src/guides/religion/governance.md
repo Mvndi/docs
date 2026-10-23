@@ -60,6 +60,12 @@ Religious heads can set a religion notice and enable or disable its login messag
 
 Religious heads also choose the menu background shown to their followers. The background picker includes a preview before applying the choice.
 
+## Map colors
+
+Religious heads can choose a color for Meridian's Religion map mode. Open `/religion faith`, select Settings, then Map color. Enter a Towny nation color name such as `red`, a six-digit hex color such as `#3388ff`, or `auto` to use the generated color. Council approval applies.
+
+The chosen color appears on affiliated towns' territory and beside the religion's name in the map legend. Political mode uses nation colors, with nationless towns sharing the default blue color.
+
 ## Shared bank
 
 Every religion has a shared bank, separate from town and nation banks. Open it with `/religion faith bank`.

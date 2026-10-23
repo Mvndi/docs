@@ -51,7 +51,8 @@ A religion chooses one family and one tradition within that family. These descri
 | Islam | Sunni, Shia, Ibadi |
 | Judaism | Rabbinic, Karaite |
 | Zoroastrianism | Mazdean |
-| Pagan | Germanic, Slavic, Baltic, Steppe |
+| Pagan | Germanic, Slavic, Baltic, Steppe, Hellenic |
+| Gnostic | Manichaean, Mandaean |
 
 Open a religion's profile and select Religious constitution to view its family, tradition, and leadership rules. Religious heads can change its family and tradition there, subject to council approval. Religions showing Unassigned can choose a profile through the same menu.
 
