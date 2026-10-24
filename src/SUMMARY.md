@@ -4,6 +4,7 @@
 - [Rules](./rules.md)
   - [Appeals](./appeals.md)
 - [Guides](./guides/guides.md)
+  - [Donator Ranks](./guides/donator_ranks.md)
   - [Color Codes](./guides/color_codes.md)
   - [Recipes](./guides/recipes.md)
   - [Markets](./guides/markets.md)
