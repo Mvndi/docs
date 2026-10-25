@@ -4,11 +4,11 @@ LLMNPCs are AI characters you can create, dress, and talk to in the world. Each 
 
 ## Rank access and limits
 
-Donator and higher ranks can talk to NPCs. Sponsor and higher ranks can also create characters and place them in the world.
+Everyone can talk to LLMNPCs; no paid rank is required. Sponsor and higher ranks can also create characters and place them in the world.
 
 | Rank | Talk to NPCs | Create characters | NPCs placed at once |
 | --- | --- | --- | --- |
-| Default | No | No | 0 |
+| Default | Yes | No | 0 |
 | Donator | Yes | No | 0 |
 | Sponsor | Yes | Yes | 3 |
 | Benefactor | Yes | Yes | 5 |
