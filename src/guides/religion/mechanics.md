@@ -2,8 +2,6 @@
 
 Religious heads choose up to three distinct mechanics in an ordered queue through `/religion faith mechanics`. Town mayors then choose one queued mechanic as their town's focus.
 
-These are the default values for the [religion system](./religion.md), which is being tested before release on Survival.
-
 ## Unlocking mechanics
 
 Each 300 followers unlocks one slot, up to three:
