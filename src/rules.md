@@ -236,10 +236,7 @@ Provocation or surrounding circumstances may be considered when determining seve
 - **4.5.4 (T3)** Camping within 10 blocks of a siege camp — stationary positioning for more than 30 seconds without active engagement — is not allowed.
 - **4.5.5 (T2)** Building or destroying blocks with the deliberate intent of denying siege weapon placement is not allowed.
 - **4.5.6 (T2–T3)** Door defenses requiring more than 2 sequential interactions to pass, or designed to trap or cycle players, are not allowed.
-- **4.5.7 (T3)** Spawn killing — repeatedly killing the same player at or near their spawn point outside of an active siege or raid — is not allowed.
-- **4.5.8 (T2)** Damaging livestock or ships present in town claims outside of an active siege or raid - is not allowed
-
-> "Repeatedly" is defined as 3+ kills of the same player within a 10-minute window without the victim initiating combat.
+- **4.5.7 (T2)** Damaging livestock or ships present in town claims outside of an active siege or raid - is not allowed
 
 ---
 
@@ -320,7 +317,6 @@ NAPs are allowed as part of roleplay diplomacy but are **not enforceable by staf
 
 A siege town is defined as any town within the attacking nation that is used to provide an unfair advantage in war:
 
-- A town created to function as a closer respawn point against an enemy nation is not allowed.
 - A vassal nation started by prior members of the attacking nation may not be allowed to create a capital closer to a pre-existing enemy nation. They must stay in within similar range of the parent nation. (A pre-exisiting enemy is defined as a nation who has had a siege decleration put on them in the past)
 
 > Reports of a town created must be made during the siege immunity period for that town (two weeks), otherwise it will be considered that permission was given by the opposing nation.
