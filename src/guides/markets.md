@@ -1,5 +1,7 @@
 # Market Guide
 
+Completed trades can reward attribute XP and advance [daily and weekly objectives](./objectives.md).
+
 ## Market chunks
 
 To create a market chunk, your town must pay 10,000 for each market chunk. Stand in one of your town's claimed chunks and use:

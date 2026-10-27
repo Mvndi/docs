@@ -9,3 +9,5 @@ Various resources and crafting recipes are locked behind professions such as nee
 Profession XP is shown in the hud to the left of your hotbar, it's seperate than attribute XP. If you want the exact xp use `/mu stats`.
 
 Each profession level require a bit more xp than the previous level.
+
+Work in your selected professions also advances [daily and weekly objectives](../objectives.md), which reward attribute XP and a bonus to the following week's attribute XP gains.

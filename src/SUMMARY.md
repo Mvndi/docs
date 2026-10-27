@@ -9,6 +9,7 @@
   - [Recipes](./guides/recipes.md)
   - [Markets](./guides/markets.md)
   - [Bounties](./guides/bounties.md)
+  - [Daily & Weekly Objectives](./guides/objectives.md)
   - [Professions](./guides/professions/professions.md)
     - [Farmer](./guides/professions/farmer.md)
     - [Herdsman](./guides/professions/herdsman.md)
