@@ -13,6 +13,7 @@ Run `/religion` to open the main menu. Hover over items for requirements, balanc
 | `/religion town` | View your town's affiliation and focus. |
 | `/religion town invitations` | Review invitations to your town. |
 | `/religion faith` | Open your religion's profile. |
+| `/religion faith banner` | Set the menu banner from the banner in your main hand (religious heads only). |
 | `/religion faith bank` | View the shared bank and transfer funds. |
 | `/religion faith mechanics` | View the religion's mechanic queue. |
 | `/religion faith constitution` | View religious identity and leadership rules. |
@@ -20,6 +21,12 @@ Run `/religion` to open the main menu. Hover over items for requirements, balanc
 | `/religion faith chat <message>` | Send a message to followers across towns and nations. |
 
 Use `/religion help`, `/religion town help`, or `/religion faith help` for command help. Leadership, ranks, notices, land, and other settings are available through the menus.
+
+## Religion banner
+
+Banner customization is currently available on the Build server for testing.
+
+Religious heads can set the banner shown for their religion in the menus. Hold a banner in your main hand and run `/religion faith banner`. Its color and patterns are saved without consuming the banner. Any current religious head can change it immediately, including a head on a council; no vote is required. Reopen the menu to see the banner.
 
 ## Joining a religion
 
