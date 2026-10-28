@@ -4,7 +4,7 @@ Seasons and temperatures affects plant growth and will affect animals and player
 For example, like in the real world cacti can't grow in the fields of Norway.
 
 Seasons cycle affect temperatures (which affects plants), animals and players.
-Each season last 14 days, and update on monday morning (UTC time).
+Each season last 14 days, and change on monday morning (UTC time). You can check next season change with `/season whenNext`.
 
 ## Spring
 
