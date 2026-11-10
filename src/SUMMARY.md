@@ -17,6 +17,7 @@
     - [Blacksmith](./guides/professions/blacksmith.md)
     - [Miner](./guides/professions/miner.md)
     - [Seaman](./guides/professions/seaman.md)
+    - [Architect](./guides/professions/architect.md)
   - [Boats](./guides/boats/boats.md)
     - [Cog](./guides/boats/cog.md)
     - [Dromon](./guides/boats/dromon.md)
