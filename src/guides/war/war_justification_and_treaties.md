@@ -80,7 +80,7 @@ Ally limits are enforced automatically through war sickness, rather than by Admi
 | --- | --- |
 | Conquest | 4 per side |
 | Despoliation | 1 for attackers and 2 for defenders |
-| Rebellion | 2 per side |
+| Rebellion | 1 per side |
 | Subjugation | 3 per side |
 | Humiliation | No allies allowed |
 | Liberation | 2 per side |
