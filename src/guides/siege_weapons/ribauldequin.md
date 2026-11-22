@@ -10,7 +10,7 @@ With an empty hand, right or left click to raise or lower the barrels. Sneak and
 
 ## Loading
 
-Right click with three Gunpowder Pouches, then right click with one Canister Shot. Vanilla gunpowder cannot be used.
+Right click with three Gunpowder Pouches, then right click with one Canister Shot.
 
 ## Firing
 
