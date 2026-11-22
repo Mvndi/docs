@@ -60,6 +60,7 @@
     - [Ballista](./guides/siege_weapons/ballista.md)
     - [Cannon](./guides/siege_weapons/cannon.md)
     - [Greek Fire](./guides/siege_weapons/greek_fire.md)
+    - [Ribauldequin](./guides/siege_weapons/ribauldequin.md)
     - [Trebuchet](./guides/siege_weapons/trebuchet.md)
     - [Catapult](./guides/siege_weapons/catapult.md)
     - [Siege Ladder](./guides/siege_weapons/siege_ladder.md)
