@@ -40,25 +40,28 @@ You can also reroll ALL of your resources with `/t resources reroll` for `50k`
 ducats.
 Available resources are:
 
-- coal
-- stone bricks
-- terracotta
-- sandstone (you can only roll this with surveys in beach and desert biomes)
-- diorite
-- andesite
-- glass
-- raw iron
-- quartz blocks
-- raw gold
-- magnetite
-- wheat
-- cooked beef
-- raw copper
-- cannister shots
-- cannonballs
-- boulders
-- steel bolts
-- gunpowder pouches
+| Category (Materials)                                    | Discovery Weight | Base Amount (Stacks) |
+| ------------------------------------------------------- | ---------------- | -------------------- |
+| `coal`                                                  | 200              | 1                    |
+| `stone_bricks`                                          | 100              | 1                    |
+| `terracotta`                                            | 100              | 0.5                  |
+| `sandstone` (`SMOOTH_SANDSTONE`)                        | 100              | 2                    |
+| `uncommon_rocks` (`DIORITE` or `ANDESITE` or `GRANITE`) | 100              | 1                    |
+| `glass`                                                 | 200              | 1                    |
+| `iron` (`RAW_IRON`)                                     | 200              | 0.5                  |
+| `quartz` (`QUARTZ_BLOCK`)                               | 100              | 0.25                 |
+| `gold` (`RAW_GOLD`)                                     | 75               | 0.25                 |
+| `diamonds`                                              | 50               | 0.125                |
+| `wheat`                                                 | 100              | 1                    |
+| `beef` (`well_cooked_beef`)                             | 100              | 1                    |
+| `copper` (`RAW_COPPER`)                                 | 150              | 0.25                 |
+| `canister_shot`                                         | 75               | 0.25                 |
+| `cannonball`                                            | 75               | 0.25                 |
+| `boulder`                                               | 75               | 0.25                 |
+| `steel_bolt`                                            | 75               | 0.25                 |
+| `gunpowder_pouch`                                       | 125              | 0.25                 |
+
+(you can only roll sandstone with surveys in beach and desert biomes)
 
 Some resources are rarer than others.
 Read the [TownyResources
